@@ -61,9 +61,16 @@ export const BasedOn = styled.p`
 
 export const DateItem = styled.p``;
 
+export const Icon = styled.img`
+  width: 25px;
+  transform: rotateZ(10deg);
+  transition: all 0.1s ease;
+`;
+
 export const SendLinkBtn = styled.p`
   cursor: pointer;
   user-select: none;
+  text-transform: capitalize;
 
   color: #d4f54c;
   font-family: Archivo, sans-serif;
@@ -71,4 +78,12 @@ export const SendLinkBtn = styled.p`
   font-style: normal;
   font-weight: 600;
   line-height: 137.8%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover img {
+    transform: rotateZ(-10deg);
+  }
 `;

@@ -7,3 +7,6 @@ export { default as threeImg } from "./cards/three.svg";
 export { default as fourImg } from "./cards/four.svg";
 export { default as fiveImg } from "./cards/five.svg";
 export { default as sixImg } from "./cards/six.svg";
+
+// ---------- export for card button icon ----------
+export { default as sendBtn } from "./buttonSendIcon/sendLink.svg";

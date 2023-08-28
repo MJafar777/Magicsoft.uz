@@ -1,16 +1,20 @@
 import { FC } from "react";
 
 import {
-  CardsProjectWrapper,
-  Cards,
   Img,
+  Icon,
   Title,
-  SubTitle,
+  Cards,
   BasedOn,
+  SubTitle,
   DateItem,
   SendLinkBtn,
   FlexBasedOn,
+  CardsProjectWrapper,
 } from "./cardsProjects";
+
+import { Link } from "react-router-dom";
+import { sendBtn } from "../../../../../../assets/images/components/PlatformProducts";
 
 type DataCard = {
   id: number;
@@ -46,9 +50,18 @@ const CardsProject: FC<Props> = (props) => {
 
               {item?.date ? <DateItem>{item.date}</DateItem> : ""}
 
-              {/* <Link to={"/"}> */}
-              <SendLinkBtn>VIEW CASE STUDY ↗️</SendLinkBtn>
-              {/* </Link> */}
+              <Link
+                style={{ listStyle: "none", textDecoration: "none" }}
+                to={item.link}
+              >
+                <SendLinkBtn>
+                  VIEW CASE STUDY{" "}
+                  <Icon
+                    src={sendBtn}
+                    alt={`this image not found !${sendBtn}`}
+                  />
+                </SendLinkBtn>
+              </Link>
             </Cards>
           );
         })}
