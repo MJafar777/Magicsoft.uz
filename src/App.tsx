@@ -1,5 +1,7 @@
+import Travels from "./pages/travels/Travels";
+
 function App() {
-  return <h1>App</h1>;
+  return <Travels />;
 }
 
 export default App;
