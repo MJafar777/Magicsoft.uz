@@ -1,5 +1,11 @@
+import { PlatformProducts } from "./pages/platformsProducts";
+
 function App() {
-  return <h1>App</h1>;
+  return (
+    <>
+      <PlatformProducts />
+    </>
+  );
 }
 
 export default App;
