@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MazzardH-Regular";
+  src: url("./assets/fonts/Mazzard/MazzardH-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MazzardH-Medium";
+  src: url("./assets/fonts/Mazzard/MazzardH-Medium.ttf"),
+    url("./assets/fonts/Mazzard/MazzardH-Medium.eot"),
+    url("./assets/fonts/Mazzard/MazzardH-Medium.woff"),
+    url("./assets/fonts/Mazzard/MazzardH-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Concretica";
+  src: url("./assets/fonts/font/Concretica.ttf");
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: white;
+}
