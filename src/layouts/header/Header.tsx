@@ -1,6 +1,6 @@
 import Navbar from "../navbar/Navbar";
-import { HeaderContainer, HeaderWrapper } from "./HeaderStyles";
 import { HeaderFeatures, HeaderLogo } from "./components";
+import { HeaderContainer, HeaderWrapper } from "./HeaderStyles";
 
 const Header = () => {
   return (

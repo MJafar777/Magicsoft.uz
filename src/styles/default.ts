@@ -5,6 +5,6 @@ export default {
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 992px)",
     xl: "screen and (max-width: 1200px)",
-    xxl: "screen and (max-width: 1400px)",
+    xxl: "screen and (max-width: 1440px)",
   },
 };
