@@ -25,6 +25,17 @@ export const ContainerInovationSkils = styled.div`
 export const InovationSkil = styled.div`
   width: 970px;
   margin-bottom: 30px;
+  img {
+    transition: all 1s linear;
+  }
+
+  p {
+    gap: 5px;
+    transition: all 1s linear;
+    .active {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const InovationName = styled.div`
@@ -42,6 +53,7 @@ export const InovationName = styled.div`
   /* padding-bottom: 18px; */
   border-bottom: 1px white solid;
   margin-bottom: 18px;
+  transition: all 1s linear;
 `;
 
 export const InovationInfo = styled.div`

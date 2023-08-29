@@ -7,13 +7,18 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
   height: 100vh;
   background-image: url(${(prop) => prop.imgUrl});
   background-repeat: no-repeat;
-  padding-left: 190px;
+  /* padding-left: 190px; */
   display: flex;
   justify-content: start;
   align-items: center;
+  position: relative;
+  cursor: pointer;
 `;
 
-export const ContentOfHeader = styled.div``;
+export const ContentOfHeader = styled.div`
+  position: absolute;
+  left: 190px;
+`;
 
 export const BaseLinks = styled.div`
   a {

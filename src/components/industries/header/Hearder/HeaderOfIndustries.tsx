@@ -7,6 +7,7 @@ import {
   HeaderTitle,
   Subtitle,
 } from "./HeaderOfIndustriesStyles";
+import ReactFluidAnimation from "@usertive/react-fluid-animation";
 
 // const defaultConfig: Partial<IAnimationConfig> = {
 //   textureDownsample: 1,
@@ -34,6 +35,12 @@ const HeaderOfIndustries = () => {
   return (
     <>
       <HeaderOfIndustriesWraper imgUrl={BgTravels}>
+        <ReactFluidAnimation
+          style={{
+            innerWidth: "100%",
+            innerHeight: "100vh",
+          }}
+        />
         <ContentOfHeader>
           <BaseLinks>
             <Link to={"/"}>Home / </Link>

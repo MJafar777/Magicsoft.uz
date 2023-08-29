@@ -5,7 +5,7 @@ export interface CardProp {
 export const SolutionWrapper = styled.div`
   width: 100%;
   background-color: #000;
-  padding: 86px 0 130px 230px;
+  padding: 86px 183px 130px 230px;
 `;
 
 export const Subtile = styled.div`

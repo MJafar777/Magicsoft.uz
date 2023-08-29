@@ -4,7 +4,8 @@ import {
   InovationSkil,
 } from "./TechnologyStyles";
 
-import Arrow from "../../../assets/industries/Arrow.svg";
+import { useState } from "react";
+import { Arrow45, Arrow } from "../../../assets/industries";
 
 interface EachTechnologyInterface {
   data: {
@@ -13,12 +14,48 @@ interface EachTechnologyInterface {
     Info: string;
   };
 }
+
 const EachTechnology = (prop: EachTechnologyInterface) => {
+  const [id, setId] = useState(0);
+
+  const moveOnSkil = (idSkil: number) => {
+    console.log(idSkil, "enter");
+    setId(idSkil);
+  };
+
+  const leaveOnSkil = (idSkil: number) => {
+    console.log(idSkil, "leave");
+    setId(0);
+  };
+
   return (
-    <InovationSkil>
+    <InovationSkil
+      onMouseMove={() => moveOnSkil(prop.data.id)}
+      onMouseLeave={() => leaveOnSkil(prop.data.id)}
+      // className={}
+    >
       <InovationName>
-        {prop.data.Title} <img src={`${Arrow}`} alt="" />
-      </InovationName>{" "}
+        <p
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: prop.data.id !== id ? "15px" : "30px",
+          }}
+        >
+          <span
+            style={{
+              display: "block",
+              width: "12px",
+              height: "12px",
+              marginRight: "12px",
+              backgroundColor: "rgba(212, 245, 76, 1)",
+              opacity: prop.data.id == id ? 1 : 0,
+            }}
+          ></span>{" "}
+          <span style={{ display: "block" }}> {prop.data.Title}</span>
+        </p>{" "}
+        <img src={`${prop.data.id !== id ? Arrow : Arrow45}`} alt="" />
+      </InovationName>
       <InovationInfo>{prop.data.Info}</InovationInfo>
     </InovationSkil>
   );

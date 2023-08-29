@@ -10,14 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/react-router-dom": "^5.3.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-fluid-animation": "^1.0.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.6",
     "@mui/material": "^5.14.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@usertive/react-fluid-animation": "^1.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fluid-animation": "^1.0.1",
     "react-router-dom": "^6.15.0",
     "styled-components": "^6.0.7"
   },
