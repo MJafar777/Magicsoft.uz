@@ -5,31 +5,43 @@ import {
   ButtonEscortText,
   ButtonEscortWrapper,
 } from "./ButtonEscortStyles";
+
 import {
   ButtonChangeBox,
   ButtonPimaryText,
   ButtonSecondaryText,
 } from "../ButtonInfo/ButtonInfoStyles";
 
-const ButtonEscort = () => {
+interface ButtonEscortProps {
+  text1: string;
+  text2: string;
+  arrowOutwardIcon: boolean;
+}
+
+function ButtonEscort({ text1, text2, arrowOutwardIcon }: ButtonEscortProps) {
   return (
     <ButtonEscortWrapper>
       <ButtonEscortBtn>
         <ButtonChangeBox>
           <ButtonPimaryText className="primary">
-            <ButtonEscortText>Hire Top Engineers</ButtonEscortText>
+            <ButtonEscortText>{text1}</ButtonEscortText>
           </ButtonPimaryText>
 
           <ButtonSecondaryText className="secondary">
-            <ButtonEscortText>Hire Top Engineers</ButtonEscortText>
+            <ButtonEscortText>{text2}</ButtonEscortText>
           </ButtonSecondaryText>
         </ButtonChangeBox>
       </ButtonEscortBtn>
-      <ButtonEscortSircle>
-        <ArrowOutwardIcon />
-      </ButtonEscortSircle>
+
+      {arrowOutwardIcon ? (
+        <ButtonEscortSircle>
+          <ArrowOutwardIcon />
+        </ButtonEscortSircle>
+      ) : (
+        ""
+      )}
     </ButtonEscortWrapper>
   );
-};
+}
 
 export default ButtonEscort;

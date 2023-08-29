@@ -1,2 +1,2 @@
-export { default as ButtonEscortBtn } from "./Buttons/ButtonEscort/ButtonEscort";
-export { default as ButtonInfoBtn } from "./Buttons/ButtonInfo/ButtonIfo";
+export { default as ButtonEscortBtn } from "./buttons/ButtonEscort/ButtonEscort";
+export { default as ButtonInfoBtn } from "./buttons/ButtonInfo/ButtonIfo";

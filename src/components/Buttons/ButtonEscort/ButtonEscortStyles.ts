@@ -17,6 +17,7 @@ export const ButtonEscortWrapper = styled.div<BreacPointsType>`
 `;
 
 export const ButtonEscortBtn = styled.div<BreacPointsType>`
+  min-width: 150px;
   padding: 17px 19px;
   border-radius: 50px;
   background-color: #1b63cc;
