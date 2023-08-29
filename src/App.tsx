@@ -8,7 +8,7 @@ function App() {
   return (
     <Suspense fallback={<h1>Loading...</h1>}>
       <Theme>
-        <Header />
+        {/* <Header /> */}
         <Outlet />
         <Footer />
       </Theme>

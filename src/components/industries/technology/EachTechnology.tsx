@@ -34,12 +34,11 @@ const EachTechnology = (prop: EachTechnologyInterface) => {
       onMouseLeave={() => leaveOnSkil(prop.data.id)}
       // className={}
     >
-      <InovationName>
+      <InovationName active={prop.data.id !== id}>
         <p
           style={{
             display: "flex",
             alignItems: "center",
-            gap: prop.data.id !== id ? "15px" : "30px",
           }}
         >
           <span

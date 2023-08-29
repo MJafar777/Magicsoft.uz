@@ -5,7 +5,11 @@ export interface CardProp {
 export const SolutionWrapper = styled.div`
   width: 100%;
   background-color: #000;
-  padding: 86px 183px 130px 230px;
+  padding: 86px 143px 130px 143px;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    padding: 80px 0 70px 0;
+  }
 `;
 
 export const Subtile = styled.div`
@@ -18,6 +22,12 @@ export const Subtile = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%; /* 27.56px */
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+  }
 `;
 
 export const SolutionTitle = styled.div`
@@ -28,10 +38,18 @@ export const SolutionTitle = styled.div`
   font-weight: 500;
   line-height: 109.8%; /* 94.428px */
   margin-bottom: 90px;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    font-size: 68.8px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
 `;
 
 export const ContainerOfSolution = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2px;
 `;

@@ -5,6 +5,7 @@ export const AnalysisWrapper = styled.div`
   padding-left: 230px;
   padding-bottom: 141px;
   display: flex;
+  justify-content: center;
   background-color: black;
 `;
 
