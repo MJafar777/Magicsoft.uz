@@ -1,14 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
-import MazzardHMedium from "../assets/fonts/Mazzard/MazzardH-Medium.ttf";
 import Concretica from "../assets/fonts/font/Concretica.ttf";
+import MazzardHMedium from "../assets/fonts/Mazzard/MazzardH-Medium.ttf";
 import MazzardHRegular from "../assets/fonts/Mazzard/MazzardH-Regular.ttf";
+import MazzardMRegular from "../assets/fonts/Mazzard/MazzardM-Regular.ttf";
+import MazzardMSemibold from "../assets/fonts/Mazzard/MazzardM-SemiBold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
 @font-face {
   font-family: "MazzardH-Regular";
   src: url(${MazzardHRegular}) format("truetype");
+}
+
+@font-face {
+  font-family: "MazzardM-Regular";
+  src: url(${MazzardMRegular}) format("truetype");
 }
 
 @font-face {
@@ -20,6 +27,11 @@ const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: "Concretica";
   src: url(${Concretica}) format("truetype");
+}
+
+@font-face {
+  font-family: "MazzardM-Semibold";
+  src: url(${MazzardMSemibold}) format("truetype");
 }
 
 * {

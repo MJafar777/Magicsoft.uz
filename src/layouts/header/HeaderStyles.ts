@@ -23,4 +23,9 @@ export const HeaderWrapper = styled.header<BreacPointsType>`
     max-width: 1321px;
     height: 88px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 834px;
+    height: 54px;
+  }
 `;
