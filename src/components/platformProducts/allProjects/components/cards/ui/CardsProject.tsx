@@ -27,17 +27,20 @@ type DataCard = {
 };
 interface Props {
   dataCard: DataCard[];
+  width: number;
+  bg: string;
+  btn?: string;
 }
 
 const CardsProject: FC<Props> = (props) => {
-  const { dataCard } = props;
+  const { dataCard, width, bg, btn } = props;
 
   return (
     <CardsProjectWrapper>
       {dataCard &&
         dataCard.map((item) => {
           return (
-            <Cards key={item.id}>
+            <Cards bg={bg} width={width} key={item.id}>
               <Img src={item.img} alt={`this image not found ${item.img}`} />
               <Title>{item.title}</Title>
               <SubTitle>{item.subTitle}</SubTitle>
@@ -55,7 +58,7 @@ const CardsProject: FC<Props> = (props) => {
                 to={item.link}
               >
                 <SendLinkBtn>
-                  VIEW CASE STUDY{" "}
+                  {btn ? btn : "VIEW CASE STUDY"}{" "}
                   <Icon
                     src={sendBtn}
                     alt={`this image not found !${sendBtn}`}
