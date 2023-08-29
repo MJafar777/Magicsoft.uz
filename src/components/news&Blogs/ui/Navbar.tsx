@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 
+import { NavbarWrapper } from "./navbar";
+
 type DataNavbar = {
   image: string;
   title: string;
@@ -11,7 +13,7 @@ interface Props {
 
 const Navbar: FC<Props> = (props) => {
   const { data } = props;
-  return <div>Navbar</div>;
+  return <NavbarWrapper>Navbar</NavbarWrapper>;
 };
 
 export default Navbar;
