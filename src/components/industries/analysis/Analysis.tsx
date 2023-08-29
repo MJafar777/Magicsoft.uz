@@ -1,6 +1,9 @@
 import {
   AnalysisWrapper,
   CardOfAnalysis,
+  TheFirst,
+  TheSecond,
+  TheThird,
   ValueOfAnalysis,
   WhichSubject,
 } from "./AnalysisStyles";
@@ -9,30 +12,24 @@ const Analysis = () => {
   return (
     <AnalysisWrapper>
       <CardOfAnalysis>
-        <ValueOfAnalysis>15+</ValueOfAnalysis>
-        <WhichSubject>Years of experience</WhichSubject>
-        <span className="top"></span>
-        <span className="right"></span>
-        <span className="bottom"></span>
-        <span className="left"></span>
+        <TheFirst>
+          <ValueOfAnalysis>15+</ValueOfAnalysis>
+          <WhichSubject>Years of experience</WhichSubject>
+        </TheFirst>
       </CardOfAnalysis>
 
       <CardOfAnalysis>
-        <ValueOfAnalysis>100+</ValueOfAnalysis>
-        <WhichSubject>Global clients</WhichSubject>
-        <span className="top"></span>
-        <span className="right"></span>
-        <span className="bottom"></span>
-        <span className="left"></span>
+        <TheSecond>
+          <ValueOfAnalysis>100+</ValueOfAnalysis>
+          <WhichSubject>Global clients</WhichSubject>
+        </TheSecond>
       </CardOfAnalysis>
 
       <CardOfAnalysis>
-        <ValueOfAnalysis>120+</ValueOfAnalysis>
-        <WhichSubject>Expert developers</WhichSubject>
-        <span className="top"></span>
-        <span className="right"></span>
-        <span className="bottom"></span>
-        <span className="left"></span>
+        <TheThird>
+          <ValueOfAnalysis>120+</ValueOfAnalysis>
+          <WhichSubject>Expert developers</WhichSubject>
+        </TheThird>
       </CardOfAnalysis>
     </AnalysisWrapper>
   );

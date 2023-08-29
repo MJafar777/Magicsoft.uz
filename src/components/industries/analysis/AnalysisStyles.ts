@@ -12,22 +12,23 @@ export const CardOfAnalysis = styled.div`
   width: 486px;
   height: 233px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const TheFirst = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-
-  border-radius: 5px;
   --border-size: 1px;
   --border-angle: 0turn;
-  /* width: 60vmin; */
-  height: 50vmin;
-
   background-image: conic-gradient(
       from var(--border-angle),
-      #213,
-      #112 50%,
-      #213
+      #000,
+      #000 50%,
+      #000
     ),
     conic-gradient(from var(--border-angle), transparent 20%, #fff, #fff);
   background-size: calc(100% - (var(--border-size) * 2))
@@ -35,8 +36,77 @@ export const CardOfAnalysis = styled.div`
     cover;
   background-position: center center;
   background-repeat: no-repeat;
-  animation-delay: 3s;
-  animation: bg-spin 3s linear infinite;
+  animation: 2s bg-spin linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+`;
+
+export const TheSecond = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --border-size: 1px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #000,
+      #000 50%,
+      #000
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #fff, #fff);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: 2s bg-spin 1s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+`;
+
+export const TheThird = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --border-size: 1px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #000,
+      #000 50%,
+      #000
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #fff, #fff);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: 2s bg-spin 2s linear infinite;
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;

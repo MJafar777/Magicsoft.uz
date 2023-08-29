@@ -3,18 +3,23 @@ import {
   InovationName,
   InovationSkil,
 } from "./TechnologyStyles";
+
 import Arrow from "../../../assets/industries/Arrow.svg";
-const EachTechnology = () => {
+
+interface EachTechnologyInterface {
+  data: {
+    id: number;
+    Title: string;
+    Info: string;
+  };
+}
+const EachTechnology = (prop: EachTechnologyInterface) => {
   return (
     <InovationSkil>
       <InovationName>
-        Artificial Intelligence (AI) <img src={`${Arrow}`} alt="" />
-       </InovationName>{" "}
-      <InovationInfo>
-        Travel brands are embracing Artificial Intelligence (AI) to create
-        tailored recommendations for travelers based on their previous travel
-        history to drive bookings.
-      </InovationInfo>
+        {prop.data.Title} <img src={`${Arrow}`} alt="" />
+      </InovationName>{" "}
+      <InovationInfo>{prop.data.Info}</InovationInfo>
     </InovationSkil>
   );
 };
