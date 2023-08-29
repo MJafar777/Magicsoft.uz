@@ -37,7 +37,7 @@ export const Title = styled.h3`
   font-style: normal;
   font-weight: 600;
   line-height: 114.3%; /* 27.432px */
-  text-transform: uppercase;
+  text-transform: capitalize;
 `;
 
 export const SubTitle = styled.h3`
