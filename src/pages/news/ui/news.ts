@@ -10,7 +10,6 @@ export const ChildWrapper = styled.div`
   color: #fff;
   width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
   max-width: 1281px;
   background-color: #080909;
 `;
