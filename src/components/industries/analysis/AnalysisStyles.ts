@@ -2,11 +2,13 @@ import { styled } from "styled-components";
 
 export const AnalysisWrapper = styled.div`
   width: 100%;
-  padding-left: 230px;
   padding-bottom: 141px;
   display: flex;
   justify-content: center;
   background-color: black;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 export const CardOfAnalysis = styled.div`
@@ -15,6 +17,15 @@ export const CardOfAnalysis = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    width: 390px;
+    height: 178px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 273px;
+    height: 125px;
+  }
 `;
 export const TheFirst = styled.div`
   width: 100%;
@@ -129,6 +140,13 @@ export const ValueOfAnalysis = styled.div`
   font-weight: 500;
   line-height: 124.175%;
   margin-bottom: 10px;
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    font-size: 43.2px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    font-size: 30.24px;
+  }
 `;
 
 export const WhichSubject = styled.div`
@@ -138,4 +156,12 @@ export const WhichSubject = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    font-size: 14.4px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    font-size: 10.8px;
+  }
 `;

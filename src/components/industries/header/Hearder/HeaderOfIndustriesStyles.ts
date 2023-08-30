@@ -37,10 +37,6 @@ export const BaseLinks = styled.div`
     @media ${(prop) => prop.theme.breakpoints.xl} {
       font-size: 14.56px;
     }
-
-    @media ${(prop) => prop.theme.breakpoints.lg} {
-      font-size: 14.56px;
-    }
   }
 `;
 
@@ -66,10 +62,6 @@ export const HeaderTitle = styled.div`
     margin-top: 17px;
     margin-bottom: 6px;
   }
-
-  @media ${(prop) => prop.theme.breakpoints.lg} {
-    font-size: 48.16px;
-  }
 `;
 
 export const Subtitle = styled.div`
@@ -88,10 +80,4 @@ export const Subtitle = styled.div`
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 14.56px;
   }
-
-  @media ${(prop) => prop.theme.breakpoints.lg} {
-    font-size: 14.56px;
-  }
-
-
 `;

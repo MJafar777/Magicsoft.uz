@@ -1,3 +1,5 @@
+import CountUp from "react-countup";
+
 import {
   AnalysisWrapper,
   CardOfAnalysis,
@@ -20,14 +22,40 @@ const Analysis = () => {
 
       <CardOfAnalysis>
         <TheSecond>
-          <ValueOfAnalysis>100+</ValueOfAnalysis>
+          <ValueOfAnalysis>
+            <CountUp
+              end={100}
+              duration={10.75}
+              start={0}
+              separator="client"
+              // decimals={4}
+              decimal=","
+              // prefix="EUR "
+              suffix=" +"
+              onEnd={() => console.log("Ended! 👏")}
+              onStart={() => console.log("Started! 💨")}
+            />
+          </ValueOfAnalysis>
           <WhichSubject>Global clients</WhichSubject>
         </TheSecond>
       </CardOfAnalysis>
 
       <CardOfAnalysis>
         <TheThird>
-          <ValueOfAnalysis>120+</ValueOfAnalysis>
+          <ValueOfAnalysis>
+          <CountUp
+              end={120}
+              duration={10.75}
+              start={5}
+              separator="developers"
+              // decimals={4}
+              decimal=","
+              // prefix="EUR "
+              suffix=" +"
+              onEnd={() => console.log("Ended! 👏")}
+              onStart={() => console.log("Started! 💨")}
+            />
+            </ValueOfAnalysis>
           <WhichSubject>Expert developers</WhichSubject>
         </TheThird>
       </CardOfAnalysis>

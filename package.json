@@ -17,6 +17,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@usertive/react-fluid-animation": "^1.0.5",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-fluid-animation": "^1.0.1",
     "react-router-dom": "^6.15.0",

@@ -6,9 +6,10 @@ interface InovationNameProp {
 
 export const TechnologyWrapper = styled.div`
   background: #000;
-  padding-left: 230px;
   padding-top: 150px;
   padding-bottom: 128px;
+  width: 80%;
+  margin: 0 auto;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding: 0;
@@ -26,6 +27,7 @@ export const TitleInovation = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: 109.8%;
+  padding-left: 5%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 68.8px;
@@ -34,6 +36,7 @@ export const TitleInovation = styled.div`
     padding-bottom: 74px;
     display: flex;
     justify-content: center;
+    padding-left: 0;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
@@ -43,8 +46,8 @@ export const TitleInovation = styled.div`
 `;
 
 export const ContainerInovationSkils = styled.div`
-  padding-left: 436px;
   padding-top: 94px;
+  /* border: solid red 1px; */
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     display: flex;
@@ -57,9 +60,11 @@ export const ContainerInovationSkils = styled.div`
 export const InovationSkil = styled.div`
   width: 970px;
   margin-bottom: 30px;
+  margin-left: 20%;
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 776px;
     margin-bottom: 30px;
+    margin-left: 0;
   }
 `;
 
