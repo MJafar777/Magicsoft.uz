@@ -14,13 +14,19 @@ export const CardsProjectWrapper = styled.div`
   gap: 20px;
   margin: 0 auto;
 `;
+
 export const Cards = styled.div<Props>`
-  max-width: ${(e) => e.width}px;
+  max-width: ${(e) => (e.width ? e.width : 614)}px;
   width: 100%;
   margin: 10px auto;
-
+  margin-top: 25px;
   background-color: ${(e) => (e.bg ? e.bg : "#000")};
 `;
+export const CardsPaddings = styled.div`
+  margin: 0px auto;
+  padding: 0px 30px;
+`;
+
 export const Img = styled.img`
   /* max-width: 600px; */
   width: 100%;
@@ -28,13 +34,13 @@ export const Img = styled.img`
 
 export const Title = styled.h3`
   color: #fff;
-  font-family: Archivo, sans-serif;
-  font-size: 20px;
+  font-family: MazzardM-Semibold, sans-serif;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 114.3%; /* 27.432px */
+  line-height: 114.3%;
   text-transform: capitalize;
-  margin-left: 5px;
+  margin: 15px auto;
 `;
 
 export const SubTitle = styled.h3`

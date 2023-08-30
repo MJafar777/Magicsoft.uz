@@ -10,6 +10,7 @@ import {
   DateItem,
   SendLinkBtn,
   FlexBasedOn,
+  CardsPaddings,
   CardsProjectWrapper,
 } from "./cardsProjects";
 
@@ -42,29 +43,31 @@ const CardsProject: FC<Props> = (props) => {
           return (
             <Cards bg={bg} width={width} key={item.id}>
               <Img src={item.img} alt={`this image not found ${item.img}`} />
-              <Title>{item.title}</Title>
-              <SubTitle>{item.subTitle}</SubTitle>
-              <FlexBasedOn>
-                {item.basedOn &&
-                  item.basedOn.map((item) => {
-                    return <BasedOn>#{item}</BasedOn>;
-                  })}
-              </FlexBasedOn>
+              <CardsPaddings>
+                <Title>{item.title}</Title>
+                <SubTitle>{item.subTitle}</SubTitle>
+                <FlexBasedOn>
+                  {item.basedOn &&
+                    item.basedOn.map((item) => {
+                      return <BasedOn>#{item}</BasedOn>;
+                    })}
+                </FlexBasedOn>
 
-              {item?.date ? <DateItem>{item.date}</DateItem> : ""}
+                {item?.date ? <DateItem>{item.date}</DateItem> : ""}
 
-              <Link
-                style={{ listStyle: "none", textDecoration: "none" }}
-                to={item.link}
-              >
-                <SendLinkBtn>
-                  {btn ? btn : "VIEW CASE STUDY"}{" "}
-                  <Icon
-                    src={sendBtn}
-                    alt={`this image not found !${sendBtn}`}
-                  />
-                </SendLinkBtn>
-              </Link>
+                <Link
+                  style={{ listStyle: "none", textDecoration: "none" }}
+                  to={item.link}
+                >
+                  <SendLinkBtn>
+                    {btn ? btn : "VIEW CASE STUDY"}{" "}
+                    <Icon
+                      src={sendBtn}
+                      alt={`this image not found !${sendBtn}`}
+                    />
+                  </SendLinkBtn>
+                </Link>
+              </CardsPaddings>
             </Cards>
           );
         })}
