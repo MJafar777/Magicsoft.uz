@@ -1,10 +1,13 @@
-import { HeaderOfAbout } from "../../components/about";
+import { AnalysisAbout, Baner, HeaderOfAbout } from "../../components/about";
+import { AboutWrapper } from "./AboutStyles";
 
 const About = () => {
   return (
-    <div>
+    <AboutWrapper>
       <HeaderOfAbout />
-    </div>
+      <AnalysisAbout />
+      <Baner />
+    </AboutWrapper>
   );
 };
 

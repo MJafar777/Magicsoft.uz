@@ -22,7 +22,7 @@ export const TechnologyWrapper = styled.div`
 export const TitleInovation = styled.div`
   color: #fff;
   text-align: start;
-  font-family: Mazzard;
+  font-family: "MazzardM-SemiBold";
   font-size: 86px;
   font-style: normal;
   font-weight: 600;
@@ -98,7 +98,7 @@ export const InovationName = styled.div<InovationNameProp>`
   align-items: center;
   padding: 18px 10px;
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardM-Regular";
   font-size: 58px;
   font-weight: 400;
   letter-spacing: 1.16px;
@@ -126,7 +126,7 @@ export const InovationName = styled.div<InovationNameProp>`
 
 export const InovationInfo = styled.div`
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardM-Regular";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

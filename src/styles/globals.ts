@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components";
 import MazzardHMedium from "../assets/fonts/Mazzard/MazzardH-Medium.ttf";
 import Concretica from "../assets/fonts/font/Concretica.ttf";
 import MazzardHRegular from "../assets/fonts/Mazzard/MazzardH-Regular.ttf";
-import MazzardMRegular from '../assets/fonts/Mazzard/MazzardM-Regular.ttf'
-import MazzardMSemiBold from '../assets/fonts/Mazzard/MazzardM-SemiBold.ttf'
-import MazzardMMedium from '../assets/fonts/Mazzard/MazzardM-Medium.ttf'
+import MazzardMRegular from "../assets/fonts/Mazzard/MazzardM-Regular.ttf";
+import MazzardMSemiBold from "../assets/fonts/Mazzard/MazzardM-SemiBold.ttf";
+import MazzardMMedium from "../assets/fonts/Mazzard/MazzardM-Medium.ttf";
 const GlobalStyles = createGlobalStyle`
 
 @font-face {
@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 @font-face {
-  font-family: "MazzardM-SemiBold";
+  font-family: "MazzardM-Medium";
   src: url(${MazzardMMedium}) format("truetype");
 }
 

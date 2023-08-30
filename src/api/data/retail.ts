@@ -67,6 +67,14 @@ export const SolutionData = {
       content:
         "We develop customizable shopping carts to address the aesthetic and functional needs of an e-commerce marketplace. We go the extra mile to optimize the customers’ buying experiences. Our custom shopping carts incorporate advanced features such as abandoned check-out recovery.",
     },
+
+    {
+      bgColor: "#000",
+
+      title: "Multisite E-Commerce",
+      content:
+        "Our multisite e-commerce solutions are most suitable for businesses whose footprint extends across regions, languages, and need to manage multiple storefronts under a single admin. Our multisite e-commerce helps online shopping platforms achieve significant ROI and deliver distinct shopping experiences.",
+    },
     {
       bgColor: "#17041E",
 
@@ -74,12 +82,13 @@ export const SolutionData = {
       content:
         "We develop custom payment solutions that integrate with payment gateways such as PayPal, Amazon Payments, Worldpay, SecurePay, Braintree, First Data, etc. Our e-commerce platforms accept payments through credit cards, debit cards, electronic balance transfers (EBT), mobile payments, and gift cards, among others.",
     },
+
     {
       bgColor: "#000",
 
-      title: "Multisite E-Commerce",
+      title: "B2B and B2C E-Commerce Software",
       content:
-        "Our multisite e-commerce solutions are most suitable for businesses whose footprint extends across regions, languages, and need to manage multiple storefronts under a single admin. Our multisite e-commerce helps online shopping platforms achieve significant ROI and deliver distinct shopping experiences.",
+        "We develop fully-featured hybrid e-commerce solutions that help manage B2B and B2C e-commerce operations from a single dashboard. Our solutions incorporate sophisticated features such as user permissions, order management systems, and business credit options.",
     },
     {
       bgColor: "#00170E",
@@ -94,6 +103,7 @@ export const SolutionData = {
       content:
         "We develop fully-featured hybrid e-commerce solutions that help manage B2B and B2C e-commerce operations from a single dashboard. Our solutions incorporate sophisticated features such as user permissions, order management systems, and business credit options.",
     },
+
     {
       bgColor: "#070E25",
       title: "Custom Marketplace App Development",

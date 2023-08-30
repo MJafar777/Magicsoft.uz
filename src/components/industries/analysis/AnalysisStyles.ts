@@ -134,7 +134,7 @@ export const TheThird = styled.div`
 
 export const ValueOfAnalysis = styled.div`
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardH-Medium";
   font-size: 54px;
   font-style: normal;
   font-weight: 500;
@@ -151,7 +151,7 @@ export const ValueOfAnalysis = styled.div`
 
 export const WhichSubject = styled.div`
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardH-Regular";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
