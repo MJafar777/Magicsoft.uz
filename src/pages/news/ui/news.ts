@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NewsWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
+  margin-top: 120px;
   background-color: #080909;
 `;
 export const ChildWrapper = styled.div`

@@ -3,6 +3,9 @@ import { BreacPointsType } from "../../types/breacPointTypes";
 
 export const HeaderContainer = styled.div`
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: #000;
   z-index: 500;
