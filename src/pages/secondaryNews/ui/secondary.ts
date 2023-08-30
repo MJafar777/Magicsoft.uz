@@ -39,6 +39,7 @@ export const GridBaseOn = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(5, 0.1fr);
+  gap: 20px;
 `;
 export const Info = styled.div`
   padding: 5px 10px;
@@ -58,4 +59,13 @@ export const Info = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%;
+`;
+export const Paragraph = styled.p`
+  color: #fff;
+  font-family: Mazzard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.8%;
+  width: 100%;
 `;
