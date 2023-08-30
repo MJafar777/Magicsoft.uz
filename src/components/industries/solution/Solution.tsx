@@ -5,8 +5,26 @@ import {
   Subtile,
 } from "./SolutionStyles";
 import CardOne from "./Card";
-
+import { SolutionData as TravelData } from "../../../api/data/travels";
+import { SolutionData as FintechData } from "../../../api/data/fintech";
+import { SolutionData as RetailData } from "../../../api/data/retail";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 const Solution = () => {
+
+  const loaction = useLocation();
+  const [data, setData] = useState(FintechData);
+
+  useEffect(() => {
+    if (loaction.pathname == "/fintech") {
+      setData(FintechData);
+    } else if (loaction.pathname == "/travels") {
+      setData(TravelData);
+    } else {
+      setData(RetailData);
+    }
+  }, [loaction.pathname]);
+
   return (
     <SolutionWrapper>
       <Subtile>
@@ -21,18 +39,19 @@ const Solution = () => {
         Solutions
       </Subtile>
       <SolutionTitle>
-        Our Hospitality and Travel Software Solutions
+        {data.title}
+        {/* Our Hospitality and Travel Software Solutions */}
       </SolutionTitle>
       <ContainerOfSolution>
-        <CardOne />
-        <CardOne />
-        <CardOne />
-        <CardOne />
-        <CardOne bgColor="#17041E" />
-        <CardOne />
-        <CardOne bgColor="#00170E" />
-        <CardOne />
-        <CardOne bgColor="#070E25" />
+        {data.listOfSolution.map((solution) => {
+          return (
+            <CardOne
+              title={solution.title}
+              content={solution.content}
+              bgColor={solution.bgColor}
+            />
+          );
+        })}
       </ContainerOfSolution>
     </SolutionWrapper>
   );

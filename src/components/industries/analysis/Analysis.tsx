@@ -9,14 +9,33 @@ import {
   ValueOfAnalysis,
   WhichSubject,
 } from "./AnalysisStyles";
+import { AnalysisData as TravelData} from "../../../api/data/travels";
+import { AnalysisData as FintechData } from "../../../api/data/fintech";
+import { AnalysisData as RetailData } from "../../../api/data/retail";
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Analysis = () => {
+
+  const loaction = useLocation();
+  const [data, setData] = useState(FintechData);
+
+  useEffect(() => {
+    if (loaction.pathname == "/fintech") {
+      setData(FintechData);
+    } else if (loaction.pathname == "/travels") {
+      setData(TravelData);
+    } else {
+      setData(RetailData);
+    }
+  }, [loaction.pathname]);
+
   return (
     <AnalysisWrapper>
       <CardOfAnalysis>
         <TheFirst>
-          <ValueOfAnalysis>15+</ValueOfAnalysis>
-          <WhichSubject>Years of experience</WhichSubject>
+          <ValueOfAnalysis>{data.year.value}</ValueOfAnalysis>
+          <WhichSubject>{data.year.subject}</WhichSubject>
         </TheFirst>
       </CardOfAnalysis>
 
@@ -24,7 +43,7 @@ const Analysis = () => {
         <TheSecond>
           <ValueOfAnalysis>
             <CountUp
-              end={100}
+              end={parseInt(data.client.value)}
               duration={10.75}
               start={0}
               separator="client"
@@ -36,15 +55,15 @@ const Analysis = () => {
               onStart={() => console.log("Started! 💨")}
             />
           </ValueOfAnalysis>
-          <WhichSubject>Global clients</WhichSubject>
+          <WhichSubject>{data.client.subject}</WhichSubject>
         </TheSecond>
       </CardOfAnalysis>
 
       <CardOfAnalysis>
         <TheThird>
           <ValueOfAnalysis>
-          <CountUp
-              end={120}
+            <CountUp
+              end={parseInt(data.developer.value)}
               duration={10.75}
               start={5}
               separator="developers"
@@ -55,8 +74,8 @@ const Analysis = () => {
               onEnd={() => console.log("Ended! 👏")}
               onStart={() => console.log("Started! 💨")}
             />
-            </ValueOfAnalysis>
-          <WhichSubject>Expert developers</WhichSubject>
+          </ValueOfAnalysis>
+          <WhichSubject>{data.developer.subject}</WhichSubject>
         </TheThird>
       </CardOfAnalysis>
     </AnalysisWrapper>

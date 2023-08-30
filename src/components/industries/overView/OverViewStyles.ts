@@ -24,7 +24,9 @@ export const OverViewTitle = styled.div`
   padding-top: 58px;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 68.8px;
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 74px;
     display: flex;
     justify-content: center;
@@ -32,7 +34,19 @@ export const OverViewTitle = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 48.16px;
-    padding-bottom: 52px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 42.16px;
+    padding-bottom: 22px;
+    text-align: center;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    font-size: 32.16px;
+    padding-bottom: 12px;
     text-align: center;
   }
 `;

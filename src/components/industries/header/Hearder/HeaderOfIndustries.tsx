@@ -1,5 +1,14 @@
-import { Link } from "react-router-dom";
-import { BgTravels } from "../../../../assets/industries";
+import { Link, useLocation } from "react-router-dom";
+
+import ReactFluidAnimation, {
+  IAnimationConfig,
+} from "@usertive/react-fluid-animation";
+
+// import { BgTravels } from "../../../../assets/industries";
+import { HeaderData as TravelData } from "../../../../api/data/travels";
+import { HeaderData as FintechData } from "../../../../api/data/fintech";
+import { HeaderData as RetailData } from "../../../../api/data/retail";
+
 import {
   BaseLinks,
   ContentOfHeader,
@@ -7,9 +16,7 @@ import {
   HeaderTitle,
   Subtitle,
 } from "./HeaderOfIndustriesStyles";
-import ReactFluidAnimation, {
-  IAnimationConfig,
-} from "@usertive/react-fluid-animation";
+import { useEffect, useState } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const defaultConfig: Partial<IAnimationConfig> = {
@@ -34,10 +41,24 @@ const defaultConfig: Partial<IAnimationConfig> = {
     "#FFFFFF",
   ],
 };
+
 const HeaderOfIndustries = () => {
+  const loaction = useLocation();
+  const [data, setData] = useState(FintechData);
+
+  useEffect(() => {
+    if (loaction.pathname == "/fintech") {
+      setData(FintechData);
+    } else if (loaction.pathname == "/travels") {
+      setData(TravelData);
+    } else {
+      setData(RetailData);
+    }
+  }, [loaction.pathname]);
+
   return (
     <>
-      <HeaderOfIndustriesWraper imgUrl={BgTravels}>
+      <HeaderOfIndustriesWraper>
         <ReactFluidAnimation
           style={{
             innerWidth: "100%",
@@ -46,18 +67,15 @@ const HeaderOfIndustries = () => {
           config={defaultConfig}
         />
         {/* <canvas width="100%" height="100vh"> */}
-          <ContentOfHeader>
-            <BaseLinks>
-              <Link to={"/"}>Home / </Link>
-              <Link to={"/"}>Industries / </Link>
-              <Link to={"/"}>Travel, Logistics & Hospitality </Link>
-            </BaseLinks>
-            <HeaderTitle>Travel, Logistics & Hospitality</HeaderTitle>
-            <Subtitle>
-              Unravel the art and science of converting travelers with
-              comprehensive travel technology
-            </Subtitle>
-          </ContentOfHeader>
+        <ContentOfHeader>
+          <BaseLinks>
+            <Link to={"/"}>Home / </Link>
+            <Link to={"/"}>Industries / </Link>
+            <Link to={"/"}>{data.back}</Link>
+          </BaseLinks>
+          <HeaderTitle>{data.title}</HeaderTitle>
+          <Subtitle>{data.subTitle}</Subtitle>
+        </ContentOfHeader>
         {/* </canvas> */}
       </HeaderOfIndustriesWraper>
     </>

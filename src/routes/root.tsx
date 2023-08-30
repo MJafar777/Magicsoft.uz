@@ -5,6 +5,8 @@ import About from "../pages/about/About";
 
 const HomeAsync = lazy(() => import("../pages/home/Home"));
 const TravelAsync = lazy(() => import("../pages/travels/Travels"));
+const RetailAsync = lazy(() => import("../pages/retail/Retail"));
+const FintechAsync = lazy(() => import("../pages/fintech/Fintech"));
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomeAsync /> },
       { path: "travels", element: <TravelAsync /> },
+      { path: "retail", element: <RetailAsync /> },
+      { path: "fintech", element: <FintechAsync /> },
+
       { path: "about", element: <About /> },
     ],
   },

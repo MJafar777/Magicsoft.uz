@@ -8,11 +8,9 @@ import { useState } from "react";
 import { Arrow45, Arrow } from "../../../assets/industries";
 
 interface EachTechnologyInterface {
-  data: {
-    id: number;
-    Title: string;
-    Info: string;
-  };
+  id: number;
+  title: string;
+  info: string;
 }
 
 const EachTechnology = (prop: EachTechnologyInterface) => {
@@ -30,11 +28,10 @@ const EachTechnology = (prop: EachTechnologyInterface) => {
 
   return (
     <InovationSkil
-      onMouseMove={() => moveOnSkil(prop.data.id)}
-      onMouseLeave={() => leaveOnSkil(prop.data.id)}
-      // className={}
+      onMouseMove={() => moveOnSkil(prop.id)}
+      onMouseLeave={() => leaveOnSkil(prop.id)}
     >
-      <InovationName active={prop.data.id !== id}>
+      <InovationName active={prop.id !== id}>
         <p
           style={{
             display: "flex",
@@ -48,14 +45,14 @@ const EachTechnology = (prop: EachTechnologyInterface) => {
               height: "12px",
               marginRight: "12px",
               backgroundColor: "rgba(212, 245, 76, 1)",
-              opacity: prop.data.id == id ? 1 : 0,
+              opacity: prop.id == id ? 1 : 0,
             }}
           ></span>{" "}
-          <span style={{ display: "block" }}> {prop.data.Title}</span>
+          <span style={{ display: "block" }}> {prop.title}</span>
         </p>{" "}
-        <img src={`${prop.data.id !== id ? Arrow : Arrow45}`} alt="" />
+        <img src={`${prop.id !== id ? Arrow : Arrow45}`} alt="" />
       </InovationName>
-      <InovationInfo>{prop.data.Info}</InovationInfo>
+      <InovationInfo>{prop.info}</InovationInfo>
     </InovationSkil>
   );
 };

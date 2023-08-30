@@ -42,12 +42,22 @@ export const TitleInovation = styled.div`
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 48.16px;
     padding-bottom: 52px;
+    text-align: center;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 42.16px;
+    padding-bottom: 42px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    font-size: 32.16px;
+    padding-bottom: 22px;
   }
 `;
 
 export const ContainerInovationSkils = styled.div`
   padding-top: 94px;
-  /* border: solid red 1px; */
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     display: flex;
@@ -61,10 +71,24 @@ export const InovationSkil = styled.div`
   width: 970px;
   margin-bottom: 30px;
   margin-left: 20%;
+  transition: 30s linear all;
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 776px;
     margin-bottom: 30px;
     margin-left: 0;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    margin-bottom: 10px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    margin-bottom: 5px;
   }
 `;
 
@@ -89,6 +113,14 @@ export const InovationName = styled.div<InovationNameProp>`
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 42.16px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 28.16px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    font-size: 20px;
   }
 `;
 

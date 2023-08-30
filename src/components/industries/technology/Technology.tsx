@@ -5,36 +5,38 @@ import {
   TitleInovation,
 } from "./TechnologyStyles";
 
-const dataOfTechnology = [
-  {
-    id: 1,
-    Title: "Artificial Intelligence (AI)",
-    Info: "Travel brands are embracing Artificial Intelligence (AI) to create tailored recommendations for travelers based on their previous travel history to drive bookings.",
-  },
-  {
-    id: 2,
-    Title: "Augmented Reality (AR) / Virtual Reality (VR)",
-    Info: "AR and VR technologies enable travel & hospitality businesses to enhance physical environments to encourage more tourists.",
-  },
-  {
-    id: 3,
-    Title: "Blockchain",
-    Info: "Blockchain’s immutable distributed ledger technology is isolating major hospitality industry pain points by removing the layers between consumers and sellers.",
-  },
-  {
-    id: 4,
-    Title: "Internet of Things (IoT)",
-    Info: "IoT technology is revolutionizing the hospitality space by helping the industry meet compliance requirements and asset tracking.",
-  },
-];
+import { TechnologyData, TechnologyData as TravelData } from "../../../api/data/travels";
+import { TechnologyData as FintechData } from "../../../api/data/fintech";
+import { TechnologyData as RetailData } from "../../../api/data/retail";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Technology = () => {
+  const loaction = useLocation();
+  const [data, setData] = useState(FintechData);
+
+  useEffect(() => {
+    if (loaction.pathname == "/fintech") {
+      setData(FintechData);
+    } else if (loaction.pathname == "/travels") {
+      setData(TravelData);
+    } else {
+      setData(RetailData);
+    }
+  }, [loaction.pathname]);
+
   return (
     <TechnologyWrapper>
-      <TitleInovation>Innovation in Hospitality</TitleInovation>
+      <TitleInovation>{TechnologyData.title}</TitleInovation>
       <ContainerInovationSkils>
-        {dataOfTechnology?.map((v) => {
-          return <EachTechnology data={v} />;
+        {data.listOfSkil?.map((oneSkil) => {
+          return (
+            <EachTechnology
+              title={oneSkil.title}
+              info={oneSkil.content}
+              id={oneSkil.id}
+            />
+          );
         })}
       </ContainerInovationSkils>
     </TechnologyWrapper>

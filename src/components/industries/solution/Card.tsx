@@ -1,16 +1,16 @@
-import { Title, Content, Card, CardProp } from "./SolutionStyles";
+import { Title, Content, Card } from "./SolutionStyles";
 
-const CardOne = (prop: CardProp) => {
+interface Data {
+  [x: string]: string | undefined;
+  title?: string;
+  content?: string;
+}
+
+const CardOne = (prop: Data) => {
   return (
     <Card bgColor={prop.bgColor}>
-      <Title>Online Booking Engine Software</Title>
-      <Content>
-        We develop highly-advanced and sophisticated AI-driven online booking
-        engine software solutions that boost conversion rates and turn online
-        travel portals into highly-profitable sales channels. Our travel portal
-        solutions are designed to reduce the overall search and booking time,
-        and help drive sales.
-      </Content>
+      <Title>{prop.title}</Title>
+      <Content>{prop.content}</Content>
     </Card>
   );
 };

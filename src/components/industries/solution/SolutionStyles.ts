@@ -54,8 +54,20 @@ export const SolutionTitle = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    width: 100%;
-    padding: 60px 129px 30px 129px;
+    font-size: 48.16px;
+    padding-bottom: 52px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 42.16px;
+    padding-bottom: 42px;
+    margin-bottom: 30px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    font-size: 32.16px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
   }
 `;
 

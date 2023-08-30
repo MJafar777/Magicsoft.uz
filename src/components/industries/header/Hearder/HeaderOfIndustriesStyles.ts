@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 interface HeaderOfIndustriesWraperProps {
-  imgUrl: string;
+  imgUrl?: string;
 }
 export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps>`
   width: 100%;
@@ -16,7 +16,7 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
 
 export const ContentOfHeader = styled.div`
   position: absolute;
-  left: 190px;
+  left: 12%;
 `;
 
 export const BaseLinks = styled.div`
@@ -37,6 +37,10 @@ export const BaseLinks = styled.div`
     @media ${(prop) => prop.theme.breakpoints.xl} {
       font-size: 14.56px;
     }
+
+    @media ${(prop) => prop.theme.breakpoints.md} {
+      font-size: 12.56px;
+    }
   }
 `;
 
@@ -46,7 +50,7 @@ export const HeaderTitle = styled.div`
   font-weight: 600;
   line-height: 94px;
   letter-spacing: 0em;
-  text-align: center;
+  text-align: left;
   color: rgba(255, 255, 255, 1);
   margin-top: 31px;
   margin-bottom: 12px;
@@ -61,6 +65,20 @@ export const HeaderTitle = styled.div`
     font-size: 48.16px;
     margin-top: 17px;
     margin-bottom: 6px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 42px;
+    margin-top: 5px;
+    line-height: 54px;
+    margin-bottom: 3px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    font-size: 36px;
+    margin-top: 5px;
+    line-height: 36px;
+    margin-bottom: 3px;
   }
 `;
 
@@ -79,5 +97,9 @@ export const Subtitle = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 14.56px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    font-size: 10.56px;
   }
 `;

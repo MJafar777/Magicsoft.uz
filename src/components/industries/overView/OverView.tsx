@@ -1,27 +1,32 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import {
   OverViewTitle,
   OverViewWraper,
   TextOfOverView,
 } from "./OverViewStyles";
+import { OverViewData as TravelData } from "../../../api/data/travels";
+import { OverViewData as FintechData } from "../../../api/data/fintech";
+import { OverViewData as RetailData } from "../../../api/data/retail";
 
 const OverView = () => {
+  const loaction = useLocation();
+  const [data, setData] = useState(FintechData);
+
+  useEffect(() => {
+    if (loaction.pathname == "/fintech") {
+      setData(FintechData);
+    } else if (loaction.pathname == "/travels") {
+      setData(TravelData);
+    } else {
+      setData(RetailData);
+    }
+  }, [loaction.pathname]);
   return (
     <OverViewWraper>
       <div>
-        <OverViewTitle>Overview</OverViewTitle>
-        <TextOfOverView>
-          Our end-to-end travel software solutions, built around the industry’s
-          technology needs, help drive business innovation. We specialize in
-          providing end-to-end travel management software development services
-          to spur Digital Transformation for our clients and help them deliver
-          seamless, personalized, and differentiated customer experiences. We
-          assist travel businesses in creating new engagement models to keep up
-          with the customers’ growing expectations in a digitally connected
-          world while balancing costs. Our solutions aid travel companies in
-          scaling limitlessly, reinventing services, and achieving a customer
-          experience vision, from touchpoints to journeys.
-        </TextOfOverView>
+        <OverViewTitle>{data.title}</OverViewTitle>
+        <TextOfOverView>{data.text}</TextOfOverView>
       </div>
     </OverViewWraper>
   );
