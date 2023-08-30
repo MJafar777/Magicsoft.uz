@@ -8,3 +8,11 @@ export default {
     xxl: "screen and (max-width: 1440px)",
   },
 };
+
+
+// 1201
+// 993
+// 769
+// 577
+// 420 
+// 320

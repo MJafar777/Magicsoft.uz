@@ -10,6 +10,10 @@ export const HeaderFeaturesWrapper = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     gap: 20px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    gap: 14px;
+  }
 `;
 
 export const LinkItem = styled.div<BreacPointsType>`
@@ -47,6 +51,14 @@ export const LinkItem = styled.div<BreacPointsType>`
       font-size: 18px;
     }
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    gap: 8.4px;
+
+    .headerLanguageIcon {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const LinkItemText = styled.p<BreacPointsType>`
@@ -60,6 +72,10 @@ export const LinkItemText = styled.p<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 16px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 11.2px;
+  }
 `;
 
 export const LinkItemColumnLine = styled.div<BreacPointsType>`
@@ -70,6 +86,11 @@ export const LinkItemColumnLine = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     width: 1.5px;
     height: 12px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 1px;
+    height: 8px;
   }
 `;
 
@@ -100,6 +121,13 @@ export const SidebarMenuBtn = styled.div<BreacPointsType>`
     border-radius: 20.8px;
     border: 1px solid #aab4c2;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 74px;
+    height: 28px;
+    border-radius: 14.56px;
+    border: 1px solid #aab4c2;
+  }
 `;
 
 export const SideabrMenuBtnText = styled.p<BreacPointsType>`
@@ -114,6 +142,10 @@ export const SideabrMenuBtnText = styled.p<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 14.4px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 10.8px;
+  }
 `;
 
 export const SidebarMenuBurgerBtn = styled.img<BreacPointsType>`
@@ -122,5 +154,10 @@ export const SidebarMenuBurgerBtn = styled.img<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     width: 40px;
     height: 40px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 28px;
+    height: 28px;
   }
 `;
