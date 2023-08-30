@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #000;
+    background-color: #000 ;
     font-size: 1.6rem;
     cursor: default;
   }

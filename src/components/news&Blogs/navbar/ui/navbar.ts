@@ -1,50 +1,53 @@
 import styled from "styled-components";
-interface Props {
-  width: number;
-  bg?: string;
-}
 
-export const CardsProjectWrapper = styled.div`
-  max-width: 1300px;
+export const NavbarWrapper = styled.div`
+  max-width: 1280px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  height: 398px;
+  flex-shrink: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  margin: 0 auto;
-`;
-export const Cards = styled.div<Props>`
-  max-width: ${(e) => e.width}px;
-  width: 100%;
-  margin: 10px auto;
 
-  background-color: ${(e) => (e.bg ? e.bg : "#000")};
+  margin: 2rem auto;
+  background: #161616;
+`;
+
+export const Cards = styled.div`
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: #161616;
 `;
 export const Img = styled.img`
-  /* max-width: 600px; */
-  width: 100%;
+  max-width: 50%;
+  transform: scaleY(1.2);
 `;
 
 export const Title = styled.h3`
+  width: 90%;
   color: #fff;
   font-family: Archivo, sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 114.3%; /* 27.432px */
   text-transform: capitalize;
-  margin-left: 5px;
 `;
 
 export const SubTitle = styled.h3`
   color: #fff;
+  width: 90%;
   font-family: Archivo;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%;
-  margin-left: 5px;
 
   opacity: 0.7;
 `;
@@ -55,8 +58,6 @@ export const FlexBasedOn = styled.div`
   grid-template-columns: repeat(3, 0.1fr);
   gap: 20px;
   justify-content: flex-start;
-  margin-left: 5px;
-  margin-left: 5px;
 `;
 
 export const BasedOn = styled.p`
@@ -65,15 +66,12 @@ export const BasedOn = styled.p`
   padding: 8px 15px;
   align-items: center;
   gap: 10px;
-  margin-left: 5px;
 
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
 `;
 
-export const DateItem = styled.p`
-  margin-left: 5px;
-`;
+export const DateItem = styled.p``;
 
 export const Icon = styled.img`
   width: 25px;
@@ -96,7 +94,6 @@ export const SendLinkBtn = styled.p`
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 5px;
 
   &:hover img {
     transform: rotateZ(-10deg);

@@ -90,7 +90,7 @@ const PlatformProducts: React.FC<Props> = () => {
     <PlatformProductsWrapper>
       <PlatformNavbar />
       <AllProjects />
-      <CardsProject dataCard={dataCard} />
+      <CardsProject dataCard={dataCard} width={600} bg={""} />
     </PlatformProductsWrapper>
   );
 };
