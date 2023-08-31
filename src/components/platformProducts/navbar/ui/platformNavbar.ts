@@ -12,6 +12,50 @@ export const PlatformNavbarWrapper = styled.div`
 export const NavbarLeft = styled.div`
   color: #fff;
   width: 50%;
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    background: #d4f54c;
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    transition: 1s ease-in-out;
+    box-shadow: 6px 6px 1px #403a16;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+
+  .btn:hover {
+    transition: 1s ease-in-out;
+  }
+
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+
+  .btn span {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
 `;
 
 export const Img = styled.img`

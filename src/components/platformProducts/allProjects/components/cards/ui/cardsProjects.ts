@@ -102,6 +102,7 @@ export const SendLinkBtn = styled.p`
   cursor: pointer;
   user-select: none;
   text-transform: capitalize;
+  transition: all 0.5s ease;
 
   color: #d4f54c;
   font-family: Archivo-Regular, sans-serif;
@@ -116,6 +117,11 @@ export const SendLinkBtn = styled.p`
   margin-top: 17px;
 
   &:hover img {
-    transform: rotateZ(-10deg);
+    transform: translateY(-4px) translateX(4px);
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    transform: translateY(-4px) translateX(4px);
   }
 `;
