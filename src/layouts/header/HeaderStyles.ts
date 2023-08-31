@@ -3,8 +3,12 @@ import { BreacPointsType } from "../../types/breacPointTypes";
 
 export const HeaderContainer = styled.div`
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: #000;
+  z-index: 500;
 `;
 
 export const HeaderWrapper = styled.header<BreacPointsType>`
@@ -22,5 +26,10 @@ export const HeaderWrapper = styled.header<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1321px;
     height: 88px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 834px;
+    height: 54px;
   }
 `;

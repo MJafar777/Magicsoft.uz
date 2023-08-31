@@ -14,6 +14,11 @@ export const LogoImage = styled.img<BreacPointsType>`
     width: 40px;
     height: 40px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 28px;
+    height: 28px;
+  }
 `;
 
 export const LogoText = styled.p<BreacPointsType>`
@@ -25,5 +30,9 @@ export const LogoText = styled.p<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 19.2px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 13.44px;
   }
 `;

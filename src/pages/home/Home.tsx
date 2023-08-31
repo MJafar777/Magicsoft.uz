@@ -1,5 +1,13 @@
+import { MainSection, LeadingBrandsSection } from "./components";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <MainSection />
+
+      <LeadingBrandsSection />
+    </>
+  );
 };
 
 export default Home;
