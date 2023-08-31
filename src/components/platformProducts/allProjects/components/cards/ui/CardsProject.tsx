@@ -1,5 +1,3 @@
-import { FC } from "react";
-
 import {
   Img,
   Icon,
@@ -20,36 +18,38 @@ import { sendBtn } from "../../../../../../assets/images/components/PlatformProd
 type DataCard = {
   id: number;
   img: string;
+  link: string;
   title: string;
   subTitle: string;
-  link: string;
-  date?: string;
   basedOn: string[];
+  miniTitle: string;
+  paragraphInfo: string;
+  date?: string;
 };
 interface Props {
-  dataCard: DataCard[];
+  dataCards: DataCard[];
   width: number;
   bg: string;
   btn?: string;
 }
 
-const CardsProject: FC<Props> = (props) => {
-  const { dataCard, width, bg, btn } = props;
+const CardsProject = (props: Props) => {
+  const { dataCards, width, bg, btn } = props;
 
   return (
     <CardsProjectWrapper>
-      {dataCard &&
-        dataCard.map((item) => {
+      {dataCards &&
+        dataCards.map((item) => {
           return (
             <Cards bg={bg} width={width} key={item.id}>
               <Img src={item.img} alt={`this image not found ${item.img}`} />
               <CardsPaddings>
-                <Title>{item.title}</Title>
+                <Title>{item.miniTitle}</Title>
                 <SubTitle>{item.subTitle}</SubTitle>
                 <FlexBasedOn>
                   {item.basedOn &&
                     item.basedOn.map((item) => {
-                      return <BasedOn>#{item}</BasedOn>;
+                      return <BasedOn key={item}>#{item}</BasedOn>;
                     })}
                 </FlexBasedOn>
 
@@ -57,7 +57,7 @@ const CardsProject: FC<Props> = (props) => {
 
                 <Link
                   style={{ listStyle: "none", textDecoration: "none" }}
-                  to={item.link}
+                  to={`${item.link}/${item.id}`}
                 >
                   <SendLinkBtn>
                     {btn ? btn : "VIEW CASE STUDY"}{" "}

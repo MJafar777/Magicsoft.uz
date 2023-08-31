@@ -9,7 +9,7 @@ import {
   Title,
   BasedOn,
   SubTitle,
-  DateItem,
+  CardLeft,
   SendLinkBtn,
   FlexBasedOn,
   NavbarWrapper,
@@ -47,7 +47,7 @@ const NavbarNews: FC<Props> = (props) => {
             return (
               <Cards key={item.id}>
                 <Img src={item.img} alt={`this image not found ${item.img}`} />
-                <div>
+                <CardLeft>
                   <Title>{item.title}</Title>
                   <SubTitle>{item.subTitle}</SubTitle>
                   <FlexBasedOn>
@@ -57,11 +57,9 @@ const NavbarNews: FC<Props> = (props) => {
                       })}
                   </FlexBasedOn>
 
-                  {item?.date ? <DateItem>{item.date}</DateItem> : ""}
-
                   <Link
                     style={{ listStyle: "none", textDecoration: "none" }}
-                    to={item.link}
+                    to={`${item.link}/${item.id}`}
                   >
                     <SendLinkBtn>
                       LEARN MORE{" "}
@@ -71,7 +69,7 @@ const NavbarNews: FC<Props> = (props) => {
                       />
                     </SendLinkBtn>
                   </Link>
-                </div>
+                </CardLeft>
               </Cards>
             );
           })}

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const PlatformNavbarWrapper = styled.div`
+  gap: 2rem;
   width: 90%;
-  margin: 2rem auto;
   display: flex;
+  margin: 2rem auto;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
 `;
 
 export const NavbarLeft = styled.div`
@@ -18,13 +18,17 @@ export const Img = styled.img`
   max-width: 600px;
   width: 50%;
 `;
+
 export const SubTitle = styled.h2`
   color: #fff;
+  font-family: MazzardM-SemiBold, sans-serif;
   font-size: 49px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 50%;
-  font-family: Mazzard, sans-serif;
+  line-height: 114.3%;
+  margin-bottom: 20px;
 `;
+
 export const SubTitleBottomBorder = styled.div`
   height: 7px;
   width: 100px;
@@ -32,6 +36,7 @@ export const SubTitleBottomBorder = styled.div`
   border-radius: 8px;
   background: #d4f54c;
 `;
+
 export const Paragraph = styled.p`
   max-width: 432px;
 
@@ -40,11 +45,13 @@ export const Paragraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%; /* 27.56px */
-  font-family: Mazzard, sans-serif;
+  font-family: MazzardM-Regular, sans-serif;
+  margin: 20px 0;
 `;
+
 export const ButtonContact = styled.button`
   color: #000;
-  font-family: Mazzard, sans-serif;
+  font-family: MazzardM-SemiBold, sans-serif;
   font-size: 20px;
   font-weight: 600;
 

@@ -1,0 +1,1 @@
+export {default as HeaderOfAbout } from './headerOfAbout/HeaderOfAbout'
