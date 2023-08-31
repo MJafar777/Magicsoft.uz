@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { path: "retail", element: <RetailAsync /> },
       { path: "fintech", element: <FintechAsync /> },
 
-      { path: "about", element: <About /> },
+      { path: "/about-us", element: <About /> },
     ],
   },
 ]);

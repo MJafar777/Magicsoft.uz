@@ -1,4 +1,9 @@
-import { AnalysisAbout, Baner, HeaderOfAbout } from "../../components/about";
+import {
+  AnalysisAbout,
+  Baner,
+  HeaderOfAbout,
+  OurTeam,
+} from "../../components/about";
 import { AboutWrapper } from "./AboutStyles";
 
 const About = () => {
@@ -7,6 +12,7 @@ const About = () => {
       <HeaderOfAbout />
       <AnalysisAbout />
       <Baner />
+      <OurTeam />
     </AboutWrapper>
   );
 };
