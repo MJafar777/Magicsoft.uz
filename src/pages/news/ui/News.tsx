@@ -19,15 +19,15 @@ const News: FC<Props> = () => {
       <ChildWrapper>
         <NavbarNews data={dataCards} length={result} />
         <TitleBlock title={"News"} />
-        {/* <FilterAllProjects dataFilter={dataFilter} /> */}
-        {/* <Brecked>
+        <FilterAllProjects dataFilter={dataFilter} />
+        <Brecked>
           <CardsProject
             width={500}
             bg={"rgba(44, 44, 44, 0.4)"}
             btn={"LEARN MORE"}
             dataCards={dataCards}
           />
-        </Brecked> */}
+        </Brecked>
       </ChildWrapper>
     </NewsWrapper>
   );

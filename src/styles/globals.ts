@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 @font-face {
-  font-family: "MazzardM-SemiBold2";
+  font-family: "MazzardM-Medium";
   src: url(${MazzardMMedium}) format("truetype");
 }
 

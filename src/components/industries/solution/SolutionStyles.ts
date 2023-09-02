@@ -36,7 +36,7 @@ export const Subtile = styled.div`
 
 export const SolutionTitle = styled.div`
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardM-Medium";
   font-size: 86px;
   font-style: normal;
   font-weight: 500;
@@ -102,7 +102,7 @@ export const Card = styled.div<CardProp>`
 
 export const Title = styled.div`
   color: #fff;
-  font-family: Mazzard;
+  font-family: "MazzardM-Medium";
   font-size: 34px;
   font-style: normal;
   font-weight: 500;
@@ -120,7 +120,7 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   color: #a5afbc;
-  font-family: Mazzard;
+  font-family: "MazzardM-Regular";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

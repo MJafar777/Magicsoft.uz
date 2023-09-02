@@ -14,15 +14,15 @@ export const OverViewWraper = styled.div`
 
 export const OverViewTitle = styled.div`
   color: #fff;
+  font-family: "MazzardM-SemiBold";
   text-align: start;
   font-family: Mazzard;
-  font-size: 86px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
   line-height: 109.8%;
   padding-bottom: 94px;
   padding-top: 58px;
-
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 40px;
     width: 90%;
@@ -33,19 +33,19 @@ export const OverViewTitle = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    font-size: 48.16px;
+    font-size: 36px;
     padding-bottom: 42px;
     text-align: center;
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    font-size: 42.16px;
+    font-size: 32px;
     padding-bottom: 22px;
     text-align: center;
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
-    font-size: 32.16px;
+    font-size: 28px;
     padding-bottom: 12px;
     text-align: center;
   }
@@ -54,7 +54,7 @@ export const OverViewTitle = styled.div`
 export const TextOfOverView = styled.div`
   color: #a5afbc;
   text-align: justify;
-  font-family: Mazzard;
+  font-family: "MazzardM-Regular";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

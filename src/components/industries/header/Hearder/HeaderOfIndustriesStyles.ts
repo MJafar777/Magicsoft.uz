@@ -23,7 +23,7 @@ export const BaseLinks = styled.div`
   a {
     color: rgba(170, 180, 194, 1);
     text-decoration: none;
-    font-family: Mazzard;
+    font-family: "MazzardM-Regular";
     font-size: 26px;
     font-weight: 400;
     line-height: 29px;
@@ -45,7 +45,7 @@ export const BaseLinks = styled.div`
 `;
 
 export const HeaderTitle = styled.div`
-  font-family: Mazzard;
+  font-family: "MazzardM-SemiBold";
   font-size: 86px;
   font-weight: 600;
   line-height: 94px;
@@ -83,7 +83,7 @@ export const HeaderTitle = styled.div`
 `;
 
 export const Subtitle = styled.div`
-  font-family: Mazzard;
+  font-family: "MazzardM-Medium";
   font-size: 26px;
   font-weight: 500;
   line-height: 29px;
