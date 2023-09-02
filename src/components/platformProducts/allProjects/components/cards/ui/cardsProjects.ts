@@ -117,7 +117,7 @@ export const SendLinkBtn = styled.p`
   margin-top: 17px;
 
   &:hover img {
-    transform: translateY(-4px) translateX(4px);
+    transform: translateY(-2px) translateX(2px);
     color: #fff;
     transition: all 0.2s ease;
   }

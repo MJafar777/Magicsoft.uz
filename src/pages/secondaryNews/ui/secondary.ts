@@ -47,6 +47,13 @@ export const GridBaseOn = styled.div`
   gap: 15px;
   margin-top: 60px;
 `;
+export const GridBase = styled.div`
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+`;
 
 export const Info = styled.div`
   color: #fff;
