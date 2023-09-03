@@ -13,6 +13,7 @@ export const FilterAllProjectsWrapper = styled.div<BreacPointsType>`
   }
   @media ${(props) => props.theme.breakpoints.lg} {
     display: block;
+    height: auto;
   }
 `;
 export const ButtonsFilter = styled.div<BreacPointsType>`
