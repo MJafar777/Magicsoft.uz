@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreacPointsType } from "../../../../../../types/breacPointTypes";
 interface Props {
   width: number;
   bg?: string;
@@ -13,6 +14,10 @@ export const CardsProjectWrapper = styled.div`
   justify-content: center;
   gap: 20px;
   margin: 0 auto;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Cards = styled.div<Props>`
@@ -21,11 +26,19 @@ export const Cards = styled.div<Props>`
   margin: 0 auto;
   margin-top: 25px;
   background-color: ${(e) => (e.bg ? e.bg : "#000")};
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    margin-top: 0px;
+  }
 `;
 
 export const CardsPaddings = styled.div`
   margin: 0px auto;
   padding: 30px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 10px;
+  }
 `;
 
 export const Img = styled.img`
@@ -33,7 +46,7 @@ export const Img = styled.img`
   width: 100%;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h3<BreacPointsType>`
   color: #fff;
   font-family: MazzardM-Semibold, sans-serif;
   font-size: 24px;
@@ -43,9 +56,12 @@ export const Title = styled.h3`
   text-transform: capitalize;
   margin: 0 auto;
   margin-bottom: 17px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 18px;
+  }
 `;
 
-export const SubTitle = styled.h3`
+export const SubTitle = styled.h3<BreacPointsType>`
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -55,6 +71,10 @@ export const SubTitle = styled.h3`
   margin-bottom: 13px;
 
   opacity: 0.7;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 16px;
+  }
 `;
 
 export const FlexBasedOn = styled.div`
@@ -80,6 +100,11 @@ export const BasedOn = styled.p`
 
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 14px;
+    height: 30px;
+  }
 `;
 
 export const DateItem = styled.p`
@@ -96,9 +121,12 @@ export const Icon = styled.img`
   width: 25px;
   transform: rotateZ(45deg);
   transition: all 0.1s ease;
+  @media ${(props) => props.theme.breakpoints.md} {
+    transform: scale(0.9);
+  }
 `;
 
-export const SendLinkBtn = styled.p`
+export const SendLinkBtn = styled.p<BreacPointsType>`
   cursor: pointer;
   user-select: none;
   text-transform: capitalize;
@@ -123,5 +151,8 @@ export const SendLinkBtn = styled.p`
   }
   &:hover {
     transform: translateY(-4px) translateX(4px);
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 14px;
   }
 `;

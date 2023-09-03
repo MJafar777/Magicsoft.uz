@@ -18,3 +18,6 @@ export { default as blogs6 } from "./images/pages/blogs/blog6.svg";
 // ---------- export images in secondaryNews page ----------
 
 export { default as secondaryNews1 } from "./images/pages/secondaryNews/secondaryNews1.svg";
+
+// ---------- export images in filter page ----------
+export { default as filter } from "./images/components/PlatformProducts/buttonSendIcon/filter.svg";

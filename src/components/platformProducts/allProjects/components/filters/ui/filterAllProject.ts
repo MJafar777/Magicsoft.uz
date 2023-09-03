@@ -1,12 +1,21 @@
 import styled from "styled-components";
+import { BreacPointsType } from "../../../../../../types/breacPointTypes";
 
-export const FilterAllProjectsWrapper = styled.div`
+export const FilterAllProjectsWrapper = styled.div<BreacPointsType>`
   width: 100%;
   height: 60px;
   display: flex;
   gap: 20px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    gap: 17px;
+    height: 50px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: block;
+  }
 `;
-export const ButtonsFilter = styled.div`
+export const ButtonsFilter = styled.div<BreacPointsType>`
   display: flex;
   padding: 26px 0px 25px 0px;
   justify-content: center;
@@ -48,5 +57,27 @@ export const ButtonsFilter = styled.div`
       left: 120%;
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 20px 0px 19px 0px;
+    min-width: 100px;
+  }
+`;
+export const IconFilter = styled.img`
+  width: 30px;
+  margin-left: 95%;
+  cursor: pointer;
+  position: relative;
+  top: -60px;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 25px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-left: 93%;
   }
 `;
