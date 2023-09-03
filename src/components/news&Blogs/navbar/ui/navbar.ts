@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const NavbarWrapper = styled.div<BreacPointsType>`
+export const NavbarWrapper = styled.div`
   max-width: 1280px;
   width: 100%;
   flex-shrink: 0;

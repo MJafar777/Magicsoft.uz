@@ -1,15 +1,21 @@
 import styled from "styled-components";
+import { BreacPointsType } from "../../../types/breacPointTypes";
+
+
 
 interface Props {
   src: string;
   alt: string;
 }
 
-export const SecondaryNewsWrapper = styled.div`
+export const SecondaryNewsWrapper = styled.div<BreacPointsType>`
   width: 100%;
   background: #000;
   color: white;
   margin-top: 120px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 0 20px;
+  }
 `;
 
 export const SecondaryNewsParent = styled.div`
@@ -26,7 +32,7 @@ export const ImageTitle = styled.img<Props>`
   width: 100%;
 `;
 
-export const Title = styled.p`
+export const Title = styled.p<BreacPointsType>`
   width: 100%;
   margin: 20px auto;
 
@@ -38,24 +44,45 @@ export const Title = styled.p`
   line-height: 114.3%;
 
   margin: 30px auto;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin: 20px auto;
+    font-size: 24px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 20px;
+  }
 `;
 
-export const GridBaseOn = styled.div`
+export const GridBaseOn = styled.div<BreacPointsType>`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(5, 0.1fr);
   gap: 15px;
   margin-top: 60px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 30px;
+  }
 `;
-export const GridBase = styled.div`
+
+export const GridBase = styled.div<BreacPointsType>`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 30px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px auto;
+  }
 `;
 
-export const Info = styled.div`
+export const Info = styled.div<BreacPointsType>`
   color: #fff;
   font-family: Archivo-Regular, sans-serif;
   font-size: 16px;
@@ -70,16 +97,24 @@ export const Info = styled.div`
 
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 14px;
+  }
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<BreacPointsType>`
   color: #fff;
-  font-family: Mazzard;
+  font-family: MazzardM-Regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%;
   width: 100%;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 14px;
+  }
 `;
 
 export const TitleBottomBorder = styled.div`

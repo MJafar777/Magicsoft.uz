@@ -5,7 +5,7 @@ interface Props {
   bg?: string;
 }
 
-export const CardsProjectWrapper = styled.div`
+export const CardsProjectWrapper = styled.div<BreacPointsType>`
   max-width: 1300px;
   width: 100%;
   display: grid;
@@ -20,7 +20,7 @@ export const CardsProjectWrapper = styled.div`
   }
 `;
 
-export const Cards = styled.div<Props>`
+export const Cards = styled.div<Props, BreacPointsType>`
   max-width: ${(e) => (e.width ? e.width : 614)}px;
   width: 100%;
   margin: 0 auto;
@@ -32,7 +32,7 @@ export const Cards = styled.div<Props>`
   }
 `;
 
-export const CardsPaddings = styled.div`
+export const CardsPaddings = styled.div<BreacPointsType>`
   margin: 0px auto;
   padding: 30px;
 
@@ -85,7 +85,7 @@ export const FlexBasedOn = styled.div`
   justify-content: left;
 `;
 
-export const BasedOn = styled.p`
+export const BasedOn = styled.p<BreacPointsType>`
   color: #fff;
   font-family: Archivo-Regular, sans-serif;
   font-size: 16px;
@@ -117,7 +117,7 @@ export const DateItem = styled.p`
   margin-top: 15px;
 `;
 
-export const Icon = styled.img`
+export const Icon = styled.img<BreacPointsType>`
   width: 25px;
   transform: rotateZ(45deg);
   transition: all 0.1s ease;

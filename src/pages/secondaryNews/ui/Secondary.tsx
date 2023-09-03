@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import {
   Info,
   Title,
-  Paragraph,
-  GridBaseOn,
   GridBase,
+  Paragraph,
   ImageTitle,
+  GridBaseOn,
   TitleBottomBorder,
   SecondaryNewsParent,
   SecondaryNewsWrapper,
@@ -24,11 +24,11 @@ interface DataCard {
   img: string;
   link: string;
   title: string;
+  date?: string;
   subTitle: string;
   basedOn: string[];
   miniTitle: string;
   paragraphInfo: string;
-  date?: string;
 }
 
 const SecondaryNews = () => {
