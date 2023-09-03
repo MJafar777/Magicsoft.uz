@@ -21,3 +21,7 @@ export { default as secondaryNews1 } from "./images/pages/secondaryNews/secondar
 
 // ---------- export images in filter page ----------
 export { default as filter } from "./images/components/PlatformProducts/buttonSendIcon/filter.svg";
+
+// ---------- export images in filter page ----------
+export { default as eye_looked } from "./images/components/login/eye_looked.svg";
+export { default as eye_closed } from "./images/components/login/eye_closed.svg";
