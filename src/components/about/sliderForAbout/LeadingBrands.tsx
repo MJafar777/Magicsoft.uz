@@ -3,8 +3,6 @@ import { slide1, slide2, slide3, slide4 } from "../../../assets/about";
 // import ButtonMagnet from "../../components/buttons/MagnetikButton/ButtonMagnetik";
 
 import {
-  LeadingBrandsTitle,
-  LeadingBrandsNumbers,
   LeadingBrandsBox,
   LeadingBrandsCart,
   LeadingBrandsImgWrapper,
@@ -14,16 +12,6 @@ import SliderAutoPlay from "./SliderForAbout";
 const LeadingBrands = () => {
   return (
     <LeadingBrandsImgWrapper>
-      {/* <LeadingBrandsTitle>
-        Trusted by Leading Brands and Startups
-      </LeadingBrandsTitle>
-
-      <LeadingBrandsNumbers>
-        <span></span>
-        <p>02</p>
-        <h4>/</h4>
-        <p>12</p>
-      </LeadingBrandsNumbers> */}
       <LeadingBrandsBox>
         <SliderAutoPlay>
           <LeadingBrandsCart>

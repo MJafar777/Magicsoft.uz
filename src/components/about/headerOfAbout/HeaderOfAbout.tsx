@@ -24,7 +24,10 @@ const HeaderOfAbout = () => {
           <img src={theFirstImgInHeader} alt="" />
           <img src={theSecondtImgInHeader} alt="" />
         </div>
-        <img src={theThirdImgInHeader} alt="" />
+        <div>
+          {" "}
+          <img className="imgOfgroup" src={theThirdImgInHeader} alt="" />
+        </div>
       </RightSideOfHeader>
     </HeaderOfAboutWrapper>
   );

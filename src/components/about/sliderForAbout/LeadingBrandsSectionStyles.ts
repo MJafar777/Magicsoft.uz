@@ -74,7 +74,14 @@ export const LeadingBrandsCart = styled.div`
   justify-content: center;
 
   img {
-    width: 100%;
+    width: 90%;
     height: 100% !important;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+  img{
+    width: 90%;
+    height: 80% !important;
+  }
   }
 `;
