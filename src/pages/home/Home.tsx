@@ -1,7 +1,7 @@
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
 
-gconst Home = () => {
+const Home = () => {
   return (
     <>
       <MainSection />
