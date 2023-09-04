@@ -1,11 +1,66 @@
-import { CommentContainer, CommentsWrapper } from "./CommentStyles";
+import Slider from "react-slick";
+import CommentCard from "./CommentCard";
+import {
+  CommentContainer,
+  CommentsWrapper,
+  LeadingBrandsBoxComment,
+  SubTitle,
+  Title,
+} from "./CommentStyles";
 
 const Comments = () => {
+  const settings = {
+    className: "center",
+    centerMode: false,
+    speed: 1000,
+    dots: true,
+    infinite: true,
+    slidesToShow: 2.5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <CommentsWrapper>
-      <p style={{ fontSize: "80px" }}>What our clients say</p>
+      <Title>What our clients say</Title>
+      <SubTitle>What our clients say</SubTitle>
       <CommentContainer>
-        <p>What our clients say</p>
+        <LeadingBrandsBoxComment>
+          <Slider {...settings}>
+            <CommentCard />
+            <CommentCard />
+            <CommentCard />
+            <CommentCard />
+            <CommentCard />
+          </Slider>
+        </LeadingBrandsBoxComment>
       </CommentContainer>
     </CommentsWrapper>
   );

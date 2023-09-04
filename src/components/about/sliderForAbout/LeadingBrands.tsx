@@ -14,7 +14,7 @@ import SliderAutoPlay from "./SliderForAbout";
 const LeadingBrands = () => {
   return (
     <LeadingBrandsImgWrapper>
-      <LeadingBrandsTitle>
+      {/* <LeadingBrandsTitle>
         Trusted by Leading Brands and Startups
       </LeadingBrandsTitle>
 
@@ -23,8 +23,7 @@ const LeadingBrands = () => {
         <p>02</p>
         <h4>/</h4>
         <p>12</p>
-      </LeadingBrandsNumbers>
-
+      </LeadingBrandsNumbers> */}
       <LeadingBrandsBox>
         <SliderAutoPlay>
           <LeadingBrandsCart>

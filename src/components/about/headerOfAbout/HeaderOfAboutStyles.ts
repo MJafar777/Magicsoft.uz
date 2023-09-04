@@ -13,7 +13,7 @@ export const HeaderOfAboutWrapper = styled.div`
 export const LeftSideOfHeader = styled.div`
   width: 45%;
   span {
-    background-color: yellow;
+    background-color: #d4f54c;
     color: black;
     padding: 5px 10px;
   }
