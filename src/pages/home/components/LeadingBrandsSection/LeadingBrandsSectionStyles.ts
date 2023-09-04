@@ -56,16 +56,46 @@ export const LeadingBrandsNumbers = styled.div<BreacPointsType>`
 `;
 
 export const LeadingBrandsBox = styled.div`
-  height: 126px;
   width: 100%;
   margin: 90px auto;
-  background-color: #111;
+
+  .slick-next {
+    right: 0;
+    left: 0;
+  }
+
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+    gap: 140px;
+
+    div {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+    }
+
+    .slick-slider .slick-list,
+    .slick-slider .slick-track {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    display: none;
+  }
 `;
 
 export const LeadingBrandsCart = styled.div`
-  height: 126px;
-  width: 100px;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -19,24 +19,6 @@ export const MainSectionContainer = styled.section<BreacPointsType>`
 
 export const MainSectionLeft = styled.div<BreacPointsType>``;
 
-export const MainSectionLeftPartNumber = styled.div<BreacPointsType>`
-  display: flex;
-  align-items: flex-end;
-  gap: 5px;
-
-  span {
-    width: 10px;
-    height: 10px;
-    background-color: #1b63cc;
-    margin-right: 8px;
-  }
-
-  p {
-    margin-bottom: -6px;
-    color: #aab4c2;
-  }
-`;
-
 export const MainSectionLeftTitle = styled.h2<BreacPointsType>`
   max-width: 770px;
   color: #fff;
@@ -74,6 +56,10 @@ export const MainSectinLeftButtonsBox = styled.div<BreacPointsType>`
   gap: 26px;
 `;
 
-export const MainSectionRight = styled.section<BreacPointsType>``;
+export const MainSectionRight = styled.section<BreacPointsType>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const MainSectionAnimation = styled.section<BreacPointsType>``;

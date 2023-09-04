@@ -1,0 +1,9 @@
+export { default as tniLogo } from "./tniLogo.svg";
+export { default as ibdLogo } from "./ibdLogo.svg";
+export { default as amplLogo } from "./amplLogo.svg";
+export { default as eximLogo } from "./eximLogo.svg";
+export { default as kervanyol } from "./kervanyol.svg";
+export { default as vektorBorder } from "./vektorBorder.svg";
+export { default as fonusAll } from "./fonusAll.png";
+export { default as fonus } from "./fonus.svg";
+export { default as mainImage } from "./mainImage.svg";

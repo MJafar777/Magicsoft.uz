@@ -1,28 +1,24 @@
-import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
 import ButtonIfo from "../../../../components/buttons/ButtonInfo/ButtonIfo";
+import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
 import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
 import {
-  MainSectionContainer,
   MainSectionLeft,
   MainSectionRight,
   MainSectionWrapper,
   MainSectionLeftTitle,
-  MainSectionLeftPartNumber,
-  MainSectionLeftDescription,
+  MainSectionContainer,
   MainSectinLeftButtonsBox,
+  MainSectionLeftDescription,
 } from "./MainSectionStyles";
+import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
+import { mainImage } from "../../../../assets/images";
 
 const MainSection = () => {
   return (
     <MainSectionWrapper>
       <MainSectionContainer>
         <MainSectionLeft>
-          <MainSectionLeftPartNumber>
-            <span></span>
-            <p>01</p>
-            <p>/</p>
-            <p>12</p>
-          </MainSectionLeftPartNumber>
+          <PageSectionNumber fullPageNumber={12} currentPageNumber={"01"} />
 
           <MainSectionLeftTitle>
             Hire the Top of{" "}
@@ -49,7 +45,9 @@ const MainSection = () => {
           </MainSectinLeftButtonsBox>
         </MainSectionLeft>
 
-        <MainSectionRight></MainSectionRight>
+        <MainSectionRight>
+          <img src={mainImage} alt="" />
+        </MainSectionRight>
       </MainSectionContainer>
     </MainSectionWrapper>
   );
