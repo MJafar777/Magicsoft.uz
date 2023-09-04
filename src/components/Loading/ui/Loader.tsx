@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 import {
   Span,
   Contain,
@@ -16,16 +16,16 @@ const MyLoader: FC = () => {
   const arr = [""];
   // const arr2 = new Array(100).fill("");
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (arr.length < 100) {
-  //       arr.push(arr2.map((item)=));
-  //     } else {
-  //       clearInterval(interval);
-  //       setLoading(false);
-  //     }
-  //   }, 1);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (arr.length < 100) {
+        // arr.push(arr2.map((item)=));
+      } else {
+        clearInterval(interval);
+        setLoading(false);
+      }
+    }, 1);
+  }, []);
 
   return loading ? (
     <LoaderWrapper>
