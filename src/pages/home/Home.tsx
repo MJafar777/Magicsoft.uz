@@ -4,7 +4,7 @@ import DigitalExperience from "./components/DigitalExperience/DigitalExperience"
 const Home = () => {
   return (
     <>
-      {/* <MainSection /> */}
+      <MainSection />
 
       {/* <LeadingBrandsSection /> */}
 

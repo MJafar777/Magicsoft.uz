@@ -5,6 +5,18 @@ export const MainSectionWrapper = styled.div<BreacPointsType>`
   padding-top: 111px;
   max-width: 1652px;
   margin: 0 auto;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 75px 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 35px 15px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 25px 15px;
+  }
 `;
 
 export const MainSectionContainer = styled.section<BreacPointsType>`
@@ -13,8 +25,24 @@ export const MainSectionContainer = styled.section<BreacPointsType>`
   justify-content: space-between;
   background: #111114;
   margin: 30px auto;
-  padding: 100px 155px 54px 155px;
+  padding: 90px 135px 54px 135px;
   border-radius: 48px 48px 0px 0px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 50px 135px 42px 120px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 50px 50px 40px 40px;
+    border-radius: 26px 26px 0px 0px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    padding: 0;
+  }
 `;
 
 export const MainSectionLeft = styled.div<BreacPointsType>``;
@@ -37,6 +65,35 @@ export const MainSectionLeftTitle = styled.h2<BreacPointsType>`
     text-decoration: underline;
     text-decoration-color: #1b63cc;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 760px;
+    font-size: 68.8px;
+    font-weight: 600;
+    line-height: 78.638px;
+    margin: 30px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 460px;
+    font-size: 48.8px;
+    line-height: 55.638px;
+    margin: 20px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 460px;
+    font-size: 48.8px;
+    line-height: 55.638px;
+    margin: 20px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 438px;
+    font-size: 42px;
+    line-height: 48.638px;
+    margin: 20px 0;
+  }
 `;
 
 export const MainSectionLeftDescription = styled.p<BreacPointsType>`
@@ -48,12 +105,42 @@ export const MainSectionLeftDescription = styled.p<BreacPointsType>`
   max-width: 565px;
   padding-bottom: 20px;
   margin-bottom: 40px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.048px;
+    margin-bottom: 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 12px;
+    line-height: 15.048px;
+    margin-bottom: 15px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 270px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
 `;
 
 export const MainSectinLeftButtonsBox = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   gap: 26px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    gap: 18px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+  }
 `;
 
 export const MainSectionRight = styled.section<BreacPointsType>`
@@ -62,6 +149,10 @@ export const MainSectionRight = styled.section<BreacPointsType>`
   justify-content: center;
   position: relative;
   width: 50%;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const MainSectionAnimation = styled.section<BreacPointsType>`
@@ -94,5 +185,18 @@ export const MainSectionAnimation = styled.section<BreacPointsType>`
     left: -100%;
     object-fit: cover;
     z-index: -100;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    height: 533px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    height: 400px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    height: 355px;
+    width: 140px;
   }
 `;

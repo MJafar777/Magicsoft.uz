@@ -15,7 +15,7 @@ export const JobItemWrapper = styled.div<JobItemProps>`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 13px 18px;
+  padding: 13px 18px 11px 18px;
   border-radius: 25px;
 
   top: ${(props) => props.top};
@@ -54,5 +54,37 @@ export const JobItemWrapper = styled.div<JobItemProps>`
     font-style: normal;
     font-weight: 400;
     line-height: 33.072px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    gap: 15px;
+    padding: 10px 15px 8px 15px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    p {
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 26.458px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    gap: 15px;
+    padding: 7px 15px 5px 15px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.458px;
+    }
   }
 `;

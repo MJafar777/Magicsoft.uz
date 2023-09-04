@@ -33,4 +33,29 @@ export const PageSectionNumberWrapper = styled.div<BreacPointsType>`
     line-height: normal;
     margin-bottom: -4px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    p,
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    p,
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    p,
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
