@@ -9,9 +9,12 @@ import {
   MainSectionContainer,
   MainSectinLeftButtonsBox,
   MainSectionLeftDescription,
+  MainSectionAnimation,
 } from "./MainSectionStyles";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
-import { mainImage } from "../../../../assets/images";
+
+import mainAnim from "../../../../assets/mainAnim.mp4";
+import JobItems from "../../../../components/jobItem/JobItems";
 
 const MainSection = () => {
   return (
@@ -46,7 +49,39 @@ const MainSection = () => {
         </MainSectionLeft>
 
         <MainSectionRight>
-          <img src={mainImage} alt="" />
+          <MainSectionAnimation>
+            <video
+              loop
+              muted
+              autoPlay
+              playsInline
+              data-wf-ignore="true"
+              data-object-fit="cover"
+            >
+              <source type="video/mp4" src={mainAnim} data-wf-ignore="true" />
+            </video>
+          </MainSectionAnimation>
+          <JobItems
+            text={"Finance Experts"}
+            top={"20%"}
+            right={""}
+            bottom={""}
+            left={"0px"}
+          />
+          <JobItems
+            text={"Project Managers"}
+            top={""}
+            right={""}
+            bottom={"10%"}
+            left={"30px"}
+          />
+          <JobItems
+            text={"Software engineers"}
+            top={"50%"}
+            right={"-20px"}
+            bottom={""}
+            left={""}
+          />
         </MainSectionRight>
       </MainSectionContainer>
     </MainSectionWrapper>

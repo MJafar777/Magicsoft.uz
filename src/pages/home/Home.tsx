@@ -1,12 +1,9 @@
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
 
-// import ReactPageScroller from "react-page-scroller";
-
-const Home = () => {
+gconst Home = () => {
   return (
     <>
-      {/* <ReactPageScroller></ReactPageScroller> */}
       <MainSection />
 
       <LeadingBrandsSection />

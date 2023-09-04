@@ -60,6 +60,39 @@ export const MainSectionRight = styled.section<BreacPointsType>`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 50%;
 `;
 
-export const MainSectionAnimation = styled.section<BreacPointsType>``;
+export const MainSectionAnimation = styled.section<BreacPointsType>`
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  width: 249px;
+  height: 633px;
+  mix-blend-mode: lighten;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    bottom: -100%;
+    top: -100%;
+    left: -100%;
+    object-fit: cover;
+    z-index: -100;
+  }
+`;

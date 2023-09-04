@@ -1,14 +1,13 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
-import { vektorBorder } from "../../../../assets/images";
 
 export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
-  height: 100vh;
+  min-height: 627px;
   max-width: 1652px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 0 auto;
+  margin: 150px auto;
 `;
 
 export const DigitalExperienceLeft = styled.div<BreacPointsType>`
@@ -29,7 +28,7 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
 `;
 
 export const DigitalExperienceDescription = styled.div<BreacPointsType>`
-  max-width: 485px;
+  max-width: 600px;
   color: #a5afbc;
   font-family: "MazzardM-Regular";
   font-size: 20px;
@@ -49,16 +48,51 @@ export const DigitalExperienceRight = styled.div<BreacPointsType>`
   justify-content: flex-end;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: 3;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    position: absolute;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
 `;
 
-export const DigitalExperienceRightBorder = styled.div<BreacPointsType>`
+export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
-  height: 627px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(${vektorBorder});
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2.5em;
+
+  video {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    z-index: -100;
+    transform: translateX(-100px);
+  }
 `;
+
+export const DigitalExperienceItem = styled.div<BreacPointsType>``;

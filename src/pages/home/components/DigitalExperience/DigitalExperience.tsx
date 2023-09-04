@@ -8,8 +8,13 @@ import {
   DigitalExperienceTitle,
   DigitalExperienceWrapper,
   DigitalExperienceDescription,
-  DigitalExperienceRightBorder,
+  DigitalExperienceVideContainer,
 } from "./DigitalExperienceStyles";
+
+import digitialVideo from "../../../../assets/digitial.mp4";
+
+import { borderBigVector } from "../../../../assets/images";
+import JobItems from "../../../../components/jobItem/JobItems";
 
 const DigitalExperience = () => {
   return (
@@ -36,7 +41,46 @@ const DigitalExperience = () => {
       </DigitalExperienceLeft>
 
       <DigitalExperienceRight>
-        <DigitalExperienceRightBorder className="DigitalExperienceRightBorder" />
+        <DigitalExperienceVideContainer>
+          <video
+            loop
+            muted
+            autoPlay
+            playsInline
+            data-wf-ignore="true"
+            data-object-fit="cover"
+          >
+            <source
+              type="video/mp4"
+              src={digitialVideo}
+              data-wf-ignore="true"
+            />
+          </video>
+        </DigitalExperienceVideContainer>
+
+        <img src={borderBigVector} alt="border vector" />
+
+        <JobItems
+          text={"Product Design"}
+          top={"40%"}
+          right={""}
+          bottom={""}
+          left={"-50px"}
+        />
+        <JobItems
+          text={"Product Strategy  Consultingn"}
+          top={""}
+          right={""}
+          bottom={"20%"}
+          left={"-50px"}
+        />
+        <JobItems
+          text={"Product Management"}
+          top={"20%"}
+          right={""}
+          bottom={""}
+          left={""}
+        />
       </DigitalExperienceRight>
     </DigitalExperienceWrapper>
   );
