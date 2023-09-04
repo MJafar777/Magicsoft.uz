@@ -13,12 +13,15 @@ import {
 import LanguageIcon from "@mui/icons-material/Language";
 
 import burger from "../../../../assets/images/burger.svg";
+import { NavLink } from "react-router-dom";
 
 const HeaderFeatures = () => {
   return (
     <HeaderFeaturesWrapper>
       <LinkItem>
-        <LinkItemText className="loginLink">Log In</LinkItemText>
+        <NavLink to="/login">
+          <LinkItemText className="loginLink">Log In</LinkItemText>
+        </NavLink>
       </LinkItem>
 
       <LinkItemColumnLine />

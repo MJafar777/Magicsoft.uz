@@ -18,3 +18,15 @@ export { default as blogs6 } from "./images/pages/blogs/blog6.svg";
 // ---------- export images in secondaryNews page ----------
 
 export { default as secondaryNews1 } from "./images/pages/secondaryNews/secondaryNews1.svg";
+
+// ---------- export images in filter page ----------
+export { default as filter } from "./images/components/PlatformProducts/buttonSendIcon/filter.svg";
+
+// ---------- export images in Login page ----------
+export { default as eye_looked } from "./images/components/login/eye_looked.svg";
+export { default as eye_closed } from "./images/components/login/eye_closed.svg";
+
+// ---------- export images in Login page ----------
+export { default as bgImgLoader } from "./images/components/Loader/LoaderSclet.svg";
+export { default as loader } from "./images/components/Loader/loder.svg";
+export { default as rectangle } from "./images/components/Loader/Rectangle.svg";

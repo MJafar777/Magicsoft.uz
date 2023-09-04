@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import {
   Info,
   Title,
+  GridBase,
   Paragraph,
-  GridBaseOn,
   ImageTitle,
+  GridBaseOn,
   TitleBottomBorder,
   SecondaryNewsParent,
   SecondaryNewsWrapper,
@@ -14,19 +15,20 @@ import {
 import { useParams } from "react-router-dom";
 import { secondaryNews1 } from "../../../assets";
 import { dataCards } from "../../../api/data/news";
-import { TitleBlock } from "../../../components/news&Blogs";
-import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards";
+import { TitleBlock } from "../../../components/news&Blogs/navbar";
+// import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards";
+import { MiniCard } from "../../../components/news&Blogs/miniCard";
 
 interface DataCard {
   id: number;
   img: string;
   link: string;
   title: string;
+  date?: string;
   subTitle: string;
   basedOn: string[];
   miniTitle: string;
   paragraphInfo: string;
-  date?: string;
 }
 
 const SecondaryNews = () => {
@@ -58,13 +60,26 @@ const SecondaryNews = () => {
         </GridBaseOn>
         <TitleBlock title={"Want to explore more?"} />
         <TitleBottomBorder />
+        <GridBase>
+          {dataCards.map((item) => {
+            return (
+              <MiniCard
+                id={item.id}
+                img={item.img}
+                link={item.link}
+                subTitle={item.subTitle}
+                miniTitle={item.miniTitle}
+              />
+            );
+          })}
+        </GridBase>
 
-        <CardsProject
+        {/* <CardsProject
           width={500}
           bg={"rgba(44, 44, 44, 0.4)"}
           btn={"LEARN MORE"}
           dataCards={dataCards}
-        />
+        /> */}
       </SecondaryNewsParent>
     </SecondaryNewsWrapper>
   );

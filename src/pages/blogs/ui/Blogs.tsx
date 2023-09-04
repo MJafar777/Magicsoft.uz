@@ -2,7 +2,7 @@ import { FC } from "react";
 import { dataCards } from "../../../api/data/news";
 import { dataFilter } from "../../../api/data/blogs";
 import { NewsWrapper, ChildWrapper, Brecked } from "./blogs";
-import { NavbarNews, TitleBlock } from "../../../components/news&Blogs";
+import { NavbarNews, TitleBlock } from "../../../components/news&Blogs/navbar";
 import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards";
 import { FilterAllProjects } from "../../../components/platformProducts/allProjects/components/filters";
 

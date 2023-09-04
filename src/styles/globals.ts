@@ -7,6 +7,7 @@ import MazzardHRegular from "../assets/fonts/Mazzard/MazzardH-Regular.ttf";
 import MazzardMRegular from "../assets/fonts/Mazzard/MazzardM-Regular.ttf";
 import MazzardMSemiBold from "../assets/fonts/Mazzard/MazzardM-SemiBold.ttf";
 import MazzardMMedium from "../assets/fonts/Mazzard/MazzardM-Medium.ttf";
+
 const GlobalStyles = createGlobalStyle`
 
 @font-face {
@@ -57,11 +58,22 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #000 ;
+    background-color: #0B0B0E ;
     font-size: 1.6rem;
     cursor: default;
   }
 
+  body::-webkit-scrollbar {
+  width: 12px;              
+}
+  body::-webkit-scrollbar-track {
+  background: transparent;        
+}
+  body::-webkit-scrollbar-thumb {
+  background-color: #FCD702;    
+  border-radius: 20px;       
+  border: 5px solid black;
+}
   a {
     text-decoration: none;
   }

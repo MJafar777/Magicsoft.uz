@@ -53,7 +53,7 @@ const NavbarNews: FC<Props> = (props) => {
                   <FlexBasedOn>
                     {item.basedOn &&
                       item.basedOn.map((item) => {
-                        return <BasedOn>#{item}</BasedOn>;
+                        return <BasedOn key={item}>#{item}</BasedOn>;
                       })}
                   </FlexBasedOn>
 
