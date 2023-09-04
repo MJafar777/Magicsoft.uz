@@ -7,12 +7,11 @@ import { Loader } from "./components/Loading";
 
 function App() {
   return (
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<Loader />}>
       <Theme>
-        {/* <Header /> */}
-        {/* <Outlet /> */}
-        {/* <Footer /> */}
-        <Loader />
+        <Header />
+        <Outlet />
+        <Footer />
       </Theme>
     </Suspense>
   );

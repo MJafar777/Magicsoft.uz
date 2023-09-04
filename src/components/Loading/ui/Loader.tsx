@@ -14,17 +14,18 @@ import { bgImgLoader, loader, rectangle } from "../../../assets";
 const MyLoader: FC = () => {
   const [loading, setLoading] = useState(true);
   const arr = [""];
+  // const arr2 = new Array(100).fill("");
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (arr.length < 100) {
-        arr.push("");
-      } else {
-        clearInterval(interval);
-        setLoading(false);
-      }
-    }, 1);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (arr.length < 100) {
+  //       arr.push(arr2.map((item)=));
+  //     } else {
+  //       clearInterval(interval);
+  //       setLoading(false);
+  //     }
+  //   }, 1);
+  // }, []);
 
   return loading ? (
     <LoaderWrapper>
@@ -40,7 +41,7 @@ const MyLoader: FC = () => {
                 <Span key={index}>{item}</Span>
               ))}
             </Loading>{" "}
-            % 10/100
+            % {arr.length}/100
           </Contain>
         </Paragraph>
       </ChildLoader>
