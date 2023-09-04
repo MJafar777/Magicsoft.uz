@@ -27,7 +27,7 @@ export const PlatformNavbarWrapper = styled.div<BreacPointsType>`
   }
 `;
 
-export const NavbarLeft = styled.div`
+export const NavbarLeft = styled.div<BreacPointsType>`
   color: #fff;
   width: 50%;
   .center {
@@ -44,7 +44,7 @@ export const NavbarLeft = styled.div`
     height: 60px;
     cursor: pointer;
     background: transparent;
-    border: 2px solid black;
+    border: 3px solid transparent;
     outline: none;
     transition: 1s ease-in-out;
     box-shadow: 6px 6px 1px #403a16;
@@ -80,7 +80,7 @@ export const NavbarLeft = styled.div`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled.img<BreacPointsType>`
   max-width: 600px;
   width: 50%;
 
@@ -90,7 +90,7 @@ export const Img = styled.img`
   }
 `;
 
-export const SubTitle = styled.h2`
+export const SubTitle = styled.h2<BreacPointsType>`
   color: #fff;
   font-family: MazzardM-SemiBold, sans-serif;
   font-size: 49px;
@@ -104,7 +104,7 @@ export const SubTitle = styled.h2`
   }
 `;
 
-export const SubTitleBottomBorder = styled.div`
+export const SubTitleBottomBorder = styled.div<BreacPointsType>`
   height: 7px;
   width: 100px;
   flex-shrink: 0;

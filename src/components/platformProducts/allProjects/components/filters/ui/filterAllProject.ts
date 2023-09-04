@@ -72,7 +72,7 @@ export const IconFilter = styled.img`
   position: relative;
   top: -60px;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 993px) {
     display: none;
   }
   @media ${(props) => props.theme.breakpoints.md} {

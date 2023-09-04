@@ -60,7 +60,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: #0B0B0E ;
     font-size: 1.6rem;
-    
     cursor: default;
   }
 
