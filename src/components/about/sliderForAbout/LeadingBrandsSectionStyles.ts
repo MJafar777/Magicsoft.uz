@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
-import { BreacPointsType } from "../../../../types/breacPointTypes";
+import { BreacPointsType } from "../../../types/breacPointTypes";
 
-export const LeadingBrandsSectionWrapper = styled.section<BreacPointsType>`
+export const LeadingBrandsImgWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+  height: 180vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,14 +60,18 @@ export const LeadingBrandsBox = styled.div`
   width: 100%;
   margin: 90px auto;
   background-color: #111;
+  gap: 30px;
 `;
 
 export const LeadingBrandsCart = styled.div`
-  height: 126px;
-  width: 100px;
+  height: fit-content;
+  width: fit-content;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repea400t;
+
+  img {
+    width: 100%;
+  }
 `;
