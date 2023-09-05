@@ -28,21 +28,6 @@ const LeadingBrands = () => {
 
       <LeadingBrandsBox>
         <SliderAutoPlay>
-<<<<<<< HEAD
-          <LeadingBrandsCart>2</LeadingBrandsCart>
-          <LeadingBrandsCart>3</LeadingBrandsCart>
-          <LeadingBrandsCart>4</LeadingBrandsCart>
-          <LeadingBrandsCart>5</LeadingBrandsCart>
-          <LeadingBrandsCart>6</LeadingBrandsCart>
-          <LeadingBrandsCart>7</LeadingBrandsCart>
-          <LeadingBrandsCart>8</LeadingBrandsCart>
-          <LeadingBrandsCart>9</LeadingBrandsCart>
-          <LeadingBrandsCart>10</LeadingBrandsCart>
-          <LeadingBrandsCart>11</LeadingBrandsCart>
-          <LeadingBrandsCart>12</LeadingBrandsCart>
-          <LeadingBrandsCart>13</LeadingBrandsCart>
-          <LeadingBrandsCart>14</LeadingBrandsCart>
-=======
           <LeadingBrandsCart>
             <img src={eximLogo} />
           </LeadingBrandsCart>
@@ -73,7 +58,6 @@ const LeadingBrands = () => {
           <LeadingBrandsCart>
             <img src={ibdLogo} />
           </LeadingBrandsCart>
->>>>>>> 14e7c67b681952b74fe02fff8dd8a0b660372766
         </SliderAutoPlay>
       </LeadingBrandsBox>
 
