@@ -29,34 +29,34 @@ const LeadingBrands = () => {
       <LeadingBrandsBox>
         <SliderAutoPlay>
           <LeadingBrandsCart>
-            <img src={eximLogo} style={{ width: "247px" }} />
+            <img src={eximLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={kervanyol} style={{ width: "367px" }} />
+            <img src={kervanyol} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={tniLogo} style={{ width: "365px" }} />
+            <img src={tniLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={amplLogo} style={{ width: "222px" }} />
+            <img src={amplLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={ibdLogo} style={{ width: "163px" }} />
+            <img src={ibdLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={eximLogo} style={{ width: "247px" }} />
+            <img src={eximLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={kervanyol} style={{ width: "367px" }} />
+            <img src={kervanyol} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={tniLogo} style={{ width: "365px" }} />
+            <img src={tniLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={amplLogo} style={{ width: "222px" }} />
+            <img src={amplLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={ibdLogo} style={{ width: "163px" }} />
+            <img src={ibdLogo} />
           </LeadingBrandsCart>
         </SliderAutoPlay>
       </LeadingBrandsBox>

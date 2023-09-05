@@ -6,9 +6,9 @@ const Home = () => {
     <>
       <MainSection />
 
-      {/* <LeadingBrandsSection /> */}
+      <LeadingBrandsSection />
 
-      {/* <DigitalExperience /> */}
+      <DigitalExperience />
     </>
   );
 };
