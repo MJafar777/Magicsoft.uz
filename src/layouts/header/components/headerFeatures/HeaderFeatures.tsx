@@ -42,10 +42,8 @@ const HeaderFeatures = () => {
       <LinkItemColumnLine />
 
       <SidebarMenuBtnWrapper>
-        <SidebarMenuBtn>
-          <SideabrMenuBtnText onClick={() => setOpen(true)}>
-            MENU{" "}
-          </SideabrMenuBtnText>
+        <SidebarMenuBtn onClick={() => setOpen(true)}>
+          <SideabrMenuBtnText>MENU </SideabrMenuBtnText>
         </SidebarMenuBtn>
         <SidebarMenuBurgerBtn onClick={() => setOpen(true)} src={burger} />
       </SidebarMenuBtnWrapper>

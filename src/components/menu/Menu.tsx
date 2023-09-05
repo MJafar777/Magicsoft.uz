@@ -21,6 +21,7 @@ import {
   YouTube,
 } from "@mui/icons-material";
 import { ButtonContext, ButtonContextProps } from "../../context/ButtonContext";
+import { Arrow } from "../../assets/industries";
 
 const Menu = () => {
   const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
@@ -63,11 +64,47 @@ const Menu = () => {
       <BodyOfMenu>
         <Title>Menu</Title>
         <ContainerOfPageOfSite>
-          <EachLinkOfPage>Platforms & Products</EachLinkOfPage>
-          <EachLinkOfPage>Industries</EachLinkOfPage>
-          <EachLinkOfPage>News</EachLinkOfPage>
-          <EachLinkOfPage>Blog</EachLinkOfPage>
-          <EachLinkOfPage>About Us</EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/news">
+              <>
+                <span></span> <p>News</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/industries">
+              <>
+                <span></span> <p>Industries</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/platform_products">
+              <>
+                <span></span> <p>Platforms & Products</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/blog">
+              <>
+                <span></span> <p>Blog</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/about-us">
+              <>
+                <span></span> <p>About Us</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
         </ContainerOfPageOfSite>
       </BodyOfMenu>
     </MenuWrapper>
