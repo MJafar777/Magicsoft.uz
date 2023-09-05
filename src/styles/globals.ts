@@ -63,17 +63,6 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
   }
 
-  body::-webkit-scrollbar {
-  width: 12px;              
-}
-  body::-webkit-scrollbar-track {
-  background: transparent;        
-}
-  body::-webkit-scrollbar-thumb {
-  background-color: #FCD702;    
-  border-radius: 20px;       
-  border: 5px solid black;
-}
   a {
     text-decoration: none;
   }
