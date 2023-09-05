@@ -4,6 +4,7 @@ export const OverViewWraper = styled.div`
   height: fit-content;
   padding-left: 230px;
   background-color: #111114;
+  
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding: 0;
     display: flex;
@@ -23,6 +24,7 @@ export const OverViewTitle = styled.div`
   line-height: 109.8%;
   padding-bottom: 94px;
   padding-top: 58px;
+  
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 40px;
     width: 90%;
@@ -32,18 +34,21 @@ export const OverViewTitle = styled.div`
     justify-content: center;
   }
 
+  
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 36px;
     padding-bottom: 42px;
     text-align: center;
   }
 
+  
   @media ${(prop) => prop.theme.breakpoints.md} {
     font-size: 32px;
     padding-bottom: 22px;
     text-align: center;
   }
 
+  
   @media ${(prop) => prop.theme.breakpoints.sm} {
     font-size: 28px;
     padding-bottom: 12px;
@@ -61,6 +66,7 @@ export const TextOfOverView = styled.div`
   line-height: 137.8%;
   padding: 0 387px 122px 157px;
 
+  
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 16px;
     padding: 0;
@@ -69,6 +75,7 @@ export const TextOfOverView = styled.div`
     width: 70%;
   }
 
+  
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 11.2px;
     padding: 0;
