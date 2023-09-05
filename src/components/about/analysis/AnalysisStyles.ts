@@ -54,7 +54,7 @@ export const Title = styled.div`
   color: white;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 39px;
+    font-size: 35px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
