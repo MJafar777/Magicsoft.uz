@@ -1,6 +1,5 @@
 import ButtonIfo from "../../../../components/buttons/ButtonInfo/ButtonIfo";
 import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
-import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
 import {
   MainSectionLeft,
   MainSectionRight,
@@ -15,6 +14,7 @@ import PageSectionNumber from "../../../../components/pageSectionNumber/PageSect
 
 import mainAnim from "../../../../assets/mainAnim.mp4";
 import JobItems from "../../../../components/jobItem/JobItems";
+import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
 
 const MainSection = () => {
   return (

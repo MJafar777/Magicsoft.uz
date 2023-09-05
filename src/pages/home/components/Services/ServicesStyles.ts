@@ -9,6 +9,27 @@ export const ServicesWrapper = styled.section<BreacPointsType>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 1200px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 992px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 768px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 576px;
+  }
 `;
 
 export const ServicesLeft = styled.div<BreacPointsType>`
@@ -22,6 +43,26 @@ export const ServicesLeftTitle = styled.h2<BreacPointsType>`
   font-weight: 600;
   line-height: 98.298px;
   margin-bottom: 8px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 68.8px;
+    font-weight: 600;
+    line-height: 78.638px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 48.8px;
+    font-weight: 600;
+    line-height: 55.638px;
+    margin-bottom: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 42.8px;
+    font-weight: 600;
+    line-height: 48.638px;
+    margin-bottom: 25px;
+  }
 `;
 
 export const ServicesLeftItem = styled.div<BreacPointsType>`
@@ -49,6 +90,11 @@ export const ServicesLeftItem = styled.div<BreacPointsType>`
       color: black;
     }
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 30px 15px 15px 0;
+    gap: 13px;
+  }
 `;
 
 export const ServicesLeftItemNumber = styled.div<BreacPointsType>`
@@ -67,6 +113,16 @@ export const ServicesLeftItemNumber = styled.div<BreacPointsType>`
     font-weight: 400;
     line-height: 15.75px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 6px 7px 3px 7px;
+
+    p {
+      font-size: 14.4px;
+      font-weight: 400;
+      line-height: 12.6px;
+    }
+  }
 `;
 
 export const ServicesLeftItemTitle = styled.h2<BreacPointsType>`
@@ -78,6 +134,12 @@ export const ServicesLeftItemTitle = styled.h2<BreacPointsType>`
   line-height: 29.75px;
   margin-bottom: 18px;
   transition: all 0.3s;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 27.2px;
+    line-height: 23.8px;
+    margin-bottom: 15px;
+  }
 `;
 
 export const ServicesLeftItemDescription = styled.p<BreacPointsType>`
@@ -88,10 +150,18 @@ export const ServicesLeftItemDescription = styled.p<BreacPointsType>`
   font-weight: 500;
   line-height: 24px;
   transition: all 0.3s;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 19.2px;
+    line-height: 19.2px;
+  }
 `;
 
 export const ServicesLeftItemBtn = styled.div<BreacPointsType>`
   margin-top: 52px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 `;
 
 export const ServicesRight = styled.div<BreacPointsType>`
@@ -100,6 +170,7 @@ export const ServicesRight = styled.div<BreacPointsType>`
   align-items: flex-end;
   width: 50%;
   height: 100%;
+  padding: 0;
 
   position: relative;
 `;
@@ -142,10 +213,19 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
     align-items: center;
     border-radius: 50px;
   }
-`;
 
-export const ServicesRightPageNumber = styled.div<BreacPointsType>`
-  position: absolute;
-  right: 0;
-  bottom: 0px;
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    img.gifBorderVector {
+      width: 550px;
+      top: 50px;
+      right: 0;
+    }
+
+    img.gif {
+      width: 460px;
+      top: 150px;
+      right: 43px;
+      border-radius: 40px;
+    }
+  }
 `;

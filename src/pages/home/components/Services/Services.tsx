@@ -9,7 +9,6 @@ import {
   ServicesLeftItemNumber,
   ServicesLeftItemDescription,
   ServicesRight,
-  ServicesRightPageNumber,
   ServicesLeftItemBtn,
   ServicesRightImageBox,
 } from "./ServicesStyles";
@@ -85,6 +84,7 @@ const Services = () => {
             text2={"View All Services"}
             arrowOutwardIcon={true}
           />
+          <PageSectionNumber fullPageNumber={12} currentPageNumber={"04"} />
         </ServicesLeftItemBtn>
       </ServicesLeft>
       <ServicesRight>
@@ -93,9 +93,6 @@ const Services = () => {
 
           <img className="gifBorderVector" src={borderVectorServices} />
         </ServicesRightImageBox>
-        <ServicesRightPageNumber>
-          <PageSectionNumber fullPageNumber={12} currentPageNumber={"04"} />
-        </ServicesRightPageNumber>
       </ServicesRight>
     </ServicesWrapper>
   );
