@@ -14,8 +14,16 @@ import LanguageIcon from "@mui/icons-material/Language";
 
 import burger from "../../../../assets/images/burger.svg";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import Menu from "../../../../components/menu/Menu";
+import {
+  ButtonContext,
+  ButtonContextProps,
+} from "../../../../context/ButtonContext";
 
 const HeaderFeatures = () => {
+  const { setOpen } = useContext<ButtonContextProps>(ButtonContext);
+
   return (
     <HeaderFeaturesWrapper>
       <LinkItem>
@@ -34,11 +42,12 @@ const HeaderFeatures = () => {
       <LinkItemColumnLine />
 
       <SidebarMenuBtnWrapper>
-        <SidebarMenuBtn>
+        <SidebarMenuBtn onClick={() => setOpen(true)}>
           <SideabrMenuBtnText>MENU </SideabrMenuBtnText>
         </SidebarMenuBtn>
-        <SidebarMenuBurgerBtn src={burger} />
+        <SidebarMenuBurgerBtn onClick={() => setOpen(true)} src={burger} />
       </SidebarMenuBtnWrapper>
+      <Menu />
     </HeaderFeaturesWrapper>
   );
 };

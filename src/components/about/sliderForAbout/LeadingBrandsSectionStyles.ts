@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../types/breacPointTypes";
 
 export const LeadingBrandsImgWrapper = styled.div`
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   height: 80vh;
   display: flex;
@@ -63,8 +63,6 @@ export const LeadingBrandsBox = styled.div`
   gap: 30px;
 `;
 
-
-
 export const LeadingBrandsCart = styled.div`
   height: 400px;
   width: 500px;
@@ -79,9 +77,9 @@ export const LeadingBrandsCart = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-  img{
-    width: 90%;
-    height: 80% !important;
-  }
+    img {
+      width: 90%;
+      height: 80% !important;
+    }
   }
 `;
