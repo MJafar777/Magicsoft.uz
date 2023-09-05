@@ -15,4 +15,5 @@ export const ChildWrapper = styled.div`
   height: 338px;
   max-width: 1200px;
   background-color: transparent;
+  margin: 0 2rem;
 `;
