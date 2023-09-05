@@ -26,7 +26,6 @@ const LeadingBrands = () => {
 
       <LeadingBrandsBox>
         <SliderAutoPlay>
-          <LeadingBrandsCart>1</LeadingBrandsCart>
           <LeadingBrandsCart>2</LeadingBrandsCart>
           <LeadingBrandsCart>3</LeadingBrandsCart>
           <LeadingBrandsCart>4</LeadingBrandsCart>

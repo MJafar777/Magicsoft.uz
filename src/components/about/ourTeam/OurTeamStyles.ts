@@ -11,6 +11,9 @@ export const OurTeamWrapper = styled.div<WrapperProp>`
   background-color: #1f2020;
   background-image: url(${(prop) => prop.bg});
   padding: 129px 0 70px 0;
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    margin-top: 40px;
+  }
 `;
 
 export const ContentOfTeam = styled.div`
@@ -37,6 +40,26 @@ export const ContentOfTeam = styled.div`
     font-weight: 400;
     line-height: 137.8%;
   }
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    width: 50%;
+    h3 {
+      font-size: 39.2px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    h3 {
+      font-size: 27.2px;
+    }
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    width: 80%;
+  }
 `;
 
 export const ContainerImgs = styled.div`
@@ -45,6 +68,22 @@ export const ContainerImgs = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    width: 85%;
+    gap: 43px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 85%;
+    gap: 30px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const InfoEachWorker = styled.div`
@@ -54,14 +93,27 @@ export const InfoEachWorker = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const NameOfWorker = styled.div`
   text-align: center;
   color: yellow;
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    font-size: 14px;
+  }
 `;
 
 export const Specialty = styled.div`
   text-align: center;
   color: white;
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    font-size: 12px;
+  }
 `;
