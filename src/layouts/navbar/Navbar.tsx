@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <NavbarWrapper>
       <LinkItem>
-        <NavLink to="/">
+        <NavLink to="/platform_products">
           {({ isActive }) =>
             isActive ? (
               <>

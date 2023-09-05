@@ -1,10 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 import Concretica from "../assets/fonts/font/Concretica.ttf";
+import ArchivoRegular from "../assets/fonts/Archivo/static/Archivo-Regular.ttf";
 import MazzardHMedium from "../assets/fonts/Mazzard/MazzardH-Medium.ttf";
 import MazzardHRegular from "../assets/fonts/Mazzard/MazzardH-Regular.ttf";
 import MazzardMRegular from "../assets/fonts/Mazzard/MazzardM-Regular.ttf";
-import MazzardMSemibold from "../assets/fonts/Mazzard/MazzardM-SemiBold.ttf";
+import MazzardMSemiBold from "../assets/fonts/Mazzard/MazzardM-SemiBold.ttf";
+import MazzardMMedium from "../assets/fonts/Mazzard/MazzardM-Medium.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -19,6 +21,17 @@ const GlobalStyles = createGlobalStyle`
 }
 
 @font-face {
+
+  font-family: "MazzardM-SemiBold";
+  src: url(${MazzardMSemiBold}) format("truetype");
+}
+
+@font-face {
+  font-family: "MazzardM-Medium";
+  src: url(${MazzardMMedium}) format("truetype");
+}
+
+@font-face {
   font-family: "MazzardH-Medium";
   src: url(${MazzardHMedium}) format("truetype");
         
@@ -28,10 +41,9 @@ const GlobalStyles = createGlobalStyle`
   font-family: "Concretica";
   src: url(${Concretica}) format("truetype");
 }
-
 @font-face {
-  font-family: "MazzardM-Semibold";
-  src: url(${MazzardMSemibold}) format("truetype");
+  font-family: "Archivo-Regular";
+  src: url(${ArchivoRegular}) format("truetype");
 }
 
 * {
@@ -51,6 +63,19 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
   }
 
+  body::-webkit-scrollbar {
+  width: 12px;              
+}
+
+  body::-webkit-scrollbar-track {
+  background: transparent;        
+}
+
+  body::-webkit-scrollbar-thumb {
+  background-color: #FCD702;    
+  border-radius: 20px;       
+  border: 5px solid black;
+}
   a {
     text-decoration: none;
   }

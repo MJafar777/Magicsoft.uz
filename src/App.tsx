@@ -1,16 +1,22 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 import Theme from "./styles/Theme";
 import { Footer, Header } from "./layouts";
+import { Loader } from "./components/Loading";
+import ThemeLocalization from "./locales/ThemeLocalization";
+
+import "./locales/i18n";
 
 function App() {
   return (
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<Loader />}>
       <Theme>
-        <Header />
-        <Outlet />
-        <Footer />
+        <ThemeLocalization>
+          <Header />
+          <Outlet />
+          <Footer />
+        </ThemeLocalization>
       </Theme>
     </Suspense>
   );

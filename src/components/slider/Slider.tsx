@@ -16,6 +16,7 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
     speed: 1000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+ 
   };
 
   return (
