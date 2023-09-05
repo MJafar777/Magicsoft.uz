@@ -8,7 +8,9 @@ const PlatformProducts = () => {
   return (
     <PlatformProductsWrapper>
       <PlatformNavbar />
+
       <AllProjects />
+
       <CardsProject dataCards={dataCards} width={600} bg={""} />
     </PlatformProductsWrapper>
   );
