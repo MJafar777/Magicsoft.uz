@@ -59,6 +59,10 @@ export const LinkItem = styled.div<BreacPointsType>`
       font-size: 14px;
     }
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
 `;
 
 export const LinkItemText = styled.p<BreacPointsType>`
@@ -91,6 +95,10 @@ export const LinkItemColumnLine = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xl} {
     width: 1px;
     height: 8px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
   }
 `;
 
@@ -127,6 +135,14 @@ export const SidebarMenuBtn = styled.div<BreacPointsType>`
     height: 28px;
     border-radius: 14.56px;
     border: 1px solid #aab4c2;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
   }
 `;
 

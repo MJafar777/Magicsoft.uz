@@ -25,6 +25,14 @@ export const ButtonInfoBtn = styled.div<BreacPointsType>`
     top: 0px;
     position: relative;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 14px 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 8px 12px;
+  }
 `;
 
 export const ButtonInfoText = styled.p<BreacPointsType>`
@@ -33,6 +41,16 @@ export const ButtonInfoText = styled.p<BreacPointsType>`
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 14.4px;
+    line-height: 14.4px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 11px;
+    line-height: 11px;
+  }
 `;
 
 export const ButtonChangeBox = styled.div`

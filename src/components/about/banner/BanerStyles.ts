@@ -40,14 +40,14 @@ export const ContentOfBaner = styled.div`
   h3 {
     font-size: 45px;
     margin-bottom: 24px;
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-style: normal;
     font-weight: 600;
     line-height: 114.3%;
   }
 
   p {
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

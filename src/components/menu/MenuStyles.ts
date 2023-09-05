@@ -79,6 +79,7 @@ export const BodyOfMenu = styled.div`
 
 export const Title = styled.div`
   /* height: 70%; */
+  font-family: Concretica;
   width: 40%;
   display: flex;
   align-items: center;
@@ -98,11 +99,12 @@ export const ContainerOfPageOfSite = styled.div`
 
 export const EachLinkOfPage = styled.div`
   color: #aab4c2;
-  font-family: Mazzard;
+  font-family: MazzardM-Regular;
   font-size: 58px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.16px;
   cursor: pointer;
+
 `;

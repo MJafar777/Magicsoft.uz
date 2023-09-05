@@ -23,8 +23,7 @@ import {
 import { ButtonContext, ButtonContextProps } from "../../context/ButtonContext";
 
 const Menu = () => {
-  const { setOpen ,open} = useContext<ButtonContextProps>(ButtonContext);
-
+  const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
 
   return (
     <MenuWrapper open={open}>
@@ -64,11 +63,11 @@ const Menu = () => {
       <BodyOfMenu>
         <Title>Menu</Title>
         <ContainerOfPageOfSite>
-          <EachLinkOfPage>Create Token</EachLinkOfPage>
-          <EachLinkOfPage>Create Token</EachLinkOfPage>
-          <EachLinkOfPage>Create Token</EachLinkOfPage>
-          <EachLinkOfPage>Create Token</EachLinkOfPage>
-          <EachLinkOfPage>Create Token</EachLinkOfPage>
+          <EachLinkOfPage>Platforms & Products</EachLinkOfPage>
+          <EachLinkOfPage>Industries</EachLinkOfPage>
+          <EachLinkOfPage>News</EachLinkOfPage>
+          <EachLinkOfPage>Blog</EachLinkOfPage>
+          <EachLinkOfPage>About Us</EachLinkOfPage>
         </ContainerOfPageOfSite>
       </BodyOfMenu>
     </MenuWrapper>

@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #0B0B0E ;
+    background-color: #0B0B0E;
     font-size: 1.6rem;
     cursor: default;
   }
@@ -66,9 +66,11 @@ const GlobalStyles = createGlobalStyle`
   body::-webkit-scrollbar {
   width: 12px;              
 }
+
   body::-webkit-scrollbar-track {
   background: transparent;        
 }
+
   body::-webkit-scrollbar-thumb {
   background-color: #FCD702;    
   border-radius: 20px;       

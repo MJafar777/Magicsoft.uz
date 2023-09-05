@@ -22,7 +22,7 @@ import {
 } from "../../../../context/ButtonContext";
 
 const HeaderFeatures = () => {
-  const { open, setOpen } = useContext<ButtonContextProps>(ButtonContext);
+  const { setOpen } = useContext<ButtonContextProps>(ButtonContext);
 
   return (
     <HeaderFeaturesWrapper>

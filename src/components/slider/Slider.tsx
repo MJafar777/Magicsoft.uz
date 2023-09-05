@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Slider from "react-slick";
+import { SliderPlayer } from "./SliderStyles";
 
 interface SliderProps {
   children: ReactNode;
@@ -19,9 +20,9 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
   };
 
   return (
-    <div>
+    <SliderPlayer>
       <Slider {...settings}>{children}</Slider>
-    </div>
+    </SliderPlayer>
   );
 };
 

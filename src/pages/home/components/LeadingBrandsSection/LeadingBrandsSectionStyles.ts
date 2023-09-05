@@ -19,6 +19,13 @@ export const LeadingBrandsTitle = styled.h2<BreacPointsType>`
   line-height: 95px;
   margin: 90px auto;
   text-align: center;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 850px;
+    font-size: 68.8px;
+    line-height: 75.542px;
+    margin: 79px auto 10px auto;
+  }
 `;
 
 export const LeadingBrandsNumbers = styled.div<BreacPointsType>`
@@ -56,16 +63,58 @@ export const LeadingBrandsNumbers = styled.div<BreacPointsType>`
 `;
 
 export const LeadingBrandsBox = styled.div`
-  height: 126px;
   width: 100%;
   margin: 90px auto;
-  background-color: #111;
+
+  .slick-next {
+    right: 0;
+    left: 0;
+  }
+
+  img {
+    height: 125px;
+  }
+
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+    gap: 140px;
+
+    div {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+    }
+
+    .slick-slider .slick-list,
+    .slick-slider .slick-track {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    display: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    margin: 60px auto;
+
+    .slick-track {
+      gap: 100px;
+    }
+  }
 `;
 
 export const LeadingBrandsCart = styled.div`
-  height: 126px;
-  width: 100px;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
