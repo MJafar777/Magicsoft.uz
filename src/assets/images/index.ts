@@ -7,5 +7,4 @@ export { default as mainImage } from "./mainImage.svg";
 export { default as kervanyol } from "./kervanyol.svg";
 export { default as jobItemIcon } from "./jobItemIcon.svg";
 export { default as borderVector } from "./borderVector.svg";
-export { default as footerLogo } from "./layouts/footerLogo.svg";
 export { default as borderBigVector } from "./borderBigVector.svg";

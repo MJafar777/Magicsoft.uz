@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { TitleLogoWrapper, Img, TitleLogoName } from "./titleLogo";
-import { footerLogo } from "../../../../assets/images";
+import { footerLogo } from "../../../../assets";
 
 const TitleLogo: FC = () => {
   return (

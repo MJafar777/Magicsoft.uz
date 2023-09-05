@@ -1,3 +1,11 @@
+export { default as SubText } from "./subText/SubText.tsx";
 export { default as FooterTop } from "./footerTop/FooterTop.tsx";
+export { default as ScrollTop } from "./scrollTop/ScrollTop.tsx";
 export { default as TitleLogo } from "./titleLogo/TitleLogo.tsx";
+export { default as BoxImgLast } from "./boxImgLast/BoxImgLast.tsx";
+export { default as BoxContact } from "./boxContact/BoxContact.tsx";
+export { default as FooterMain } from "./footerMain/FooterMain.tsx";
+export { default as FooterBottom } from "./footerBottom/FooterBottom.tsx";
+export { default as BoxMenuFirst } from "./boxMenuFirst/BoxMenuFirst.tsx";
+export { default as BoxMenuSecond } from "./boxMenuSecond/BoxMenuSecond.tsx";
 export { default as TitleRightParagraph } from "./titleRightParagraph/TitleRightParagraph.tsx";

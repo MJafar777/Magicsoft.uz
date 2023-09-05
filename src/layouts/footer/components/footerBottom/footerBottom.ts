@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const FooterTopWrapper = styled.div`
-  width: 100%;
+export const FooterBottomWrapper = styled.div`
+  color: red;
+  margin-top: 30px;
+  padding-bottom: 30px;
+
   display: flex;
   align-items: center;
-  margin-bottom: 22px;
   justify-content: space-between;
 `;
