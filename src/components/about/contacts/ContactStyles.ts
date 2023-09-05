@@ -149,6 +149,8 @@ export const FormSide = styled.div`
     margin-bottom: 18px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 6px 6px 1px #403a16;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {

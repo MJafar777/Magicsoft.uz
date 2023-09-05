@@ -26,12 +26,14 @@ import { Arrow } from "../../assets/industries";
 const Menu = () => {
   const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
   useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = originalStyle;
-    };
-  }, []);
+    if (open) {
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalStyle;
+      };
+    }
+  }, [open]);
   return (
     <MenuWrapper open={open}>
       <NavOfmenu>
