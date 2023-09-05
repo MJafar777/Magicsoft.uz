@@ -19,6 +19,13 @@ export const LeadingBrandsTitle = styled.h2<BreacPointsType>`
   line-height: 95px;
   margin: 90px auto;
   text-align: center;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 850px;
+    font-size: 68.8px;
+    line-height: 75.542px;
+    margin: 79px auto 10px auto;
+  }
 `;
 
 export const LeadingBrandsNumbers = styled.div<BreacPointsType>`
@@ -64,6 +71,10 @@ export const LeadingBrandsBox = styled.div`
     left: 0;
   }
 
+  img {
+    height: 125px;
+  }
+
   .slick-track {
     display: flex !important;
     align-items: center !important;
@@ -92,6 +103,14 @@ export const LeadingBrandsBox = styled.div`
   .slick-next:before,
   .slick-prev:before {
     display: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    margin: 60px auto;
+
+    .slick-track {
+      gap: 100px;
+    }
   }
 `;
 
