@@ -30,3 +30,9 @@ export { default as eye_closed } from "./images/components/login/eye_closed.svg"
 export { default as bgImgLoader } from "./images/components/Loader/LoaderSclet.svg";
 export { default as loader } from "./images/components/Loader/loder.svg";
 export { default as rectangle } from "./images/components/Loader/Rectangle.svg";
+
+// ---------- export images in Footer Layouts ----------
+export { default as btnTop } from "./images/layouts/footer/btnTop.svg";
+export { default as footerLogo } from "./images/layouts/footer/footerLogo.svg";
+export { default as firstImageFooter } from "./images/layouts/footer/firstImageFooter.svg";
+export { default as secondImageFooter } from "./images/layouts/footer/secondImageFooter.svg";
