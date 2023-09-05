@@ -38,7 +38,6 @@ export const ContentSide = styled.div`
     background-color: #fcd702;
     height: 10px;
     margin: 60px 0 30px 0;
-    border-radius: 5px;
     @media ${(prop) => prop.theme.breakpoints.xxl} {
       margin: 67px 0 23px 0;
     }
@@ -61,7 +60,7 @@ export const ContentSide = styled.div`
 `;
 
 export const Title = styled.div`
-  font-family: Archivo;
+  font-family: Archivo-Regular;
   font-size: 49px;
   font-style: normal;
   font-weight: 600;
@@ -83,7 +82,7 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
-  font-family: Archivo;
+  font-family: Archivo-Regular;
   width: 90%;
   font-size: 20px;
   font-style: normal;
@@ -109,7 +108,7 @@ export const FormSide = styled.div`
     border: none;
     outline: none;
     color: #fff;
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -125,7 +124,7 @@ export const FormSide = styled.div`
     border: none;
     outline: none;
     color: #fff;
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -140,7 +139,7 @@ export const FormSide = styled.div`
   button {
     width: 40%;
     color: #000;
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -150,6 +149,8 @@ export const FormSide = styled.div`
     margin-bottom: 18px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 6px 6px 1px #403a16;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -199,7 +200,7 @@ export const FormSide = styled.div`
 `;
 
 export const Privacy = styled.div`
-  font-family: Archivo;
+  font-family: Archivo-Regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -207,6 +208,7 @@ export const Privacy = styled.div`
   color: #898989;
   span {
     color: white;
+    border-bottom: white solid 1px;
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 12px;

@@ -26,7 +26,7 @@ const Contact = () => {
         <input type="email" placeholder="Your email address" />
         <input type="tel" placeholder="Your phone number (optional)" />
         <textarea placeholder="Your message..." name="" id="" />
-        <button>Submit</button>
+        <button className="btn">Submit</button>
         <Privacy>
           By sending this request you agree to our privacy policy.{" "}
           <span>Privacy policy </span>
