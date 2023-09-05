@@ -13,10 +13,12 @@ export const ServicesWrapper = styled.section<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
     padding: 0 20px;
+    margin: 200px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
     max-width: 1200px;
+    margin: 100px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -34,6 +36,15 @@ export const ServicesWrapper = styled.section<BreacPointsType>`
 
 export const ServicesLeft = styled.div<BreacPointsType>`
   width: 50%;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 45%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const ServicesLeftTitle = styled.h2<BreacPointsType>`
@@ -54,14 +65,15 @@ export const ServicesLeftTitle = styled.h2<BreacPointsType>`
     font-size: 48.8px;
     font-weight: 600;
     line-height: 55.638px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 42.8px;
     font-weight: 600;
     line-height: 48.638px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    text-align: center;
   }
 `;
 
@@ -95,6 +107,16 @@ export const ServicesLeftItem = styled.div<BreacPointsType>`
     padding: 30px 15px 15px 0;
     gap: 13px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 10px 8px 8px 0;
+    gap: 9px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+    padding: 18px 8px 10px 0;
+  }
 `;
 
 export const ServicesLeftItemNumber = styled.div<BreacPointsType>`
@@ -123,6 +145,16 @@ export const ServicesLeftItemNumber = styled.div<BreacPointsType>`
       line-height: 12.6px;
     }
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 5px 6px 2px 6px;
+
+    p {
+      font-size: 10.08px;
+      font-weight: 400;
+      line-height: 8.82px;
+    }
+  }
 `;
 
 export const ServicesLeftItemTitle = styled.h2<BreacPointsType>`
@@ -140,6 +172,16 @@ export const ServicesLeftItemTitle = styled.h2<BreacPointsType>`
     line-height: 23.8px;
     margin-bottom: 15px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 19.04px;
+    line-height: 16.66px;
+    margin-bottom: 10px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-bottom: 15px;
+  }
 `;
 
 export const ServicesLeftItemDescription = styled.p<BreacPointsType>`
@@ -155,6 +197,11 @@ export const ServicesLeftItemDescription = styled.p<BreacPointsType>`
     font-size: 19.2px;
     line-height: 19.2px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 13.44px;
+    line-height: 13.44px;
+  }
 `;
 
 export const ServicesLeftItemBtn = styled.div<BreacPointsType>`
@@ -162,6 +209,15 @@ export const ServicesLeftItemBtn = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    gap: 30px;
+    margin-top: 18.8px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+  }
 `;
 
 export const ServicesRight = styled.div<BreacPointsType>`
@@ -173,6 +229,14 @@ export const ServicesRight = styled.div<BreacPointsType>`
   padding: 0;
 
   position: relative;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 55%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const ServicesRightImageBox = styled.div<BreacPointsType>`
@@ -226,6 +290,36 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
       top: 150px;
       right: 43px;
       border-radius: 40px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    img.gifBorderVector {
+      width: 480px;
+      top: 50px;
+      right: 0;
+    }
+
+    img.gif {
+      width: 390px;
+      top: 150px;
+      right: 43px;
+      border-radius: 35px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    img.gifBorderVector {
+      width: 380px;
+      top: 110px;
+      right: 0;
+    }
+
+    img.gif {
+      width: 320px;
+      top: 180px;
+      right: 33px;
+      border-radius: 25px;
     }
   }
 `;
