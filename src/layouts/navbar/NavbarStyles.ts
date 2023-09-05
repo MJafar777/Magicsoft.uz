@@ -14,6 +14,10 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints?.xl} {
     gap: 13px;
   }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const LinkItem = styled.div<BreacPointsType>`

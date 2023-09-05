@@ -5,6 +5,18 @@ export const MainSectionWrapper = styled.div<BreacPointsType>`
   padding-top: 111px;
   max-width: 1652px;
   margin: 0 auto;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 75px 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 35px 15px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 25px 15px;
+  }
 `;
 
 export const MainSectionContainer = styled.section<BreacPointsType>`
@@ -13,29 +25,27 @@ export const MainSectionContainer = styled.section<BreacPointsType>`
   justify-content: space-between;
   background: #111114;
   margin: 30px auto;
-  padding: 100px 155px 54px 155px;
+  padding: 90px 135px 54px 135px;
   border-radius: 48px 48px 0px 0px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    padding: 50px 135px 42px 120px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    padding: 50px 50px 40px 40px;
+    border-radius: 26px 26px 0px 0px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    padding: 0;
+  }
 `;
 
 export const MainSectionLeft = styled.div<BreacPointsType>``;
-
-export const MainSectionLeftPartNumber = styled.div<BreacPointsType>`
-  display: flex;
-  align-items: flex-end;
-  gap: 5px;
-
-  span {
-    width: 10px;
-    height: 10px;
-    background-color: #1b63cc;
-    margin-right: 8px;
-  }
-
-  p {
-    margin-bottom: -6px;
-    color: #aab4c2;
-  }
-`;
 
 export const MainSectionLeftTitle = styled.h2<BreacPointsType>`
   max-width: 770px;
@@ -55,6 +65,35 @@ export const MainSectionLeftTitle = styled.h2<BreacPointsType>`
     text-decoration: underline;
     text-decoration-color: #1b63cc;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 760px;
+    font-size: 68.8px;
+    font-weight: 600;
+    line-height: 78.638px;
+    margin: 30px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 460px;
+    font-size: 48.8px;
+    line-height: 55.638px;
+    margin: 20px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 460px;
+    font-size: 48.8px;
+    line-height: 55.638px;
+    margin: 20px 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 438px;
+    font-size: 42px;
+    line-height: 48.638px;
+    margin: 20px 0;
+  }
 `;
 
 export const MainSectionLeftDescription = styled.p<BreacPointsType>`
@@ -66,14 +105,98 @@ export const MainSectionLeftDescription = styled.p<BreacPointsType>`
   max-width: 565px;
   padding-bottom: 20px;
   margin-bottom: 40px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.048px;
+    margin-bottom: 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 12px;
+    line-height: 15.048px;
+    margin-bottom: 15px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 270px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
 `;
 
 export const MainSectinLeftButtonsBox = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   gap: 26px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    gap: 18px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+  }
 `;
 
-export const MainSectionRight = styled.section<BreacPointsType>``;
+export const MainSectionRight = styled.section<BreacPointsType>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
 
-export const MainSectionAnimation = styled.section<BreacPointsType>``;
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
+`;
+
+export const MainSectionAnimation = styled.section<BreacPointsType>`
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  width: 249px;
+  height: 633px;
+  mix-blend-mode: lighten;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    bottom: -100%;
+    top: -100%;
+    left: -100%;
+    object-fit: cover;
+    z-index: -100;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    height: 533px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    height: 400px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    height: 355px;
+    width: 140px;
+  }
+`;
