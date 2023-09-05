@@ -6,5 +6,6 @@ export { default as kervanyol } from "./kervanyol.svg";
 export { default as fonus } from "./fonus.svg";
 export { default as mainImage } from "./mainImage.svg";
 export { default as borderVector } from "./borderVector.svg";
+export { default as borderVectorServices } from "./vectorBorderServices.svg";
 export { default as borderBigVector } from "./borderBigVector.svg";
 export { default as jobItemIcon } from "./jobItemIcon.svg";

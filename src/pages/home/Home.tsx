@@ -1,5 +1,6 @@
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
+import Services from "./components/Services/Services";
 
 const Home = () => {
   return (
@@ -9,6 +10,8 @@ const Home = () => {
       <LeadingBrandsSection />
 
       <DigitalExperience />
+
+      <Services />
     </>
   );
 };
