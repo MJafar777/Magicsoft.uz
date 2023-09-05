@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import {
   BodyOfMenu,
   CloseContainer,
@@ -25,7 +25,13 @@ import { Arrow } from "../../assets/industries";
 
 const Menu = () => {
   const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
-
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
   return (
     <MenuWrapper open={open}>
       <NavOfmenu>
@@ -45,9 +51,6 @@ const Menu = () => {
             </Link>
             <Link to="/">
               <WhatsApp />
-            </Link>
-            <Link to="/">
-              <Facebook />
             </Link>
             <Link to="/">
               <Instagram />
@@ -72,19 +75,35 @@ const Menu = () => {
               <img src={Arrow} alt="" />
             </Link>
           </EachLinkOfPage>
-          <EachLinkOfPage onClick={() => setOpen(false)}>
-            <Link to="/industries">
-              <>
-                <span></span> <p>Industries</p>
-              </>
-              <img src={Arrow} alt="" />
-            </Link>
-          </EachLinkOfPage>
 
           <EachLinkOfPage onClick={() => setOpen(false)}>
             <Link to="/platform_products">
               <>
                 <span></span> <p>Platforms & Products</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/travels">
+              <>
+                <span></span> <p>Travel, Logistics & Hospitality</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/retail">
+              <>
+                <span></span> <p>Retail and e-commerce</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/fintech">
+              <>
+                <span></span> <p>Fintech and Banking</p>
               </>
               <img src={Arrow} alt="" />
             </Link>

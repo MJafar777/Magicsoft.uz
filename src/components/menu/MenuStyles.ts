@@ -8,8 +8,6 @@ export const MenuWrapper = styled.div<MenuWrapperProp>`
   height: 100vh;
   background-color: #000;
   position: absolute;
-  /* top: ${(prop) => (prop.open ? 0 : 100)}
-  ; */
   top: 0;
   left: 0;
   z-index: 100;
@@ -20,6 +18,10 @@ export const MenuWrapper = styled.div<MenuWrapperProp>`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    height: 110vh;
+  }
 `;
 
 export const NavOfmenu = styled.div`
@@ -27,17 +29,35 @@ export const NavOfmenu = styled.div`
   display: flex;
   padding: 50px 100px;
   justify-content: space-between;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    padding: 40px 80px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    padding: 30px 60px;
+  }
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    justify-content: end;
+    padding: 20px;
+  }
 `;
 
 export const SocialWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    position: absolute;
+    bottom: 12%;
+    width: 62%;
+    margin: 0 auto;
+  }
 `;
 
 export const SocialLink = styled.div`
   display: flex;
   gap: 20px;
-
   a {
     display: block;
     color: white;
@@ -80,6 +100,18 @@ export const BodyOfMenu = styled.div`
   display: flex;
   height: calc(100vh - 200px);
   justify-content: center;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    padding-top: 100px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    padding: 80px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.lg} {
+    padding: 80px 10px;
+  }
 `;
 
 export const Title = styled.div`
@@ -92,14 +124,39 @@ export const Title = styled.div`
   text-align: right;
   font-size: 86px;
   padding-right: 10%;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    font-size: 70px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 30%;
+    font-size: 65px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.lg} {
+    font-size: 56px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const ContainerOfPageOfSite = styled.div`
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    width: 85%;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 90%;
+  }
 `;
 
 export const EachLinkOfPage = styled.div`
@@ -107,7 +164,7 @@ export const EachLinkOfPage = styled.div`
   justify-content: start;
   align-items: center;
   font-family: "MazzardM-Regular";
-  font-size: 58px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -123,6 +180,7 @@ export const EachLinkOfPage = styled.div`
     padding-bottom: 12px;
     width: fit-content;
     transition: all 0.2s;
+    line-height: 30px;
 
     p {
       color: #aab4c2;
@@ -161,5 +219,21 @@ export const EachLinkOfPage = styled.div`
         color: #fff;
       }
     }
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    font-size: 45px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 100%;
+    font-size: 38px;
+    p {
+      line-height: 40px;
+    }
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.lg} {
+    font-size: 32px;
   }
 `;

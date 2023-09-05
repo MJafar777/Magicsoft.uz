@@ -68,33 +68,95 @@ export const ContainerInovationSkils = styled.div`
 `;
 
 export const InovationSkil = styled.div`
-  width: 970px;
-  margin-bottom: 30px;
-  margin-left: 20%;
-  transition: 30s linear all;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  .topContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px white;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    padding-left: 20px;
+
+    p {
+      text-align: left;
+      font-size: 58px;
+      font-family: "MazzardM-Regular";
+      transition: all 0.5s linear;
+    }
+    span {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      transition: all 0.5s linear;
+      margin-right: 12px;
+    }
+
+    img {
+      margin-left: 30px;
+      transition: all 0.5s linear;
+    }
+  }
+
+  &:hover {
+    span {
+      background-color: #d4f54c;
+    }
+
+    img {
+      transform: rotate(-45deg);
+    }
+
+    p {
+      margin-left: 22.5px;
+      color: #fff;
+    }
+  }
+
   @media ${(prop) => prop.theme.breakpoints.xxl} {
+    .topContent {
+      p {
+        font-size: 46.4px;
+      }
+    }
     width: 776px;
     margin-bottom: 30px;
     margin-left: 0;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
+    .topContent {
+      p {
+        font-size: 42.16px;
+      }
+    }
     width: 100%;
     margin-bottom: 20px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
+    .topContent {
+      p {
+        font-size: 28.16px;
+      }
+    }
     margin-bottom: 10px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
     margin-bottom: 5px;
+    .topContent {
+      p {
+        font-size: 20px;
+      }
+    }
   }
 `;
 
 export const InovationName = styled.div<InovationNameProp>`
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 18px 10px;
   color: #fff;
@@ -103,9 +165,6 @@ export const InovationName = styled.div<InovationNameProp>`
   font-weight: 400;
   letter-spacing: 1.16px;
   border-bottom: 1px white solid;
-  margin-bottom: 18px;
-  transition: all 1s linear;
-  gap: ${(prop) => (!prop.active ? "0" : "30px")};
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 46.4px;
@@ -116,11 +175,9 @@ export const InovationName = styled.div<InovationNameProp>`
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    font-size: 28.16px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
-    font-size: 20px;
   }
 `;
 
