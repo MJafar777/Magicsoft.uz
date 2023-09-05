@@ -26,6 +26,18 @@ export const LeadingBrandsTitle = styled.h2<BreacPointsType>`
     line-height: 75.542px;
     margin: 79px auto 10px auto;
   }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 48.8px;
+    font-weight: 600;
+    line-height: 55.638px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 42.8px;
+    font-weight: 600;
+    line-height: 48.638px;
+  }
 `;
 
 export const LeadingBrandsNumbers = styled.div<BreacPointsType>`

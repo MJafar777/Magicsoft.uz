@@ -4,11 +4,11 @@ import {
   MainSectionLeft,
   MainSectionRight,
   MainSectionWrapper,
-  MainSectionLeftTitle,
   MainSectionContainer,
+  MainSectionAnimation,
+  MainSectionLeftTitle,
   MainSectinLeftButtonsBox,
   MainSectionLeftDescription,
-  MainSectionAnimation,
 } from "./MainSectionStyles";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
 

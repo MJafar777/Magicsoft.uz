@@ -243,6 +243,7 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
   position: relative;
 
   img {
+    transition: all 0.3s;
     position: absolute;
   }
 
@@ -278,6 +279,17 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
     border-radius: 50px;
   }
 
+  &:hover {
+    img.gifBorderVector {
+      opacity: 0;
+    }
+
+    img.gif {
+      border-radius: 2px;
+      transform: scale(1.05);
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.xxl} {
     img.gifBorderVector {
       width: 550px;
@@ -302,7 +314,7 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
 
     img.gif {
       width: 390px;
-      top: 150px;
+      top: 100px;
       right: 43px;
       border-radius: 35px;
     }
@@ -311,13 +323,13 @@ export const ServicesRightImageBox = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.lg} {
     img.gifBorderVector {
       width: 380px;
-      top: 110px;
+      top: 60px;
       right: 0;
     }
 
     img.gif {
       width: 320px;
-      top: 180px;
+      top: 130px;
       right: 33px;
       border-radius: 25px;
     }

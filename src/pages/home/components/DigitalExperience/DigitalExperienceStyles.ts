@@ -8,12 +8,45 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 150px auto;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0px auto;
+    min-height: 627px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 992px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 768px;
+    display: flex;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 576px;
+  }
 `;
 
 export const DigitalExperienceLeft = styled.div<BreacPointsType>`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  z-index: 100;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
@@ -25,6 +58,24 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
   font-weight: 600;
   line-height: 98.298px;
   margin-top: 7px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 68.8px;
+    font-weight: 600;
+    line-height: 78.638px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 48.8px;
+    font-weight: 600;
+    line-height: 55.638px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 42.8px;
+    font-weight: 600;
+    line-height: 48.638px;
+  }
 `;
 
 export const DigitalExperienceDescription = styled.div<BreacPointsType>`
@@ -40,6 +91,42 @@ export const DigitalExperienceDescription = styled.div<BreacPointsType>`
   p:nth-child(1) {
     margin-bottom: 24px;
   }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.048px;
+    margin-bottom: 20px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    font-size: 12px;
+    line-height: 15.048px;
+    margin-bottom: 15px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 12px;
+
+    p:nth-child(1) {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
 `;
 
 export const DigitalExperienceRight = styled.div<BreacPointsType>`
@@ -50,17 +137,43 @@ export const DigitalExperienceRight = styled.div<BreacPointsType>`
   height: 100%;
   margin: 0 auto;
   position: relative;
+  transition: all 0.3s;
 
   img {
+    transition: all 0.3s;
     position: absolute;
-    z-index: 3;
+    z-index: -1;
     overflow-clip-margin: content-box;
     overflow: clip;
     position: absolute;
     top: -13%;
     right: 0;
     bottom: 0;
-    z-index: 3;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 396px;
+    top: 0px;
+
+    img {
+      top: 60px;
+      width: 656px;
+      right: -150px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 356px;
+
+    img {
+      top: 120px;
+      width: 456px;
+      right: -50px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
   }
 `;
 
@@ -70,7 +183,7 @@ export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
   transform-style: preserve-3d;
   opacity: 1;
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -92,6 +205,30 @@ export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
     object-fit: cover;
     z-index: -100;
     transform: translateX(-100px);
+
+    @media ${(props) => props.theme.breakpoints.xxl} {
+      transform: translateX(0px);
+    }
+
+    @media ${(props) => props.theme.breakpoints.xl} {
+      width: 330px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 410px;
+    height: 305px;
+    top: 178px;
+    right: -20px;
+    border-radius: 10px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 356px;
+    top: 138px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
   }
 `;
 

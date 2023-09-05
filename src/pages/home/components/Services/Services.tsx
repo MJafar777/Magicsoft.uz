@@ -16,6 +16,8 @@ import {
 import gif from "../../../../assets/gif.gif";
 
 import { borderVectorServices } from "../../../../assets/images";
+import { ButtonEscortBtn } from "../../../../components";
+import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
 
 const Services = () => {
   return (
@@ -79,11 +81,13 @@ const Services = () => {
         </ServicesLeftItem>
 
         <ServicesLeftItemBtn>
-          <ButtonEscort
-            text1={"View All Services"}
-            text2={"View All Services"}
-            arrowOutwardIcon={true}
-          />
+          <ButtonMagnet>
+            <ButtonEscort
+              text1={"View All Services"}
+              text2={"View All Services"}
+              arrowOutwardIcon={true}
+            />
+          </ButtonMagnet>
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"04"} />
         </ServicesLeftItemBtn>
       </ServicesLeft>
