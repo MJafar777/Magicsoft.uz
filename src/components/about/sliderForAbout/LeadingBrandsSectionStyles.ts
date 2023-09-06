@@ -9,6 +9,13 @@ export const LeadingBrandsImgWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .slick-next:before, [dir=rtl] .slick-prev:before{
+    display: none;
+  }
+  .slick-prev:before{
+    display: none;
+  }
 `;
 
 export const LeadingBrandsTitle = styled.h2<BreacPointsType>`
