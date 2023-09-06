@@ -10,7 +10,7 @@ export const ContactWrapper = styled.div`
   align-items: center;
   .bg {
     width: 70%;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: start;
