@@ -4,7 +4,7 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 export const LeadingBrandsSectionWrapper = styled.section<BreacPointsType>`
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;

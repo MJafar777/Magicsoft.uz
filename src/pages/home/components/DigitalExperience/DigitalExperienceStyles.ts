@@ -12,7 +12,7 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
     padding: 0 20px;
-    margin: 0px auto;
+    margin: 150px auto;
     min-height: 627px;
   }
 
