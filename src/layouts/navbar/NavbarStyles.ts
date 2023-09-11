@@ -22,14 +22,46 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
 
 export const LinkItem = styled.div<BreacPointsType>`
   cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
 
-  a {
+  /* a {
     display: flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
   }
-
+  .listOfLink {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: saddlebrown 1px solid;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: -50%;
+    gap: 20px;
+    a {
+      display: block;
+      position: absolute;
+      width: 100px;
+      top: 20px;
+      border: solid red 1px;
+      z-index: 1000;
+    }
+    img {
+      z-index: -100;
+      position: absolute;
+      left: -50%;
+      z-index: -333;
+    }
+  } */
   @media ${(props) => props.theme.breakpoints?.xxl} {
     a {
       gap: 6.4px;
