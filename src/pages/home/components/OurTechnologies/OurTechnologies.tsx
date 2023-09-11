@@ -9,6 +9,7 @@ import {
   OurTechnologiesCardTitle,
   OurTechnologiesCardButton,
   OurTechnologiesCardDescription,
+  OurTechnologiesPageNumber,
 } from "./OurTechnologiesStyles";
 
 const OurTechnologies = () => {
@@ -17,17 +18,18 @@ const OurTechnologies = () => {
       <OurTechnologiesTitle>
         We
         <span> revolutionalize industries</span>
-        <br />
-        with the power of tech
+        <br className="md-removed-br" /> with the power of tech
       </OurTechnologiesTitle>
 
-      <PageSectionNumber fullPageNumber={12} currentPageNumber={"05"} />
+      <OurTechnologiesPageNumber>
+        <PageSectionNumber fullPageNumber={12} currentPageNumber={"05"} />
+      </OurTechnologiesPageNumber>
 
       <OurTechnologiesCards>
         <OurTechnologiesCard>
           <OurTechnologiesCardTitle>
             Travel, Logistics <span>&</span>
-            <br /> Hospitality
+            <br className="md-removed-br" /> Hospitality
           </OurTechnologiesCardTitle>
 
           <OurTechnologiesCardDescription>
@@ -43,7 +45,7 @@ const OurTechnologies = () => {
         <OurTechnologiesCard>
           <OurTechnologiesCardTitle>
             Retail <span>and</span>
-            <br /> E-commerce
+            <br className="md-removed-br" /> E-commerce
           </OurTechnologiesCardTitle>
 
           <OurTechnologiesCardDescription>
@@ -60,7 +62,7 @@ const OurTechnologies = () => {
         <OurTechnologiesCard>
           <OurTechnologiesCardTitle>
             Fintech <span>and</span>
-            <br /> Banking
+            <br className="md-removed-br" /> Banking
           </OurTechnologiesCardTitle>
 
           <OurTechnologiesCardDescription>
