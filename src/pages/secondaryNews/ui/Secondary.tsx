@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 
 import {
   Info,
@@ -18,6 +18,7 @@ import { dataCards } from "../../../api/data/news";
 import { TitleBlock } from "../../../components/news&Blogs/navbar";
 // import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards";
 import { MiniCard } from "../../../components/news&Blogs/miniCard";
+import { Loader } from "../../../components/Loading";
 
 interface DataCard {
   id: number;
@@ -43,6 +44,7 @@ const SecondaryNews = () => {
   }, [id, state]);
 
   return (
+    <Suspense fallback={<Loader />}>
     <SecondaryNewsWrapper key={data[0]?.id}>
       <SecondaryNewsParent>
         <ImageTitle
@@ -82,6 +84,7 @@ const SecondaryNews = () => {
         /> */}
       </SecondaryNewsParent>
     </SecondaryNewsWrapper>
+    </Suspense>
   );
 };
 
