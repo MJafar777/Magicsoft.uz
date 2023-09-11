@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../types/breacPointTypes";
 
 export const LeadingBrandsImgWrapper = styled.div`
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   height: 80vh;
   display: flex;
@@ -10,10 +10,11 @@ export const LeadingBrandsImgWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  .slick-next:before, [dir=rtl] .slick-prev:before{
+  .slick-next:before,
+  [dir="rtl"] .slick-prev:before {
     display: none;
   }
-  .slick-prev:before{
+  .slick-prev:before {
     display: none;
   }
 `;
