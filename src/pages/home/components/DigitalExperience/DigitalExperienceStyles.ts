@@ -28,6 +28,7 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 768px;
     display: flex;
+    min-height: auto;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

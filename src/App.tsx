@@ -16,7 +16,7 @@ function App() {
           <ThemeLocalization>
             <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
           </ThemeLocalization>
         </Theme>
       </ButtonContextProvider>
