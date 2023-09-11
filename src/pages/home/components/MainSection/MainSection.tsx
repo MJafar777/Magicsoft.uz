@@ -1,4 +1,3 @@
-import ButtonIfo from "../../../../components/buttons/ButtonInfo/ButtonIfo";
 import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
 import {
   MainSectionLeft,
@@ -15,6 +14,7 @@ import PageSectionNumber from "../../../../components/pageSectionNumber/PageSect
 import mainAnim from "../../../../assets/mainAnim.mp4";
 import JobItems from "../../../../components/jobItem/JobItems";
 import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
+import ButtonIfo from "../../../../components/buttons/ButtonInfo/ButtonIfo";
 
 const MainSection = () => {
   return (
@@ -44,7 +44,7 @@ const MainSection = () => {
               />
             </ButtonMagnet>
 
-            <ButtonIfo />
+            <ButtonIfo text1={"Why MagicSoft?"} text2={"Why MagicSoft?"} />
           </MainSectinLeftButtonsBox>
         </MainSectionLeft>
 

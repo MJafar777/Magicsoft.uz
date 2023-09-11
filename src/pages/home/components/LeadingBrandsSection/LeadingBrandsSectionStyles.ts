@@ -4,7 +4,7 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 export const LeadingBrandsSectionWrapper = styled.section<BreacPointsType>`
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@ export const LeadingBrandsNumbers = styled.div<BreacPointsType>`
   }
 `;
 
-export const LeadingBrandsBox = styled.div`
+export const LeadingBrandsBox = styled.div<BreacPointsType>`
   width: 100%;
   margin: 90px auto;
 
@@ -83,14 +83,13 @@ export const LeadingBrandsBox = styled.div`
     left: 0;
   }
 
-  img {
-    height: 125px;
+  img.leadingLogo {
+    height: 105px;
   }
 
   .slick-track {
     display: flex !important;
     align-items: center !important;
-    gap: 140px;
 
     div {
       display: flex !important;
@@ -121,7 +120,39 @@ export const LeadingBrandsBox = styled.div`
     margin: 60px auto;
 
     .slick-track {
-      gap: 100px;
+      gap: 20px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    .slick-track {
+      gap: 15px;
+    }
+
+    img.leadingLogo {
+      height: 85px !important;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    .slick-track {
+      gap: 0px;
+    }
+
+    img.leadingLogo {
+      height: 55px !important;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    img.leadingLogo {
+      height: 45px !important;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    img.leadingLogo {
+      height: 38px !important;
     }
   }
 `;
@@ -130,5 +161,5 @@ export const LeadingBrandsCart = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repea400t;
+  background-repeat: no-repeat;
 `;
