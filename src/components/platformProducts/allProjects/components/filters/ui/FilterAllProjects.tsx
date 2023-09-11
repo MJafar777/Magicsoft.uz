@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useContext, useState } from "react";
 import {
   FilterAllProjectsWrapper,
   ButtonsFilter,
@@ -6,6 +6,10 @@ import {
 } from "./filterAllProject";
 import { filter } from "../../../../../../assets";
 import useWindowWidth from "../../../../../../hooks/useWindowWidth";
+import {
+  ButtonContext,
+  ButtonContextProps,
+} from "../../../../../../context/ButtonContext";
 
 type DataFilterItem = {
   id: number;
@@ -17,6 +21,9 @@ type Props = {
 };
 
 const FilterAllProjects: FC<Props> = (props) => {
+  const { setFilterHandlerCard } =
+    useContext<ButtonContextProps>(ButtonContext);
+
   const window = useWindowWidth();
   const [idFilterValue, setIdFilterValue] = useState<number>(1);
   const [filterBtn, setFilterBtn] = useState<boolean>(false);
@@ -28,6 +35,11 @@ const FilterAllProjects: FC<Props> = (props) => {
   };
   const activeButton = { backgroundColor: "#FFF", color: "black" };
 
+  const setContextValueItem = (props: string) => {
+    setFilterHandlerCard(props);
+  };
+
+  // devise mobile
   if (window <= 993) {
     return (
       <FilterAllProjectsWrapper>
@@ -42,7 +54,7 @@ const FilterAllProjects: FC<Props> = (props) => {
               <ButtonsFilter
                 onClick={() => {
                   FilterButtonClicked(item.id);
-                  // setFilterBtn(false);
+                  setContextValueItem(item.value);
                 }}
                 key={item.id}
                 style={idFilterValue === item.id ? activeButton : {}}
@@ -54,6 +66,8 @@ const FilterAllProjects: FC<Props> = (props) => {
       </FilterAllProjectsWrapper>
     );
   }
+
+  // devise Desctop
   return (
     <FilterAllProjectsWrapper>
       {dataFilter &&
@@ -61,7 +75,7 @@ const FilterAllProjects: FC<Props> = (props) => {
           <ButtonsFilter
             onClick={() => {
               FilterButtonClicked(item.id);
-              // setFilterBtn(false);
+              setContextValueItem(item.value);
             }}
             key={item.id}
             style={idFilterValue === item.id ? activeButton : {}}

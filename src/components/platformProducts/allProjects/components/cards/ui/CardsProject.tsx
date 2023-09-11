@@ -14,6 +14,11 @@ import {
 
 import { Link } from "react-router-dom";
 import { sendBtn } from "../../../../../../assets/images/components/PlatformProducts";
+import { useContext } from "react";
+import {
+  ButtonContextProps,
+  ButtonContext,
+} from "../../../../../../context/ButtonContext";
 
 type DataCard = {
   id: number;
@@ -25,6 +30,7 @@ type DataCard = {
   miniTitle: string;
   paragraphInfo: string;
   date?: string;
+  category: string[];
 };
 interface Props {
   dataCards: DataCard[];
@@ -34,44 +40,56 @@ interface Props {
 }
 
 const CardsProject = (props: Props) => {
+  const { filterHandlerCard } = useContext<ButtonContextProps>(ButtonContext);
+
+  // console.log(filterHandlerCard, props.dataCards[1].category);
+
   const { dataCards, width, bg, btn } = props;
 
   return (
-    <CardsProjectWrapper>
-      {dataCards &&
-        dataCards.map((item) => {
-          return (
-            <Cards bg={bg} width={width} key={item.id}>
-              <Img src={item.img} alt={`this image not found ${item.img}`} />
-              <CardsPaddings>
-                <Title>{item.miniTitle}</Title>
-                <SubTitle>{item.subTitle}</SubTitle>
-                <FlexBasedOn>
-                  {item.basedOn &&
-                    item.basedOn.map((item) => {
-                      return <BasedOn key={item}>#{item}</BasedOn>;
-                    })}
-                </FlexBasedOn>
+    <>
+      <CardsProjectWrapper>
+        {dataCards
+          .filter((value) => {
+            return (
+              value.category[0] == filterHandlerCard ||
+              value.category[1] == filterHandlerCard
+            );
+          })
+          .map((item) => {
+            return (
+              <Cards bg={bg} width={width} key={item.id}>
+                <Img src={item.img} alt={`this image not found ${item.img}`} />
+                <CardsPaddings>
+                  <Title>{item.miniTitle}</Title>
+                  <SubTitle>{item.subTitle}</SubTitle>
+                  <FlexBasedOn>
+                    {item.basedOn &&
+                      item.basedOn.map((item) => {
+                        return <BasedOn key={item}>#{item}</BasedOn>;
+                      })}
+                  </FlexBasedOn>
 
-                {item?.date ? <DateItem>{item.date}</DateItem> : ""}
+                  {item?.date ? <DateItem>{item.date}</DateItem> : ""}
 
-                <Link
-                  style={{ listStyle: "none", textDecoration: "none" }}
-                  to={`${item.link}/${item.id}`}
-                >
-                  <SendLinkBtn>
-                    {btn ? btn : "VIEW CASE STUDY"}{" "}
-                    <Icon
-                      src={sendBtn}
-                      alt={`this image not found !${sendBtn}`}
-                    />
-                  </SendLinkBtn>
-                </Link>
-              </CardsPaddings>
-            </Cards>
-          );
-        })}
-    </CardsProjectWrapper>
+                  <Link
+                    style={{ listStyle: "none", textDecoration: "none" }}
+                    to={`${item.link}/${item.id}`}
+                  >
+                    <SendLinkBtn>
+                      {btn ? btn : "VIEW CASE STUDY"}{" "}
+                      <Icon
+                        src={sendBtn}
+                        alt={`this image not found !${sendBtn}`}
+                      />
+                    </SendLinkBtn>
+                  </Link>
+                </CardsPaddings>
+              </Cards>
+            );
+          })}
+      </CardsProjectWrapper>
+    </>
   );
 };
 
