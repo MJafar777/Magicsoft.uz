@@ -26,7 +26,7 @@ export const ContentOfTeam = styled.div`
   color: white;
   text-align: center;
   h3 {
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 49px;
     font-style: normal;
     font-weight: 600;
@@ -34,7 +34,7 @@ export const ContentOfTeam = styled.div`
   }
 
   p {
-    font-family: Archivo;
+    font-family: Archivo-Regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -102,6 +102,7 @@ export const InfoEachWorker = styled.div`
 
 export const NameOfWorker = styled.div`
   text-align: center;
+  font-family: Archivo-Regular;
   color: yellow;
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
@@ -112,6 +113,7 @@ export const NameOfWorker = styled.div`
 export const Specialty = styled.div`
   text-align: center;
   color: white;
+  font-family: Archivo-Regular;
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 12px;

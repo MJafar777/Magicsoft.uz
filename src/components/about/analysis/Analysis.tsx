@@ -18,6 +18,7 @@ const Analysis = () => {
             separator="client"
             decimal=","
             suffix=" +"
+            style={{ fontFamily: "MazzardH-Medium" }}
           />
         </Title>
         <Subtitle>Apps created</Subtitle>

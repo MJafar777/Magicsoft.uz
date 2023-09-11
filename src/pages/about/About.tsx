@@ -3,11 +3,10 @@ import {
   Baner,
   HeaderOfAbout,
   OurTeam,
+  SliderOfWorkers,
+  Contact,
+  Comments,
 } from "../../components/about";
-import Comments from "../../components/about/comments/Comments";
-import Contact from "../../components/about/contacts/Contact";
-import LeadingBrands from "../../components/about/sliderForAbout/LeadingBrands";
-
 import { AboutWrapper } from "./AboutStyles";
 
 const About = () => {
@@ -17,7 +16,7 @@ const About = () => {
       <AnalysisAbout />
       <Baner />
       <OurTeam />
-      <LeadingBrands />
+      <SliderOfWorkers />
       <Comments />
       <Contact />
     </AboutWrapper>
