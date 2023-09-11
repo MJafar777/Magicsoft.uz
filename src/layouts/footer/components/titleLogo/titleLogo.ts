@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 interface Props {
   src: string;
@@ -8,7 +9,6 @@ interface Props {
 export const TitleLogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  
 `;
 
 export const Img = styled.img<Props>`
@@ -16,7 +16,7 @@ export const Img = styled.img<Props>`
   height: 50px;
   flex-shrink: 0;
 `;
-export const TitleLogoName = styled.p`
+export const TitleLogoName = styled.p<BreacPointsType>`
   color: #fff;
   text-align: justify;
   font-family: MazzardH-Medium;
@@ -24,4 +24,8 @@ export const TitleLogoName = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    
+  }
 `;
