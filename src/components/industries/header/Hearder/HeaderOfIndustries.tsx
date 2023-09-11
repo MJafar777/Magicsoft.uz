@@ -4,7 +4,6 @@ import ReactFluidAnimation, {
   IAnimationConfig,
 } from "@usertive/react-fluid-animation";
 
-// import { BgTravels } from "../../../../assets/industries";
 import { HeaderData as TravelData } from "../../../../api/data/travels";
 import { HeaderData as FintechData } from "../../../../api/data/fintech";
 import { HeaderData as RetailData } from "../../../../api/data/retail";
@@ -16,6 +15,7 @@ import {
   HeaderTitle,
   Subtitle,
 } from "./HeaderOfIndustriesStyles";
+
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

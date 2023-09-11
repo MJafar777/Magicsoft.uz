@@ -8,6 +8,7 @@ import {
   Team_member_6,
   Team_member_7,
 } from "../../../assets/about";
+
 import {
   ContainerImgs,
   ContentOfTeam,

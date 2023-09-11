@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 interface HeaderOfIndustriesWraperProps {
   imgUrl?: string;
 }
+
 export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps>`
   width: 100%;
   height: 100vh;

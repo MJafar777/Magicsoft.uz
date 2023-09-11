@@ -9,6 +9,7 @@ import {
 } from "./CommentStyles";
 
 const Comments = () => {
+
   const settings = {
     className: "center",
     centerMode: false,
@@ -65,6 +66,7 @@ const Comments = () => {
       },
     ],
   };
+  
   return (
     <CommentsWrapper>
       <Title>What our clients say</Title>

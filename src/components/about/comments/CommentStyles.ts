@@ -16,6 +16,7 @@ export const CommentsWrapper = styled.div`
     font-size: 36px !important;
     font-weight: bolder;
   }
+  
   .slick-next:before,
   [dir="rtl"] .slick-prev:before {
     content: url(${next}) !important;
