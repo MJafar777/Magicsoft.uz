@@ -33,6 +33,7 @@ export const HeaderOfAboutWrapper = styled.div`
 export const LeftSideOfHeader = styled.div`
   width: 45%;
   span {
+    font-family: Archivo-Regular;
     background-color: #d4f54c;
     color: black;
     padding: 5px 10px;
@@ -42,6 +43,8 @@ export const LeftSideOfHeader = styled.div`
     font-size: 49px;
     color: white;
     line-height: 114.3%;
+    font-family: Archivo-Regular;
+
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {

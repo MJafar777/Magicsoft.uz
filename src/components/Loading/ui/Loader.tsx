@@ -41,7 +41,7 @@ const MyLoader: FC = () => {
                 <Span key={index}>{item}</Span>
               ))}
             </Loading>{" "}
-            % {arr.length}/100
+            {arr.length} / 100
           </Contain>
         </Paragraph>
       </ChildLoader>

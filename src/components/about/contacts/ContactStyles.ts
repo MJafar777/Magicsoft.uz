@@ -1,28 +1,44 @@
 import { styled } from "styled-components";
 import BgContact from "../../../assets/about/bgOfContact.svg";
+
 export const ContactWrapper = styled.div`
-  width: 80%;
+  height: 100vh;
+  width: 100%;
   margin: 0 auto;
   background-image: url(${BgContact});
   display: flex;
   justify-content: center;
-  align-items: start;
-  gap: 50px;
-  padding-top: 10%;
-
+  align-items: center;
+  .bg {
+    width: 70%;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #000;
+  }
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    width: 90%;
+    .bg {
+      width: 90%;
+    }
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    width: 100%;
+    .bg {
+      width: 100%;
+    }
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .bg {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

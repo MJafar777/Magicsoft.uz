@@ -1,5 +1,6 @@
 import CountUp from "react-countup";
-
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   AnalysisWrapper,
   CardOfAnalysis,
@@ -12,8 +13,7 @@ import {
 import { AnalysisData as TravelData} from "../../../api/data/travels";
 import { AnalysisData as FintechData } from "../../../api/data/fintech";
 import { AnalysisData as RetailData } from "../../../api/data/retail";
-import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+
 
 const Analysis = () => {
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { CommentCardWrapper, User } from "./CommentStyles";
 import { star } from "../../../assets/about";
 

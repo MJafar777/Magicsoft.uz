@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import EachTechnology from "./EachTechnology";
 import {
   ContainerInovationSkils,
@@ -5,11 +7,12 @@ import {
   TitleInovation,
 } from "./TechnologyStyles";
 
-import { TechnologyData, TechnologyData as TravelData } from "../../../api/data/travels";
+import {
+  TechnologyData,
+  TechnologyData as TravelData,
+} from "../../../api/data/travels";
 import { TechnologyData as FintechData } from "../../../api/data/fintech";
 import { TechnologyData as RetailData } from "../../../api/data/retail";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const Technology = () => {
   const loaction = useLocation();

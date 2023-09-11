@@ -7,6 +7,9 @@ export const AnalysisWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 143px;
+  .noneBorder {
+    border-right: none;
+  }
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 85%;
   }
@@ -21,7 +24,8 @@ export const AnalysisWrapper = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
-  width: 100%;
+    width: 100%;
+    justify-content: center;
   }
 `;
 
@@ -46,15 +50,15 @@ export const CardOfAnalysis = styled.div`
 
 export const Title = styled.div`
   text-align: left;
-  font-family: Archivo;
-  font-size: 49px;
+  font-family: MazzardH-Medium;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
   line-height: 114.3%;
   color: white;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 39px;
+    font-size: 35px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
@@ -72,7 +76,7 @@ export const Title = styled.div`
 
 export const Subtitle = styled.div`
   text-align: left;
-  font-family: Archivo;
+  font-family: MazzardH-Regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;

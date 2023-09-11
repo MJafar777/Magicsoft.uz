@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const AnalysisWrapper = styled.div`
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 141px;
   display: flex;
   justify-content: center;
@@ -9,6 +9,12 @@ export const AnalysisWrapper = styled.div`
   padding: 0;
   width: 80%;
   margin: 0 auto;
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const CardOfAnalysis = styled.div`
@@ -17,16 +23,22 @@ export const CardOfAnalysis = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 390px;
     height: 178px;
   }
 
-  
   @media ${(prop) => prop.theme.breakpoints.xl} {
     width: 273px;
     height: 125px;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 export const TheFirst = styled.div`
@@ -142,12 +154,11 @@ export const ValueOfAnalysis = styled.div`
   font-weight: 500;
   line-height: 124.175%;
   margin-bottom: 10px;
-  
+
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 43.2px;
   }
 
-  
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 30.24px;
   }
@@ -161,12 +172,10 @@ export const WhichSubject = styled.div`
   font-weight: 400;
   line-height: normal;
 
-  
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 14.4px;
   }
 
-  
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 10.8px;
   }

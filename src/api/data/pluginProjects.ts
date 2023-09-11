@@ -17,6 +17,7 @@ export const dataCards: {
   basedOn: string[];
   miniTitle: string;
   paragraphInfo: string;
+  category: string[];
 }[] = [
   {
     id: 1,
@@ -29,6 +30,7 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "Startup"],
   },
   {
     id: 2,
@@ -41,6 +43,7 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "Enterprise"],
   },
   {
     id: 3,
@@ -53,6 +56,7 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "Enterprise"],
   },
   {
     id: 4,
@@ -65,6 +69,7 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "SaaS"],
   },
   {
     id: 5,
@@ -77,6 +82,7 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "SaaS"],
   },
   {
     id: 6,
@@ -89,5 +95,6 @@ export const dataCards: {
     date: undefined,
     basedOn: ["Startup", "iOS", "Android"],
     paragraphInfo: "",
+    category: ["All", "SaaS"],
   },
 ];

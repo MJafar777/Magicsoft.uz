@@ -16,6 +16,7 @@ export const CommentsWrapper = styled.div`
     font-size: 36px !important;
     font-weight: bolder;
   }
+
   .slick-next:before,
   [dir="rtl"] .slick-prev:before {
     content: url(${next}) !important;
@@ -56,11 +57,12 @@ export const LeadingBrandsBoxComment = styled.div`
   height: 40vh;
   width: 100%;
   margin: 0 auto;
+
   gap: 30px;
 `;
 
 export const CommentCardWrapper = styled.div`
-  width: 623px;
+  width: 580px;
   height: 229px;
   background-color: rgba(22, 22, 22, 1);
   display: flex;
@@ -93,7 +95,6 @@ export const CommentCardWrapper = styled.div`
       font-size: 14px;
     }
   }
- 
 `;
 export const SubTitle = styled.p`
   font-family: MazzardM-SemiBold;

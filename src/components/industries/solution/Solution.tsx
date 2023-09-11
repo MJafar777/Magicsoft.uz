@@ -1,15 +1,19 @@
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import {
   ContainerOfSolution,
   SolutionTitle,
   SolutionWrapper,
   Subtile,
 } from "./SolutionStyles";
+
 import CardOne from "./Card";
+
 import { SolutionData as TravelData } from "../../../api/data/travels";
 import { SolutionData as FintechData } from "../../../api/data/fintech";
 import { SolutionData as RetailData } from "../../../api/data/retail";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
 const Solution = () => {
 
   const loaction = useLocation();

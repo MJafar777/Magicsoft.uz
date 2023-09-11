@@ -25,6 +25,7 @@ import { Arrow } from "../../assets/industries";
 
 const Menu = () => {
   const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
+
   useEffect(() => {
     if (open) {
       const originalStyle = window.getComputedStyle(document.body).overflow;
@@ -34,8 +35,11 @@ const Menu = () => {
       };
     }
   }, [open]);
+
+
   return (
     <MenuWrapper open={open}>
+      
       <NavOfmenu>
         <SocialWrapper>
           <SocialLink>
@@ -66,6 +70,7 @@ const Menu = () => {
           </div>
         </CloseContainer>
       </NavOfmenu>
+
       <BodyOfMenu>
         <Title>Menu</Title>
         <ContainerOfPageOfSite>
@@ -128,6 +133,7 @@ const Menu = () => {
           </EachLinkOfPage>
         </ContainerOfPageOfSite>
       </BodyOfMenu>
+
     </MenuWrapper>
   );
 };

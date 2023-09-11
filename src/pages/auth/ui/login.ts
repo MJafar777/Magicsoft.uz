@@ -16,9 +16,9 @@ export const Title = styled.div<BreacPointsType>`
   color: #fff;
   text-align: start;
   font-family: Mazzard, sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 109.8%;
 
   @media ${(props) => props.theme.breakpoints.xxl} {

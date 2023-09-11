@@ -22,6 +22,7 @@ const OverView = () => {
       setData(RetailData);
     }
   }, [loaction.pathname]);
+  
   return (
     <OverViewWraper>
       <div>

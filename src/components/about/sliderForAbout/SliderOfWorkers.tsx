@@ -9,7 +9,7 @@ import {
 } from "./LeadingBrandsSectionStyles";
 import SliderAutoPlay from "./SliderForAbout";
 
-const LeadingBrands = () => {
+const SliderOfWorkers = () => {
   return (
     <LeadingBrandsImgWrapper>
       <LeadingBrandsBox>
@@ -48,4 +48,4 @@ const LeadingBrands = () => {
   );
 };
 
-export default LeadingBrands;
+export default SliderOfWorkers;
