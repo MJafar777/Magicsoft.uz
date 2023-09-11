@@ -25,6 +25,7 @@ type DataNavbar = {
   link: string;
   date?: string;
   basedOn: string[];
+  category: string[];
 };
 
 interface Props {

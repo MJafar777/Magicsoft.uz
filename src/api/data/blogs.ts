@@ -18,6 +18,7 @@ export const dataCard: {
   link: string;
   date?: string | undefined;
   basedOn: string[];
+  category: string[];
 }[] = [
   {
     id: 1,
@@ -28,6 +29,7 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["Getting started", "All"],
   },
   {
     id: 2,
@@ -38,6 +40,7 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["Business", "All"],
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["Design", "All"],
   },
   {
     id: 4,
@@ -58,6 +62,7 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["Development", "All"],
   },
   {
     id: 5,
@@ -68,6 +73,7 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["SEO", "All"],
   },
   {
     id: 6,
@@ -78,5 +84,6 @@ export const dataCard: {
     link: "http://iqro-quran.uz/",
     date: undefined,
     basedOn: ["Business", "Design"],
+    category: ["VR & AR", "All"],
   },
 ];
