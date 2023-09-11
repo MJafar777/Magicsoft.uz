@@ -19,8 +19,6 @@ export const BanerWrapper = styled.div`
   @media ${(prop) => prop.theme.breakpoints.xl} {
     height: 370px;
     padding-right: 170px;
-    
-
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
@@ -77,6 +75,20 @@ export const ContentOfBaner = styled.div`
     h3 {
       font-size: 27.44px;
     }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: fit-content;
+    height: fit-content;
+    opacity: 0.7;
+    margin: 0 20px;
+    h3 {
+      font-size: 27.44px;
+    }
+
     p {
       font-size: 12px;
     }

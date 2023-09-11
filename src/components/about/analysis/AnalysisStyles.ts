@@ -7,7 +7,9 @@ export const AnalysisWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 143px;
-
+  .noneBorder {
+    border-right: none;
+  }
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 85%;
   }
@@ -23,6 +25,7 @@ export const AnalysisWrapper = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
     width: 100%;
+    justify-content: center;
   }
 `;
 

@@ -4,9 +4,9 @@ import ReactFluidAnimation, {
   IAnimationConfig,
 } from "@usertive/react-fluid-animation";
 
-import { HeaderData as TravelData } from "../../../../api/data/travels";
-import { HeaderData as FintechData } from "../../../../api/data/fintech";
-import { HeaderData as RetailData } from "../../../../api/data/retail";
+import { HeaderData as TravelData } from "../../../api/data/travels";
+import { HeaderData as FintechData } from "../../../api/data/fintech";
+import { HeaderData as RetailData } from "../../../api/data/retail";
 
 import {
   BaseLinks,
