@@ -87,7 +87,7 @@ const Navbar = () => {
                 <LinkItemText>About Us</LinkItemText>
               </>
             ) : (
-              <LinkItemText>About Us</LinkItemText>
+              <LinkItemText>About Us </LinkItemText>
             )
           }
         </NavLink>

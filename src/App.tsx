@@ -15,6 +15,7 @@ function App() {
         <Theme>
           <ThemeLocalization>
             <Header />
+            
             <Outlet />
             <Footer />
           </ThemeLocalization>
