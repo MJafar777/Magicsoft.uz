@@ -28,8 +28,7 @@ export const LinkItem = styled.div<BreacPointsType>`
   align-items: center;
   justify-content: space-between;
   height: fit-content;
-
-  /* a {
+  a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -45,7 +44,7 @@ export const LinkItem = styled.div<BreacPointsType>`
     width: 100%;
     height: 100%;
     top: 40px;
-    left: -50%;
+    left: 50%;
     gap: 20px;
     a {
       display: block;
@@ -58,10 +57,10 @@ export const LinkItem = styled.div<BreacPointsType>`
     img {
       z-index: -100;
       position: absolute;
-      left: -50%;
+      left: 20%;
       z-index: -333;
     }
-  } */
+  }
   @media ${(props) => props.theme.breakpoints?.xxl} {
     a {
       gap: 6.4px;

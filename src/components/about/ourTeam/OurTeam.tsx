@@ -31,8 +31,8 @@ const dataOfTeamMember = [
   },
   {
     img: Team_member_3,
-    name: "Louis",
-    specialty: "Team Leader",
+    name: "Ja’far",
+    specialty: "Bekorchi xo'ja",
   },
   {
     img: Team_member_4,

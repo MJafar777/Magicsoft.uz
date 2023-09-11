@@ -11,10 +11,17 @@ import {
   SubTitleBottomBorder,
   PlatformNavbarWrapper,
 } from "./platformNavbar";
+import { useNavigate } from "react-router-dom";
 
 interface Props {}
 
 const PlatformNavbar: FC<Props> = () => {
+  const navigate = useNavigate();
+
+  const navigator = () => {
+    navigate("/contact");
+  };
+
   return (
     <PlatformNavbarWrapper>
       <NavbarLeft>
@@ -26,7 +33,7 @@ const PlatformNavbar: FC<Props> = () => {
         </Paragraph>
         {/* <ButtonContact>Contact</ButtonContact> */}
         <div className="center">
-          <button className="btn">
+          <button className="btn" onClick={() => navigator()}>
             <svg
               width="180px"
               height="60px"

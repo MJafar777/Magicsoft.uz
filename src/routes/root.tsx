@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { SecondaryNews } from "../pages/secondaryNews";
 import { PlatformProducts } from "../pages/platformsProducts";
 import { Login } from "../pages/auth";
+import { Contact } from "../components/about";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const HomeAsync = lazy(() => import("../pages/home/Home"));
@@ -47,6 +48,7 @@ const router = createBrowserRouter([
       { path: "/about-us", element: <About /> },
 
       { path: "/login", element: <Login /> },
+      { path: "/contact", element: <Contact /> },
     ],
   },
 ]);

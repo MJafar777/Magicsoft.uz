@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import {
   LinkItem,
   LinkItemText,
@@ -40,7 +40,7 @@ const Navbar = () => {
             )
           }
         </NavLink>
-        {/* <div className="listOfLink">
+        <div className="listOfLink">
           <div>
             <a href="/" className="travel">
               Travel 1
@@ -57,7 +57,7 @@ const Navbar = () => {
             </a>
           </div>
           <img src={folder} alt="" />
-        </div> */}
+        </div>
       </LinkItem>
 
       <LinkItemColumnLine />

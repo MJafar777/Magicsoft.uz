@@ -9,7 +9,7 @@ import {
 
 const Contact = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="#contact">
       <div className="bg">
         <ContentSide>
           <Title>CONTACT US</Title>
