@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import {
   LinkItem,
   LinkItemText,
@@ -6,7 +6,7 @@ import {
   LinkItemActiveBox,
   LinkItemColumnLine,
 } from "./NavbarStyles";
-
+import folder from "../../assets/nav/folder.svg";
 const Navbar = () => {
   return (
     <NavbarWrapper>
@@ -40,6 +40,24 @@ const Navbar = () => {
             )
           }
         </NavLink>
+        <div className="listOfLink">
+          <div>
+            <a href="/" className="travel">
+              Travel 1
+            </a>
+          </div>
+          <div>
+            <a href="/" className="travel">
+              Travel 1
+            </a>
+          </div>
+          <div>
+            <a href="/" className="travel">
+              Travel 1
+            </a>
+          </div>
+          <img src={folder} alt="" />
+        </div>
       </LinkItem>
 
       <LinkItemColumnLine />
