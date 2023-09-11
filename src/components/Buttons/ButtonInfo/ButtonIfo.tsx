@@ -6,20 +6,25 @@ import {
   ButtonSecondaryText,
 } from "./ButtonInfoStyles";
 
-const ButtonIfo = () => {
+interface ButtonIfoProps {
+  text1: string;
+  text2: string;
+}
+
+function ButtonIfo({ text1, text2 }: ButtonIfoProps) {
   return (
     <ButtonInfoBtn>
       <ButtonChangeBox>
         <ButtonPimaryText className="primary">
-          <ButtonInfoText>Why MagicSoft?</ButtonInfoText>
+          <ButtonInfoText>{text1}</ButtonInfoText>
         </ButtonPimaryText>
 
         <ButtonSecondaryText className="secondary">
-          <ButtonInfoText>Why MagicSoft?</ButtonInfoText>
+          <ButtonInfoText>{text2}</ButtonInfoText>
         </ButtonSecondaryText>
       </ButtonChangeBox>
     </ButtonInfoBtn>
   );
-};
+}
 
 export default ButtonIfo;

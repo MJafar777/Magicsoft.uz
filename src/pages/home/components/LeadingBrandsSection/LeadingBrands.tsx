@@ -29,34 +29,34 @@ const LeadingBrands = () => {
       <LeadingBrandsBox>
         <SliderAutoPlay>
           <LeadingBrandsCart>
-            <img src={eximLogo} />
+            <img className="leadingLogo" src={eximLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={kervanyol} />
+            <img className="leadingLogo" src={kervanyol} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={tniLogo} />
+            <img className="leadingLogo" src={tniLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={amplLogo} />
+            <img className="leadingLogo" src={amplLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={ibdLogo} />
+            <img className="leadingLogo" src={ibdLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={eximLogo} />
+            <img className="leadingLogo" src={eximLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={kervanyol} />
+            <img className="leadingLogo" src={kervanyol} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={tniLogo} />
+            <img className="leadingLogo" src={tniLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={amplLogo} />
+            <img className="leadingLogo" src={amplLogo} />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={ibdLogo} />
+            <img className="leadingLogo" src={ibdLogo} />
           </LeadingBrandsCart>
         </SliderAutoPlay>
       </LeadingBrandsBox>

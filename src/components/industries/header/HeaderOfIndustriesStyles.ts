@@ -5,7 +5,7 @@ interface HeaderOfIndustriesWraperProps {
 
 export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps>`
   width: 100%;
-  height: 100vh;
+
   background-image: url(${(prop) => prop.imgUrl});
   background-repeat: no-repeat;
   display: flex;

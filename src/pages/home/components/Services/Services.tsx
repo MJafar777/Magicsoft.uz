@@ -16,7 +16,6 @@ import {
 import gif from "../../../../assets/gif.gif";
 
 import { borderVectorServices } from "../../../../assets/images";
-import { ButtonEscortBtn } from "../../../../components";
 import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
 
 const Services = () => {

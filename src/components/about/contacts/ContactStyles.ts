@@ -2,8 +2,7 @@ import { styled } from "styled-components";
 import BgContact from "../../../assets/about/bgOfContact.svg";
 
 export const ContactWrapper = styled.div`
-  height: 100vh;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   background-image: url(${BgContact});
   display: flex;

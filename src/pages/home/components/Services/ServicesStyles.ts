@@ -2,10 +2,9 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const ServicesWrapper = styled.section<BreacPointsType>`
-  height: 100vh;
   max-width: 1571px;
   margin: 300px auto;
-
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,6 +26,7 @@ export const ServicesWrapper = styled.section<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 768px;
+    height: auto;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
