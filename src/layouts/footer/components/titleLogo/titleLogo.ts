@@ -15,6 +15,10 @@ export const Img = styled.img<Props>`
   width: 50px;
   height: 50px;
   flex-shrink: 0;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 40px;
+    height: 40px;
+  }
 `;
 export const TitleLogoName = styled.p<BreacPointsType>`
   color: #fff;
@@ -26,6 +30,9 @@ export const TitleLogoName = styled.p<BreacPointsType>`
   line-height: normal;
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    
+    font-size: 26px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 24px;
   }
 `;

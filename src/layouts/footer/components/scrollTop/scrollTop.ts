@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 interface Props {
   src: string;
@@ -6,26 +7,30 @@ interface Props {
 }
 
 export const ScrollTopWrapper = styled.div`
-  max-width: 130px;
   width: 100%;
+  max-width: 130px;
 
-  display: flex;
   gap: 12px;
-  align-items: center;
+  display: flex;
   cursor: pointer;
   user-select: none;
+  align-items: center;
 `;
 export const Img = styled.img<Props>`
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 `;
-export const BtnName = styled.p`
+export const BtnName = styled.p<BreacPointsType>`
   color: #fff;
-  text-align: justify;
-  font-family: MazzardM-SemiBold, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
+  text-align: justify;
   line-height: normal;
+  font-family: MazzardM-SemiBold, sans-serif;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 12px;
+  }
 `;

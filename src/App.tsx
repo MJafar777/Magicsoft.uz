@@ -14,8 +14,8 @@ function App() {
       <ButtonContextProvider>
         <Theme>
           <ThemeLocalization>
-            <Header />
-            <Outlet />
+            {/* <Header /> */}
+            {/* <Outlet /> */}
             <Footer />
           </ThemeLocalization>
         </Theme>

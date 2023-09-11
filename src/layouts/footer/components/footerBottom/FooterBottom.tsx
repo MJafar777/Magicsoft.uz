@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { FooterBottomWrapper } from "./footerBottom";
 import { ScrollTop, SubText } from "..";
+import { FooterBottomWrapper } from "./footerBottom";
 
 const FooterBottom: FC = () => {
   return (
