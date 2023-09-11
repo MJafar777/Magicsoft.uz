@@ -1,3 +1,5 @@
+import { Comments } from "../../components/about";
+import Analysis from "../../components/about/analysis/Analysis";
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
@@ -18,6 +20,10 @@ const Home = () => {
       <OurTechnologies />
 
       <OurCommunity />
+
+      <Analysis />
+
+      <Comments />
     </>
   );
 };
