@@ -19,7 +19,6 @@ function App() {
         <Theme>
           <ThemeLocalization>
             <Header />
-            
             <Outlet />
             {location.pathname != "/" ? <Footer /> : ""}
           </ThemeLocalization>
