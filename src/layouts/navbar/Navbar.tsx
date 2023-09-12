@@ -140,7 +140,7 @@ const Navbar = () => {
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>{}</LinkItemText>
+                <LinkItemText>{translate("aboutUs")}</LinkItemText>
               </>
             ) : (
               <LinkItemText>{translate("aboutUs")}</LinkItemText>
