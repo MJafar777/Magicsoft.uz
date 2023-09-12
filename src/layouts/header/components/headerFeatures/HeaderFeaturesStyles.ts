@@ -1,5 +1,12 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
+
+interface PropLinkItem {
+  display?: boolean;
+}
+
+
 
 export const HeaderFeaturesWrapper = styled.div<BreacPointsType>`
   display: flex;
@@ -16,10 +23,11 @@ export const HeaderFeaturesWrapper = styled.div<BreacPointsType>`
   }
 `;
 
-export const LinkItem = styled.div<BreacPointsType>`
+export const LinkItem = styled.div<PropLinkItem>`
   display: flex;
   align-items: center;
   gap: 15px;
+  position: relative;
   cursor: pointer;
 
   .headerLanguageIcon {
@@ -41,6 +49,42 @@ export const LinkItem = styled.div<BreacPointsType>`
 
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  .listOfLink {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50px;
+    left: -50px;
+    transition: all 0.5s;
+    transform: translateY(${(prop) => (prop.display ? "0px" : "-300px")});
+
+    div {
+      transition: all 1s linear;
+      display: flex;
+      p {
+        transition: all 0.5s linear;
+
+        margin-top: 30px;
+        margin-left: 50px;
+        font-size: 24px;
+        color: #1b63cc;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    img {
+      transition: all 1s linear;
+
+      z-index: -100;
+      position: absolute;
+      left: 20%;
+      z-index: -333;
     }
   }
 

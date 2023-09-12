@@ -21,22 +21,58 @@ import {
   ButtonContextProps,
 } from "../../../../context/ButtonContext";
 
+import folder from "../../../../assets/nav/folder.svg";
+
 const HeaderFeatures = () => {
-  const { setOpen } = useContext<ButtonContextProps>(ButtonContext);
+  const {
+    setOpen,
+    setDisplayOfLanguage,
+    displayOfLanguage,
+    setDisplayOfIndustry,
+  } = useContext<ButtonContextProps>(ButtonContext);
+
+  const toggleButtonLang = () => {
+    setDisplayOfIndustry(false);
+    if (displayOfLanguage) {
+      setDisplayOfLanguage(false);
+    } else {
+      setDisplayOfLanguage(true);
+    }
+  };
 
   return (
     <HeaderFeaturesWrapper>
       <LinkItem>
         <NavLink to="/login">
-          <LinkItemText className="loginLink">Log In</LinkItemText>
+          <LinkItemText
+            className="loginLink"
+            onClick={() => {
+              setDisplayOfIndustry(false);
+              setDisplayOfLanguage(false);
+            }}
+          >
+            Log In
+          </LinkItemText>
         </NavLink>
       </LinkItem>
 
       <LinkItemColumnLine />
 
-      <LinkItem>
+      <LinkItem display={displayOfLanguage}>
         <LanguageIcon className="headerLanguageIcon" />
-        <LinkItemText>English</LinkItemText>
+        <LinkItemText onClick={() => toggleButtonLang()}>English</LinkItemText>
+        <div className="listOfLink">
+          <div className="uz" onClick={() => setDisplayOfLanguage(false)}>
+            <p>Uzbekcha</p>
+          </div>
+          <div className="ru" onClick={() => setDisplayOfLanguage(false)}>
+            <p>Русский</p>
+          </div>
+          <div className="en" onClick={() => setDisplayOfLanguage(false)}>
+            <p>English</p>
+          </div>
+          <img src={folder} alt="" />
+        </div>
       </LinkItem>
 
       <LinkItemColumnLine />
