@@ -8,14 +8,16 @@ import {
   theSecondtImgInHeader,
   theThirdImgInHeader,
 } from "../../../assets/about";
+import useLocales from "../../../locales/useLocales";
 
 const HeaderOfAbout = () => {
+const {translate}= useLocales()
+
   return (
     <HeaderOfAboutWrapper>
       <LeftSideOfHeader>
         <p>
-          <span>Magicsoft</span> is a creative digital agency working with
-          startups and enterprises.
+          <span>Magicsoft</span> {translate('titleOfheader')}.
         </p>
       </LeftSideOfHeader>
       <RightSideOfHeader>

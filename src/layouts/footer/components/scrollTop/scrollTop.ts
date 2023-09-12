@@ -28,7 +28,7 @@ export const BtnName = styled.p<BreacPointsType>`
   font-style: normal;
   text-align: justify;
   line-height: normal;
-  font-family: MazzardM-SemiBold, sans-serif;
+  font-family: "MazzardM-SemiBold", sans-serif;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 12px;

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { BreacPointsType } from "../../../types/breacPointTypes";
 
-
-
 interface Props {
   src: string;
   alt: string;
@@ -15,6 +13,15 @@ export const SecondaryNewsWrapper = styled.div<BreacPointsType>`
   margin-top: 120px;
   @media ${(props) => props.theme.breakpoints.lg} {
     padding: 0 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-top: 80px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 60px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 40px;
   }
 `;
 
@@ -37,7 +44,7 @@ export const Title = styled.p<BreacPointsType>`
   margin: 20px auto;
 
   color: #fff;
-  font-family: MazzardM-SemiBold, sans-serif;
+  font-family: "MazzardM-SemiBold", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -105,7 +112,7 @@ export const Info = styled.div<BreacPointsType>`
 
 export const Paragraph = styled.p<BreacPointsType>`
   color: #fff;
-  font-family: MazzardM-Regular;
+  font-family: "MazzardM-Regular";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

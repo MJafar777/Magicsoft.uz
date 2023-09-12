@@ -63,7 +63,7 @@ export const Title = styled.h3<BreacPointsType>`
   text-transform: capitalize;
 
   color: #fff;
-  font-family: MazzardM-SemiBold, sans-serif;
+  font-family: "MazzardM-SemiBold", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -86,7 +86,7 @@ export const SubTitle = styled.h3<BreacPointsType>`
   flex-shrink: 0;
 
   color: #fff;
-  font-family: MazzardM-Regular, sans-serif;
+  font-family: "MazzardM-Regular", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

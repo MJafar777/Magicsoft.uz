@@ -7,31 +7,34 @@ import {
   LinkItemColumnLine,
 } from "./NavbarStyles";
 import folder from "../../assets/nav/folder.svg";
-import { useState } from "react";
+import { useContext } from "react";
+import { ButtonContext } from "../../context/ButtonContext";
+import useLocales from "../../locales/useLocales";
 const Navbar = () => {
-  const [display, setDisplay] = useState(false);
+  const { translate } = useLocales();
+
+  const { setDisplayOfIndustry, displayOfIndustry, setDisplayOfLanguage } =
+    useContext(ButtonContext);
+
+  const toggleButtonIndustry = () => {
+    setDisplayOfLanguage(false);
+    if (displayOfIndustry) {
+      setDisplayOfIndustry(false);
+    } else {
+      setDisplayOfIndustry(true);
+    }
+  };
 
   return (
     <NavbarWrapper>
-      <LinkItem>
-        <NavLink to="/" onClick={() => setDisplay(false)}>
-          {({ isActive }) =>
-            isActive ? (
-              <>
-                <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>Home</LinkItemText>
-              </>
-            ) : (
-              <LinkItemText>Home</LinkItemText>
-            )
-          }
-        </NavLink>
-      </LinkItem>
-
-      <LinkItemColumnLine />
-
-      <LinkItem>
-        <NavLink to="/platform_products" onClick={() => setDisplay(false)}>
+      <LinkItem display={displayOfIndustry}>
+        <NavLink
+          to="/platform_products"
+          onClick={() => {
+            setDisplayOfIndustry(false);
+            setDisplayOfLanguage(false);
+          }}
+        >
           {({ isActive }) =>
             isActive ? (
               <>
@@ -47,26 +50,28 @@ const Navbar = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem display={display}>
-        <>
-          <LinkItemActiveBox></LinkItemActiveBox>
-          <LinkItemText onClick={() => setDisplay((pre) => !pre)}>
-            Industries
-          </LinkItemText>
-        </>
+      <LinkItem display={displayOfIndustry}>
+        <LinkItemText onClick={() => toggleButtonIndustry()}>
+          {displayOfIndustry ? (
+            <LinkItemActiveBox></LinkItemActiveBox>
+          ) : (
+            <div></div>
+          )}
+          Industries
+        </LinkItemText>
 
         <div className="listOfLink">
-          <div onClick={() => setDisplay(false)}>
+          <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/travels" className="travel">
               Travel, Logistics & Hospitality
             </Link>
           </div>
-          <div onClick={() => setDisplay(false)}>
+          <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/retail" className="travel2">
               Retail and e-commerce
             </Link>
           </div>
-          <div onClick={() => setDisplay(false)}>
+          <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/fintech" className="travel3">
               Fintech and Banking
             </Link>
@@ -78,7 +83,13 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/news" onClick={() => setDisplay(false)}>
+        <NavLink
+          to="/news"
+          onClick={() => {
+            setDisplayOfIndustry(false);
+            setDisplayOfLanguage(false);
+          }}
+        >
           {({ isActive }) =>
             isActive ? (
               <>
@@ -95,7 +106,13 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/blog" onClick={() => setDisplay(false)}>
+        <NavLink
+          to="/blog"
+          onClick={() => {
+            setDisplayOfIndustry(false);
+            setDisplayOfLanguage(false);
+          }}
+        >
           {({ isActive }) =>
             isActive ? (
               <>
@@ -112,15 +129,21 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/about-us" onClick={() => setDisplay(false)}>
+        <NavLink
+          to="/about-us"
+          onClick={() => {
+            setDisplayOfIndustry(false);
+            setDisplayOfLanguage(false);
+          }}
+        >
           {({ isActive }) =>
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>About Us</LinkItemText>
+                <LinkItemText>{translate("aboutUs")}</LinkItemText>
               </>
             ) : (
-              <LinkItemText>About Us</LinkItemText>
+              <LinkItemText>{translate("aboutUs")}</LinkItemText>
             )
           }
         </NavLink>

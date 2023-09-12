@@ -21,7 +21,7 @@ export const BoxMenuFirstFlex = styled.div`
 
 export const BoxMenuFirstValue = styled.p<BreacPointsType>`
   color: #fff;
-  font-family: MazzardM-Regular;
+  font-family: "MazzardM-Regular";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
