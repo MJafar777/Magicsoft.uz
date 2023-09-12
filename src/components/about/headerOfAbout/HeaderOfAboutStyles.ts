@@ -44,7 +44,6 @@ export const LeftSideOfHeader = styled.div`
     color: white;
     line-height: 114.3%;
     font-family: Archivo-Regular;
-
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -69,7 +68,7 @@ export const LeftSideOfHeader = styled.div`
   }
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 75%;
-   }
+  }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
     width: 90%;
@@ -80,7 +79,7 @@ export const RightSideOfHeader = styled.div`
   div {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 34px 0;
+    padding: 0px 0 34px 0;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {

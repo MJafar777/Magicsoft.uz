@@ -185,7 +185,7 @@ export const EachLinkOfPage = styled.div`
     line-height: 30px;
 
     p {
-      font-family: MazzardM-Regular;
+      font-family: "MazzardM-Regular";
       color: #aab4c2;
       transition: all 0.2s;
     }
@@ -218,7 +218,7 @@ export const EachLinkOfPage = styled.div`
       border-bottom: 1px #fff solid;
 
       p {
-        font-family: MazzardH-Regular;
+        font-family: "MazzardH-Regular";
         margin-left: 22.5px;
         color: #fff;
       }
