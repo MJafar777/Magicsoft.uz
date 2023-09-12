@@ -18,6 +18,7 @@ import {
   OurTeamWrapper,
   Specialty,
 } from "./OurTeamStyles";
+import useLocales from "../../../locales/useLocales";
 
 const dataOfTeamMember = [
   {
@@ -59,14 +60,13 @@ const dataOfTeamMember = [
 ];
 
 const OurTeam = () => {
+  const { translate } = useLocales();
+
   return (
     <OurTeamWrapper bg={OurTeamBg}>
       <ContentOfTeam>
-        <h3>Our Team</h3>
-        <p>
-          Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis
-          libero, proin consequat ultrices congue nunc sit consectetur.
-        </p>
+        <h3>{translate("teamTitle")}</h3>
+        <p>{translate("teamSubtile")}</p>
       </ContentOfTeam>
       <ContainerImgs>
         {dataOfTeamMember.map((worker, index) => (
@@ -78,7 +78,7 @@ const OurTeam = () => {
               {/* <Team_member_1 /> */}
               <img src={worker.img} alt="" />
               <NameOfWorker>{worker.name}</NameOfWorker>
-              <Specialty>{worker.specialty}</Specialty>
+              <Specialty>{worker.specialty=='Team Leader'? translate('teamLead'):worker.specialty}</Specialty>
             </Link>
           </InfoEachWorker>
         ))}

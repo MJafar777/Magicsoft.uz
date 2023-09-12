@@ -7,9 +7,12 @@ import {
 } from "./AnalysisStyles";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@mui/material";
+import useLocales from "../../../locales/useLocales";
 
 const Analysis = () => {
   const [start, setStart] = useState(0);
+
+  const { translate } = useLocales();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,7 +44,7 @@ const Analysis = () => {
               style={{ fontFamily: "MazzardH-Medium" }}
             />
           </Title>
-          <Subtitle>Apps created</Subtitle>
+          <Subtitle>{translate("countOfApp")}</Subtitle>
         </CardOfAnalysis>
       ) : (
         <Skeleton
@@ -65,7 +68,7 @@ const Analysis = () => {
               suffix=" +"
             />
           </Title>
-          <Subtitle>Employees</Subtitle>
+          <Subtitle>{translate("countEmployee")}</Subtitle>
         </CardOfAnalysis>
       ) : (
         <Skeleton
@@ -89,7 +92,7 @@ const Analysis = () => {
               suffix=" +"
             />
           </Title>
-          <Subtitle>Positive reviews</Subtitle>
+          <Subtitle>{translate("countReviews")}</Subtitle>
         </CardOfAnalysis>
       ) : (
         <Skeleton
@@ -113,7 +116,7 @@ const Analysis = () => {
               suffix=" +"
             />
           </Title>
-          <Subtitle>Title goes here</Subtitle>
+          <Subtitle>{translate("count")}</Subtitle>
         </CardOfAnalysis>
       ) : (
         <Skeleton
