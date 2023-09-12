@@ -72,7 +72,7 @@ const Feedback = () => {
   return (
     <FeedbackWrapper>
       <FeedbackNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"10"} />
+        <PageSectionNumber fullPageNumber={12} currentPageNumber={"09"} />
       </FeedbackNumber>
       <Title>What our clients say</Title>
       <SubTitle>What our clients say</SubTitle>

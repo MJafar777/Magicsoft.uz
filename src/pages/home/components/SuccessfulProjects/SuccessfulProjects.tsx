@@ -33,9 +33,9 @@ const SuccessfulProjects = () => {
   return (
     <SuccessfulProjectsWrapper>
       <SuccessfulProjectsNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"10"} />
+        <PageSectionNumber fullPageNumber={12} currentPageNumber={"08"} />
       </SuccessfulProjectsNumber>
-      <SuccessfulProjectsTitle>What our clients say</SuccessfulProjectsTitle>
+      <SuccessfulProjectsTitle>Successful Projects</SuccessfulProjectsTitle>
       <AnalysisWrapper>
         {start > 0 ? (
           <CardOfAnalysis>

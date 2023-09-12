@@ -10,10 +10,26 @@ import folder from "../../assets/nav/folder.svg";
 import { useState } from "react";
 const Navbar = () => {
   const [display, setDisplay] = useState(false);
-  console.log(display);
 
   return (
     <NavbarWrapper>
+      <LinkItem>
+        <NavLink to="/" onClick={() => setDisplay(false)}>
+          {({ isActive }) =>
+            isActive ? (
+              <>
+                <LinkItemActiveBox></LinkItemActiveBox>
+                <LinkItemText>Home</LinkItemText>
+              </>
+            ) : (
+              <LinkItemText>Home</LinkItemText>
+            )
+          }
+        </NavLink>
+      </LinkItem>
+
+      <LinkItemColumnLine />
+
       <LinkItem>
         <NavLink to="/platform_products" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
