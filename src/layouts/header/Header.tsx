@@ -7,9 +7,7 @@ const Header = () => {
     <HeaderContainer>
       <HeaderWrapper>
         <HeaderLogo />
-
         <Navbar />
-
         <HeaderFeatures />
       </HeaderWrapper>
     </HeaderContainer>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   OurTeamBg,
   Team_member_1,
@@ -32,7 +33,8 @@ const dataOfTeamMember = [
   {
     img: Team_member_3,
     name: "Ja’far",
-    specialty: "Bekorchi xo'ja",
+    specialty: "Frontend developer",
+    link: "https://jafarbek.uz/",
   },
   {
     img: Team_member_4,
@@ -69,10 +71,15 @@ const OurTeam = () => {
       <ContainerImgs>
         {dataOfTeamMember.map((worker, index) => (
           <InfoEachWorker key={index}>
-            {/* <Team_member_1 /> */}
-            <img src={worker.img} alt="" />
-            <NameOfWorker>{worker.name}</NameOfWorker>
-            <Specialty>{worker.specialty}</Specialty>
+            <Link
+              style={{ listStyle: "none" }}
+              to={worker.link ? worker.link : ""}
+            >
+              {/* <Team_member_1 /> */}
+              <img src={worker.img} alt="" />
+              <NameOfWorker>{worker.name}</NameOfWorker>
+              <Specialty>{worker.specialty}</Specialty>
+            </Link>
           </InfoEachWorker>
         ))}
       </ContainerImgs>

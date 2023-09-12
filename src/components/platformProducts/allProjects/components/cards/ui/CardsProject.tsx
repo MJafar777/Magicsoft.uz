@@ -46,6 +46,15 @@ const CardsProject = (props: Props) => {
 
   const { dataCards, width, bg, btn } = props;
 
+  const sendToTop = (id: number, category: string[]): void => {
+    id == id && category[1] == category[1]
+      ? window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      : console.log("this info not found!");
+  };
+
   return (
     <>
       <CardsProjectWrapper>
@@ -76,7 +85,11 @@ const CardsProject = (props: Props) => {
                     style={{ listStyle: "none", textDecoration: "none" }}
                     to={`${item.link}/${item.id}`}
                   >
-                    <SendLinkBtn>
+                    <SendLinkBtn
+                      onClick={() =>
+                        sendToTop(dataCards[1].id, dataCards[1].category)
+                      }
+                    >
                       {btn ? btn : "VIEW CASE STUDY"}{" "}
                       <Icon
                         src={sendBtn}

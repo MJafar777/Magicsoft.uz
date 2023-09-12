@@ -4,6 +4,10 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 export const OurCommunityWrapper = styled.section<BreacPointsType>`
   max-width: 1163px;
   margin: 200px auto;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin: 20px auto;
+  }
 `;
 
 export const OurCommunityPageNumber = styled.div<BreacPointsType>`
@@ -39,6 +43,7 @@ export const OurCommunityTitle = styled.div<BreacPointsType>`
     font-size: 42.8px;
     font-weight: 600;
     line-height: 48.638px;
+    margin-bottom: 22px;
   }
 `;
 
