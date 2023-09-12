@@ -1,3 +1,4 @@
+import useLocales from "../../../locales/useLocales";
 import {
   ContactWrapper,
   Content,
@@ -8,29 +9,26 @@ import {
 } from "./ContactStyles";
 
 const Contact = () => {
+  const { translate } = useLocales();
+
   return (
     <ContactWrapper id="#contact">
       <div className="bg">
         <ContentSide>
-          <Title>CONTACT US</Title>
+          <Title>{translate("contactTitle")}</Title>
           <div className="border"></div>
-          <Content>
-            We have convinced you? Very cool! Then just write to us and we'll
-            get back to you as soon as possible to arrange a video call. There
-            you can pitch your idea and we will answer all your questions. We
-            are happy to welcome you at MAGICSOFT Studios!
-          </Content>
+          <Content>{translate("contactSubtitle")}</Content>
         </ContentSide>
         <FormSide>
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email address" />
-          <input type="tel" placeholder="Your phone number (optional)" />
-          <textarea placeholder="Your message..." name="" id="" />
-          <button className="btn">Submit</button>
+          <input type="text" placeholder={translate("inputName")} />
+          <input type="email" placeholder={translate("inputEmail")} />
+          <input type="tel" placeholder={translate("inputPhone")} />
+          <textarea placeholder={translate("teaxtareaMessage")} name="" id="" />
+          <button className="btn">{translate("Submit")}</button>
           <Privacy>
-            By sending this request you agree to our privacy policy.{" "}
-            <span>Privacy policy </span>
-            agree to our privacy policy.
+            {translate("contactFormSubtitle")}
+            <span>{translate("privancy")} </span>
+            {translate("contactFormSubtitleCon")}
           </Privacy>
         </FormSide>
       </div>
