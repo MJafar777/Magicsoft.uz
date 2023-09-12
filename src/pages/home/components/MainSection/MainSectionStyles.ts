@@ -2,12 +2,14 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const MainSectionWrapper = styled.div<BreacPointsType>`
-  padding-top: 111px;
+  padding-top: 20px;
   max-width: 1652px;
   margin: 0 auto;
 
+  /* height: 100vh; */
+
   @media ${(props) => props.theme.breakpoints.xxl} {
-    padding: 75px 20px;
+    padding: 20px 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {

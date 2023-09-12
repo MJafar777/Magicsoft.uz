@@ -3,7 +3,8 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const OurTechnologiesWrapper = styled.section<BreacPointsType>`
   max-width: 1516px;
-  margin: 250px auto;
+  /* margin: 250px auto; */
+  margin: 0px auto;
   padding: 0 20px;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -34,8 +35,9 @@ export const OurTechnologiesTitle = styled.div<BreacPointsType>`
   font-style: normal;
   font-weight: 400;
   line-height: 91.65px;
-  margin: 17px 0;
+  margin: 0;
   text-align: left;
+  margin-top: -40px;
 
   span {
     color: #d4f54c;
@@ -76,11 +78,12 @@ export const OurTechnologiesCards = styled.div<BreacPointsType>`
   align-items: flex-end;
   justify-content: center;
   gap: 125px;
-  padding: 56px;
+  padding: 0 56px 0px 56px;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     gap: 58px;
     padding: 0;
+    margin-top: -70px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {

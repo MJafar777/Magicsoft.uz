@@ -72,7 +72,7 @@ const Analysis = () => {
               // prefix="EUR "
               suffix=" +"
               onEnd={() => console.log("Ended! 👏")}
-              onStart={() => console.log("Started! 💨")}
+              onStart={() => .log("Started! 💨")}
             />
           </ValueOfAnalysis>
           <WhichSubject>{data.developer.subject}</WhichSubject>

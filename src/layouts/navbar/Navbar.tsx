@@ -1,4 +1,4 @@
-import {  NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   LinkItem,
   LinkItemText,
@@ -7,11 +7,31 @@ import {
   LinkItemColumnLine,
 } from "./NavbarStyles";
 import folder from "../../assets/nav/folder.svg";
+import { useState } from "react";
 const Navbar = () => {
+  const [display, setDisplay] = useState(false);
+
   return (
     <NavbarWrapper>
       <LinkItem>
-        <NavLink to="/platform_products">
+        <NavLink to="/" onClick={() => setDisplay(false)}>
+          {({ isActive }) =>
+            isActive ? (
+              <>
+                <LinkItemActiveBox></LinkItemActiveBox>
+                <LinkItemText>Home</LinkItemText>
+              </>
+            ) : (
+              <LinkItemText>Home</LinkItemText>
+            )
+          }
+        </NavLink>
+      </LinkItem>
+
+      <LinkItemColumnLine />
+
+      <LinkItem>
+        <NavLink to="/platform_products" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (
               <>
@@ -27,34 +47,29 @@ const Navbar = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem>
-        <NavLink to="/industries">
-          {({ isActive }) =>
-            isActive ? (
-              <>
-                <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>Industries</LinkItemText>
-              </>
-            ) : (
-              <LinkItemText>Industries</LinkItemText>
-            )
-          }
-        </NavLink>
+      <LinkItem display={display}>
+        <>
+          <LinkItemActiveBox></LinkItemActiveBox>
+          <LinkItemText onClick={() => setDisplay((pre) => !pre)}>
+            Industries
+          </LinkItemText>
+        </>
+
         <div className="listOfLink">
-          <div>
-            <a href="/" className="travel">
-              Travel 1
-            </a>
+          <div onClick={() => setDisplay(false)}>
+            <Link to="/travels" className="travel">
+              Travel, Logistics & Hospitality
+            </Link>
           </div>
-          <div>
-            <a href="/" className="travel">
-              Travel 1
-            </a>
+          <div onClick={() => setDisplay(false)}>
+            <Link to="/retail" className="travel2">
+              Retail and e-commerce
+            </Link>
           </div>
-          <div>
-            <a href="/" className="travel">
-              Travel 1
-            </a>
+          <div onClick={() => setDisplay(false)}>
+            <Link to="/fintech" className="travel3">
+              Fintech and Banking
+            </Link>
           </div>
           <img src={folder} alt="" />
         </div>
@@ -63,7 +78,7 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/news">
+        <NavLink to="/news" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (
               <>
@@ -80,7 +95,7 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/blog">
+        <NavLink to="/blog" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (
               <>
@@ -97,7 +112,7 @@ const Navbar = () => {
       <LinkItemColumnLine />
 
       <LinkItem>
-        <NavLink to="/about-us">
+        <NavLink to="/about-us" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (
               <>

@@ -23,7 +23,7 @@ const OurCommunity = () => {
   return (
     <OurCommunityWrapper>
       <OurCommunityPageNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"09"} />
+        <PageSectionNumber fullPageNumber={12} currentPageNumber={"07"} />
       </OurCommunityPageNumber>
 
       <OurCommunityTitle>Our Commmunity</OurCommunityTitle>

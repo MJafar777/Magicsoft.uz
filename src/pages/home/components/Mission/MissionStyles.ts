@@ -1,20 +1,21 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
+export const MissionWrapper = styled.section<BreacPointsType>`
   min-height: 627px;
   max-width: 1652px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   /* margin: 150px auto; */
-  margin: 0 auto;
+  margin: 0px auto;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
     padding: 0 20px;
     /* margin: 150px auto; */
-    margin: 0 auto;
+    margin: 0px auto;
+    min-height: 627px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
@@ -37,7 +38,7 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceLeft = styled.div<BreacPointsType>`
+export const MissionLeft = styled.div<BreacPointsType>`
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -51,7 +52,7 @@ export const DigitalExperienceLeft = styled.div<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
+export const MissionTitle = styled.h2<BreacPointsType>`
   max-width: 634px;
   color: #fff;
   font-family: "MazzardM-Semibold";
@@ -60,6 +61,10 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
   font-weight: 600;
   line-height: 98.298px;
   margin-top: 7px;
+
+  span {
+    color: #d4f54c;
+  }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 68.8px;
@@ -80,7 +85,7 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceDescription = styled.div<BreacPointsType>`
+export const MissionDescription = styled.div<BreacPointsType>`
   max-width: 600px;
   color: #a5afbc;
   font-family: "MazzardM-Regular";
@@ -131,7 +136,7 @@ export const DigitalExperienceDescription = styled.div<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceRight = styled.div<BreacPointsType>`
+export const MissionRight = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -179,7 +184,7 @@ export const DigitalExperienceRight = styled.div<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
+export const MissionVideContainer = styled.div<BreacPointsType>`
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
@@ -234,4 +239,4 @@ export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceItem = styled.div<BreacPointsType>``;
+export const MissionItem = styled.div<BreacPointsType>``;

@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../types/breacPointTypes";
-
+interface LinkItemProp {
+  display: boolean;
+}
 export const NavbarWrapper = styled.nav<BreacPointsType>`
   display: flex;
   align-items: center;
@@ -20,7 +22,7 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
   }
 `;
 
-export const LinkItem = styled.div<BreacPointsType>`
+export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
   cursor: pointer;
   position: relative;
   display: flex;
@@ -28,6 +30,9 @@ export const LinkItem = styled.div<BreacPointsType>`
   align-items: center;
   justify-content: space-between;
   height: fit-content;
+  &:hover .listOfLink {
+    transform: translateY(${(prop) => (prop.display ? "0px" : "-300px")});
+  }
   a {
     display: flex;
     align-items: center;
@@ -35,26 +40,57 @@ export const LinkItem = styled.div<BreacPointsType>`
     text-decoration: none;
   }
   .listOfLink {
-    display: block;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: saddlebrown 1px solid;
     width: 100%;
+    transition: all 0.5s;
+    transform: translateY(${(prop) => (prop.display ? "0px" : "-300px")});
     height: 100%;
     top: 40px;
-    left: 50%;
-    gap: 20px;
+    left: -50%;
+
+    div {
+      transition: all 1s linear;
+      display: flex;
+      .travel {
+        margin-left: 30px;
+        width: 100vw;
+        margin-top: 40px;
+        color: #1b63cc;
+        font-size: 14px;
+      }
+
+      .travel2 {
+        margin-left: 30px;
+        width: 100vw;
+        margin-top: 70px;
+        color: #1b63cc;
+        font-size: 14px;
+      }
+
+      .travel3 {
+        margin-left: 30px;
+        margin-top: 100px;
+        width: 100vw;
+        color: #1b63cc;
+        font-size: 14px;
+      }
+    }
+
     a {
       display: block;
       position: absolute;
       width: 100px;
       top: 20px;
-      border: solid red 1px;
+      /* border: solid red 1px; */
       z-index: 1000;
     }
+
     img {
+      transition: all 1s linear;
+      /* display: ${(prop) => (prop.display ? "block" : "none")}; */
       z-index: -100;
       position: absolute;
       left: 20%;
