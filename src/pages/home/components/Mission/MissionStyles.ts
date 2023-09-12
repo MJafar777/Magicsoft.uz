@@ -7,12 +7,14 @@ export const MissionWrapper = styled.section<BreacPointsType>`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 150px auto;
+  /* margin: 150px auto; */
+  margin: 0px auto;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
     padding: 0 20px;
-    margin: 150px auto;
+    /* margin: 150px auto; */
+    margin: 0px auto;
     min-height: 627px;
   }
 

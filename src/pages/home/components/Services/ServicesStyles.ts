@@ -3,16 +3,24 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const ServicesWrapper = styled.section<BreacPointsType>`
   max-width: 1571px;
-  margin: 300px auto;
-  height: 100vh;
+  max-height: 627px;
+
+  /* margin: 100px auto; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  height: 100vh;
+  margin: 0px auto;
+
+  /* margin-top: 200px; */
+
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
     padding: 0 20px;
-    margin: 200px auto;
+    /* margin: 200px auto; */
+
+    margin: 0px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {

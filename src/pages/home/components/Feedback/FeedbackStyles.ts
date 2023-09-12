@@ -3,10 +3,10 @@ import next from "../../../../assets/about/next.svg";
 import pre from "../../../../assets/about/pre.svg";
 
 export const FeedbackWrapper = styled.div`
-  height: 90vh;
+  height: 100vh;
   width: 90%;
   margin: 0 auto;
-  margin-top: 400px;
+  padding-top: 100px;
 
   .slick-prev:before {
     content: url(${pre}) !important;
@@ -28,12 +28,13 @@ export const FeedbackWrapper = styled.div`
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
     height: 60vh;
-    margin-top: 200px;
+    margin: 200px auto 300px auto;
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     height: 60vh;
-    margin-top: 100px;
+    margin: 0px auto 0px auto;
+
     .slick-prev:before {
       top: 100px !important;
     }
@@ -71,8 +72,9 @@ export const FeedbackCardWrapper = styled.div`
   padding: 26px 0;
   padding-left: 32px;
   margin-left: 50px;
+
   p {
-    font-family: MazzardM-SemiBold;
+    font-family: "MazzardM-SemiBold";
     font-size: 20px;
   }
 
@@ -103,7 +105,7 @@ export const FeedbackNumber = styled.div`
 `;
 
 export const SubTitle = styled.p`
-  font-family: MazzardM-SemiBold;
+  font-family: "MazzardM-SemiBold";
   font-size: 20px;
   margin-bottom: 21px;
 
@@ -117,12 +119,13 @@ export const SubTitle = styled.p`
 
 export const Title = styled.p`
   font-size: 79px;
-  font-family: Concretica;
+  font-family: "Concretica";
   padding-left: 8%;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 62px;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 43.68px;
@@ -130,6 +133,7 @@ export const Title = styled.p`
   }
   @media ${(prop) => prop.theme.breakpoints.md} {
     text-align: center;
+    margin-bottom: 20px;
   }
 `;
 
@@ -137,7 +141,7 @@ export const User = styled.div`
   margin-top: 40px;
   gap: 21px;
   p {
-    font-family: MazzardM-Regular;
+    font-family: "MazzardM-Regular";
   }
   img {
     width: 20px;

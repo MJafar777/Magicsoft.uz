@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import Theme from "./styles/Theme";
 import { Footer, Header } from "./layouts";
@@ -9,6 +9,10 @@ import "./locales/i18n";
 import { ButtonContextProvider } from "./context/ButtonContext";
 
 function App() {
+  const location = useLocation();
+
+  console.log(location.pathname);
+
   return (
     <Suspense fallback={<Loader />}>
       <ButtonContextProvider>
@@ -16,7 +20,7 @@ function App() {
           <ThemeLocalization>
             <Header />
             <Outlet />
-            <Footer />
+            {location.pathname != "/" ? <Footer /> : ""}
           </ThemeLocalization>
         </Theme>
       </ButtonContextProvider>

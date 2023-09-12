@@ -10,6 +10,14 @@ export const SuccessfulProjectsNumber = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-top: 100px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 20px;
+  }
 `;
 
 export const SuccessfulProjectsTitle = styled.h2`
@@ -37,6 +45,7 @@ export const SuccessfulProjectsTitle = styled.h2`
     font-size: 42.8px;
     font-weight: 600;
     line-height: 48.638px;
+    margin-bottom: 0;
   }
 `;
 
@@ -61,6 +70,7 @@ export const AnalysisWrapper = styled.div`
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 70%;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
