@@ -9,7 +9,10 @@ import {
 import folder from "../../assets/nav/folder.svg";
 import { useContext } from "react";
 import { ButtonContext } from "../../context/ButtonContext";
+import useLocales from "../../locales/useLocales";
 const Navbar = () => {
+  const { translate } = useLocales();
+
   const { setDisplayOfIndustry, displayOfIndustry, setDisplayOfLanguage } =
     useContext(ButtonContext);
 
@@ -137,10 +140,10 @@ const Navbar = () => {
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>About Us</LinkItemText>
+                <LinkItemText>{}</LinkItemText>
               </>
             ) : (
-              <LinkItemText>About Us</LinkItemText>
+              <LinkItemText>{translate("aboutUs")}</LinkItemText>
             )
           }
         </NavLink>

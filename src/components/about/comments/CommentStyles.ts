@@ -72,7 +72,7 @@ export const CommentCardWrapper = styled.div`
   padding-left: 32px;
   margin-left: 50px;
   p {
-    font-family: MazzardM-SemiBold;
+    font-family: "MazzardM-SemiBold";
     font-size: 20px;
   }
 
@@ -97,7 +97,7 @@ export const CommentCardWrapper = styled.div`
   }
 `;
 export const SubTitle = styled.p`
-  font-family: MazzardM-SemiBold;
+  font-family: "MazzardM-SemiBold";
   font-size: 20px;
   margin-bottom: 21px;
 
@@ -131,7 +131,7 @@ export const User = styled.div`
   margin-top: 40px;
   gap: 21px;
   p {
-    font-family: MazzardM-Regular;
+    font-family: "MazzardM-Regular";
   }
   img {
     width: 20px;

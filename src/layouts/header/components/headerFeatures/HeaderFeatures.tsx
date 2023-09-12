@@ -22,6 +22,7 @@ import {
 } from "../../../../context/ButtonContext";
 
 import folder from "../../../../assets/nav/folder.svg";
+import useLocales from "../../../../locales/useLocales";
 
 const HeaderFeatures = () => {
   const {
@@ -31,6 +32,10 @@ const HeaderFeatures = () => {
     setDisplayOfIndustry,
   } = useContext<ButtonContextProps>(ButtonContext);
 
+  // const [lang, setLang] = useState("uz");
+
+  const { onChangeLang, translate } = useLocales();
+
   const toggleButtonLang = () => {
     setDisplayOfIndustry(false);
     if (displayOfLanguage) {
@@ -38,6 +43,11 @@ const HeaderFeatures = () => {
     } else {
       setDisplayOfLanguage(true);
     }
+  };
+
+  const handleLanguage = (prop: string) => {
+    onChangeLang(prop);
+    setDisplayOfLanguage(false);
   };
 
   return (
@@ -58,17 +68,17 @@ const HeaderFeatures = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem display={displayOfLanguage}>
+      <LinkItem display={displayOfLanguage} onClick={() => toggleButtonLang()}>
         <LanguageIcon className="headerLanguageIcon" />
-        <LinkItemText onClick={() => toggleButtonLang()}>English</LinkItemText>
+        <LinkItemText>{translate("changeLang")}</LinkItemText>
         <div className="listOfLink">
-          <div className="uz" onClick={() => setDisplayOfLanguage(false)}>
+          <div className="uz" onClick={() => handleLanguage("uz")}>
             <p>Uzbekcha</p>
           </div>
-          <div className="ru" onClick={() => setDisplayOfLanguage(false)}>
+          <div className="ru" onClick={() => handleLanguage("ru")}>
             <p>Русский</p>
           </div>
-          <div className="en" onClick={() => setDisplayOfLanguage(false)}>
+          <div className="en" onClick={() => handleLanguage("en")}>
             <p>English</p>
           </div>
           <img src={folder} alt="" />

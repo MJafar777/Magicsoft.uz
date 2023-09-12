@@ -7,7 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import uzLocales from "./langs/uz";
 import yzLocales from "./langs/yz";
 import ruLocales from "./langs/ru";
-import engLocales from "./langs/eng";
+import engLocales from "./langs/en";
 
 import { defaultLang } from "./config-lang";
 
@@ -22,7 +22,7 @@ i18n
       uz: { translations: uzLocales },
       yz: { translations: yzLocales },
       ru: { translations: ruLocales },
-      eng: { translations: engLocales },
+      en: { translations: engLocales },
     },
     lng,
     fallbackLng: defaultLang.value,

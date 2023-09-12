@@ -18,7 +18,7 @@ export const allLangs = [
   },
   {
     label: "english",
-    value: "eng",
+    value: "en",
     systemValue: kkKZ,
     icon: "",
   },
