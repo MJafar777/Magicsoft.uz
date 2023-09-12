@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { BreacPointsType } from "../../../types/breacPointTypes";
 
-
-
 interface Props {
   src: string;
   alt: string;
@@ -15,6 +13,15 @@ export const SecondaryNewsWrapper = styled.div<BreacPointsType>`
   margin-top: 120px;
   @media ${(props) => props.theme.breakpoints.lg} {
     padding: 0 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-top: 80px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 60px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 40px;
   }
 `;
 

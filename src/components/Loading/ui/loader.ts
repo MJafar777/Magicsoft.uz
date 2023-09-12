@@ -35,7 +35,7 @@ export const ChildLoader = styled.div<Props>`
 export const Paragraph = styled.p`
   width: 80%;
   color: #fff;
-  font-family: Concretica;
+  /* font-family: Concretica; */
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
