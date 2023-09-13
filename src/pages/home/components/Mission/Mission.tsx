@@ -1,5 +1,5 @@
-import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
-import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
+import ButtonEscort from "../../../../components/buttons/buttonEscort/ButtonEscort";
+import ButtonMagnet from "../../../../components/buttons/magnetikButton/ButtonMagnetik";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
 
 import {

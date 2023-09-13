@@ -94,7 +94,7 @@ const Navbar = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem>
+      <LinkItem className="lg-remove"> 
         <NavLink to="/blog" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (
@@ -111,7 +111,7 @@ const Navbar = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem>
+      <LinkItem className="">
         <NavLink to="/about-us" onClick={() => setDisplay(false)}>
           {({ isActive }) =>
             isActive ? (

@@ -24,18 +24,18 @@ export const HeaderWrapper = styled.header<BreacPointsType>`
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    max-width: 1321px;
+    max-width: 1440px;
     height: 88px;
     padding: 0 26px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    max-width: 834px;
+    max-width: 992px;
     height: 54px;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    max-width: 747px;
+    max-width: 769px;
     height: 54px;
     padding: 0 11px;
   }

@@ -2,44 +2,77 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const MainSectionWrapper = styled.div<BreacPointsType>`
-  padding-top: 20px;
   max-width: 1652px;
+  min-height: 787px;
+  height: calc(100vh - 111px);
   margin: 0 auto;
 
-  /* height: 100vh; */
+  .mainSectionMobileBox {
+    display: none;
+  }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    padding: 20px 20px;
+    width: 100%;
+    padding: 0px;
+    max-width: 1440px;
+    min-height: 630px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    padding: 35px 15px;
+    width: 100%;
+    padding: 0px;
+    max-width: 992px;
+    min-height: 441px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 768px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 25px 15px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+    .mainSectionMobileBox {
+      display: inline-block;
+    }
+
+    .mainSectionDesctopBox {
+      display: none;
+    }
   }
 `;
 
 export const MainSectionContainer = styled.section<BreacPointsType>`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #111114;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 90px 135px 54px 135px;
   border-radius: 48px 48px 0px 0px;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    padding: 50px 135px 42px 120px;
+    width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 20px 105px 20px 105px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    padding: 50px 50px 40px 40px;
-    border-radius: 26px 26px 0px 0px;
+    margin: 0 auto;
+    padding: 77px 40px 77px 40px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 37px 40px 27px 40px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
+    gap: 20px;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background: transparent;
@@ -152,8 +185,8 @@ export const MainSectionRight = styled.section<BreacPointsType>`
   position: relative;
   width: 50%;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    display: none;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 90%;
   }
 `;
 

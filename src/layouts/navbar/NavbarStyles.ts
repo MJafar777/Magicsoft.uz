@@ -17,6 +17,12 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
     gap: 13px;
   }
 
+  @media ${(props) => props.theme.breakpoints?.lg} {
+    .lg-remove {
+      display: none;
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     display: none;
   }

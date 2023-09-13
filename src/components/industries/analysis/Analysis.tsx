@@ -10,13 +10,11 @@ import {
   ValueOfAnalysis,
   WhichSubject,
 } from "./AnalysisStyles";
-import { AnalysisData as TravelData} from "../../../api/data/travels";
+import { AnalysisData as TravelData } from "../../../api/data/travels";
 import { AnalysisData as FintechData } from "../../../api/data/fintech";
 import { AnalysisData as RetailData } from "../../../api/data/retail";
 
-
 const Analysis = () => {
-
   const loaction = useLocation();
   const [data, setData] = useState(FintechData);
 
@@ -72,7 +70,7 @@ const Analysis = () => {
               // prefix="EUR "
               suffix=" +"
               onEnd={() => console.log("Ended! 👏")}
-              onStart={() => .log("Started! 💨")}
+              onStart={() => console.log("Started! 💨")}
             />
           </ValueOfAnalysis>
           <WhichSubject>{data.developer.subject}</WhichSubject>

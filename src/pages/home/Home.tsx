@@ -1,6 +1,6 @@
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { Footer } from "../../layouts";
-import { HomePageContainer, ScrollPageContainer } from "./HomeStyles";
+import { HeaderReplace } from "./HomeStyles";
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
 import Feedback from "./components/Feedback/Feedback";
@@ -16,76 +16,60 @@ const Home = () => {
 
   console.log(WWidth);
 
-  if (WWidth < 1200) {
-    return (
-      <>
-        <MainSection />
+  // if (WWidth < 1200) {
+  //   return (
+  //     <>
+  //       <HeaderReplace />
 
-        <LeadingBrandsSection />
+  //       <MainSection />
 
-        <DigitalExperience />
+  //       <LeadingBrandsSection />
 
-        <Services />
+  //       {/* <DigitalExperience /> */}
 
-        <OurTechnologies />
+  //       <Services />
 
-        <Mission />
+  //       <OurTechnologies />
 
-        <OurCommunity />
+  //       {/* <Mission /> */}
 
-        <SuccessfulProjects />
+  //       <OurCommunity />
 
-        <Feedback />
+  //       <SuccessfulProjects />
 
-        <Footer />
-      </>
-    );
-  }
+  //       {/* <Feedback /> */}
+
+  //       <Footer />
+  //     </>
+  //   );
+  // }
 
   return (
-    <HomePageContainer>
-      <ReactPageScroller>
-        <ScrollPageContainer>
-          <MainSection />
-        </ScrollPageContainer>
+    <>
+      <HeaderReplace />
+      {/* <ReactPageScroller> */}
 
-        <ScrollPageContainer className="scrollPageContainerNoPaddingTop">
-          <LeadingBrandsSection />
-        </ScrollPageContainer>
+      <MainSection />
 
-        <ScrollPageContainer className="scrollPageContainerNoPaddingTop">
-          <DigitalExperience />
-        </ScrollPageContainer>
+      <LeadingBrandsSection />
 
-        <ScrollPageContainer>
-          <Services />
-        </ScrollPageContainer>
+      {/* <DigitalExperience /> */}
 
-        <ScrollPageContainer>
-          <OurTechnologies />
-        </ScrollPageContainer>
+      <Services />
 
-        <ScrollPageContainer className="scrollPageContainerNoPaddingTop">
-          <Mission />
-        </ScrollPageContainer>
+      <OurTechnologies />
 
-        <ScrollPageContainer>
-          <OurCommunity />
-        </ScrollPageContainer>
+      {/* <Mission /> */}
 
-        <ScrollPageContainer className="scrollPageContainerNoPaddingTop">
-          <SuccessfulProjects />
-        </ScrollPageContainer>
+      <OurCommunity />
 
-        <ScrollPageContainer>
-          <Feedback />
-        </ScrollPageContainer>
+      <SuccessfulProjects />
 
-        <ScrollPageContainer>
-          <Footer />
-        </ScrollPageContainer>
-      </ReactPageScroller>
-    </HomePageContainer>
+      <Feedback />
+
+      <Footer />
+      {/* </ReactPageScroller> */}
+    </>
   );
 };
 

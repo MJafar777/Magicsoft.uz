@@ -1,4 +1,4 @@
-import ButtonEscort from "../../../../components/buttons/ButtonEscort/ButtonEscort";
+import ButtonEscort from "../../../../components/buttons/buttonEscort/ButtonEscort";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
 import {
   ServicesLeft,
@@ -16,7 +16,7 @@ import {
 import gif from "../../../../assets/gif.gif";
 
 import { borderVectorServices } from "../../../../assets/images";
-import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
+import ButtonMagnet from "../../../../components/buttons/magnetikButton/ButtonMagnetik";
 import useWindowWidth from "../../../../hooks/useWindowWidth";
 
 const Services = () => {

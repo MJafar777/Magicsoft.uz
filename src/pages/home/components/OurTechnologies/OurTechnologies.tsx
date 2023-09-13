@@ -1,5 +1,5 @@
 import { tecCardImae1, tecCardImae2 } from "../../../../assets/images";
-import ButtonIfo from "../../../../components/buttons/ButtonInfo/ButtonIfo";
+import ButtonIfo from "../../../../components/buttons/buttonInfo/ButtonIfo";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
 import {
   OurTechnologiesCard,
