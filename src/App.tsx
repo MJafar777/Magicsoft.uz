@@ -21,6 +21,7 @@ function App() {
             <Header />
             <Outlet />
             {location.pathname != "/" ? <Footer /> : ""}
+            
           </ThemeLocalization>
         </Theme>
       </ButtonContextProvider>

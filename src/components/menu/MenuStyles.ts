@@ -90,11 +90,11 @@ export const BodyOfMenu = styled.div`
   padding: 0;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    padding: 80px;
+    padding: 50px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {
