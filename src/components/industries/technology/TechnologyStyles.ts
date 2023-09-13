@@ -8,7 +8,8 @@ export const TechnologyWrapper = styled.div`
   background: #000;
   padding-top: 150px;
   padding-bottom: 128px;
-  width: 80%;
+  width: 100%;
+  padding-left: 288px;
   margin: 0 auto;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -27,7 +28,6 @@ export const TitleInovation = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: 109.8%;
-  padding-left: 5%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 68.8px;

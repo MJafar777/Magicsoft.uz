@@ -3,7 +3,7 @@ import next from "../../../assets/about/next.svg";
 import pre from "../../../assets/about/pre.svg";
 
 export const CommentsWrapper = styled.div`
-  height: 90vh;
+  height: fit-content;
   width: 90%;
   margin: 0 auto;
   margin-top: 400px;

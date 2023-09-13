@@ -5,7 +5,7 @@ export interface CardProp {
 export const SolutionWrapper = styled.div`
   width: 100%;
   background-color: #000;
-  padding: 86px 5% 130px 10%;
+  padding: 86px 5% 130px 288px;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding: 80px 0 70px 0;
@@ -26,7 +26,6 @@ export const Subtile = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%; /* 27.56px */
-  padding-left: 5%;
   margin-bottom: 30px;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -42,7 +41,6 @@ export const SolutionTitle = styled.div`
   font-weight: 500;
   line-height: 109.8%; /* 94.428px */
   margin-bottom: 90px;
-  padding-left: 5%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 68.8px;

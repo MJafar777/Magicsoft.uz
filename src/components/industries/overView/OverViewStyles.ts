@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const OverViewWraper = styled.div`
   height: fit-content;
-  padding-left: 230px;
+  padding-left: 288px;
   background-color: #111114;
   
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -64,7 +64,7 @@ export const TextOfOverView = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 137.8%;
-  padding: 0 387px 122px 157px;
+  padding: 0 387px 122px 0;
 
   
   @media ${(prop) => prop.theme.breakpoints.xxl} {

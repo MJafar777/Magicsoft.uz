@@ -27,7 +27,9 @@ const uz = {
   teaxtareaMessage: "Xabaringiz...",
   Submit: "Yuborish",
   contactFormSubtitle:
-    "Ushbu soʻrovni yuborish orqali siz bizning maxfiylik siyosatimizga rozilik bildirasiz. Maxfiylik siyosati bizning maxfiylik siyosatimizga rozilik bildirasiz",
+    "Ushbu soʻrovni yuborish orqali siz bizning maxfiylik siyosatimizga rozilik bildirasiz.",
+  privancy: " Maxfiylik siyosati",
+  contactFormSubtitleCon: "maxfiylik siyosatimizga rozilik bildirdiz.",
   //about page
 
   //navbar

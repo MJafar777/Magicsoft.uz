@@ -17,7 +17,7 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
 
 export const ContentOfHeader = styled.div`
   position: absolute;
-  left: 12%;
+  left: 288px;
 `;
 
 export const BaseLinks = styled.div`

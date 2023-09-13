@@ -29,8 +29,8 @@ const en = {
   teaxtareaMessage: "Your message...",
   Submit:'Submit',
   contactFormSubtitle:
-    "By sending this request you agree to our privacy policy. Privacy policy ",
-  privancy:' Privacy policy',
+    "By sending this request you agree to our privacy policy. ",
+  privancy:' Privacy policy ',
   contactFormSubtitleCon:'agree to our privacy policy.'
   };
 

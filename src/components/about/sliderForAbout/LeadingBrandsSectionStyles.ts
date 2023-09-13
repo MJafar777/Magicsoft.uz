@@ -4,7 +4,7 @@ import { BreacPointsType } from "../../../types/breacPointTypes";
 export const LeadingBrandsImgWrapper = styled.div`
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;

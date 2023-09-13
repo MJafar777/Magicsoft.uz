@@ -7,7 +7,7 @@ interface WrapperProp {
 export const OurTeamWrapper = styled.div<WrapperProp>`
   width: 100%;
   height: fit-content;
-  margin-top: 146px;
+  /* margin-top: 146px; */
   background-color: #1f2020;
   background-image: url(${(prop) => prop.bg});
   padding: 129px 0 70px 0;
@@ -92,7 +92,21 @@ export const InfoEachWorker = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    div {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 200px;
+      align-self: center;
+    }
+  }
   @media ${(prop) => prop.theme.breakpoints.sm} {
     width: 100%;
     justify-content: center;
@@ -101,12 +115,14 @@ export const InfoEachWorker = styled.div`
 `;
 
 export const NameOfWorker = styled.div`
+  width: 100%;
   text-align: center;
   font-family: Archivo-Regular;
   color: yellow;
+  font-size: 20px;
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
 
@@ -114,8 +130,8 @@ export const Specialty = styled.div`
   text-align: center;
   color: white;
   font-family: Archivo-Regular;
-
+  font-size: 20px;
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    font-size: 12px;
+    font-size: 18px;
   }
 `;
