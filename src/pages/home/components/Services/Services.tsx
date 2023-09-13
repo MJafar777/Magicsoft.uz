@@ -17,8 +17,11 @@ import gif from "../../../../assets/gif.gif";
 
 import { borderVectorServices } from "../../../../assets/images";
 import ButtonMagnet from "../../../../components/buttons/MagnetikButton/ButtonMagnetik";
+import useWindowWidth from "../../../../hooks/useWindowWidth";
 
 const Services = () => {
+  const wWidth = useWindowWidth();
+
   return (
     <ServicesWrapper>
       <ServicesLeft>
@@ -65,19 +68,23 @@ const Services = () => {
           </div>
         </ServicesLeftItem>
 
-        <ServicesLeftItem>
-          <ServicesLeftItemNumber className="yellovNumber">
-            <p>4</p>
-          </ServicesLeftItemNumber>
-          <div>
-            <ServicesLeftItemTitle>NextGen Services</ServicesLeftItemTitle>
-            <ServicesLeftItemDescription>
-              We leverage emerging technologies like blockchain, the metaverse,
-              and Web3 to transform how businesses and people interact with each
-              other.
-            </ServicesLeftItemDescription>
-          </div>
-        </ServicesLeftItem>
+        {wWidth < 1200 ? (
+          <ServicesLeftItem>
+            <ServicesLeftItemNumber className="yellovNumber">
+              <p>4</p>
+            </ServicesLeftItemNumber>
+            <div>
+              <ServicesLeftItemTitle>NextGen Services</ServicesLeftItemTitle>
+              <ServicesLeftItemDescription>
+                We leverage emerging technologies like blockchain, the
+                metaverse, and Web3 to transform how businesses and people
+                interact with each other.
+              </ServicesLeftItemDescription>
+            </div>
+          </ServicesLeftItem>
+        ) : (
+          ""
+        )}
 
         <ServicesLeftItemBtn>
           <ButtonMagnet>

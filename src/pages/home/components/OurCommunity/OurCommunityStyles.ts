@@ -3,7 +3,8 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const OurCommunityWrapper = styled.section<BreacPointsType>`
   max-width: 1163px;
-  margin: 200px auto;
+  /* margin: 200px auto; */
+  margin: 0px auto;
 
   @media ${(props) => props.theme.breakpoints.md} {
     margin: 20px auto;

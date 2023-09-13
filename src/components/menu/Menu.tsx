@@ -36,10 +36,8 @@ const Menu = () => {
     }
   }, [open]);
 
-
   return (
     <MenuWrapper open={open}>
-      
       <NavOfmenu>
         <SocialWrapper>
           <SocialLink>
@@ -74,6 +72,15 @@ const Menu = () => {
       <BodyOfMenu>
         <Title>Menu</Title>
         <ContainerOfPageOfSite>
+          <EachLinkOfPage onClick={() => setOpen(false)}>
+            <Link to="/">
+              <>
+                <span></span> <p>Home</p>
+              </>
+              <img src={Arrow} alt="" />
+            </Link>
+          </EachLinkOfPage>
+
           <EachLinkOfPage onClick={() => setOpen(false)}>
             <Link to="/news">
               <>
@@ -133,7 +140,6 @@ const Menu = () => {
           </EachLinkOfPage>
         </ContainerOfPageOfSite>
       </BodyOfMenu>
-
     </MenuWrapper>
   );
 };

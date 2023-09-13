@@ -1,8 +1,8 @@
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import {
-  Span,
-  Contain,
-  Loading,
+  // Span,
+  // Contain,
+  // Loading,
   Paragraph,
   ChildLoader,
   ImgParagraph,
@@ -11,34 +11,36 @@ import {
 } from "./loader";
 import { bgImgLoader, loader, rectangle } from "../../../assets";
 
+import "./helper.css";
+
 const MyLoader: FC = () => {
-  const [loadingPercentage, setLoadingPercentage] = useState(0);
+  // const [loadingPercentage, setLoadingPercentage] = useState(0);
 
-  console.log(loadingPercentage);
+  // console.log(loadingPercentage);
 
-  useEffect(() => {
-    const updatePercentage = () => {
-      const totalBytes =
-        window.performance
-          ?.getEntriesByType("resource")
-          .reduce((total, resource) => total + resource.encodedBodySize, 0) ||
-        1;
-      const loadedBytes =
-        window.performance
-          ?.getEntriesByType("resource")
-          .reduce((loaded, resource) => loaded + resource.transferSize, 0) || 0;
-      const percentage = (loadedBytes / totalBytes) * 100;
-      setLoadingPercentage(percentage);
-    };
+  // useEffect(() => {
+  //   const updatePercentage = () => {
+  //     const totalBytes =
+  //       window.performance
+  //         ?.getEntriesByType("resource")
+  //         .reduce((total, resource) => total + resource.encodedBodySize, 0) ||
+  //       1;
+  //     const loadedBytes =
+  //       window.performance
+  //         ?.getEntriesByType("resource")
+  //         .reduce((loaded, resource) => loaded + resource.transferSize, 0) || 0;
+  //     const percentage = (loadedBytes / totalBytes) * 100;
+  //     setLoadingPercentage(percentage);
+  //   };
 
-    window.addEventListener("load", updatePercentage);
+  //   window.addEventListener("load", updatePercentage);
 
-    return () => {
-      window.removeEventListener("load", updatePercentage);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("load", updatePercentage);
+  //   };
+  // }, []);
 
-  return loadingPercentage ? (
+  return (
     <LoaderWrapper>
       <ChildLoader bgImgLoader={bgImgLoader}>
         <Paragraph>
@@ -46,17 +48,17 @@ const MyLoader: FC = () => {
           <ImgParagraph src={rectangle} alt="rectangle" />
           {""}
           <ImgParagraphTwo src={loader} alt="loader" />
-          <Contain>
+          {/* <Contain>
             <Loading>
               <Span></Span>
             </Loading>{" "}
             {loadingPercentage.toFixed(2)}/100%
-          </Contain>
+          </Contain> */}
         </Paragraph>
         <Loadering />
       </ChildLoader>
     </LoaderWrapper>
-  ) : null;
+  );
 };
 
 export default MyLoader;
@@ -74,7 +76,8 @@ const Loadering = () => {
         </mask>
       </defs>
       <g stroke-linecap="round" stroke-width="8" stroke-dasharray="32 32">
-        <g stroke="hsl(193,90%,50%)">
+        {/* <g stroke="hsl(193,90%,50%)"> */}
+        <g stroke="hsl(62.88209606986899, 89.80392156862744%, 50%)">
           <line className="pl__line1" x1="4" y1="48" x2="4" y2="80" />
           <line className="pl__line2" x1="19" y1="48" x2="19" y2="80" />
           <line className="pl__line3" x1="34" y1="48" x2="34" y2="80" />
@@ -93,7 +96,11 @@ const Loadering = () => {
             <line className="pl__line9" x1="124" y1="48" x2="124" y2="80" />
           </g>
         </g>
-        <g stroke="hsl(283,90%,50%)" mask="url(#pl-mask)">
+        {/* <g stroke="hsl(283,90%,50%)" mask="url(#pl-mask)"> */}
+        <g
+          stroke="hsl(19.912663755458517, 89.80392156862744%, 50%)"
+          mask="url(#pl-mask)"
+        >
           <line className="pl__line1" x1="4" y1="48" x2="4" y2="80" />
           <line className="pl__line2" x1="19" y1="48" x2="19" y2="80" />
           <line className="pl__line3" x1="34" y1="48" x2="34" y2="80" />

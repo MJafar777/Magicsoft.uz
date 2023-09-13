@@ -1,0 +1,2061 @@
+[33mcommit 87deba5a651e8b3f676a39b8acaa286b38e6152d[m[33m ([m[1;36mHEAD -> [m[1;32mhp[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 9de0531 ba0df74
+Author: JasurbekIsokov <94431356+JasurbekIsokov@users.noreply.github.com>
+Date:   Tue Sep 12 17:25:04 2023 +0500
+
+    Merge pull request #5 from JasurbekIsokov/hp
+    
+    Hp
+
+[33mcommit ba0df74086c8acd6f32d545c98240a1029ff7c71[m[33m ([m[1;31morigin/hp[m[33m)[m
+Merge: 0d17d62 a0f355e
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 17:23:51 2023 +0500
+
+    Merge branch 'Behzod' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit a0f355eb8dedc50514349d52cc4cbcdf5cb631ad[m[33m ([m[1;31morigin/Behzod[m[33m)[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 17:22:25 2023 +0500
+
+    fixed nav
+
+ src/layouts/navbar/Navbar.tsx | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 0d17d625b2dc31844fb0cd3cdf61df68981ade0b[m
+Merge: 552ec85 f877412
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 17:18:09 2023 +0500
+
+    Merge branch 'Behzod' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit f87741283deb34431173cecd1c12c5e2ff782bbd[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 17:17:54 2023 +0500
+
+    translate page of about
+
+ src/components/about/analysis/Analysis.tsx         | 11 [32m++++[m[31m---[m
+ src/components/about/banner/Baner.tsx              | 15 [32m+++[m[31m------[m
+ src/components/about/comments/Comments.tsx         |  8 [32m+++[m[31m--[m
+ src/components/about/contacts/Contact.tsx          | 28 [32m++++++++[m[31m--------[m
+ .../about/headerOfAbout/HeaderOfAbout.tsx          |  6 [32m++[m[31m--[m
+ src/components/about/ourTeam/OurTeam.tsx           | 12 [32m+++[m[31m----[m
+ src/locales/langs/en.ts                            | 37 [32m+++++++++++++++++++[m[31m---[m
+ src/locales/langs/ru.ts                            | 26 [32m+++++++++++++++[m
+ src/locales/langs/uz.ts                            | 36 [32m++++++++++++++++[m[31m-----[m
+ 9 files changed, 127 insertions(+), 52 deletions(-)
+
+[33mcommit 552ec85a4873fe0d468235c898f8cd9a4d7cc061[m[33m ([m[1;31morigin/user[m[33m, [m[1;32muser[m[33m)[m
+Merge: fa10ab6 b20eb5c
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 17:15:20 2023 +0500
+
+    finished
+
+[33mcommit fa10ab61a50674424cd349a770378a90c956ec5d[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 15:05:58 2023 +0500
+
+    ss
+
+ src/App.tsx                          |   1 [31m-[m
+ src/components/Loading/ui/Loader.tsx | 127 [32m++++++++++[m[31m---[m
+ src/components/Loading/ui/helper.css | 344 [32m+++++++++++++++++++++++++++++++++++[m
+ src/components/Loading/ui/loader.ts  |   4 [32m+[m[31m-[m
+ 4 files changed, 447 insertions(+), 29 deletions(-)
+
+[33mcommit b20eb5c53be461581feea403a03ae72a51c88842[m
+Merge: 9b271e1 c913b96
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 14:19:08 2023 +0500
+
+    merge with hp
+
+[33mcommit 9b271e1314e90d188457f05a5373cb8407190b6d[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 12:28:32 2023 +0500
+
+    function of changelanguage connect with select and write one translate json and fixed font-family with string
+
+ src/api/data/retail.ts                               |  2 [32m+[m[31m-[m
+ src/components/about/analysis/AnalysisStyles.ts      |  2 [32m+[m[31m-[m
+ src/components/about/comments/CommentStyles.ts       |  6 [32m+++[m[31m---[m
+ src/components/menu/MenuStyles.ts                    |  4 [32m++[m[31m--[m
+ src/components/news&Blogs/navbar/ui/navbar.ts        |  4 [32m++[m[31m--[m
+ .../allProjects/components/cards/ui/cardsProjects.ts |  4 [32m++[m[31m--[m
+ .../footer/components/boxMenuFirst/boxMenuFirst.ts   |  2 [32m+[m[31m-[m
+ .../footer/components/boxMenuSecond/boxMenuSecond.ts |  2 [32m+[m[31m-[m
+ src/layouts/footer/components/scrollTop/scrollTop.ts |  2 [32m+[m[31m-[m
+ .../components/headerFeatures/HeaderFeatures.tsx     | 20 [32m+++++++++++++++[m[31m-----[m
+ src/layouts/navbar/Navbar.tsx                        |  7 [32m+++++[m[31m--[m
+ src/locales/config-lang.ts                           |  2 [32m+[m[31m-[m
+ src/locales/i18n.ts                                  |  4 [32m++[m[31m--[m
+ src/locales/langs/en.ts                              |  8 [32m++++++++[m
+ src/locales/langs/eng.ts                             |  5 [31m-----[m
+ src/locales/langs/index.ts                           |  2 [32m+[m[31m-[m
+ src/locales/langs/ru.ts                              |  2 [32m++[m
+ src/locales/langs/uz.ts                              | 11 [32m+++++++++++[m
+ src/pages/secondaryNews/ui/secondary.ts              |  6 [32m++[m[31m----[m
+ 19 files changed, 61 insertions(+), 34 deletions(-)
+
+[33mcommit 093e6c081313b54928a907df01da64c469c1d641[m
+Merge: 19c97cd 9de0531
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 12:15:23 2023 +0500
+
+    Merge branch 'main' of https://github.com/JasurbekIsokov/MagicSoft into user
+
+[33mcommit c913b96f1879cf62ad58f4f7673507a5dbd7fab5[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 12:14:28 2023 +0500
+
+    loading page
+
+ src/App.tsx                                        |  1 [31m-[m
+ src/components/Loading/ui/Loader.tsx               | 98 [32m++++++++++++++++++[m[31m----[m
+ src/components/Loading/ui/loader.ts                |  2 [32m+[m[31m-[m
+ src/components/news&Blogs/miniCard/ui/MiniCard.tsx | 34 [32m+++++++[m[31m-[m
+ .../components/cards/ui/CardsProject.tsx           | 15 [32m+++[m[31m-[m
+ src/pages/blogs/ui/blogs.ts                        |  9 [32m++[m
+ src/pages/news/ui/news.ts                          | 11 [32m++[m[31m-[m
+ src/pages/platformsProducts/ui/platformProducts.ts |  9 [32m++[m
+ src/pages/secondaryNews/ui/Secondary.tsx           | 71 [32m++++++++[m[31m--------[m
+ src/pages/secondaryNews/ui/secondary.ts            | 11 [32m++[m[31m-[m
+ 10 files changed, 200 insertions(+), 61 deletions(-)
+
+[33mcommit 9de0531fb59ea4f09d789ba9640bd59f3275f93e[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 12 12:13:19 2023 +0500
+
+    Added React-scroll-page
+
+ package-lock.json                                  | 55 [32m++++++++++++++[m[31m-[m
+ package.json                                       |  1 [32m+[m
+ src/App.tsx                                        |  8 [32m++[m[31m-[m
+ src/pages/home/Home.tsx                            | 80 [32m+++++++++++++++++++[m[31m---[m
+ src/pages/home/HomeStyles.ts                       | 16 [32m+++++[m
+ .../DigitalExperience/DigitalExperienceStyles.ts   |  7 [32m+[m[31m-[m
+ .../home/components/Feedback/FeedbackStyles.ts     | 24 [32m++++[m[31m---[m
+ .../LeadingBrandsSectionStyles.ts                  |  1 [32m+[m
+ .../components/MainSection/MainSectionStyles.ts    |  6 [32m+[m[31m-[m
+ src/pages/home/components/Mission/MissionStyles.ts |  6 [32m+[m[31m-[m
+ .../components/OurCommunity/OurCommunityStyles.ts  |  3 [32m+[m[31m-[m
+ .../OurTechnologies/OurTechnologiesStyles.ts       |  9 [32m++[m[31m-[m
+ src/pages/home/components/Services/Services.tsx    | 33 [32m+++++[m[31m----[m
+ .../home/components/Services/ServicesStyles.ts     | 14 [32m+++[m[31m-[m
+ .../SuccessfulProjects/SuccessfulProjectsStyles.ts | 10 [32m+++[m
+ vite.config.ts                                     | 12 [32m+++[m[31m-[m
+ 16 files changed, 230 insertions(+), 55 deletions(-)
+
+[33mcommit 001617501328f67496da23a7594a2abd60f03c92[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 11:56:06 2023 +0500
+
+    dropdow for language and conext
+
+ src/context/ButtonContext.tsx                      | 19 [32m+++++[m
+ .../components/headerFeatures/HeaderFeatures.tsx   | 44 [32m++++++++++[m[31m--[m
+ .../headerFeatures/HeaderFeaturesStyles.ts         | 46 [32m+++++++++++[m[31m-[m
+ src/layouts/navbar/Navbar.tsx                      | 83 [32m++++++++++++++[m[31m--------[m
+ src/layouts/navbar/NavbarStyles.ts                 | 36 [32m+++++++[m[31m---[m
+ 5 files changed, 185 insertions(+), 43 deletions(-)
+
+[33mcommit f9b278b1a9b4b28f3a06a0a71b2c7338d109acea[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 12 10:30:59 2023 +0500
+
+    Added Home link in Navbar
+
+ src/components/industries/analysis/Analysis.tsx        |  2 [32m+[m[31m-[m
+ src/components/menu/Menu.tsx                           | 12 [32m+++++++++[m[31m---[m
+ .../allProjects/components/cards/ui/CardsProject.tsx   |  2 [31m--[m
+ src/layouts/navbar/Navbar.tsx                          | 18 [32m+++++++++++++++++[m[31m-[m
+ src/pages/home/components/Feedback/Feedback.tsx        |  2 [32m+[m[31m-[m
+ .../home/components/OurCommunity/OurCommunity.tsx      |  2 [32m+[m[31m-[m
+ .../SuccessfulProjects/SuccessfulProjects.tsx          |  4 [32m++[m[31m--[m
+ 7 files changed, 31 insertions(+), 11 deletions(-)
+
+[33mcommit 40cad3440625e936485a3b956d25ad14caaa4641[m
+Merge: 7b617f9 9672cea
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 12 09:48:09 2023 +0500
+
+    Merge branch 'Behzod' of github.com:JasurbekIsokov/MagicSoft
+
+[33mcommit ef5778b1293d7267b62e6116fb404041923aee3b[m
+Merge: 4a40a90 9672cea
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 09:19:12 2023 +0500
+
+    Merge branch 'Behzod' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit 9672cea9b85c3df21ddddbc1b368b370d9c5d7d7[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 12 09:18:55 2023 +0500
+
+    dropdow work
+
+ .../industries/header/HeaderOfIndustriesStyles.ts  |  2 [32m+[m[31m-[m
+ src/layouts/navbar/Navbar.tsx                      | 70 [32m++++++++++++[m[31m----------[m
+ src/layouts/navbar/NavbarStyles.ts                 | 50 [32m+++++++++++++[m[31m---[m
+ 3 files changed, 84 insertions(+), 38 deletions(-)
+
+[33mcommit 4a40a904f7c9279a4ddc6e138875e787afc49e31[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 09:18:42 2023 +0500
+
+    d
+
+ .../allProjects/components/filters/ui/FilterAllProjects.tsx              | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit 2e256f97d33b86df6b883ea375efe74ae8bd7819[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 12 08:48:49 2023 +0500
+
+    merging
+
+ package-lock.json | 785 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m---[m
+ package.json      |   1 [32m+[m
+ vite.config.ts    |   2 [32m+[m[31m-[m
+ 3 files changed, 757 insertions(+), 31 deletions(-)
+
+[33mcommit 19c97cde551ad59bbecdd6e484e5d99909dde506[m
+Merge: 62bad1b 201c076
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 17:27:25 2023 +0500
+
+    Merge branch 'hp' of https://github.com/JasurbekIsokov/MagicSoft into user
+
+[33mcommit 201c076136b3b9685e5cb739834b5d7829e6eb27[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 17:26:48 2023 +0500
+
+    create new work
+
+ index.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 7b617f9e20621bf5df88dcdf7038f5a18a05004d[m[33m ([m[1;31morigin/demo[m[33m)[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 16:47:13 2023 +0500
+
+    Finished Feedback and SuccessfulProjects sections
+
+ src/layouts/navbar/Navbar.tsx                      |   6 [32m+[m[31m-[m
+ src/pages/home/Home.tsx                            |   8 [32m+[m[31m-[m
+ src/pages/home/components/Feedback/Feedback.tsx    |  94 [32m++++++++++++[m
+ .../home/components/Feedback/FeedbackCard.tsx      |  28 [32m++++[m
+ .../home/components/Feedback/FeedbackStyles.ts     | 159 [32m+++++++++++++++++++++[m
+ .../SuccessfulProjects/SuccessfulProjects.tsx      | 141 [32m++++++++++++++++++[m
+ .../SuccessfulProjects/SuccessfulProjectsStyles.ts | 136 [32m++++++++++++++++++[m
+ 7 files changed, 565 insertions(+), 7 deletions(-)
+
+[33mcommit 62bad1bc1b82ad98d5c22315977ee8748729c7ac[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 16:20:57 2023 +0500
+
+    d
+
+ index.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 7087fd1871a8aa4e8b2dd881a5f48f56926e8892[m
+Merge: 6f58790 8b6441b
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 16:19:08 2023 +0500
+
+    Merge branch 'Behzod' of github.com:JasurbekIsokov/MagicSoft
+
+[33mcommit 6f58790a3ebb0c8fe30c765c5650468d4b2105f3[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 16:17:51 2023 +0500
+
+    Finished Mission
+
+ src/pages/home/Home.tsx                            |   3 [32m+[m
+ src/pages/home/components/Mission/Mission.tsx      |  92 [32m++++++++[m
+ src/pages/home/components/Mission/MissionStyles.ts | 240 [32m+++++++++++++++++++++[m
+ 3 files changed, 335 insertions(+)
+
+[33mcommit b99a3467d50d0393cfd6f8663636208a2cad9e53[m
+Merge: 2e7ca91 8b6441b
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 16:08:08 2023 +0500
+
+    merging
+
+[33mcommit 2e7ca91b528b3ada3b039108ccd33b8161c3fd04[m
+Merge: ba0165a 1a3dd7c
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 15:57:07 2023 +0500
+
+    merging
+
+[33mcommit 8b6441b501995634d3c171324989f2915c8e72e7[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 15:55:09 2023 +0500
+
+    add jafar image in our team components
+
+ src/assets/about/Jafar.png               | Bin [31m0[m -> [32m138601[m bytes
+ src/assets/about/Jafar.svg               |  10 [32m++++++++++[m
+ src/assets/about/index.ts                |   2 [32m+[m[31m-[m
+ src/components/about/ourTeam/OurTeam.tsx |   4 [32m++[m[31m--[m
+ 4 files changed, 13 insertions(+), 3 deletions(-)
+
+[33mcommit 53212f28f9af11b3ae3bdc29fab3b677364c9784[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 15:40:04 2023 +0500
+
+    contact link from product
+
+ src/components/about/contacts/Contact.tsx                    | 2 [32m+[m[31m-[m
+ src/components/platformProducts/navbar/ui/PlatformNavbar.tsx | 9 [32m++++++++[m[31m-[m
+ src/layouts/navbar/Navbar.tsx                                | 6 [32m+++[m[31m---[m
+ src/layouts/navbar/NavbarStyles.ts                           | 9 [32m++++[m[31m-----[m
+ src/pages/home/Home.tsx                                      | 6 [32m++++++[m
+ src/routes/root.tsx                                          | 2 [32m++[m
+ 6 files changed, 24 insertions(+), 10 deletions(-)
+
+[33mcommit 3a248a793cab8cbef9bc41370f1e5778b318873d[m
+Merge: 1a3dd7c 7332de7
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 15:10:58 2023 +0500
+
+    Merge branch 'Behzod' of github.com:JasurbekIsokov/MagicSoft into demo
+
+[33mcommit 1a3dd7c9ad95da8e8d193861f4942d902a2bdc0a[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 15:09:46 2023 +0500
+
+    Fixed styles
+
+ src/App.tsx                                                          | 2 [32m+[m[31m-[m
+ .../home/components/DigitalExperience/DigitalExperienceStyles.ts     | 1 [32m+[m
+ src/pages/home/components/OurCommunity/OurCommunityStyles.ts         | 5 [32m+++++[m
+ 3 files changed, 7 insertions(+), 1 deletion(-)
+
+[33mcommit 7332de70640ab54bbb7efde4da0e6c14a2b7ab6a[m
+Merge: c397fba f134eb8
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 15:09:29 2023 +0500
+
+    merge with main
+
+[33mcommit c397fbafb6a617ea350e6714096b18a9f9a6c77f[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 15:06:39 2023 +0500
+
+    merge with main
+
+ src/assets/nav/folder.svg          |  7 [32m+++++++[m
+ src/layouts/navbar/Navbar.tsx      | 22 [32m++++++++++++++++++++[m[31m--[m
+ src/layouts/navbar/NavbarStyles.ts | 36 [32m++++++++++++++++++++++++++++++++++[m[31m--[m
+ 3 files changed, 61 insertions(+), 4 deletions(-)
+
+[33mcommit f134eb825b20cc7b9a65603c434417da0557eb73[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 15:03:44 2023 +0500
+
+    Finished Our Texnoligies
+
+ src/App.tsx                                        |   2 [32m+[m[31m-[m
+ .../components/OurTechnologies/OurTechnologies.tsx |  14 [32m+[m[31m--[m
+ .../OurTechnologies/OurTechnologiesStyles.ts       | 107 [32m++++++++++++++++++++[m[31m-[m
+ 3 files changed, 112 insertions(+), 11 deletions(-)
+
+[33mcommit ba0165a5c9b027b2f58e447990337b763001bb67[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 15:00:32 2023 +0500
+
+    as
+
+ src/App.tsx                   | 1 [32m+[m
+ src/layouts/header/Header.tsx | 2 [31m--[m
+ src/layouts/navbar/Navbar.tsx | 2 [32m+[m[31m-[m
+ 3 files changed, 2 insertions(+), 3 deletions(-)
+
+[33mcommit 9b8fdd04af7c10c2bc893a158fbf6d1d8dcbcde3[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 12:30:11 2023 +0500
+
+    Our Technologies section
+
+ src/assets/images/index.ts                         |   2 [32m+[m
+ src/assets/images/tecCardImage1.svg                |   9 [32m++[m
+ src/assets/images/tecCardImage2.svg                |   9 [32m++[m
+ src/components/Buttons/ButtonInfo/ButtonIfo.tsx    |  13 [32m+[m[31m-[m
+ src/pages/home/Home.tsx                            |   3 [32m+[m
+ .../home/components/MainSection/MainSection.tsx    |   4 [32m+[m[31m-[m
+ .../components/OurTechnologies/OurTechnologies.tsx |  82 [32m+++++++++++[m
+ .../OurTechnologies/OurTechnologiesStyles.ts       | 160 [32m+++++++++++++++++++++[m
+ 8 files changed, 276 insertions(+), 6 deletions(-)
+
+[33mcommit 264c64a8bbc444cbde282ad28198d392e4331904[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 12:17:33 2023 +0500
+
+    open footer from commit
+
+ src/App.tsx | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit d8036053d864f05dac8ce4a2c7fb3f58d4a6aeb4[m
+Merge: 746c5fb 7a30112
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 12:16:37 2023 +0500
+
+    merge with hp
+
+[33mcommit 746c5fb1c5e96862b33b1cc49a0ed05be272ea49[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 12:12:59 2023 +0500
+
+    remove border ,banner fixed responsive
+
+ src/components/about/analysis/Analysis.tsx         | 165 [32m++++++++++++++[m[31m-------[m
+ src/components/about/analysis/AnalysisStyles.ts    |   5 [32m+[m[31m-[m
+ src/components/about/banner/BanerStyles.ts         |  16 [32m+[m[31m-[m
+ src/components/about/comments/CommentStyles.ts     |   6 [32m+[m[31m-[m
+ .../header/{Hearder => }/HeaderOfIndustries.tsx    |   6 [32m+[m[31m-[m
+ .../{Hearder => }/HeaderOfIndustriesStyles.ts      |   0
+ src/components/industries/index.ts                 |  10 [32m+[m[31m-[m
+ 7 files changed, 141 insertions(+), 67 deletions(-)
+
+[33mcommit 7a301129d2e40d53ebd8449ebe82a272f25f8f09[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 12:11:47 2023 +0500
+
+    create loader component my pages
+
+ src/components/Loading/ui/Loader.tsx               |  2 [32m+[m[31m-[m
+ src/pages/auth/ui/Login.tsx                        | 93 [32m+++++++++++[m[31m-----------[m
+ src/pages/blogs/ui/Blogs.tsx                       | 35 [32m++++[m[31m----[m
+ src/pages/news/ui/News.tsx                         | 41 [32m+++++[m[31m-----[m
+ .../platformsProducts/ui/PlatformProducts.tsx      | 14 [32m++[m[31m--[m
+ src/pages/secondaryNews/ui/Secondary.tsx           |  5 [32m+[m[31m-[m
+ 6 files changed, 103 insertions(+), 87 deletions(-)
+
+[33mcommit 092d08f268c716580eb0795c4e035ffa5e2a6b4c[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 11:51:30 2023 +0500
+
+    filteratsiya component finished
+
+ src/api/data/blogs.ts                              |  7 [32m++[m
+ src/api/data/news.ts                               |  7 [32m++[m
+ src/api/data/pluginProjects.ts                     |  7 [32m++[m
+ src/components/news&Blogs/navbar/ui/Navbar.tsx     |  1 [32m+[m
+ .../components/cards/ui/CardsProject.tsx           | 84 [32m+++++++++++++[m[31m---------[m
+ .../components/filters/ui/FilterAllProjects.tsx    | 20 [32m+++++[m[31m-[m
+ src/context/ButtonContext.tsx                      | 15 [32m+++[m[31m-[m
+ 7 files changed, 104 insertions(+), 37 deletions(-)
+
+[33mcommit b7c63949b51dee8431fdced5381173ef0c89e752[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 11:31:12 2023 +0500
+
+    Finished Our Community
+
+ package-lock.json                                  |  12 [32m+[m[31m-[m
+ package.json                                       |   1 [32m+[m
+ src/assets/images/blueBorder.svg                   |   6 [32m+[m
+ src/assets/images/index.ts                         |   3 [32m+[m[31m-[m
+ src/components/about/contacts/ContactStyles.ts     |   1 [31m-[m
+ .../header/Hearder/HeaderOfIndustriesStyles.ts     |   2 [32m+[m[31m-[m
+ .../DigitalExperience/DigitalExperienceStyles.ts   |   2 [32m+[m[31m-[m
+ .../LeadingBrandsSectionStyles.ts                  |   2 [32m+[m[31m-[m
+ .../home/components/OurCommunity/OurCommunity.tsx  | 139 [32m++++++++++++++++[m[31m-[m
+ .../components/OurCommunity/OurCommunityStyles.ts  | 170 [32m++++++++++++++++++++[m[31m-[m
+ .../home/components/Services/ServicesStyles.ts     |   4 [32m+[m[31m-[m
+ 11 files changed, 330 insertions(+), 12 deletions(-)
+
+[33mcommit 052d1be2ee2863e0880c90d896bc6d1227aedae0[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 10:30:32 2023 +0500
+
+     code reviewe
+
+ src/components/about/banner/BanerStyles.ts                    |  1 [32m+[m
+ src/components/about/comments/CommentCard.tsx                 |  1 [31m-[m
+ src/components/about/comments/CommentStyles.ts                |  1 [32m+[m
+ src/components/about/comments/Comments.tsx                    |  2 [32m++[m
+ src/components/about/contacts/ContactStyles.ts                |  1 [32m+[m
+ src/components/about/headerOfAbout/HeaderOfAbout.tsx          |  1 [31m-[m
+ src/components/about/ourTeam/OurTeam.tsx                      |  1 [32m+[m
+ .../about/sliderForAbout/LeadingBrandsSectionStyles.ts        |  1 [31m-[m
+ src/components/about/sliderForAbout/SliderStyles.ts           | 11 [31m-----------[m
+ src/components/industries/analysis/Analysis.tsx               |  6 [32m+++[m[31m---[m
+ .../industries/header/Hearder/HeaderOfIndustries.tsx          |  2 [32m+[m[31m-[m
+ .../industries/header/Hearder/HeaderOfIndustriesStyles.ts     |  1 [32m+[m
+ src/components/industries/overView/OverView.tsx               |  1 [32m+[m
+ src/components/industries/solution/Solution.tsx               |  8 [32m++++++[m[31m--[m
+ src/components/industries/technology/Technology.tsx           |  9 [32m++++++[m[31m---[m
+ 15 files changed, 24 insertions(+), 23 deletions(-)
+
+[33mcommit 2fb6c28483af4eb7432be24311af7c260c7482b3[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 10:17:20 2023 +0500
+
+    fixed scrollX in about page
+
+ src/components/about/sliderForAbout/LeadingBrandsSectionStyles.ts | 7 [32m++++[m[31m---[m
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+[33mcommit a2d523d816f0ac4dab61f0d7cf6237044f691b15[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 10:17:00 2023 +0500
+
+    change font-size login page for sub title
+
+ src/pages/auth/ui/login.ts | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit 17c08eb006fb17e5278588d2068a944182606174[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 10:03:12 2023 +0500
+
+    comentary ga olingan kodlar ochildi
+
+ src/App.tsx | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit d74cb497fb805a379b41e424cb4dc53bbcb6ea1c[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 11 10:02:20 2023 +0500
+
+    add all font-family
+
+ src/components/about/analysis/Analysis.tsx                    |  1 [32m+[m
+ src/components/about/analysis/AnalysisStyles.ts               | 10 [32m++++[m[31m------[m
+ src/components/about/headerOfAbout/HeaderOfAboutStyles.ts     |  3 [32m+++[m
+ src/components/about/index.ts                                 | 11 [32m+++++++[m[31m----[m
+ src/components/about/ourTeam/OurTeamStyles.ts                 |  6 [32m++++[m[31m--[m
+ .../sliderForAbout/{LeadingBrands.tsx => SliderOfWorkers.tsx} |  4 [32m++[m[31m--[m
+ src/components/menu/Menu.tsx                                  |  6 [32m++++++[m
+ src/components/menu/MenuStyles.ts                             |  5 [32m++++[m[31m-[m
+ src/pages/about/About.tsx                                     |  9 [32m++++[m[31m-----[m
+ 9 files changed, 35 insertions(+), 20 deletions(-)
+
+[33mcommit c15e32baa30f7a72fc13905a2c7e57403516a1fb[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 10:02:20 2023 +0500
+
+    responsive footer finished
+
+ src/App.tsx                                        |  4 [32m++[m[31m--[m
+ .../footer/components/boxContact/boxContact.ts     | 22 [32m++++++++++++++[m[31m---[m
+ .../footer/components/boxImgLast/boxImgLast.ts     | 28 [32m+++++++++++++++++++[m[31m---[m
+ .../footer/components/boxMenuFirst/boxMenuFirst.ts | 13 [32m++++++++[m[31m--[m
+ .../components/boxMenuSecond/boxMenuSecond.ts      | 17 [32m+++++++++++[m[31m--[m
+ .../components/footerBottom/FooterBottom.tsx       |  2 [32m+[m[31m-[m
+ .../footer/components/footerMain/FooterMain.tsx    | 18 [32m++++++++[m[31m------[m
+ .../footer/components/footerMain/footerMain.ts     | 21 [32m++++++++++++++[m[31m--[m
+ src/layouts/footer/components/footerTop/footer.ts  |  7 [32m+++++[m[31m-[m
+ .../footer/components/scrollTop/scrollTop.ts       | 19 [32m+++++++++[m[31m------[m
+ src/layouts/footer/components/subText/subText.ts   |  7 [32m+++++[m[31m-[m
+ .../footer/components/titleLogo/titleLogo.ts       |  9 [32m++++++[m[31m-[m
+ .../titleRightParagraph/titleRightParagraph.ts     | 22 [32m++++++++++++++++[m[31m-[m
+ src/layouts/footer/footer.ts                       |  7 [32m+++++[m[31m-[m
+ 14 files changed, 162 insertions(+), 34 deletions(-)
+
+[33mcommit 7e0f324bfccf5f9b3e2f39cb09202f84229521a9[m
+Merge: 933b5d8 260857f
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 09:59:05 2023 +0500
+
+    Merge branch 'main' of github.com:JasurbekIsokov/MagicSoft
+
+[33mcommit 933b5d871ec06539ddd4ae781c91937761739fd8[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 11 09:58:46 2023 +0500
+
+    Fixed Responsive in Brands
+
+ src/assets/images/amplLogo.svg                     |  2 [32m+[m[31m-[m
+ src/assets/images/eximLogo.svg                     |  6 [32m+[m[31m--[m
+ src/assets/images/ibdLogo.svg                      |  6 [32m+[m[31m--[m
+ src/assets/images/kervanyol.svg                    |  6 [32m+[m[31m--[m
+ src/assets/images/tniLogo.svg                      |  6 [32m+[m[31m--[m
+ src/components/slider/Slider.tsx                   |  6 [32m++[m[31m-[m
+ src/pages/home/Home.tsx                            |  3 [32m++[m
+ .../LeadingBrandsSection/LeadingBrands.tsx         | 20 [32m+++++[m[31m-----[m
+ .../LeadingBrandsSectionStyles.ts                  | 43 [32m+++++++++++++++++++[m[31m---[m
+ .../home/components/OurCommunity/OurCommunity.tsx  | 15 [32m+++++++[m[31m-[m
+ .../components/OurCommunity/OurCommunityStyles.ts  | 20 [32m++++++++[m[31m--[m
+ 11 files changed, 97 insertions(+), 36 deletions(-)
+
+[33mcommit 48e1f6d103a39841a3d13c7e6e5abd64ca075202[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 11 08:25:43 2023 +0500
+
+    title logo
+
+ src/layouts/footer/components/titleLogo/titleLogo.ts | 8 [32m++++++[m[31m--[m
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+[33mcommit f03254cc3ee092d59f1d89016e63832f373c4e1d[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Wed Sep 6 12:59:38 2023 +0500
+
+    resposive of travels
+
+ src/components/about/contacts/ContactStyles.ts     |  2 [32m+[m[31m-[m
+ .../industries/analysis/AnalysisStyles.ts          | 23 [32m+++++++++++++++[m[31m-------[m
+ 2 files changed, 17 insertions(+), 8 deletions(-)
+
+[33mcommit 348c658af41e6f55e8e585e8b3ef19b35e6d71d1[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Wed Sep 6 11:44:16 2023 +0500
+
+    add background in contact
+
+ src/App.tsx                                        |  4 [32m+[m[31m-[m
+ src/components/about/analysis/AnalysisStyles.ts    |  3 [32m++[m
+ src/components/about/contacts/Contact.tsx          | 46 [32m+++++++++++[m[31m-----------[m
+ src/components/about/contacts/ContactStyles.ts     | 36 [32m+++++++++++[m[31m------[m
+ .../sliderForAbout/LeadingBrandsSectionStyles.ts   |  7 [32m++++[m
+ src/components/about/swiper/SwiperImg.tsx          |  0
+ 6 files changed, 61 insertions(+), 35 deletions(-)
+
+[33mcommit d2ba4b8a843ecf21fe66a36f2df0f8c13e082878[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 18:10:16 2023 +0500
+
+    s
+
+ src/layouts/footer/footer.ts | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit ab273ff6c3156486c94177a56da5b07fa3a8c158[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 18:08:25 2023 +0500
+
+    font-size
+
+ src/components/about/analysis/AnalysisStyles.ts | 2 [32m+[m[31m-[m
+ src/components/about/contacts/Contact.tsx       | 1 [31m-[m
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+[33mcommit 260857ffe86f422b9412c7c3ce7a9b62ec547348[m
+Merge: bbe5a0a 8ba8a75
+Author: Hamroyev Behzod <86470760+BehzodHamroyev@users.noreply.github.com>
+Date:   Tue Sep 5 17:57:26 2023 +0500
+
+    Merge pull request #3 from JasurbekIsokov/Behzod
+    
+    fixed footer in about page
+
+[33mcommit 8ba8a75fdcf652e8f7cdd6a4ee28787b306a8f58[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 17:55:29 2023 +0500
+
+    fixed footer in about page
+
+ src/pages/about/AboutStyles.ts | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 460bd7751d04ecb53337678ffd2e94bbf24e8a09[m
+Merge: 3728a31 bbe5a0a
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 17:53:08 2023 +0500
+
+    Merge branch 'main' of github.com:JasurbekIsokov/MagicSoft
+
+[33mcommit 3728a31175f71b0016c7b93d9f44fa240ccc51d4[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 17:52:56 2023 +0500
+
+    .
+
+ .../home/components/OurCommunity/OurCommunity.tsx  |  6 [32m++++[m
+ .../components/OurCommunity/OurCommunityStyles.ts  | 41 [32m++++++++++++++++++++++[m
+ src/pages/home/components/Services/Services.tsx    |  1 [31m-[m
+ 3 files changed, 47 insertions(+), 1 deletion(-)
+
+[33mcommit bbe5a0ad576dd52273b290ad815b9d21dbdcb217[m
+Merge: abf5981 1916a05
+Author: Hamroyev Behzod <86470760+BehzodHamroyev@users.noreply.github.com>
+Date:   Tue Sep 5 17:41:32 2023 +0500
+
+    Merge pull request #2 from JasurbekIsokov/Behzod
+    
+    Behzod
+
+[33mcommit 1916a05186c26c70a5525e878b53edc5e79461a5[m
+Merge: f4aef9a 4656526
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 17:36:46 2023 +0500
+
+    Merge branch 'hp' of https://github.com/JasurbekIsokov/MagicSoft into Behzod
+
+[33mcommit f4aef9a746ebeada5dd7d95c84be1f90089a7510[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 17:33:11 2023 +0500
+
+    button shadow
+
+ src/components/about/contacts/Contact.tsx      |  2 [32m+[m[31m-[m
+ src/components/about/contacts/ContactStyles.ts |  2 [32m++[m
+ src/components/menu/Menu.tsx                   | 14 [32m+++++++[m[31m------[m
+ src/components/menu/MenuStyles.ts              | 29 [32m++++++++[m[31m------------------[m
+ 4 files changed, 20 insertions(+), 27 deletions(-)
+
+[33mcommit 465652645b4ec38b2be2457303e30c42e7882280[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 17:30:25 2023 +0500
+
+    footer desigin finished
+
+ src/assets/images/index.ts                         |  1 [31m-[m
+ src/assets/images/layouts/footer/btnTop.svg        |  4 [32m+++[m
+ .../images/layouts/footer/firstImageFooter.svg     |  9 [32m+++++[m
+ .../images/layouts/{ => footer}/footerLogo.svg     |  0
+ .../images/layouts/footer/secondImageFooter.svg    |  9 [32m+++++[m
+ src/assets/index.ts                                |  6 [32m++++[m
+ src/layouts/footer/Footer.tsx                      |  6 [32m++[m[31m--[m
+ .../footer/components/boxContact/BoxContact.tsx    | 35 [32m+++++++++++++++++++[m
+ .../footer/components/boxContact/boxContact.ts     | 33 [32m++++++++++++++++++[m
+ .../footer/components/boxImgLast/BoxImgLast.tsx    | 20 [32m+++++++++++[m
+ .../footer/components/boxImgLast/boxImgLast.ts     | 31 [32m+++++++++++++++++[m
+ .../components/boxMenuFirst/BoxMenuFirst.tsx       | 37 [32m++++++++++++++++++++[m
+ .../footer/components/boxMenuFirst/boxMenuFirst.ts | 24 [32m+++++++++++++[m
+ .../components/boxMenuSecond/BoxMenuSecond.tsx     | 37 [32m++++++++++++++++++++[m
+ .../components/boxMenuSecond/boxMenuSecond.ts      | 24 [32m+++++++++++++[m
+ .../components/footerBottom/FooterBottom.tsx       | 14 [32m++++++++[m
+ .../footer/components/footerBottom/footerBottom.ts | 11 [32m++++++[m
+ .../footer/components/footerMain/FooterMain.tsx    | 19 [32m+++++++++++[m
+ .../footer/components/footerMain/footerMain.ts     |  8 [32m+++++[m
+ src/layouts/footer/components/footerTop/footer.ts  |  1 [32m+[m
+ src/layouts/footer/components/index.ts             |  8 [32m+++++[m
+ .../footer/components/scrollTop/ScrollTop.tsx      | 39 [32m++++++++++++++++++++++[m
+ .../footer/components/scrollTop/scrollTop.ts       | 31 [32m+++++++++++++++++[m
+ src/layouts/footer/components/subText/SubText.tsx  | 12 [32m+++++++[m
+ src/layouts/footer/components/subText/subText.ts   | 16 [32m+++++++++[m
+ .../footer/components/titleLogo/TitleLogo.tsx      |  2 [32m+[m[31m-[m
+ src/layouts/footer/footer.ts                       |  4 [32m+[m[31m--[m
+ 27 files changed, 435 insertions(+), 6 deletions(-)
+
+[33mcommit f8cb356eac45d092a9ce2bb01e9c65e2842ba9e0[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 17:13:11 2023 +0500
+
+    enter every media
+
+ src/components/industries/analysis/AnalysisStyles.ts |  6 [32m++++++[m
+ src/components/industries/overView/OverViewStyles.ts |  7 [32m+++++++[m
+ src/components/menu/MenuStyles.ts                    | 17 [32m+++++++++++++++++[m
+ 3 files changed, 30 insertions(+)
+
+[33mcommit f519b976cdc9679192010b13bbe1e3fdefac5a8b[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 17:09:19 2023 +0500
+
+    resposive of menu section
+
+ .../industries/technology/EachTechnology.tsx       | 42 [32m++[m[31m---------[m
+ .../industries/technology/TechnologyStyles.ts      | 79 [32m+++++++++++++++++[m[31m---[m
+ src/components/menu/Menu.tsx                       | 39 [32m+++++++[m[31m---[m
+ src/components/menu/MenuStyles.ts                  | 84 [32m++++++++++++++++++++[m[31m--[m
+ 4 files changed, 182 insertions(+), 62 deletions(-)
+
+[33mcommit abf5981d35e688f23935edeb57ed03078624073a[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 16:49:06 2023 +0500
+
+    Finished Responcive design in DigitialExperience
+
+ src/pages/home/Home.tsx                            |   2 [32m+[m[31m-[m
+ .../DigitalExperience/DigitalExperienceStyles.ts   | 143 [32m++++++++++++++++++++[m[31m-[m
+ .../LeadingBrandsSectionStyles.ts                  |  12 [32m++[m
+ .../home/components/MainSection/MainSection.tsx    |   4 [32m+[m[31m-[m
+ src/pages/home/components/Services/Services.tsx    |  14 [32m+[m[31m-[m
+ .../home/components/Services/ServicesStyles.ts     |  18 [32m++[m[31m-[m
+ 6 files changed, 179 insertions(+), 14 deletions(-)
+
+[33mcommit 0314ef344bd9ddef6f494842a3fd3644874fabfc[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 15:46:16 2023 +0500
+
+    menu container full
+
+ src/components/menu/Menu.tsx                       | 47 [32m+++++++++++++[m[31m--[m
+ src/components/menu/MenuStyles.ts                  | 69 [32m+++++++++++++++++++[m[31m---[m
+ .../components/headerFeatures/HeaderFeatures.tsx   |  6 [32m+[m[31m-[m
+ 3 files changed, 106 insertions(+), 16 deletions(-)
+
+[33mcommit 6a65ef4f2cf463e5edbd5831e6910d771a300005[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 15:15:33 2023 +0500
+
+    Finished Our Services section
+
+ .../home/components/Services/ServicesStyles.ts     | 98 [32m+++++++++++++++++++++[m[31m-[m
+ 1 file changed, 96 insertions(+), 2 deletions(-)
+
+[33mcommit 13ab0dc1691526536a1d7b43d67445d09b671ca5[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 15:15:24 2023 +0500
+
+    Finished Our Services section
+
+ src/pages/home/Home.tsx                            |  2 [32m+[m[31m-[m
+ .../home/components/MainSection/MainSection.tsx    |  2 [32m+[m[31m-[m
+ src/pages/home/components/Services/Services.tsx    |  5 [32m+[m[31m-[m
+ .../home/components/Services/ServicesStyles.ts     | 90 [32m++++++++++++++++++++[m[31m--[m
+ 4 files changed, 88 insertions(+), 11 deletions(-)
+
+[33mcommit 2818345e96a19d21201e5c40b9a16600d2c54073[m
+Merge: fc47cf9 2fac657
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 14:50:45 2023 +0500
+
+    merge with main and fixed some style of about us and font family
+
+[33mcommit fc47cf9bd5fb82a1fe219271d501c58de561279f[m
+Merge: 8c533af 898682b
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Sep 5 14:39:05 2023 +0500
+
+    menu
+
+[33mcommit 2fac657be8861d87e7fafe52381665a81d3e81b0[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 12:08:27 2023 +0500
+
+    Fininshed Our services desctop vertion
+
+ src/assets/gif.gif                                 | Bin [31m0[m -> [32m926932[m bytes
+ src/assets/images/index.ts                         |   1 [32m+[m
+ src/assets/images/vectorBorderServices.svg         |   3 [32m+[m
+ src/pages/home/Home.tsx                            |   3 [32m+[m
+ src/pages/home/components/Services/Services.tsx    | 104 [32m++++++++++++++[m
+ .../home/components/Services/ServicesStyles.ts     | 151 [32m+++++++++++++++++++++[m
+ 6 files changed, 262 insertions(+)
+
+[33mcommit 2db99088e45540d2fa05d27b32d573aabd777496[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 11:56:31 2023 +0500
+
+    ss
+
+ package-lock.json                                  | 20 [32m++++++++++++++++[m
+ package.json                                       |  1 [32m+[m
+ src/assets/images/index.ts                         |  7 [32m+++[m[31m---[m
+ src/assets/images/layouts/footerLogo.svg           |  6 [32m+++++[m
+ src/layouts/footer/Footer.tsx                      | 15 [32m++++++++++[m[31m--[m
+ .../footer/components/footerTop/FooterTop.tsx      | 14 [32m+++++++++++[m
+ src/layouts/footer/components/footerTop/footer.ts  |  8 [32m+++++++[m
+ src/layouts/footer/components/index.ts             |  3 [32m+++[m
+ .../footer/components/titleLogo/TitleLogo.tsx      | 14 [32m+++++++++++[m
+ .../footer/components/titleLogo/titleLogo.ts       | 27 [32m++++++++++++++++++++++[m
+ .../titleRightParagraph/TitleRightParagraph.tsx    | 12 [32m++++++++++[m
+ .../titleRightParagraph/titleRightParagraph.ts     | 11 [32m+++++++++[m
+ src/layouts/footer/footer.ts                       | 18 [32m+++++++++++++++[m
+ src/layouts/index.ts                               |  2 [32m+[m[31m-[m
+ src/styles/globals.ts                              | 11 [31m---------[m
+ 15 files changed, 152 insertions(+), 17 deletions(-)
+
+[33mcommit 70c0e897cabf9a890ecc676d6699af8c08f74c91[m
+Merge: 4cf5667 8c533af
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 10:40:42 2023 +0500
+
+    Mergde
+
+[33mcommit 2398c4751d579ab39cbbc6618f1baae39c66a042[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 09:53:42 2023 +0500
+
+    s
+
+ .../components/LeadingBrandsSection/LeadingBrands.tsx    | 16 [31m----------------[m
+ 1 file changed, 16 deletions(-)
+
+[33mcommit 82ee19cf21f947f19869ac485c7f66be41949967[m
+Merge: e6afb7b 4cf5667
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 09:49:37 2023 +0500
+
+    Merge branch 'main' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit e6afb7b6324fc74a2c02b12da29c6a17690e4b0a[m
+Merge: 302045c 14e7c67
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 09:47:35 2023 +0500
+
+    s
+
+[33mcommit 4cf5667a3f724613db5e03f5b9454dd6fa5163b3[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Sep 5 09:33:28 2023 +0500
+
+    Changed Leading brands images
+
+ .../images/1674631184591-removebg-preview 1.svg      |  9 [32m+++++++++[m
+ src/assets/images/ampLogo.svg                        |  9 [32m+++++++++[m
+ src/assets/images/amplLogo.svg                       |  6 [32m+++[m[31m---[m
+ src/assets/images/exim.svg                           |  9 [32m+++++++++[m
+ src/assets/images/eximLogo.svg                       |  6 [32m+++[m[31m---[m
+ src/assets/images/ibdLogo.svg                        |  6 [32m+++[m[31m---[m
+ src/assets/images/kervanyol.svg                      |  6 [32m+++[m[31m---[m
+ src/assets/images/tniLogo.svg                        |  6 [32m+++[m[31m---[m
+ src/pages/home/Home.tsx                              |  4 [32m++[m[31m--[m
+ .../LeadingBrandsSection/LeadingBrands.tsx           | 20 [32m++++++++++[m[31m----------[m
+ .../LeadingBrandsSectionStyles.ts                    | 19 [32m+++++++++++++++++++[m
+ 11 files changed, 73 insertions(+), 27 deletions(-)
+
+[33mcommit 302045c5c188250626f682afefc527065263f42c[m
+Merge: 898682b 8c533af
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 08:34:29 2023 +0500
+
+    Merge branch 'Behzod' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit 898682b02ecad9d715ef918b9f6f8e9a9028e480[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Sep 5 08:30:24 2023 +0500
+
+    s
+
+ src/pages/platformsProducts/ui/PlatformProducts.tsx | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+
+[33mcommit 8c533af66b1015d906143069f1bbef91f54bf406[m
+Merge: 4046823 57d2e61
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 4 17:54:44 2023 +0500
+
+    merge from jafar
+
+[33mcommit 40468238e9408f2b1dc591b639388d757c4beff3[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 4 17:41:08 2023 +0500
+
+    resposive page of about full
+
+ src/components/about/analysis/AnalysisStyles.ts    |  60 [32m+++++++++++[m[31m-[m
+ src/components/about/banner/BanerStyles.ts         |  47 [32m+++++++++[m
+ src/components/about/comments/CommentStyles.ts     |  65 [32m++++++++++++[m[31m-[m
+ src/components/about/comments/Comments.tsx         |  28 [32m+++++[m[31m-[m
+ src/components/about/contacts/ContactStyles.ts     | 108 [32m++++++++++++++++++++[m[31m-[m
+ .../about/headerOfAbout/HeaderOfAbout.tsx          |   5 [32m+[m[31m-[m
+ .../about/headerOfAbout/HeaderOfAboutStyles.ts     |  81 [32m+++++++++++++++[m[31m-[m
+ src/components/about/ourTeam/OurTeamStyles.ts      |  52 [32m++++++++++[m
+ .../about/sliderForAbout/LeadingBrands.tsx         |  12 [31m---[m
+ .../sliderForAbout/LeadingBrandsSectionStyles.ts   |   9 [32m+[m[31m-[m
+ .../about/sliderForAbout/SliderForAbout.tsx        |   9 [32m++[m
+ 11 files changed, 451 insertions(+), 25 deletions(-)
+
+[33mcommit 57d2e6175d1cf8fe2d2567e1ced404c6c9d78119[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 4 17:32:49 2023 +0500
+
+    s
+
+ .../components/filters/ui/FilterAllProjects.tsx    | 63 [32m++++++++++++++[m[31m--------[m
+ .../components/filters/ui/filterAllProject.ts      |  2 [32m+[m[31m-[m
+ .../platformProducts/navbar/ui/platformNavbar.ts   | 10 [32m++[m[31m--[m
+ src/hooks/useWindowWidth.ts                        | 21 [32m++++++++[m
+ src/styles/globals.ts                              |  1 [31m-[m
+ 5 files changed, 69 insertions(+), 28 deletions(-)
+
+[33mcommit 14e7c67b681952b74fe02fff8dd8a0b660372766[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 4 17:03:34 2023 +0500
+
+    Finished Responsive in Main Section Home page
+
+ .../Buttons/ButtonEscort/ButtonEscortStyles.ts     |  33 [32m+++++++[m
+ .../Buttons/ButtonInfo/ButtonInfoStyles.ts         |  18 [32m++++[m
+ src/components/jobItem/JobItemStyles.ts            |  34 [32m++++++[m[31m-[m
+ .../pageSectionNumber/PageSectionNumberStyles.ts   |  25 [32m+++++[m
+ src/pages/home/Home.tsx                            |   2 [32m+[m[31m-[m
+ .../components/MainSection/MainSectionStyles.ts    | 106 [32m++++++++++++++++++++[m[31m-[m
+ 6 files changed, 215 insertions(+), 3 deletions(-)
+
+[33mcommit 4ba2bb4d00898ff372b59ee42bafc7487fe5edd8[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 4 16:34:17 2023 +0500
+
+    s
+
+ src/styles/globals.ts | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit ef828c9fbf4ffaad99190144077432d1c050622e[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 4 15:52:51 2023 +0500
+
+    Finished Header Responsive styles
+
+ src/layouts/header/HeaderStyles.ts                       | 11 [32m+++++++++++[m
+ .../components/headerFeatures/HeaderFeaturesStyles.ts    | 16 [32m++++++++++++++++[m
+ src/layouts/navbar/NavbarStyles.ts                       |  4 [32m++++[m
+ src/pages/home/Home.tsx                                  |  6 [32m+++[m[31m---[m
+ 4 files changed, 34 insertions(+), 3 deletions(-)
+
+[33mcommit b0cb42e33d623c73c56aec2996cfbad9f13d2ff0[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 4 15:33:38 2023 +0500
+
+    Bug fixed
+
+ src/pages/home/Home.tsx | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 806bb0bd722238316ad8026a5a0096c05130883f[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 4 15:33:08 2023 +0500
+
+    Main and experience section added animation
+
+ src/assets/digitial.mp4                            | Bin [31m0[m -> [32m3781360[m bytes
+ src/assets/images/borderBigVector.svg              |  20 [32m+++++++[m
+ src/assets/images/borderVector.svg                 |   8 [32m+++[m
+ src/assets/images/index.ts                         |   5 [32m+[m[31m-[m
+ src/assets/images/jobItemIcon.svg                  |   3 [32m++[m
+ src/assets/mainAnim.mp4                            | Bin [31m0[m -> [32m117152[m bytes
+ src/components/jobItem/JobItemStyles.ts            |  58 [32m+++++++++++++++++++++[m
+ src/components/jobItem/JobItems.tsx                |  28 [32m++++++++++[m
+ src/pages/home/Home.tsx                            |   5 [32m+[m[31m-[m
+ .../DigitalExperience/DigitalExperience.tsx        |  48 [32m++++++++++++++++[m[31m-[m
+ .../DigitalExperience/DigitalExperienceStyles.ts   |  58 [32m++++++++++++++++[m[31m-----[m
+ .../home/components/MainSection/MainSection.tsx    |  39 [32m+++++++++++++[m[31m-[m
+ .../components/MainSection/MainSectionStyles.ts    |  35 [32m++++++++++++[m[31m-[m
+ src/styles/globals.ts                              |   2 [32m+[m[31m-[m
+ 14 files changed, 285 insertions(+), 24 deletions(-)
+
+[33mcommit 52e279dab7df71563812bd1dc76dda72da56411c[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 4 15:22:52 2023 +0500
+
+    create new variable bg color in global ts
+
+ src/App.tsx           | 2 [32m+[m[31m-[m
+ src/styles/globals.ts | 2 [32m+[m[31m-[m
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit 1ad4bef26e3036adeac1ab4705f99ce7a05f2327[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 4 14:34:52 2023 +0500
+
+    full finnished 1440px>
+
+ src/assets/about/bgOfContact.svg                   |  19 [32m++++[m
+ src/assets/about/index.ts                          |   1 [32m+[m
+ src/assets/about/next.svg                          |   3 [32m+[m
+ src/assets/about/pre.svg                           |   3 [32m+[m
+ src/assets/about/star.svg                          |   3 [32m+[m
+ src/components/about/comments/CommentCard.tsx      |  30 [32m+++++[m[31m-[m
+ src/components/about/comments/CommentStyles.ts     |  81 [32m++++++++++++++[m[31m-[m
+ src/components/about/comments/Comments.tsx         |  61 [32m+++++++++++[m[31m-[m
+ src/components/about/contacts/Contact.tsx          |  40 [32m++++++++[m
+ src/components/about/contacts/ContactStyles.ts     | 110 [32m+++++++++++++++++++++[m
+ .../about/headerOfAbout/HeaderOfAboutStyles.ts     |   2 [32m+[m[31m-[m
+ .../about/sliderForAbout/LeadingBrands.tsx         |   5 [32m+[m[31m-[m
+ .../sliderForAbout/LeadingBrandsSectionStyles.ts   |   9 [32m+[m[31m-[m
+ src/pages/about/About.tsx                          |   4 [32m+[m[31m-[m
+ 14 files changed, 353 insertions(+), 18 deletions(-)
+
+[33mcommit 2926b20fcfbbdae8ca4b159ab5d9beeb4128ec4c[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 4 12:11:11 2023 +0500
+
+    localization
+
+ package-lock.json                              | 982 [32m++++++++++++++++++++[m[31m-----[m
+ package.json                                   |   9 [32m+[m[31m-[m
+ src/App.tsx                                    |  11 [32m+[m[31m-[m
+ src/components/Loading/ui/Loader.tsx           |  22 [32m+[m[31m-[m
+ src/components/news&Blogs/navbar/ui/Navbar.tsx |   2 [32m+[m[31m-[m
+ src/locales/ThemeLocalization.tsx              |  18 [32m+[m
+ src/locales/config-lang.ts                     |  33 [32m+[m
+ src/locales/i18n.ts                            |  38 [32m+[m
+ src/locales/langs/all.ts                       |   3 [32m+[m
+ src/locales/langs/eng.ts                       |   5 [32m+[m
+ src/locales/langs/index.ts                     |   4 [32m+[m
+ src/locales/langs/ru.ts                        |   4 [32m+[m
+ src/locales/langs/uz.ts                        |   4 [32m+[m
+ src/locales/langs/yz.ts                        |   4 [32m+[m
+ src/locales/useLocales.ts                      |  36 [32m+[m
+ src/main.tsx                                   |   2 [32m+[m[31m-[m
+ src/pages/news/ui/News.tsx                     |   4 [32m+[m
+ src/utils/localStorageAvailable.ts             |  15 [32m+[m
+ 18 files changed, 984 insertions(+), 212 deletions(-)
+
+[33mcommit b690e7131e15e0a796002bad4866f8b8d9a1b740[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Sep 4 11:58:22 2023 +0500
+
+    Digitial Experience section finished
+
+ package-lock.json                                  | 2850 [32m+++++++++[m[31m-----------[m
+ src/assets/images/amplLogo.svg                     |    9 [32m+[m
+ src/assets/images/eximLogo.svg                     |    9 [32m+[m
+ src/assets/images/fonus.svg                        |    9 [32m+[m
+ src/assets/images/fonusAll.png                     |  Bin [31m0[m -> [32m1055914[m bytes
+ src/assets/images/ibdLogo.svg                      |    9 [32m+[m
+ src/assets/images/index.ts                         |    9 [32m+[m
+ src/assets/images/kervanyol.svg                    |    9 [32m+[m
+ src/assets/images/mainImage.svg                    |    9 [32m+[m
+ src/assets/images/tniLogo.png                      |  Bin [31m0[m -> [32m32055[m bytes
+ src/assets/images/tniLogo.svg                      |    9 [32m+[m
+ src/assets/images/vektorBorder.svg                 |    3 [32m+[m
+ .../pageSectionNumber/PageSectionNumber.tsx        |   23 [32m+[m
+ .../pageSectionNumber/PageSectionNumberStyles.ts   |   36 [32m+[m
+ src/components/slider/Slider.tsx                   |    5 [32m+[m[31m-[m
+ src/components/slider/SliderStyles.ts              |    5 [32m+[m
+ src/pages/home/Home.tsx                            |    6 [32m+[m
+ .../DigitalExperience/DigitalExperience.tsx        |   45 [32m+[m
+ .../DigitalExperience/DigitalExperienceStyles.ts   |   64 [32m+[m
+ .../LeadingBrandsSection/LeadingBrands.tsx         |   64 [32m+[m[31m-[m
+ .../LeadingBrandsSectionStyles.ts                  |   40 [32m+[m[31m-[m
+ .../home/components/MainSection/MainSection.tsx    |   20 [32m+[m[31m-[m
+ .../components/MainSection/MainSectionStyles.ts    |   24 [32m+[m[31m-[m
+ 23 files changed, 1584 insertions(+), 1673 deletions(-)
+
+[33mcommit 47648b0f2ed637f489626f2db2705bb246ec178d[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Sep 4 10:17:46 2023 +0500
+
+    slider and comments section
+
+ package-lock.json                                  | 21 [32m+[m[31m-----[m
+ package.json                                       |  3 [32m+[m[31m-[m
+ src/assets/about/index.ts                          |  6 [32m++[m
+ src/assets/about/slide1.svg                        | 10 [32m+++[m
+ src/assets/about/slide2.svg                        |  9 [32m+++[m
+ src/assets/about/slide3.svg                        |  9 [32m+++[m
+ src/assets/about/slide4.svg                        |  9 [32m+++[m
+ src/components/about/comments/CommentCard.tsx      |  9 [32m+++[m
+ src/components/about/comments/CommentStyles.ts     | 12 [32m++++[m
+ src/components/about/comments/Comments.tsx         | 14 [32m++++[m
+ .../about/sliderForAbout/LeadingBrands.tsx         | 64 [32m++++++++++++++++++[m
+ .../sliderForAbout/LeadingBrandsSectionStyles.ts   | 77 [32m++++++++++++++++++++++[m
+ .../about/sliderForAbout/SliderForAbout.tsx        | 53 [32m+++++++++++++++[m
+ .../about/sliderForAbout/SliderStyles.ts           | 11 [32m++++[m
+ src/components/slider/Slider.tsx                   |  1 [32m+[m
+ src/components/slider/SliderStyles.ts              |  0
+ src/pages/about/About.tsx                          |  5 [32m++[m
+ .../LeadingBrandsSection/LeadingBrands.tsx         |  1 [31m-[m
+ .../LeadingBrandsSectionStyles.ts                  |  1 [32m+[m
+ 19 files changed, 292 insertions(+), 23 deletions(-)
+
+[33mcommit 6e23a399155992b17ffd734e3f38620b944efcf4[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Sep 4 08:40:27 2023 +0500
+
+    finished
+
+ src/App.tsx                          |  9 [32m++++[m[31m-----[m
+ src/components/Loading/ui/Loader.tsx | 23 [32m++++++++++++[m[31m-----------[m
+ 2 files changed, 16 insertions(+), 16 deletions(-)
+
+[33mcommit 43430a0c19805b48045d859590660fbcc6316da9[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sun Sep 3 19:32:04 2023 +0500
+
+    loader page
+
+ src/App.tsx                                        |  8 [32m++[m[31m-[m
+ .../images/components/Loader/LoaderSclet.svg       |  5 [32m++[m
+ src/assets/images/components/Loader/Rectangle.svg  |  3 [32m+[m
+ src/assets/images/components/Loader/loder.svg      | 10 [32m+++[m
+ src/assets/index.ts                                |  7 [32m+[m[31m-[m
+ src/components/Loading/index.ts                    |  1 [32m+[m
+ src/components/Loading/ui/Loader.tsx               | 51 [32m++++++++++++++[m
+ src/components/Loading/ui/loader.ts                | 82 [32m++++++++++++++++++++++[m
+ 8 files changed, 163 insertions(+), 4 deletions(-)
+
+[33mcommit 061cf45a77687693394fe80f931171cdb5e61147[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sun Sep 3 17:47:26 2023 +0500
+
+    login page finished
+
+ src/assets/images/components/login/eye_closed.svg  |  1 [32m+[m
+ src/assets/images/components/login/eye_looked.svg  |  3 [32m+[m
+ src/assets/index.ts                                |  4 [32m+[m
+ .../components/headerFeatures/HeaderFeatures.tsx   |  5 [32m+[m[31m-[m
+ src/pages/auth/index.ts                            |  1 [32m+[m
+ src/pages/auth/ui/Login.tsx                        | 95 [32m+++++++++++++++++++++[m
+ src/pages/auth/ui/login.ts                         | 99 [32m++++++++++++++++++++++[m
+ src/routes/root.tsx                                |  3 [32m+[m
+ 8 files changed, 210 insertions(+), 1 deletion(-)
+
+[33mcommit e08d399888bfe4ae52c2cde129a1a852b267f7a5[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sun Sep 3 15:42:31 2023 +0500
+
+    s
+
+ src/App.tsx                                        |  2 [32m+[m[31m-[m
+ src/components/news&Blogs/miniCard/ui/miniCard.ts  | 29 [32m+++++++++++[m[31m--[m
+ src/components/news&Blogs/navbar/ui/navbar.ts      |  2 [32m+[m[31m-[m
+ .../components/cards/ui/cardsProjects.ts           | 10 [32m++[m[31m---[m
+ .../platformProducts/navbar/ui/platformNavbar.ts   | 46 [32m+++++++++++++++++++[m[31m-[m
+ src/pages/blogs/ui/blogs.ts                        |  8 [32m+++[m[31m-[m
+ src/pages/news/ui/news.ts                          |  8 [31m----[m
+ src/pages/platformsProducts/ui/platformProducts.ts |  6 [32m++[m[31m-[m
+ src/pages/secondaryNews/ui/Secondary.tsx           |  6 [32m+[m[31m--[m
+ src/pages/secondaryNews/ui/secondary.ts            | 49 [32m++++++++++++++++++[m[31m----[m
+ 10 files changed, 133 insertions(+), 33 deletions(-)
+
+[33mcommit aaa4105708662851dac006dd053cd1587706d686[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sun Sep 3 08:58:21 2023 +0500
+
+    a
+
+ .../allProjects/components/filters/ui/filterAllProject.ts                | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit ea91276cc0b06f12ef43b97bcf08c92c1253830e[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sun Sep 3 08:54:25 2023 +0500
+
+    s
+
+ src/App.tsx                                        |  2 [32m+[m[31m-[m
+ .../PlatformProducts/buttonSendIcon/filter.svg     |  1 [32m+[m
+ src/assets/index.ts                                |  3 [32m++[m
+ src/components/news&Blogs/title/title.ts           | 19 [32m+++++++++[m[31m-[m
+ .../components/cards/ui/cardsProjects.ts           | 37 [32m++++++++++++++++++[m[31m--[m
+ .../components/filters/ui/FilterAllProjects.tsx    | 40 [32m+++++++++++++++[m[31m-------[m
+ .../components/filters/ui/filterAllProject.ts      | 35 [32m+++++++++++++++++[m[31m--[m
+ 7 files changed, 118 insertions(+), 19 deletions(-)
+
+[33mcommit e43e45bd6ec5b264bd7569ec1275bdf75f6bb9b6[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sat Sep 2 21:45:33 2023 +0500
+
+    s
+
+ package.json | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 43e0165beb84f0a101cca882289ad9a74bb71829[m
+Merge: c0891a0 f64c87a
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sat Sep 2 21:39:01 2023 +0500
+
+    merging Behzod
+
+[33mcommit c0891a041d742dc0af30fe7598f37c9d17e2609c[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Sat Sep 2 21:26:48 2023 +0500
+
+    s
+
+ src/App.tsx                                        |  2 [32m+[m[31m-[m
+ src/components/news&Blogs/index.ts                 |  2 [31m-[m
+ src/components/news&Blogs/miniCard/index.ts        |  1 [32m+[m
+ src/components/news&Blogs/miniCard/ui/MiniCard.tsx | 45 [32m++++++++++++[m
+ src/components/news&Blogs/miniCard/ui/miniCard.ts  | 74 [32m+++++++++++++++++++[m
+ src/components/news&Blogs/navbar/index.ts          |  2 [32m+[m
+ src/components/news&Blogs/navbar/ui/navbar.ts      | 85 [32m+++++++++++++++++++[m[31m---[m
+ .../components/cards/ui/cardsProjects.ts           |  2 [32m+[m[31m-[m
+ src/pages/blogs/ui/Blogs.tsx                       |  2 [32m+[m[31m-[m
+ src/pages/news/ui/News.tsx                         |  8 [32m+[m[31m-[m
+ src/pages/news/ui/news.ts                          | 14 [32m+++[m[31m-[m
+ src/pages/secondaryNews/ui/Secondary.tsx           | 23 [32m+++++[m[31m-[m
+ src/pages/secondaryNews/ui/secondary.ts            |  7 [32m++[m
+ src/styles/globals.ts                              | 11 [32m+++[m
+ 14 files changed, 254 insertions(+), 24 deletions(-)
+
+[33mcommit 880491b7b134c6437d6b56679970a6bec2a1589d[m
+Merge: f64c87a 6f4ff01
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Thu Aug 31 11:31:36 2023 +0500
+
+    merge with jafs
+    ar
+
+[33mcommit f64c87a776e5464d789093a6d53818f5f8f052a7[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Thu Aug 31 11:25:47 2023 +0500
+
+    banner section and team info
+
+ package-lock.json                             | 21 [32m++++++[m[31m-[m
+ package.json                                  |  3 [32m+[m[31m-[m
+ src/assets/about/Our_Team_bg.svg              | 61 [32m++++++++++++++++++++[m
+ src/assets/about/Team_member_1.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_2.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_3.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_4.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_5.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_6.svg            |  9 [32m+++[m
+ src/assets/about/Team_member_7.svg            |  9 [32m+++[m
+ src/assets/about/index.ts                     |  8 [32m+++[m
+ src/components/about/banner/Baner.tsx         | 22 [32m+++++[m[31m--[m
+ src/components/about/banner/BanerStyles.ts    | 30 [32m+++++++++[m[31m-[m
+ src/components/about/index.ts                 |  5 [32m+[m[31m-[m
+ src/components/about/ourTeam/OurTeam.tsx      | 82 [32m+++++++++++++++++++++++++++[m
+ src/components/about/ourTeam/OurTeamStyles.ts | 67 [32m++++++++++++++++++++++[m
+ src/components/about/swiper/SwiperImg.tsx     |  0
+ src/pages/about/About.tsx                     |  8 [32m++[m[31m-[m
+ src/routes/root.tsx                           |  2 [32m+[m[31m-[m
+ 19 files changed, 361 insertions(+), 11 deletions(-)
+
+[33mcommit 6f4ff0148bf3dcebfa2c5afea733cabb050c3620[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Thu Aug 31 11:24:19 2023 +0500
+
+    animation finished
+
+ .../components/cards/ui/cardsProjects.ts           |  8 [32m+++[m[31m-[m
+ .../platformProducts/navbar/ui/PlatformNavbar.tsx  | 24 [32m+++++++++++[m[31m-[m
+ .../platformProducts/navbar/ui/platformNavbar.ts   | 44 [32m++++++++++++++++++++++[m
+ 3 files changed, 73 insertions(+), 3 deletions(-)
+
+[33mcommit 882e8e4d6eafb26c5e9342df691ae492f553469d[m
+Merge: 25e56ae ded700f
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Thu Aug 31 10:44:05 2023 +0500
+
+    finished werst
+
+[33mcommit fedbadf3eee59fe280deda5d4ff18824ad059a4c[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Wed Aug 30 17:43:09 2023 +0500
+
+    font family and main section of about page
+
+ src/App.tsx                                        |  2 [32m+[m[31m-[m
+ src/api/data/retail.ts                             | 14 [32m++++[m[31m-[m
+ src/assets/about/banner.svg                        | 10 [32m+++[m
+ src/assets/about/index.ts                          |  3 [32m+[m
+ src/assets/about/theFirstImgHeader.svg             | 10 [32m+++[m
+ src/assets/about/theSecondImgHeader.svg            | 10 [32m+++[m
+ src/assets/about/theThirdImgHeader.svg             | 10 [32m+++[m
+ src/components/about/analysis/Analysis.tsx         | 71 [32m++++++++++++++++++++++[m
+ src/components/about/analysis/AnalysisStyles.ts    | 34 [32m+++++++++++[m
+ src/components/about/banner/Baner.tsx              |  8 [32m+++[m
+ src/components/about/banner/BanerStyles.ts         |  8 [32m+++[m
+ .../about/headerOfAbout/HeaderOfAbout.tsx          | 34 [32m+++++++++[m[31m--[m
+ .../about/headerOfAbout/HeaderOfAboutStyles.ts     | 36 [32m+++++++++[m[31m--[m
+ src/components/about/index.ts                      |  4 [32m+[m[31m-[m
+ .../industries/analysis/AnalysisStyles.ts          |  4 [32m+[m[31m-[m
+ .../header/Hearder/HeaderOfIndustriesStyles.ts     |  6 [32m+[m[31m-[m
+ .../industries/overView/OverViewStyles.ts          | 12 [32m++[m[31m--[m
+ .../industries/solution/SolutionStyles.ts          |  6 [32m+[m[31m-[m
+ .../industries/technology/TechnologyStyles.ts      |  6 [32m+[m[31m-[m
+ src/pages/about/About.tsx                          |  9 [32m++[m[31m-[m
+ src/pages/about/AboutStyles.ts                     |  6 [32m++[m
+ src/styles/globals.ts                              |  8 [32m+[m[31m--[m
+ 22 files changed, 273 insertions(+), 38 deletions(-)
+
+[33mcommit ded700fbd25978d00f8bb21fda316dbd7656956f[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Wed Aug 30 15:17:30 2023 +0500
+
+    create api/data
+
+ src/api/data/fintech.ts                            | 113 [32m+++++++++++++++++++++[m
+ src/api/data/retail.ts                             | 110 [32m++++++++++++++++++++[m
+ src/api/data/travels.ts                            | 107 [32m+++++++++++++++++++[m
+ src/components/industries/analysis/Analysis.tsx    |  35 [32m+++++[m[31m--[m
+ .../header/Hearder/HeaderOfIndustries.tsx          |  54 [32m++++++[m[31m----[m
+ .../header/Hearder/HeaderOfIndustriesStyles.ts     |  28 [32m++++[m[31m-[m
+ src/components/industries/overView/OverView.tsx    |  33 [32m+++[m[31m---[m
+ .../industries/overView/OverViewStyles.ts          |  18 [32m+++[m[31m-[m
+ src/components/industries/solution/Card.tsx        |  20 [32m++[m[31m--[m
+ src/components/industries/solution/Solution.tsx    |  41 [32m++++++[m[31m--[m
+ .../industries/solution/SolutionStyles.ts          |  16 [32m++[m[31m-[m
+ .../industries/technology/EachTechnology.tsx       |  23 [32m++[m[31m---[m
+ .../industries/technology/Technology.tsx           |  52 [32m+++++[m[31m-----[m
+ .../industries/technology/TechnologyStyles.ts      |  34 [32m++++++[m[31m-[m
+ src/pages/fintech/Fintech.tsx                      |  22 [32m++++[m
+ src/pages/retail/Retail.tsx                        |  22 [32m++++[m
+ src/routes/root.tsx                                |   5 [32m+[m
+ src/styles/globals.ts                              |  19 [32m+++[m[31m-[m
+ 18 files changed, 644 insertions(+), 108 deletions(-)
+
+[33mcommit 25e56aedad224d0f2879f8162fb0fa9a23d62198[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 15:17:29 2023 +0500
+
+    crete new data api started
+
+ .../components/cards/ui/CardsProject.tsx           | 45 [32m++++++++++++[m[31m----------[m
+ .../components/cards/ui/cardsProjects.ts           | 18 [32m++++++[m[31m---[m
+ src/index.css                                      |  4 [32m+[m[31m-[m
+ 3 files changed, 38 insertions(+), 29 deletions(-)
+
+[33mcommit 9d41a8face77a23a6de2d733f22b9abb43117c68[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 14:20:54 2023 +0500
+
+    s
+
+ src/pages/news/ui/news.ts               | 1 [31m-[m
+ src/pages/secondaryNews/ui/secondary.ts | 1 [32m+[m
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit f19602c954fcbc6ac85c23d1c155062d6b1cd41b[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 11:41:05 2023 +0500
+
+    jasur headerni tepaga qotirmagan ekansiz shun fix qildim
+
+ src/layouts/header/HeaderStyles.ts | 3 [32m+++[m
+ src/pages/blogs/ui/blogs.ts        | 1 [32m+[m
+ src/pages/news/ui/news.ts          | 1 [32m+[m
+ 3 files changed, 5 insertions(+)
+
+[33mcommit cb12e9b9b2e88047d7b8b17207cd498d26270d49[m
+Merge: 9a92949 391147e
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 11:34:43 2023 +0500
+
+    merging
+
+[33mcommit 8aedd146ab66a2aab13d21a1bd298542738d3b93[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Wed Aug 30 10:47:30 2023 +0500
+
+    responsive xxl and xl and install new library for number count
+
+ package-lock.json                                  | 75 [32m+++++++++++++++++++++[m[31m-[m
+ package.json                                       |  1 [32m+[m
+ .../about/headerOfAbout/HeaderOfAbout.tsx          |  9 [32m+++[m
+ .../about/headerOfAbout/HeaderOfAboutStyles.ts     |  9 [32m+++[m
+ src/components/about/index.ts                      |  1 [32m+[m
+ src/components/industries/analysis/Analysis.tsx    | 32 [32m++++++++[m[31m-[m
+ .../industries/analysis/AnalysisStyles.ts          | 28 [32m+++++++[m[31m-[m
+ .../header/Hearder/HeaderOfIndustriesStyles.ts     | 14 [31m----[m
+ src/components/industries/index.ts                 |  5 [32m++[m
+ .../industries/solution/SolutionStyles.ts          | 58 [32m++++++++++++++[m[31m---[m
+ .../industries/technology/TechnologyStyles.ts      |  9 [32m++[m[31m-[m
+ src/pages/about/About.tsx                          | 11 [32m++++[m
+ src/pages/about/AboutStyles.ts                     |  0
+ src/pages/travels/Travels.tsx                      |  7 [32m+[m[31m-[m
+ src/routes/root.tsx                                |  2 [32m+[m
+ 15 files changed, 228 insertions(+), 33 deletions(-)
+
+[33mcommit 9a92949a79f750c859260e9f479de5fec168a050[m
+Merge: 96fb9d0 a3af268
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 08:32:55 2023 +0500
+
+    Merge branch 'main' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit 391147e09303974db593a445418ecef4478445ce[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Wed Aug 30 08:31:46 2023 +0500
+
+    news second
+
+ src/pages/secondaryNews/ui/Secondary.tsx | 37 [32m++++++++++++++++++++++++++++++++[m
+ src/pages/secondaryNews/ui/secondary.ts  | 10 [32m+++++++++[m
+ 2 files changed, 47 insertions(+)
+
+[33mcommit 0680e65a21b477f34d8d2e86203c2d17f49496ec[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Aug 29 18:44:40 2023 +0500
+
+    responsive xxl and xl
+
+ src/App.tsx                                        |  2 [32m+[m[31m-[m
+ .../industries/analysis/AnalysisStyles.ts          |  1 [32m+[m
+ .../header/Hearder/HeaderOfIndustries.tsx          | 76 [32m++++++++++++[m[31m----------[m
+ .../header/Hearder/HeaderOfIndustriesStyles.ts     | 43 [32m+++++++++++[m[31m-[m
+ .../industries/overView/OverViewStyles.ts          | 39 [32m++++++++++[m[31m-[m
+ .../industries/solution/SolutionStyles.ts          | 20 [32m+++++[m[31m-[m
+ .../industries/technology/EachTechnology.tsx       |  3 [32m+[m[31m-[m
+ .../industries/technology/TechnologyStyles.ts      | 69 [32m+++++++++++++++[m[31m-----[m
+ src/styles/global.ts                               |  9 [31m---[m
+ 9 files changed, 195 insertions(+), 67 deletions(-)
+
+[33mcommit 31ba290d77a8666c512090583a236706fce6d858[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Aug 29 18:06:05 2023 +0500
+
+    second news page
+
+ src/assets/images/pages/blogs/blog1.svg            |   9 [32m++[m
+ src/assets/images/pages/blogs/blog2.svg            |   9 [32m++[m
+ src/assets/images/pages/blogs/blog3.svg            |   9 [32m++[m
+ src/assets/images/pages/blogs/blog4.svg            |   9 [32m++[m
+ src/assets/images/pages/blogs/blog5.svg            |   9 [32m++[m
+ src/assets/images/pages/blogs/blog6.svg            |   9 [32m++[m
+ .../images/pages/secondaryNews/secondaryNews1.svg  |  14 [32m+++[m
+ src/assets/index.ts                                |  13 [32m+++[m
+ src/components/news&Blogs/navbar/ui/navbar.ts      |   2 [32m+[m[31m-[m
+ src/pages/blogs/index.ts                           |   1 [32m+[m
+ src/pages/blogs/ui/Blogs.tsx                       | 119 [32m+++++++++++++++++++++[m
+ src/pages/blogs/ui/blogs.ts                        |  19 [32m++++[m
+ src/pages/secondaryNews/index.ts                   |   1 [32m+[m
+ src/pages/secondaryNews/ui/Secondary.tsx           |  49 [32m+++++++++[m
+ src/pages/secondaryNews/ui/secondary.ts            |  61 [32m+++++++++++[m
+ src/routes/root.tsx                                |  11 [32m++[m
+ 16 files changed, 343 insertions(+), 1 deletion(-)
+
+[33mcommit a3af268d24467fb3f36579432c4952e00625a5d7[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Aug 29 17:33:09 2023 +0500
+
+    Trusted by Leading Brands and Startups section
+
+ index.html                                         | 11 [32m+++[m
+ package-lock.json                                  | 55 [32m+++++++++++++++[m
+ package.json                                       |  2 [32m+[m
+ .../Buttons/ButtonEscort/ButtonEscort.tsx          | 26 [32m+++++[m[31m--[m
+ .../Buttons/ButtonEscort/ButtonEscortStyles.ts     |  1 [32m+[m
+ src/components/index.ts                            |  4 [32m+[m[31m-[m
+ src/components/slider/Slider.tsx                   | 27 [32m++++++++[m
+ src/components/slider/SliderStyles.ts              |  0
+ src/layouts/header/HeaderStyles.ts                 |  1 [32m+[m
+ src/pages/home/Home.tsx                            | 51 [32m++[m[31m------------[m
+ src/pages/home/HomeStyles.ts                       | 79 [31m----------------------[m
+ .../LeadingBrandsSection/LeadingBrands.tsx         | 53 [32m+++++++++++++++[m
+ .../LeadingBrandsSectionStyles.ts                  | 72 [32m++++++++++++++++++++[m
+ .../home/components/MainSection/MainSection.tsx    | 58 [32m++++++++++++++++[m
+ .../components/MainSection/MainSectionStyles.ts    | 79 [32m++++++++++++++++++++++[m
+ src/pages/home/components/index.ts                 |  2 [32m+[m
+ 16 files changed, 387 insertions(+), 134 deletions(-)
+
+[33mcommit decbe1edd3a6f634845eafe681171648a3f4852f[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Tue Aug 29 12:53:31 2023 +0500
+
+    Home Main Section
+
+ package-lock.json                                  |  6 [32m++[m
+ package.json                                       |  1 [32m+[m
+ .../Buttons/ButtonEscort/ButtonEscort.tsx          | 35 [32m+++++++++[m
+ .../Buttons/ButtonEscort/ButtonEscortStyles.ts     | 44 [32m+++++++++++[m
+ src/components/Buttons/ButtonInfo/ButtonIfo.tsx    | 25 [32m++++++[m
+ .../Buttons/ButtonInfo/ButtonInfoStyles.ts         | 74 [32m++++++++++++++++++[m
+ .../Buttons/MagnetikButton/ButtonMagnetik.tsx      | 88 [32m++++++++++++++++++++++[m
+ src/components/Buttons/index.ts                    |  0
+ src/components/index.ts                            |  2 [32m+[m
+ src/layouts/header/HeaderStyles.ts                 |  5 [32m++[m
+ .../headerFeatures/HeaderFeaturesStyles.ts         | 37 [32m+++++++++[m
+ .../components/headerLogo/HeaderLogoStyles.ts      |  9 [32m+++[m
+ src/layouts/navbar/NavbarStyles.ts                 | 24 [32m++++++[m
+ src/pages/home/Home.tsx                            | 51 [32m++++++++++++[m[31m-[m
+ src/pages/home/HomeStyles.ts                       | 79 [32m+++++++++++++++++++[m
+ src/styles/default.ts                              |  8 [32m++[m
+ src/styles/globals.ts                              | 14 [32m+++[m[31m-[m
+ 17 files changed, 500 insertions(+), 2 deletions(-)
+
+[33mcommit 2a54874ed9d8f208a12cac768d3f95fd81ab8a9b[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Aug 29 11:50:58 2023 +0500
+
+    news page finished
+
+ src/assets/images/pages/News/news1.svg             |   9 [32m++[m
+ src/assets/images/pages/News/news2.svg             |   9 [32m++[m
+ src/assets/images/pages/News/news3.svg             |  14 [32m+++[m
+ src/assets/images/pages/News/news4.svg             |  14 [32m+++[m
+ src/assets/images/pages/News/news5.svg             |  14 [32m+++[m
+ src/assets/images/pages/News/news6.svg             |   9 [32m++[m
+ src/assets/images/pages/News/news7.svg             |  14 [32m+++[m
+ src/assets/index.ts                                |   7 [32m++[m
+ src/components/news&Blogs/index.ts                 |   2 [32m+[m
+ src/components/news&Blogs/navbar/ui/Navbar.tsx     |  82 [32m++++++++++++++[m
+ src/components/news&Blogs/navbar/ui/navbar.ts      | 101 [32m+++++++++++++++++[m
+ src/components/news&Blogs/title/TitleBlock.tsx     |  17 [32m+++[m
+ src/components/news&Blogs/title/title.ts           |  16 [32m+++[m
+ src/components/news&Blogs/ui/Navbar.tsx            |  17 [31m---[m
+ src/components/news&Blogs/ui/navbar.ts             |   0
+ .../components/cards/ui/CardsProject.tsx           |   9 [32m+[m[31m-[m
+ .../components/cards/ui/cardsProjects.ts           |  35 [32m++++[m[31m--[m
+ src/pages/news/ui/News.tsx                         | 122 [32m++++++++++++++++++++[m[31m-[m
+ src/pages/news/ui/news.ts                          |  13 [32m++[m[31m-[m
+ .../platformsProducts/ui/PlatformProducts.tsx      |   2 [32m+[m[31m-[m
+ 20 files changed, 471 insertions(+), 35 deletions(-)
+
+[33mcommit 0cb4fa48d549cfc8c36a8a34d7d2f2027a88be2f[m
+Merge: 1c5faa6 6ed1175
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Aug 29 10:58:26 2023 +0500
+
+    animation header and skils
+
+[33mcommit 96fb9d0ac0f1998b389ee72e09df6442ee05a7b7[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Aug 29 09:31:06 2023 +0500
+
+    conflig bugs
+
+ src/components/news&Blogs/ui/Navbar.tsx | 4 [32m+++[m[31m-[m
+ src/components/news&Blogs/ui/navbar.ts  | 3 [32m+++[m
+ src/pages/news/ui/News.tsx              | 7 [32m++++++[m[31m-[m
+ 3 files changed, 12 insertions(+), 2 deletions(-)
+
+[33mcommit 8800717bbccd1fca284b5334b513f1be9eaea1da[m
+Merge: b84c0f2 6ed1175
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Aug 29 09:17:49 2023 +0500
+
+    Merge branch 'main' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit b84c0f2b7ebfe9b1b6fb4bddb8a9382af13de595[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Tue Aug 29 09:17:17 2023 +0500
+
+    s
+
+ src/components/news&Blogs/index.ts      |  0
+ src/components/news&Blogs/ui/Navbar.tsx | 17 [32m+++++++++++++++++[m
+ src/components/news&Blogs/ui/navbar.ts  |  0
+ src/pages/news/index.ts                 |  1 [32m+[m
+ src/pages/news/ui/News.tsx              | 10 [32m++++++++++[m
+ src/pages/news/ui/news.ts               | 10 [32m++++++++++[m
+ src/routes/root.tsx                     |  5 [32m+++++[m
+ 7 files changed, 43 insertions(+)
+
+[33mcommit 1c5faa636fc229ddfdb9e0baabdd775212ee7d04[m
+Merge: 27ff5c5 3d07edd
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Tue Aug 29 09:05:26 2023 +0500
+
+    Analysis.tsx HeaderStyles.ts .....
+
+[33mcommit 6ed1175b8bbc2f5dabb1ab5c090828ed33836895[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 18:16:37 2023 +0500
+
+    xxl
+
+ src/layouts/header/Header.tsx                      |  2 [32m+[m[31m-[m
+ src/layouts/header/HeaderStyles.ts                 |  8 [32m+++[m[31m-[m
+ .../headerFeatures/HeaderFeaturesStyles.ts         | 52 [32m+++++++++++++++++++[m[31m---[m
+ .../components/headerLogo/HeaderLogoStyles.ts      | 14 [32m+++++[m[31m-[m
+ src/layouts/navbar/NavbarStyles.ts                 | 35 [32m++++++++++++[m[31m---[m
+ src/pages/home/Home.tsx                            |  8 [32m+[m[31m---[m
+ src/styles/default.ts                              |  2 [32m+[m[31m-[m
+ src/types/breacPointTypes.ts                       | 11 [32m+++++[m
+ 8 files changed, 108 insertions(+), 24 deletions(-)
+
+[33mcommit fcdaeb0fcbb23996aa8897848bb6451732637653[m
+Merge: 251c344 3d07edd
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 17:39:26 2023 +0500
+
+    s
+
+[33mcommit 251c3440d7bbf40e362d8067cf23ff7af2461026[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 17:15:47 2023 +0500
+
+    PlatformProducts
+
+ package-lock.json                                  | 39 [32m+++++++++++[m
+ package.json                                       |  1 [32m+[m
+ .../components/PlatformProducts/cards/five.svg     |  9 [32m+++[m
+ .../components/PlatformProducts/cards/four.svg     |  9 [32m+++[m
+ .../components/PlatformProducts/cards/one.svg      |  9 [32m+++[m
+ .../components/PlatformProducts/cards/six.svg      |  9 [32m+++[m
+ .../components/PlatformProducts/cards/three.svg    |  9 [32m+++[m
+ .../components/PlatformProducts/cards/two.svg      |  9 [32m+++[m
+ .../images/components/PlatformProducts/index.ts    |  8 [32m+++[m
+ .../allProjects/components/cards/index.ts          |  1 [32m+[m
+ .../components/cards/ui/CardsProject.tsx           | 59 [32m++++++++++++++++[m
+ .../components/cards/ui/cardsProjects.ts           | 74 [32m++++++++++++++++++++[m
+ .../platformsProducts/ui/PlatformProducts.tsx      | 81 [32m++++++++++++++++++++++[m
+ 13 files changed, 317 insertions(+)
+
+[33mcommit 27ff5c59a3e7e327c4b8c80b39cc4ddfd04c858d[m
+Merge: dfabb44 0c88d5a
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Aug 28 17:05:35 2023 +0500
+
+    merge and industries page
+
+[33mcommit 3d07eddf5e47c05126dd0a5ca0db96bf6349cd1c[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 17:02:02 2023 +0500
+
+    Create root file and added Suspens lazy loader ...
+
+ src/App.tsx                   | 16 [32m+++++++++[m[31m-----[m
+ src/layouts/footer/Footer.tsx |  5 [32m+++++[m
+ src/layouts/index.ts          |  2 [32m++[m
+ src/main.tsx                  |  9 [32m+++[m[31m-----[m
+ src/routes/indes.ts           |  0
+ src/routes/root.tsx           | 17 [32m+++++++++++++++[m
+ src/styles/Theme.tsx          | 19 [32m++++++++++++++++[m
+ src/styles/default.ts         | 10 [32m+++++++++[m
+ src/styles/globals.ts         | 51 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ 9 files changed, 118 insertions(+), 11 deletions(-)
+
+[33mcommit 8a46789119063a31617f1dbe320f7b3cd3d454ae[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 16:19:35 2023 +0500
+
+    Finished <Header/> and <Navbar/>
+
+ package-lock.json                                  | 660 [32m++++++++++++++++++++[m[31m-[m
+ package.json                                       |   5 [32m+[m
+ src/App.tsx                                        |   8 [32m+[m[31m-[m
+ src/assets/fonts/font/Concretica.ttf               | Bin [31m0[m -> [32m132016[m bytes
+ src/assets/images/burger.svg                       |  15 [32m+[m
+ src/assets/images/logo.png                         | Bin [31m0[m -> [32m1394[m bytes
+ src/assets/images/logo.svg                         |   6 [32m+[m
+ src/index.css                                      |  31 [32m+[m
+ src/layouts/header/Header.tsx                      |  19 [32m+[m
+ src/layouts/header/HeaderStyles.ts                 |  20 [32m+[m
+ .../components/headerFeatures/HeaderFeatures.tsx   |  43 [32m++[m
+ .../headerFeatures/HeaderFeaturesStyles.ts         |  88 [32m+++[m
+ .../header/components/headerLogo/HeaderLogo.tsx    |  17 [32m+[m
+ .../components/headerLogo/HeaderLogoStyles.ts      |  19 [32m+[m
+ src/layouts/header/components/index.ts             |   2 [32m+[m
+ src/layouts/navbar/Navbar.tsx                      |  99 [32m++++[m
+ src/layouts/navbar/NavbarStyles.ts                 |  44 [32m++[m
+ .../LinkItemColumnLines/LinkItemColumnLines.tsx    |   7 [32m+[m
+ .../LinkItemColumnLinesStyles.ts                   |   7 [32m+[m
+ .../navbar/components/linkItems/LinkItems.tsx      |   0
+ .../navbar/components/linkItems/LinkItemsStyles.ts |   0
+ src/layouts/navbar/data/LinkData.tsx               |   0
+ src/main.tsx                                       |   7 [32m+[m[31m-[m
+ src/pages/home/Home.tsx                            |   8 [32m+[m[31m-[m
+ 24 files changed, 1092 insertions(+), 13 deletions(-)
+
+[33mcommit 56f014846b9f34fcf9be0687abdc247b590aebaf[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 15:36:20 2023 +0500
+
+    PRoject
+
+ package-lock.json                                  | 595 [32m++++++++++++++++++++[m[31m-[m
+ package.json                                       |   3 [32m+[m
+ .../images/components/PlatformProducts/index.ts    |   1 [32m+[m
+ .../devisesThree_PluginPruductPage_Navbar.svg      |  66 [32m+++[m
+ .../allProjects/components/cards/index.ts          |   0
+ .../components/cards/ui/CardsProject.tsx           |   0
+ .../components/cards/ui/cardsProjects.ts           |   0
+ .../allProjects/components/filters/index.ts        |   1 [32m+[m
+ .../components/filters/ui/FilterAllProjects.tsx    |  39 [32m++[m
+ .../components/filters/ui/filterAllProject.ts      |  26 [32m+[m
+ .../platformProducts/allProjects/index.ts          |   1 [32m+[m
+ .../allProjects/ui/AllProjects.tsx                 |  25 [32m+[m
+ .../platformProducts/allProjects/ui/allProjects.ts |  14 [32m+[m
+ src/components/platformProducts/navbar/index.ts    |   3 [32m+[m
+ .../platformProducts/navbar/ui/PlatformNavbar.tsx  |  37 [32m++[m
+ .../platformProducts/navbar/ui/platformNavbar.ts   |  70 [32m+++[m
+ .../platformsProducts/ui/PlatformProducts.tsx      |   9 [32m+[m[31m-[m
+ src/pages/platformsProducts/ui/platformProducts.ts |  10 [32m+[m[31m-[m
+ 18 files changed, 888 insertions(+), 12 deletions(-)
+
+[33mcommit d06d684c192c0ce24fdaf2aa6ef1b83c5b4a6461[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 10:48:28 2023 +0500
+
+    s
+
+ src/pages/platformsProducts/index.ts               | 2 [32m+[m[31m-[m
+ src/pages/platformsProducts/ui/platformProducts.ts | 1 [32m+[m
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+[33mcommit 51eafaaf2c76842686b9bf4adf5eb3e4f1e55c39[m
+Merge: cd37f1a 0c88d5a
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 10:42:11 2023 +0500
+
+    Merge branch 'main' of https://github.com/JasurbekIsokov/MagicSoft into hp
+
+[33mcommit cd37f1aaa498054e40b0dd979feffffc985a74d4[m
+Author: MJafar777 <mirzaraximovjafar2001@gmail.com>
+Date:   Mon Aug 28 10:40:52 2023 +0500
+
+    create new files
+
+ package-lock.json                                  | 2330 [32m++++++++++++++++++[m[31m--[m
+ package.json                                       |    3 [32m+[m[31m-[m
+ src/App.tsx                                        |    8 [32m+[m[31m-[m
+ src/pages/platformsProducts/index.ts               |    3 [32m+[m
+ .../platformsProducts/ui/PlatformProducts.tsx      |   10 [32m+[m
+ src/pages/platformsProducts/ui/platformProducts.ts |    5 [32m+[m
+ 6 files changed, 2147 insertions(+), 212 deletions(-)
+
+[33mcommit dfabb44cc0701696108cc9033571c895cb6d18db[m
+Author: BehzodHamroyev <behzodhamroyev007@gmail.com>
+Date:   Mon Aug 28 10:28:50 2023 +0500
+
+    innitial code
+
+ package-lock.json                                  | 2330 [32m++++++++++++++++++[m[31m--[m
+ package.json                                       |    3 [32m+[m[31m-[m
+ src/App.tsx                                        |    4 [32m+[m[31m-[m
+ src/assets/industries/bg-travel.svg                |    9 [32m+[m
+ src/assets/industries/index.ts                     |    1 [32m+[m
+ .../industries/header/HeaderOfIndustries.tsx       |    6 [32m+[m
+ .../industries/header/HeaderOfIndustriesStyles.ts  |    9 [32m+[m
+ src/pages/travels/TravelStyles.ts                  |    6 [32m+[m
+ src/pages/travels/Travels.tsx                      |   12 [32m+[m
+ 9 files changed, 2168 insertions(+), 212 deletions(-)
+
+[33mcommit 0c88d5af76740434028be0b88085a25bcf6031dc[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 10:24:51 2023 +0500
+
+    Download fonts
+
+ package-lock.json                                  | 2330 [32m++++++++++++++++++[m[31m--[m
+ package.json                                       |    3 [32m+[m[31m-[m
+ src/App.tsx                                        |    4 [32m+[m[31m-[m
+ src/assets/fonts/Mazzard/MazzardH-Black.eot        |  Bin [31m0[m -> [32m81514[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Black.ttf        |  Bin [31m0[m -> [32m81316[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Black.woff       |  Bin [31m0[m -> [32m36176[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Black.woff2      |  Bin [31m0[m -> [32m24352[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BlackItalic.eot  |  Bin [31m0[m -> [32m86424[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BlackItalic.ttf  |  Bin [31m0[m -> [32m86216[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BlackItalic.woff |  Bin [31m0[m -> [32m39196[m bytes
+ .../fonts/Mazzard/MazzardH-BlackItalic.woff2       |  Bin [31m0[m -> [32m26016[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Bold.eot         |  Bin [31m0[m -> [32m83410[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Bold.ttf         |  Bin [31m0[m -> [32m83232[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Bold.woff        |  Bin [31m0[m -> [32m38516[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Bold.woff2       |  Bin [31m0[m -> [32m26320[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BoldItalic.eot   |  Bin [31m0[m -> [32m87304[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BoldItalic.ttf   |  Bin [31m0[m -> [32m87100[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BoldItalic.woff  |  Bin [31m0[m -> [32m41224[m bytes
+ src/assets/fonts/Mazzard/MazzardH-BoldItalic.woff2 |  Bin [31m0[m -> [32m27868[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraBold.eot    |  Bin [31m0[m -> [32m82238[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraBold.ttf    |  Bin [31m0[m -> [32m82024[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraBold.woff   |  Bin [31m0[m -> [32m38328[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraBold.woff2  |  Bin [31m0[m -> [32m26256[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraBoldItalic.eot     |  Bin [31m0[m -> [32m86972[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraBoldItalic.ttf     |  Bin [31m0[m -> [32m86748[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraBoldItalic.woff    |  Bin [31m0[m -> [32m41388[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraBoldItalic.woff2   |  Bin [31m0[m -> [32m28136[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraLight.eot   |  Bin [31m0[m -> [32m84766[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraLight.ttf   |  Bin [31m0[m -> [32m84548[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraLight.woff  |  Bin [31m0[m -> [32m38244[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ExtraLight.woff2 |  Bin [31m0[m -> [32m25964[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraLightItalic.eot    |  Bin [31m0[m -> [32m89088[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraLightItalic.ttf    |  Bin [31m0[m -> [32m88860[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraLightItalic.woff   |  Bin [31m0[m -> [32m41080[m bytes
+ .../fonts/Mazzard/MazzardH-ExtraLightItalic.woff2  |  Bin [31m0[m -> [32m27876[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Italic.eot       |  Bin [31m0[m -> [32m87846[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Italic.ttf       |  Bin [31m0[m -> [32m87660[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Italic.woff      |  Bin [31m0[m -> [32m41240[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Italic.woff2     |  Bin [31m0[m -> [32m27992[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Light.eot        |  Bin [31m0[m -> [32m84542[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Light.ttf        |  Bin [31m0[m -> [32m84344[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Light.woff       |  Bin [31m0[m -> [32m38612[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Light.woff2      |  Bin [31m0[m -> [32m26340[m bytes
+ src/assets/fonts/Mazzard/MazzardH-LightItalic.eot  |  Bin [31m0[m -> [32m88600[m bytes
+ src/assets/fonts/Mazzard/MazzardH-LightItalic.ttf  |  Bin [31m0[m -> [32m88392[m bytes
+ src/assets/fonts/Mazzard/MazzardH-LightItalic.woff |  Bin [31m0[m -> [32m41388[m bytes
+ .../fonts/Mazzard/MazzardH-LightItalic.woff2       |  Bin [31m0[m -> [32m28120[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Medium.eot       |  Bin [31m0[m -> [32m83766[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Medium.ttf       |  Bin [31m0[m -> [32m83564[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Medium.woff      |  Bin [31m0[m -> [32m38568[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Medium.woff2     |  Bin [31m0[m -> [32m26408[m bytes
+ src/assets/fonts/Mazzard/MazzardH-MediumItalic.eot |  Bin [31m0[m -> [32m87732[m bytes
+ src/assets/fonts/Mazzard/MazzardH-MediumItalic.ttf |  Bin [31m0[m -> [32m87520[m bytes
+ .../fonts/Mazzard/MazzardH-MediumItalic.woff       |  Bin [31m0[m -> [32m41304[m bytes
+ .../fonts/Mazzard/MazzardH-MediumItalic.woff2      |  Bin [31m0[m -> [32m27968[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Regular.eot      |  Bin [31m0[m -> [32m84042[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Regular.ttf      |  Bin [31m0[m -> [32m83852[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Regular.woff     |  Bin [31m0[m -> [32m38364[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Regular.woff2    |  Bin [31m0[m -> [32m26304[m bytes
+ src/assets/fonts/Mazzard/MazzardH-SemiBold.eot     |  Bin [31m0[m -> [32m82726[m bytes
+ src/assets/fonts/Mazzard/MazzardH-SemiBold.ttf     |  Bin [31m0[m -> [32m82516[m bytes
+ src/assets/fonts/Mazzard/MazzardH-SemiBold.woff    |  Bin [31m0[m -> [32m37892[m bytes
+ src/assets/fonts/Mazzard/MazzardH-SemiBold.woff2   |  Bin [31m0[m -> [32m25816[m bytes
+ .../fonts/Mazzard/MazzardH-SemiBoldItalic.eot      |  Bin [31m0[m -> [32m87964[m bytes
+ .../fonts/Mazzard/MazzardH-SemiBoldItalic.ttf      |  Bin [31m0[m -> [32m87744[m bytes
+ .../fonts/Mazzard/MazzardH-SemiBoldItalic.woff     |  Bin [31m0[m -> [32m40652[m bytes
+ .../fonts/Mazzard/MazzardH-SemiBoldItalic.woff2    |  Bin [31m0[m -> [32m27540[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Thin.eot         |  Bin [31m0[m -> [32m83462[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Thin.ttf         |  Bin [31m0[m -> [32m83268[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Thin.woff        |  Bin [31m0[m -> [32m35944[m bytes
+ src/assets/fonts/Mazzard/MazzardH-Thin.woff2       |  Bin [31m0[m -> [32m23988[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ThinItalic.eot   |  Bin [31m0[m -> [32m88612[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ThinItalic.ttf   |  Bin [31m0[m -> [32m88408[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ThinItalic.woff  |  Bin [31m0[m -> [32m39116[m bytes
+ src/assets/fonts/Mazzard/MazzardH-ThinItalic.woff2 |  Bin [31m0[m -> [32m25800[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Black.eot        |  Bin [31m0[m -> [32m80846[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Black.ttf        |  Bin [31m0[m -> [32m80648[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Black.woff       |  Bin [31m0[m -> [32m35928[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Black.woff2      |  Bin [31m0[m -> [32m24376[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BlackItalic.eot  |  Bin [31m0[m -> [32m85036[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BlackItalic.ttf  |  Bin [31m0[m -> [32m84828[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BlackItalic.woff |  Bin [31m0[m -> [32m38772[m bytes
+ .../fonts/Mazzard/MazzardL-BlackItalic.woff2       |  Bin [31m0[m -> [32m25896[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Bold.eot         |  Bin [31m0[m -> [32m81726[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Bold.ttf         |  Bin [31m0[m -> [32m81548[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Bold.woff        |  Bin [31m0[m -> [32m38000[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Bold.woff2       |  Bin [31m0[m -> [32m26300[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BoldItalic.eot   |  Bin [31m0[m -> [32m86052[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BoldItalic.ttf   |  Bin [31m0[m -> [32m85848[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BoldItalic.woff  |  Bin [31m0[m -> [32m40840[m bytes
+ src/assets/fonts/Mazzard/MazzardL-BoldItalic.woff2 |  Bin [31m0[m -> [32m27816[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraBold.eot    |  Bin [31m0[m -> [32m81586[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraBold.ttf    |  Bin [31m0[m -> [32m81372[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraBold.woff   |  Bin [31m0[m -> [32m38068[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraBold.woff2  |  Bin [31m0[m -> [32m26360[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraBoldItalic.eot     |  Bin [31m0[m -> [32m85992[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraBoldItalic.ttf     |  Bin [31m0[m -> [32m85768[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraBoldItalic.woff    |  Bin [31m0[m -> [32m40956[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraBoldItalic.woff2   |  Bin [31m0[m -> [32m27920[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraLight.eot   |  Bin [31m0[m -> [32m83818[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraLight.ttf   |  Bin [31m0[m -> [32m83600[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraLight.woff  |  Bin [31m0[m -> [32m38380[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ExtraLight.woff2 |  Bin [31m0[m -> [32m26184[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraLightItalic.eot    |  Bin [31m0[m -> [32m87664[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraLightItalic.ttf    |  Bin [31m0[m -> [32m87436[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraLightItalic.woff   |  Bin [31m0[m -> [32m41112[m bytes
+ .../fonts/Mazzard/MazzardL-ExtraLightItalic.woff2  |  Bin [31m0[m -> [32m27796[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Italic.eot       |  Bin [31m0[m -> [32m86850[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Italic.ttf       |  Bin [31m0[m -> [32m86664[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Italic.woff      |  Bin [31m0[m -> [32m40856[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Italic.woff2     |  Bin [31m0[m -> [32m27740[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Light.eot        |  Bin [31m0[m -> [32m83990[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Light.ttf        |  Bin [31m0[m -> [32m83792[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Light.woff       |  Bin [31m0[m -> [32m38656[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Light.woff2      |  Bin [31m0[m -> [32m26216[m bytes
+ src/assets/fonts/Mazzard/MazzardL-LightItalic.eot  |  Bin [31m0[m -> [32m87444[m bytes
+ src/assets/fonts/Mazzard/MazzardL-LightItalic.ttf  |  Bin [31m0[m -> [32m87236[m bytes
+ src/assets/fonts/Mazzard/MazzardL-LightItalic.woff |  Bin [31m0[m -> [32m41204[m bytes
+ .../fonts/Mazzard/MazzardL-LightItalic.woff2       |  Bin [31m0[m -> [32m28012[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Medium.eot       |  Bin [31m0[m -> [32m82714[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Medium.ttf       |  Bin [31m0[m -> [32m82512[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Medium.woff      |  Bin [31m0[m -> [32m37932[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Medium.woff2     |  Bin [31m0[m -> [32m25912[m bytes
+ src/assets/fonts/Mazzard/MazzardL-MediumItalic.eot |  Bin [31m0[m -> [32m86840[m bytes
+ src/assets/fonts/Mazzard/MazzardL-MediumItalic.ttf |  Bin [31m0[m -> [32m86628[m bytes
+ .../fonts/Mazzard/MazzardL-MediumItalic.woff       |  Bin [31m0[m -> [32m40688[m bytes
+ .../fonts/Mazzard/MazzardL-MediumItalic.woff2      |  Bin [31m0[m -> [32m27576[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Regular.eot      |  Bin [31m0[m -> [32m83266[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Regular.ttf      |  Bin [31m0[m -> [32m83076[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Regular.woff     |  Bin [31m0[m -> [32m38548[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Regular.woff2    |  Bin [31m0[m -> [32m26156[m bytes
+ src/assets/fonts/Mazzard/MazzardL-SemiBold.eot     |  Bin [31m0[m -> [32m82254[m bytes
+ src/assets/fonts/Mazzard/MazzardL-SemiBold.ttf     |  Bin [31m0[m -> [32m82044[m bytes
+ src/assets/fonts/Mazzard/MazzardL-SemiBold.woff    |  Bin [31m0[m -> [32m37512[m bytes
+ src/assets/fonts/Mazzard/MazzardL-SemiBold.woff2   |  Bin [31m0[m -> [32m25772[m bytes
+ .../fonts/Mazzard/MazzardL-SemiBoldItalic.eot      |  Bin [31m0[m -> [32m86032[m bytes
+ .../fonts/Mazzard/MazzardL-SemiBoldItalic.ttf      |  Bin [31m0[m -> [32m85812[m bytes
+ .../fonts/Mazzard/MazzardL-SemiBoldItalic.woff     |  Bin [31m0[m -> [32m40492[m bytes
+ .../fonts/Mazzard/MazzardL-SemiBoldItalic.woff2    |  Bin [31m0[m -> [32m27536[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Thin.eot         |  Bin [31m0[m -> [32m83106[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Thin.ttf         |  Bin [31m0[m -> [32m82912[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Thin.woff        |  Bin [31m0[m -> [32m36060[m bytes
+ src/assets/fonts/Mazzard/MazzardL-Thin.woff2       |  Bin [31m0[m -> [32m24124[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ThinItalic.eot   |  Bin [31m0[m -> [32m87168[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ThinItalic.ttf   |  Bin [31m0[m -> [32m86964[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ThinItalic.woff  |  Bin [31m0[m -> [32m38900[m bytes
+ src/assets/fonts/Mazzard/MazzardL-ThinItalic.woff2 |  Bin [31m0[m -> [32m25952[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Black.eot        |  Bin [31m0[m -> [32m81418[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Black.ttf        |  Bin [31m0[m -> [32m81220[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Black.woff       |  Bin [31m0[m -> [32m37764[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Black.woff2      |  Bin [31m0[m -> [32m25908[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BlackItalic.eot  |  Bin [31m0[m -> [32m85344[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BlackItalic.ttf  |  Bin [31m0[m -> [32m85136[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BlackItalic.woff |  Bin [31m0[m -> [32m40404[m bytes
+ .../fonts/Mazzard/MazzardM-BlackItalic.woff2       |  Bin [31m0[m -> [32m27492[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Bold.eot         |  Bin [31m0[m -> [32m82058[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Bold.ttf         |  Bin [31m0[m -> [32m81880[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Bold.woff        |  Bin [31m0[m -> [32m38860[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Bold.woff2       |  Bin [31m0[m -> [32m26832[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BoldItalic.eot   |  Bin [31m0[m -> [32m86240[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BoldItalic.ttf   |  Bin [31m0[m -> [32m86036[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BoldItalic.woff  |  Bin [31m0[m -> [32m41744[m bytes
+ src/assets/fonts/Mazzard/MazzardM-BoldItalic.woff2 |  Bin [31m0[m -> [32m28436[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraBold.eot    |  Bin [31m0[m -> [32m82298[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraBold.ttf    |  Bin [31m0[m -> [32m82084[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraBold.woff   |  Bin [31m0[m -> [32m38820[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraBold.woff2  |  Bin [31m0[m -> [32m26824[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraBoldItalic.eot     |  Bin [31m0[m -> [32m86052[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraBoldItalic.ttf     |  Bin [31m0[m -> [32m85828[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraBoldItalic.woff    |  Bin [31m0[m -> [32m41696[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraBoldItalic.woff2   |  Bin [31m0[m -> [32m28516[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraLight.eot   |  Bin [31m0[m -> [32m84618[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraLight.ttf   |  Bin [31m0[m -> [32m84400[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraLight.woff  |  Bin [31m0[m -> [32m39180[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ExtraLight.woff2 |  Bin [31m0[m -> [32m26888[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraLightItalic.eot    |  Bin [31m0[m -> [32m89076[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraLightItalic.ttf    |  Bin [31m0[m -> [32m88848[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraLightItalic.woff   |  Bin [31m0[m -> [32m41924[m bytes
+ .../fonts/Mazzard/MazzardM-ExtraLightItalic.woff2  |  Bin [31m0[m -> [32m28604[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Italic.eot       |  Bin [31m0[m -> [32m87246[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Italic.ttf       |  Bin [31m0[m -> [32m87060[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Italic.woff      |  Bin [31m0[m -> [32m41536[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Italic.woff2     |  Bin [31m0[m -> [32m28160[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Light.eot        |  Bin [31m0[m -> [32m84342[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Light.ttf        |  Bin [31m0[m -> [32m84144[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Light.woff       |  Bin [31m0[m -> [32m39444[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Light.woff2      |  Bin [31m0[m -> [32m27040[m bytes
+ src/assets/fonts/Mazzard/MazzardM-LightItalic.eot  |  Bin [31m0[m -> [32m87948[m bytes
+ src/assets/fonts/Mazzard/MazzardM-LightItalic.ttf  |  Bin [31m0[m -> [32m87740[m bytes
+ src/assets/fonts/Mazzard/MazzardM-LightItalic.woff |  Bin [31m0[m -> [32m41616[m bytes
+ .../fonts/Mazzard/MazzardM-LightItalic.woff2       |  Bin [31m0[m -> [32m28336[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Medium.eot       |  Bin [31m0[m -> [32m83794[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Medium.ttf       |  Bin [31m0[m -> [32m83592[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Medium.woff      |  Bin [31m0[m -> [32m38836[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Medium.woff2     |  Bin [31m0[m -> [32m26736[m bytes
+ src/assets/fonts/Mazzard/MazzardM-MediumItalic.eot |  Bin [31m0[m -> [32m87556[m bytes
+ src/assets/fonts/Mazzard/MazzardM-MediumItalic.ttf |  Bin [31m0[m -> [32m87344[m bytes
+ .../fonts/Mazzard/MazzardM-MediumItalic.woff       |  Bin [31m0[m -> [32m41624[m bytes
+ .../fonts/Mazzard/MazzardM-MediumItalic.woff2      |  Bin [31m0[m -> [32m28424[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Regular.eot      |  Bin [31m0[m -> [32m83874[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Regular.ttf      |  Bin [31m0[m -> [32m83684[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Regular.woff     |  Bin [31m0[m -> [32m39068[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Regular.woff2    |  Bin [31m0[m -> [32m26712[m bytes
+ src/assets/fonts/Mazzard/MazzardM-SemiBold.eot     |  Bin [31m0[m -> [32m82570[m bytes
+ src/assets/fonts/Mazzard/MazzardM-SemiBold.ttf     |  Bin [31m0[m -> [32m82360[m bytes
+ src/assets/fonts/Mazzard/MazzardM-SemiBold.woff    |  Bin [31m0[m -> [32m38388[m bytes
+ src/assets/fonts/Mazzard/MazzardM-SemiBold.woff2   |  Bin [31m0[m -> [32m26492[m bytes
+ .../fonts/Mazzard/MazzardM-SemiBoldItalic.eot      |  Bin [31m0[m -> [32m86776[m bytes
+ .../fonts/Mazzard/MazzardM-SemiBoldItalic.ttf      |  Bin [31m0[m -> [32m86556[m bytes
+ .../fonts/Mazzard/MazzardM-SemiBoldItalic.woff     |  Bin [31m0[m -> [32m41112[m bytes
+ .../fonts/Mazzard/MazzardM-SemiBoldItalic.woff2    |  Bin [31m0[m -> [32m28096[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Thin.eot         |  Bin [31m0[m -> [32m84354[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Thin.ttf         |  Bin [31m0[m -> [32m84160[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Thin.woff        |  Bin [31m0[m -> [32m37832[m bytes
+ src/assets/fonts/Mazzard/MazzardM-Thin.woff2       |  Bin [31m0[m -> [32m25580[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ThinItalic.eot   |  Bin [31m0[m -> [32m88780[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ThinItalic.ttf   |  Bin [31m0[m -> [32m88576[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ThinItalic.woff  |  Bin [31m0[m -> [32m40600[m bytes
+ src/assets/fonts/Mazzard/MazzardM-ThinItalic.woff2 |  Bin [31m0[m -> [32m27232[m bytes
+ src/assets/fonts/Mazzard/demo.html                 | 1585 [32m+++++++++++++[m
+ src/assets/fonts/Mazzard/stylesheet.css            |  648 [32m++++++[m
+ src/pages/home/Home.tsx                            |    5 [32m+[m
+ src/pages/home/HomeStyles.ts                       |    0
+ 223 files changed, 4363 insertions(+), 212 deletions(-)
+
+[33mcommit 4b0480ec561ee25615d7235d970b5b1f51eb7f7c[m[33m ([m[1;32mmain[m[33m)[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 09:30:29 2023 +0500
+
+    Create File and folder structure
+
+ .eslintrc.cjs           |   18 [32m+[m
+ .gitignore              |   24 [32m+[m
+ index.html              |   13 [32m+[m
+ package-lock.json       | 2900 [32m+++++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json            |   28 [32m+[m
+ public/vite.svg         |    1 [32m+[m
+ src/App.tsx             |    5 [32m+[m
+ src/assets/index.ts     |    0
+ src/components/index.ts |    0
+ src/layouts/index.ts    |    0
+ src/main.tsx            |    9 [32m+[m
+ src/pages/index.ts      |    0
+ src/routes/indes.ts     |    0
+ src/types/index.ts      |    0
+ src/vite-env.d.ts       |    1 [32m+[m
+ tsconfig.json           |   25 [32m+[m
+ tsconfig.node.json      |   10 [32m+[m
+ vite.config.ts          |    7 [32m+[m
+ 18 files changed, 3041 insertions(+)
+
+[33mcommit 24b640c6816525ffbdbdca75450296f3052fc1fd[m
+Author: Jasurbek Isokov <jasurisoqov685@gmail.com>
+Date:   Mon Aug 28 09:22:04 2023 +0500
+
+    first commit
+
+ README.md | 28 [32m++++++++++++++++++++++++++++[m
+ 1 file changed, 28 insertions(+)

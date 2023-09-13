@@ -42,8 +42,6 @@ interface Props {
 const CardsProject = (props: Props) => {
   const { filterHandlerCard } = useContext<ButtonContextProps>(ButtonContext);
 
-  // console.log(filterHandlerCard, props.dataCards[1].category);
-
   const { dataCards, width, bg, btn } = props;
 
   const sendToTop = (id: number, category: string[]): void => {
