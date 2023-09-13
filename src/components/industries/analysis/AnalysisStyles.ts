@@ -6,7 +6,7 @@ export const AnalysisWrapper = styled.div`
   padding-right: 190px;
   display: flex;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
   padding: 0;
   width: 100%;
 

@@ -3,15 +3,15 @@ import BgContact from "../../../assets/about/bgOfContact.svg";
 
 export const ContactWrapper = styled.div`
   height: fit-content;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
+  padding: 80px 0;
   background-image: url(${BgContact});
   display: flex;
   justify-content: center;
   align-items: center;
   .bg {
-    width: 70%;
-    /* height: 60vh; */
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: start;
