@@ -86,7 +86,6 @@ export const BodyOfMenu = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  height: 100%;
   margin-bottom: 40px;
   padding: 0;
 
@@ -133,7 +132,6 @@ export const Title = styled.div`
 
 export const ContainerOfPageOfSite = styled.div`
   width: 70%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,6 +155,7 @@ export const EachLinkOfPage = styled.div`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.16px;
+  margin-top: 50px;
   cursor: pointer;
   transition: all 0.2s linear;
 
