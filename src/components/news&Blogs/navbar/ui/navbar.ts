@@ -2,21 +2,18 @@ import styled from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const NavbarWrapper = styled.div`
-  max-width: 1280px;
   width: 100%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: 2rem auto;
+  margin: 0 auto;
   background: #161616;
 `;
 
 export const Cards = styled.div<BreacPointsType>`
-  width: 100%;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +22,6 @@ export const Cards = styled.div<BreacPointsType>`
   background: #161616;
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    max-width: 1024px;
-    max-width: 100%;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
@@ -34,14 +29,15 @@ export const Cards = styled.div<BreacPointsType>`
 `;
 
 export const CardLeft = styled.div<BreacPointsType>`
-  width: 50%;
+  width: 60%;
   height: 100%;
-  padding: 40px 50px;
+  padding: 50px 10px;
   @media ${(props) => props.theme.breakpoints.xl} {
     padding: 10px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
+    padding: 10px;
   }
 `;
 
@@ -54,6 +50,7 @@ export const Img = styled.img<BreacPointsType>`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
@@ -77,7 +74,7 @@ export const Title = styled.h3<BreacPointsType>`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 90%;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 `;
 
@@ -101,7 +98,7 @@ export const SubTitle = styled.h3<BreacPointsType>`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 90%;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 `;
 
@@ -113,7 +110,6 @@ export const FlexBasedOn = styled.div<BreacPointsType>`
   justify-content: flex-start;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 90%;
-    margin: 10px auto;
   }
 `;
 
@@ -154,6 +150,11 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   text-transform: capitalize;
   transition: all 0.5s ease;
 
+  background-color: #474748;
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
   color: #d4f54c;
   font-family: Archivo-Regular, sans-serif;
   font-size: 16px;
@@ -161,7 +162,7 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   font-weight: 600;
   line-height: 137.8%;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
 
@@ -179,6 +180,6 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 90%;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 `;
