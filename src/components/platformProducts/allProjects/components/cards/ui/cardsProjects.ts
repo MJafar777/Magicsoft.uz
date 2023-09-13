@@ -48,7 +48,7 @@ export const Img = styled.img`
 
 export const Title = styled.h3<BreacPointsType>`
   color: #fff;
-  font-family: MazzardM-Semibold, sans-serif;
+  font-family: "MazzardM-Semibold", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -67,7 +67,7 @@ export const SubTitle = styled.h3<BreacPointsType>`
   font-weight: 400;
   font-style: normal;
   line-height: 137.8%;
-  font-family: MazzardM-Regular, sans-serif;
+  font-family: "MazzardM-Regular", sans-serif;
   margin-bottom: 13px;
 
   opacity: 0.7;

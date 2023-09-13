@@ -7,8 +7,10 @@ import {
   SubTitle,
   Title,
 } from "./CommentStyles";
+import useLocales from "../../../locales/useLocales";
 
 const Comments = () => {
+  const { translate } = useLocales();
 
   const settings = {
     className: "center",
@@ -66,11 +68,11 @@ const Comments = () => {
       },
     ],
   };
-  
+
   return (
     <CommentsWrapper>
-      <Title>What our clients say</Title>
-      <SubTitle>What our clients say</SubTitle>
+      <Title>{translate("commentTitle")}</Title>
+      <SubTitle>{translate("commentSubtile")}</SubTitle>
       <CommentContainer>
         <LeadingBrandsBoxComment>
           <Slider {...settings}>

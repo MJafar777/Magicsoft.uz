@@ -36,7 +36,9 @@ export const Paragraph = styled.p`
   width: 80%;
   color: #fff;
   font-family: Concretica;
-  font-size: 52px;
+  font-size: 42px;
+  margin-top: 150px;
+
   font-style: normal;
   font-weight: 400;
   line-height: 126.3%; /* 88.41px */

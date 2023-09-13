@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../types/breacPointTypes";
 interface LinkItemProp {
-  display: boolean;
+  display?: boolean;
 }
+
 export const NavbarWrapper = styled.nav<BreacPointsType>`
   display: flex;
   align-items: center;
@@ -28,7 +29,7 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
   }
 `;
 
-export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
+export const LinkItem = styled.div<LinkItemProp>`
   cursor: pointer;
   position: relative;
   display: flex;
@@ -45,6 +46,7 @@ export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
     gap: 8px;
     text-decoration: none;
   }
+
   .listOfLink {
     position: absolute;
     display: flex;
@@ -54,7 +56,7 @@ export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
     transition: all 0.5s;
     transform: translateY(${(prop) => (prop.display ? "0px" : "-300px")});
     height: 100%;
-    top: 40px;
+    top: 50px;
     left: -50%;
 
     div {
@@ -62,26 +64,42 @@ export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
       display: flex;
       .travel {
         margin-left: 30px;
-        width: 100vw;
         margin-top: 40px;
         color: #1b63cc;
+        transition: all 0.5s linear;
+
         font-size: 14px;
+        width: 11vw;
+
+        &:hover {
+          color: white;
+        }
       }
 
       .travel2 {
         margin-left: 30px;
-        width: 100vw;
+        width: 11vw;
         margin-top: 70px;
         color: #1b63cc;
         font-size: 14px;
+        transition: all 0.5s linear;
+
+        &:hover {
+          color: white;
+        }
       }
 
       .travel3 {
+        width: 11vw;
         margin-left: 30px;
         margin-top: 100px;
-        width: 100vw;
         color: #1b63cc;
         font-size: 14px;
+        transition: all 0.5s linear;
+
+        &:hover {
+          color: white;
+        }
       }
     }
 
@@ -90,13 +108,11 @@ export const LinkItem = styled.div<BreacPointsType | LinkItemProp>`
       position: absolute;
       width: 100px;
       top: 20px;
-      /* border: solid red 1px; */
       z-index: 1000;
     }
 
     img {
       transition: all 1s linear;
-      /* display: ${(prop) => (prop.display ? "block" : "none")}; */
       z-index: -100;
       position: absolute;
       left: 20%;
@@ -123,7 +139,9 @@ export const LinkItemText = styled.p<BreacPointsType>`
   font-size: 20px;
   font-weight: 500;
   transition: color 0.3s;
-
+  display: flex;
+  align-items: center;
+  gap: 8px;
   &:hover {
     color: #fff;
   }

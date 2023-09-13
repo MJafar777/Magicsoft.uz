@@ -55,6 +55,7 @@ const FilterAllProjects: FC<Props> = (props) => {
                 onClick={() => {
                   FilterButtonClicked(item.id);
                   setContextValueItem(item.value);
+                  setFilterBtn(false);
                 }}
                 key={item.id}
                 style={idFilterValue === item.id ? activeButton : {}}

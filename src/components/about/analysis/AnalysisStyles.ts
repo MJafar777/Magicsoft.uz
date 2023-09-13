@@ -76,7 +76,7 @@ export const Title = styled.div`
 
 export const Subtitle = styled.div`
   text-align: left;
-  font-family: MazzardH-Regular;
+  font-family: "MazzardH-Regular";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
