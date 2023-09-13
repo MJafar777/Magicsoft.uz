@@ -1,39 +1,67 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
-  min-height: 627px;
-  max-width: 1652px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  /* margin: 150px auto; */
+export const DigitalExperienceContainerWrapper = styled.section<BreacPointsType>`
+  max-width: 1500px;
+  padding: 0 20px;
+  min-height: 787px;
+  height: 100vh;
   margin: 0 auto;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   @media ${(props) => props.theme.breakpoints.xxl} {
-    max-width: 1440px;
-    padding: 0 20px;
-    /* margin: 150px auto; */
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1201px;
+    min-height: 630px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    max-width: 1200px;
+    width: 100%;
+    padding: 0px 20px;
+    max-width: 993px;
+    min-height: 441px;
+    height: auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 768px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+`;
+
+export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
     margin: 100px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    max-width: 992px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 768px;
     display: flex;
+    flex-direction: column-reverse;
     min-height: auto;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    max-width: 576px;
   }
 `;
 
@@ -42,6 +70,7 @@ export const DigitalExperienceLeft = styled.div<BreacPointsType>`
   flex-direction: column;
   gap: 30px;
   z-index: 100;
+  width: 50%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
@@ -52,7 +81,6 @@ export const DigitalExperienceLeft = styled.div<BreacPointsType>`
 `;
 
 export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
-  max-width: 634px;
   color: #fff;
   font-family: "MazzardM-Semibold";
   font-size: 86px;
@@ -135,102 +163,56 @@ export const DigitalExperienceRight = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin: 0 auto;
-  position: relative;
   transition: all 0.3s;
 
-  img {
-    transition: all 0.3s;
-    position: absolute;
-    z-index: -1;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    position: absolute;
-    top: -13%;
-    right: 0;
-    bottom: 0;
-  }
-
-  @media ${(props) => props.theme.breakpoints.xxl} {
-    width: 396px;
-    top: 0px;
-
-    img {
-      top: 60px;
-      width: 656px;
-      right: -150px;
-    }
-  }
-
-  @media ${(props) => props.theme.breakpoints.xl} {
-    width: 356px;
-
-    img {
-      top: 120px;
-      width: 456px;
-      right: -50px;
-    }
-  }
-
   @media ${(props) => props.theme.breakpoints.md} {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
   }
 `;
 
 export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  opacity: 1;
-  position: absolute;
-  z-index: -1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  border: 1px solid white;
   display: flex;
-  overflow: hidden;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  border-radius: 2.5em;
+  border-radius: 24px;
+  border-radius: 30px;
+  width: 80%;
+  padding: 20px;
+  transition: all 0.3s;
+
+  &:hover {
+    padding: 0;
+    border: 0px;
+  }
 
   video {
+    width: 100%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    z-index: -100;
-    transform: translateX(-100px);
-
-    @media ${(props) => props.theme.breakpoints.xxl} {
-      transform: translateX(0px);
-    }
-
-    @media ${(props) => props.theme.breakpoints.xl} {
-      width: 330px;
-    }
+    border-radius: 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    width: 410px;
-    height: 305px;
-    top: 178px;
-    right: -20px;
-    border-radius: 10px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.xl} {
-    width: 356px;
-    top: 138px;
+    width: 100%;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    padding: 0;
+    border: none;
+
+    video {
+      width: 100%;
+      border-radius: 5px;
+    }
   }
 `;
 

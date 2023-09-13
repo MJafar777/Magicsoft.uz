@@ -2,7 +2,8 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const LeadingBrandsSectionContainerWrapper = styled.section<BreacPointsType>`
-  max-width: 1652px;
+  max-width: 1500px;
+  padding: 0 20px;
   min-height: 787px;
   height: 100vh;
   margin: 0 auto;

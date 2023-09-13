@@ -2,10 +2,11 @@ import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const MainSectionWrapper = styled.div<BreacPointsType>`
-  max-width: 1652px;
-  min-height: 787px;
+  max-width: 1500px;
+  padding: 0 20px;
   height: calc(100vh - 111px);
   margin: 0 auto;
+  min-height: 787px;
 
   .mainSectionMobileBox {
     display: none;
@@ -46,6 +47,7 @@ export const MainSectionWrapper = styled.div<BreacPointsType>`
 
 export const MainSectionContainer = styled.section<BreacPointsType>`
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

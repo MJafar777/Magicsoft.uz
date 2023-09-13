@@ -29,27 +29,6 @@ const Navbar = () => {
     <NavbarWrapper>
       <LinkItem display={displayOfIndustry}>
         <NavLink
-          to="/"
-          onClick={() => {
-            setDisplayOfIndustry(false);
-            setDisplayOfLanguage(false);
-          }}
-        >
-          {({ isActive }) =>
-            isActive ? (
-              <>
-                <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>Home</LinkItemText>
-              </>
-            ) : (
-              <LinkItemText>Home</LinkItemText>
-            )
-          }
-        </NavLink>
-      </LinkItem>
-
-      <LinkItem display={displayOfIndustry}>
-        <NavLink
           to="/platform_products"
           onClick={() => {
             setDisplayOfIndustry(false);

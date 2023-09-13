@@ -22,7 +22,7 @@ const Home = () => {
 
         <LeadingBrandsSection />
 
-        {/* <DigitalExperience /> */}
+        <DigitalExperience />
 
         {/* <Services /> */}
 
@@ -30,7 +30,7 @@ const Home = () => {
 
         {/* <Mission /> */}
 
-        {/* <OurCommunity /> */}
+        <OurCommunity />
 
         {/* <SuccessfulProjects /> */}
 
@@ -49,15 +49,15 @@ const Home = () => {
 
       <LeadingBrandsSection />
 
-      {/* <DigitalExperience /> */}
+      <DigitalExperience />
 
       {/* <Services /> */}
 
-      {/* <OurTechnologies /> */}
+      <OurTechnologies />
 
       {/* <Mission /> */}
 
-      {/* <OurCommunity /> */}
+      <OurCommunity />
 
       {/* <SuccessfulProjects /> */}
 
