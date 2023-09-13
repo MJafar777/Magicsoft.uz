@@ -16,7 +16,7 @@ const PlatformProducts = () => {
 
           <AllProjects />
 
-          <CardsProject dataCards={dataCards} width={600} bg={""} />
+          <CardsProject dataCards={dataCards} width={673} bg={"#1F1F20"} />
         </PlatformProductsWrapper>
       </Container>
     </Suspense>

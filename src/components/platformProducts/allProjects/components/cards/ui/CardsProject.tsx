@@ -80,7 +80,11 @@ const CardsProject = (props: Props) => {
                   {item?.date ? <DateItem>{item.date}</DateItem> : ""}
 
                   <Link
-                    style={{ listStyle: "none", textDecoration: "none" }}
+                    style={{
+                      listStyle: "none",
+                      textDecoration: "none",
+                      
+                    }}
                     to={`${item.link}/${item.id}`}
                   >
                     <SendLinkBtn
