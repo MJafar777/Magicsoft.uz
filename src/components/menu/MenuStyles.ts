@@ -98,7 +98,7 @@ export const BodyOfMenu = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {
-    padding: 80px 10px;
+    padding: 0;
   }
 `;
 
