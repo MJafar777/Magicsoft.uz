@@ -1,6 +1,5 @@
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { Footer } from "../../layouts";
-import { HeaderReplace } from "./HomeStyles";
 import { MainSection, LeadingBrandsSection } from "./components";
 import DigitalExperience from "./components/DigitalExperience/DigitalExperience";
 import Feedback from "./components/Feedback/Feedback";
@@ -16,37 +15,34 @@ const Home = () => {
 
   console.log(WWidth);
 
-  // if (WWidth < 1200) {
-  //   return (
-  //     <>
-  //       <HeaderReplace />
+  if (WWidth < 1201) {
+    return (
+      <>
+        <MainSection />
 
-  //       <MainSection />
+        <LeadingBrandsSection />
 
-  //       <LeadingBrandsSection />
+        {/* <DigitalExperience /> */}
 
-  //       {/* <DigitalExperience /> */}
+        {/* <Services /> */}
 
-  //       <Services />
+        {/* <OurTechnologies /> */}
 
-  //       <OurTechnologies />
+        {/* <Mission /> */}
 
-  //       {/* <Mission /> */}
+        {/* <OurCommunity /> */}
 
-  //       <OurCommunity />
+        {/* <SuccessfulProjects /> */}
 
-  //       <SuccessfulProjects />
+        {/* <Feedback /> */}
 
-  //       {/* <Feedback /> */}
-
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+        <Footer />
+      </>
+    );
+  }
 
   return (
-    <>
-      <HeaderReplace />
+    <ReactPageScroller>
       {/* <ReactPageScroller> */}
 
       <MainSection />
@@ -55,21 +51,21 @@ const Home = () => {
 
       {/* <DigitalExperience /> */}
 
-      <Services />
+      {/* <Services /> */}
 
-      <OurTechnologies />
+      {/* <OurTechnologies /> */}
 
       {/* <Mission /> */}
 
-      <OurCommunity />
+      {/* <OurCommunity /> */}
 
-      <SuccessfulProjects />
+      {/* <SuccessfulProjects /> */}
 
-      <Feedback />
+      {/* <Feedback /> */}
 
       <Footer />
       {/* </ReactPageScroller> */}
-    </>
+    </ReactPageScroller>
   );
 };
 

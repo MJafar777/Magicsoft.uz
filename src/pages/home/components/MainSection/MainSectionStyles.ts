@@ -23,6 +23,7 @@ export const MainSectionWrapper = styled.div<BreacPointsType>`
     padding: 0px;
     max-width: 992px;
     min-height: 441px;
+    height: auto;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -31,7 +32,6 @@ export const MainSectionWrapper = styled.div<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-    height: auto;
     margin-bottom: 30px;
 
     .mainSectionMobileBox {
