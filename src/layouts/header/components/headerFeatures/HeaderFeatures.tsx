@@ -70,7 +70,9 @@ const HeaderFeatures = () => {
 
       <LinkItem display={displayOfLanguage} onClick={() => toggleButtonLang()}>
         <LanguageIcon className="headerLanguageIcon" />
-        <LinkItemText>{translate("changeLang")}</LinkItemText>
+        <LinkItemText style={{ fontSize: "14px" }}>
+          {translate("changeLang")}
+        </LinkItemText>
         <div className="listOfLink">
           <div className="uz" onClick={() => handleLanguage("uz")}>
             <p>Uzbekcha</p>

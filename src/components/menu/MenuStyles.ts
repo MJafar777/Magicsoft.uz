@@ -67,7 +67,8 @@ export const SocialLink = styled.div`
 `;
 
 export const CloseContainer = styled.div`
-  width: 181px;
+  width: 180px;
+  height: 51px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,12 +97,13 @@ export const CloseContainer = styled.div`
 `;
 
 export const BodyOfMenu = styled.div`
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
   width: 100%;
   display: flex;
-  height: calc(100vh - 200px);
-  justify-content: center;
+  /* height: calc(100vh - 200px); */
+  justify-content: space-evenly;
+  height: 100%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding-top: 100px;
