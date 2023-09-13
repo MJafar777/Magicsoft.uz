@@ -150,7 +150,7 @@ export const EachLinkOfPage = styled.div`
   justify-content: start;
   align-items: center;
   font-family: "MazzardM-Regular";
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -211,12 +211,12 @@ export const EachLinkOfPage = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     width: 100%;
-    font-size: 38px;
+    font-size: 35px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {
