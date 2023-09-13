@@ -88,6 +88,7 @@ export const BodyOfMenu = styled.div`
   justify-content: space-evenly;
   height: 100%;
   margin-bottom: 40px;
+  padding: 0;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding-top: 100px;
