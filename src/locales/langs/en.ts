@@ -31,7 +31,8 @@ const en = {
   contactFormSubtitle:
     "By sending this request you agree to our privacy policy. ",
   privancy:' Privacy policy ',
-  contactFormSubtitleCon:'agree to our privacy policy.'
+  contactFormSubtitleCon:'agree to our privacy policy.',
+  memoriable:'Memorable photos'
   };
 
 export default en;

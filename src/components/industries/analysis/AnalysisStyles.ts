@@ -1,13 +1,15 @@
 import { styled } from "styled-components";
 
 export const AnalysisWrapper = styled.div`
-  /* width: 100%; */
   padding-bottom: 141px;
+  padding-left: 190px;
+  padding-right: 190px;
   display: flex;
   justify-content: center;
   background-color: black;
   padding: 0;
-  width: 80%;
+  width: 100%;
+
   margin: 0 auto;
   @media ${(prop) => prop.theme.breakpoints.sm} {
     margin: 0 auto;

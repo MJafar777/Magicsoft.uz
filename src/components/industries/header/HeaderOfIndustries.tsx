@@ -66,7 +66,6 @@ const HeaderOfIndustries = () => {
           }}
           config={defaultConfig}
         />
-        {/* <canvas width="100%" height="100vh"> */}
         <ContentOfHeader>
           <BaseLinks>
             <Link to={"/"}>Home / </Link>
@@ -76,7 +75,6 @@ const HeaderOfIndustries = () => {
           <HeaderTitle>{data.title}</HeaderTitle>
           <Subtitle>{data.subTitle}</Subtitle>
         </ContentOfHeader>
-        {/* </canvas> */}
       </HeaderOfIndustriesWraper>
     </>
   );

@@ -13,11 +13,19 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
   align-items: center;
   position: relative;
   cursor: pointer;
+
+  @media ${(prop) => prop.theme.breakpoints.xxl} {
+    height: 70vh;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.xl} {
+    height: 60vh;
+  }
 `;
 
 export const ContentOfHeader = styled.div`
   position: absolute;
-  left: 288px;
+  left: 12%;
 `;
 
 export const BaseLinks = styled.div`

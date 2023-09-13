@@ -31,5 +31,7 @@ const ru = {
   privancy: " Политика конфиденциальности",
   contactFormSubtitleCon:
     "Вы соглашаетесь с нашей политикой конфиденциальности.",
+    memoriable:'Памятные фотографии'
+
 };
 export default ru;
