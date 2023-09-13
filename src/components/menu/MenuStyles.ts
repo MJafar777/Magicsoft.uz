@@ -134,7 +134,7 @@ export const ContainerOfPageOfSite = styled.div`
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 85%;
