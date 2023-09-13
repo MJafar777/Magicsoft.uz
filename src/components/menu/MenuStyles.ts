@@ -155,7 +155,7 @@ export const EachLinkOfPage = styled.div`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.16px;
-  margin-top: 20px;
+  margin-top: 35px;
   cursor: pointer;
   transition: all 0.2s linear;
 
