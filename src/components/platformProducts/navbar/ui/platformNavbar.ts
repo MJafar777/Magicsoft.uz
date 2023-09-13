@@ -8,20 +8,16 @@ import { BreacPointsType } from "../../../../types/breacPointTypes";
 //   xxl: "screen and (max-width: 1440px)",
 
 export const PlatformNavbarWrapper = styled.div<BreacPointsType>`
-  gap: 2rem;
-  width: 90%;
   display: flex;
-  margin: 2rem auto;
+  margin: 0rem auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     margin: 0;
-    width: 100%;
     justify-content: space-between;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
     flex-direction: column;
     gap: 100px;
   }
@@ -82,7 +78,7 @@ export const NavbarLeft = styled.div<BreacPointsType>`
 
 export const Img = styled.img<BreacPointsType>`
   max-width: 600px;
-  width: 50%;
+  width: 100%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 80%;

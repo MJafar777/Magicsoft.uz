@@ -1,0 +1,11 @@
+import styled from "styled-components";
+
+const ContainerWrapper = styled.div`
+  width: 100%;
+  max-width: 1366px;
+  margin: 0px auto;
+  margin-top: 120px;
+  background-color: transparent;
+`;
+
+export { ContainerWrapper };

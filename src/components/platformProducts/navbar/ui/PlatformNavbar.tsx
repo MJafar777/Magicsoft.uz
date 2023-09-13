@@ -55,7 +55,7 @@ const PlatformNavbar: FC<Props> = () => {
       </NavbarLeft>
       <Img
         src={devisesThree_PluginPruductPage_Navbar}
-        alt="#devisesThree_PluginPruductPage_Navbar"
+        alt="devisesThree_PluginPruductPage_Navbar"
       />
     </PlatformNavbarWrapper>
   );
