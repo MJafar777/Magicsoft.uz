@@ -34,6 +34,8 @@ export const DigitalExperienceContainerWrapper = styled.section<BreacPointsType>
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
     margin-bottom: 30px;
+    min-height: 100px;
+    height: auto;
   }
 `;
 
@@ -44,6 +46,10 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   gap: 20px;
   align-items: center;
   margin: 0 auto;
+
+  .mobile-title {
+    display: none;
+  }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
   }
@@ -58,7 +64,18 @@ export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
     flex-direction: column-reverse;
-    min-height: auto;
+    height: auto;
+    min-height: 100px;
+    margin: 10px auto;
+
+    .desctop-title {
+      display: none;
+    }
+
+    .mobile-title {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -187,17 +204,21 @@ export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
   padding: 20px;
   transition: all 0.3s;
 
-  &:hover {
-    padding: 0;
-    border: 0px;
-  }
-
   video {
     width: 100%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
     border-radius: 20px;
+  }
+
+  &:hover {
+    padding: 0;
+    border: 0px;
+
+    video {
+      border-radius: 2px;
+    }
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
@@ -210,8 +231,19 @@ export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
     border: none;
 
     video {
-      width: 100%;
-      border-radius: 5px;
+      width: 70%;
+      border-radius: 20px;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    padding: 0;
+    border: none;
+
+    video {
+      width: 85%;
+      border-radius: 10px;
     }
   }
 `;

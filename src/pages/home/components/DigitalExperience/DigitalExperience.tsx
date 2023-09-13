@@ -14,16 +14,15 @@ import {
 
 import digitialVideo from "../../../../assets/digitial.mp4";
 
-import { borderBigVector } from "../../../../assets/images";
-import JobItems from "../../../../components/jobItem/JobItems";
-
 const DigitalExperience = () => {
   return (
     <DigitalExperienceContainerWrapper>
       <DigitalExperienceWrapper>
         <DigitalExperienceLeft>
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"03"} />
-          <DigitalExperienceTitle>Digital Experience</DigitalExperienceTitle>
+          <DigitalExperienceTitle className="desctop-title">
+            Digital Experience
+          </DigitalExperienceTitle>
 
           <DigitalExperienceDescription>
             <p>
@@ -43,6 +42,10 @@ const DigitalExperience = () => {
         </DigitalExperienceLeft>
 
         <DigitalExperienceRight>
+          <DigitalExperienceTitle className="mobile-title">
+            Digital Experience
+          </DigitalExperienceTitle>
+
           <DigitalExperienceVideContainer>
             <video
               loop

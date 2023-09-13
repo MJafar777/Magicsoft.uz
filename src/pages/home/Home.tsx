@@ -24,17 +24,17 @@ const Home = () => {
 
         <DigitalExperience />
 
-        {/* <Services /> */}
+        <Services />
 
-        {/* <OurTechnologies /> */}
+        <OurTechnologies />
 
-        {/* <Mission /> */}
+        <Mission />
 
         <OurCommunity />
 
-        {/* <SuccessfulProjects /> */}
+        <SuccessfulProjects />
 
-        {/* <Feedback /> */}
+        <Feedback />
 
         <Footer />
       </>
@@ -43,28 +43,25 @@ const Home = () => {
 
   return (
     <ReactPageScroller>
-      {/* <ReactPageScroller> */}
-
       <MainSection />
 
       <LeadingBrandsSection />
 
       <DigitalExperience />
 
-      {/* <Services /> */}
+      <Services />
 
       <OurTechnologies />
 
-      {/* <Mission /> */}
+      <Mission />
 
       <OurCommunity />
 
-      {/* <SuccessfulProjects /> */}
+      <SuccessfulProjects />
 
-      {/* <Feedback /> */}
+      <Feedback />
 
       <Footer />
-      {/* </ReactPageScroller> */}
     </ReactPageScroller>
   );
 };

@@ -62,28 +62,6 @@ const Mission = () => {
         </MissionVideContainer>
 
         <img src={borderBigVector} alt="border vector" />
-
-        <JobItems
-          text={"Product Design"}
-          top={"40%"}
-          right={""}
-          bottom={""}
-          left={"-50px"}
-        />
-        <JobItems
-          text={"Product Strategy  Consultingn"}
-          top={""}
-          right={""}
-          bottom={"20%"}
-          left={"-50px"}
-        />
-        <JobItems
-          text={"Product Management"}
-          top={"20%"}
-          right={""}
-          bottom={""}
-          left={""}
-        />
       </MissionRight>
     </MissionWrapper>
   );
