@@ -73,6 +73,7 @@ export const NavbarLeft = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
     margin: 20px auto;
+    order: 2;
   }
 `;
 
@@ -80,9 +81,17 @@ export const Img = styled.img<BreacPointsType>`
   max-width: 600px;
   width: 100%;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 80%;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 400px;
     margin: 0px auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 500px;
+    order: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 400px;
   }
 `;
 
@@ -104,7 +113,6 @@ export const SubTitleBottomBorder = styled.div<BreacPointsType>`
   height: 7px;
   width: 100px;
   flex-shrink: 0;
-  border-radius: 8px;
   background: #d4f54c;
 
   @media ${(props) => props.theme.breakpoints.md} {

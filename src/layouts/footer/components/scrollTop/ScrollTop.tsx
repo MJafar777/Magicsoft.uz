@@ -1,9 +1,11 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useContext, useEffect, useState } from "react";
 import { ScrollTopWrapper, Img, BtnName } from "./scrollTop";
 import { btnTop } from "../../../../assets";
+import { ButtonContext } from "../../../../context/ButtonContext";
 
 const ScrollTop: FC = () => {
   const [, setIsVisible] = useState(false);
+  const { goToTop } = useContext(ButtonContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,13 +22,6 @@ const ScrollTop: FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <ScrollTopWrapper onClick={goToTop}>

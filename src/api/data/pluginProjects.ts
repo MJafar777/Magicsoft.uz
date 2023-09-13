@@ -23,7 +23,7 @@ export const dataCards: {
     id: 1,
     img: twoImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
@@ -36,7 +36,7 @@ export const dataCards: {
     id: 2,
     img: oneImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
@@ -49,7 +49,7 @@ export const dataCards: {
     id: 3,
     img: threeImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
@@ -62,7 +62,7 @@ export const dataCards: {
     id: 4,
     img: fourImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
@@ -75,7 +75,7 @@ export const dataCards: {
     id: 5,
     img: fiveImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
@@ -88,7 +88,7 @@ export const dataCards: {
     id: 6,
     img: sixImg,
     title: "booking any place remotely",
-    miniTitle: "",
+    miniTitle: "booking any place remotely",
     subTitle:
       "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit.",
     link: "http://iqro-quran.uz/",
