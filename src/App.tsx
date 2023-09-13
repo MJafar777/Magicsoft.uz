@@ -18,9 +18,9 @@ function App() {
       <ButtonContextProvider>
         <Theme>
           <ThemeLocalization>
-            <Header />
-            <Outlet />
-            {location.pathname != "/" ? <Footer /> : ""}
+            {/* <Header /> */}
+            {/* <Outlet /> */}
+            {/* {location.pathname != "/" ? <Footer /> : ""} */}
           </ThemeLocalization>
         </Theme>
       </ButtonContextProvider>
