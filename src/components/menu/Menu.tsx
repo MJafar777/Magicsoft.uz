@@ -64,7 +64,7 @@ const Menu = () => {
           </SocialLink>
         </SocialWrapper>
         <CloseContainer>
-          <button onClick={() => setOpen(false)}>COLSE</button>
+          {/* <button onClick={() => setOpen(false)}>COLSE</button> */}
           <div className="btnClose" onClick={() => setOpen(false)}>
             <Close />
           </div>

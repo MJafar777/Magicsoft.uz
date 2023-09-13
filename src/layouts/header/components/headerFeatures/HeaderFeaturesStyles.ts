@@ -6,8 +6,6 @@ interface PropLinkItem {
   display?: boolean;
 }
 
-
-
 export const HeaderFeaturesWrapper = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
@@ -67,10 +65,9 @@ export const LinkItem = styled.div<PropLinkItem>`
       display: flex;
       p {
         transition: all 0.5s linear;
-
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: 50px;
-        font-size: 24px;
+        font-size: 14px;
         color: #1b63cc;
         &:hover {
           color: white;
@@ -80,7 +77,6 @@ export const LinkItem = styled.div<PropLinkItem>`
 
     img {
       transition: all 1s linear;
-
       z-index: -100;
       position: absolute;
       left: 20%;
