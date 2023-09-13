@@ -17,7 +17,7 @@ export const OverViewWraper = styled.div`
     max-width: 1650px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 190px;
+    padding:0 190px;
     @media ${(prop) => prop.theme.breakpoints.xxl} {
       max-width: 1321px;
       padding-left: 150px;

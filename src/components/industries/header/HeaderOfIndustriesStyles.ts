@@ -4,15 +4,15 @@ interface HeaderOfIndustriesWraperProps {
 }
 
 export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps>`
-  width: 100%;
   height: 100vh;
-  background-image: url(${(prop) => prop.imgUrl});
+  width: 100%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: start;
   align-items: center;
   position: relative;
   cursor: pointer;
+  /* border: solid red 1px; */
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     height: 70vh;

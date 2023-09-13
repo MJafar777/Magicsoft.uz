@@ -57,26 +57,26 @@ const HeaderOfIndustries = () => {
   }, [loaction.pathname]);
 
   return (
-    <>
-      <HeaderOfIndustriesWraper>
-        <ReactFluidAnimation
-          style={{
-            innerWidth: "100%",
-            innerHeight: "100vh",
-          }}
-          config={defaultConfig}
-        />
-        <ContentOfHeader>
-          <BaseLinks>
-            <Link to={"/"}>Home / </Link>
-            <Link to={"/"}>Industries / </Link>
-            <Link to={"/"}>{data.back}</Link>
-          </BaseLinks>
-          <HeaderTitle>{data.title}</HeaderTitle>
-          <Subtitle>{data.subTitle}</Subtitle>
-        </ContentOfHeader>
-      </HeaderOfIndustriesWraper>
-    </>
+    // <CointainerWrapper>
+    <HeaderOfIndustriesWraper>
+      <ReactFluidAnimation
+        style={{
+          innerWidth: "100%",
+          innerHeight: "100vh",
+        }}
+        config={defaultConfig}
+      />
+      <ContentOfHeader>
+        <BaseLinks>
+          <Link to={"/"}>Home / </Link>
+          <Link to={"/"}>Industries / </Link>
+          <Link to={"/"}>{data.back}</Link>
+        </BaseLinks>
+        <HeaderTitle>{data.title}</HeaderTitle>
+        <Subtitle>{data.subTitle}</Subtitle>
+      </ContentOfHeader>
+    </HeaderOfIndustriesWraper>
+    // </CointainerWrapper>
   );
 };
 
