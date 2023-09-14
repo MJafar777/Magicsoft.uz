@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="listOfLink">
           <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/travels" className="travel">
-              Travel, Logistics & Hospitality
+              Travel and others
             </Link>
           </div>
           <div onClick={() => setDisplayOfIndustry(false)}>

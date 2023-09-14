@@ -15,6 +15,7 @@ export interface ButtonContextProps {
   setOpen: (prop: boolean) => void;
   filterHandlerCard: string;
   setFilterHandlerCard(card: string): void;
+  goToTop: () => void;
 }
 
 export const ButtonContext = createContext<ButtonContextProps>({
@@ -34,6 +35,7 @@ export const ButtonContext = createContext<ButtonContextProps>({
   setDisplayOfLanguage: () => {
     return;
   },
+  goToTop: () => {},
 });
 
 export const ButtonContextProvider: React.FC<ButtonContextProviderProps> = ({
@@ -46,8 +48,16 @@ export const ButtonContextProvider: React.FC<ButtonContextProviderProps> = ({
 
   const [filterHandlerCard, setFilterHandlerCard] = useState("All");
 
+  const goToTop = () => {
+    return window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const value: ButtonContextProps = {
     open,
+    goToTop,
     setOpen,
     filterHandlerCard,
     setFilterHandlerCard,

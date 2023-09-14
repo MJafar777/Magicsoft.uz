@@ -6,13 +6,12 @@ interface Props {
 }
 
 export const CardsProjectWrapper = styled.div<BreacPointsType>`
-  max-width: 1300px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 0 20px;
   margin: 0 auto;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -24,17 +23,16 @@ export const Cards = styled.div<Props, BreacPointsType>`
   max-width: ${(e) => (e.width ? e.width : 614)}px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 20px;
   background-color: ${(e) => (e.bg ? e.bg : "#000")};
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    margin-top: 0px;
   }
 `;
 
 export const CardsPaddings = styled.div<BreacPointsType>`
   margin: 0px auto;
-  padding: 30px;
+  padding: 20px 10px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 10px;
@@ -132,6 +130,11 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   text-transform: capitalize;
   transition: all 0.5s ease;
 
+  background-color: #474748;
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
   color: #d4f54c;
   font-family: Archivo-Regular, sans-serif;
   font-size: 16px;
@@ -139,7 +142,7 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   font-weight: 600;
   line-height: 137.8%;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   margin-top: 17px;

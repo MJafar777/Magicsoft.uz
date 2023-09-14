@@ -23,7 +23,7 @@ const DigitalExperience = () => {
     <MissionContainerWrapper>
       <MissionWrapper>
         <MissionLeft>
-          <PageSectionNumber fullPageNumber={12} currentPageNumber={"06"} />
+          <PageSectionNumber fullPageNumber={12} currentPageNumber={"03"} />
           <MissionTitle className="desctop-title">
             Digital Experience
           </MissionTitle>

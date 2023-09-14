@@ -44,7 +44,6 @@ const Solution = () => {
       </Subtile>
       <SolutionTitle>
         {data.title}
-        {/* Our Hospitality and Travel Software Solutions */}
       </SolutionTitle>
       <ContainerOfSolution>
         {data.listOfSolution.map((solution) => {

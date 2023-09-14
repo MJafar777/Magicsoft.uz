@@ -2,16 +2,19 @@ import { FC } from "react";
 
 import { FooterWrapper, ChildWrapper } from "./footer";
 import { FooterBottom, FooterMain, FooterTop } from "./components";
+import { Container } from "../../components/container";
 
 const Footer: FC = () => {
   return (
-    <FooterWrapper style={{ zIndex: "140" }}>
-      <ChildWrapper>
-        <FooterTop />
-        <FooterMain />
-        <FooterBottom />
-      </ChildWrapper>
-    </FooterWrapper>
+    <Container>
+      <FooterWrapper style={{ zIndex: "140" }}>
+        <ChildWrapper>
+          <FooterTop />
+          <FooterMain />
+          <FooterBottom />
+        </ChildWrapper>
+      </FooterWrapper>
+    </Container>
   );
 };
 

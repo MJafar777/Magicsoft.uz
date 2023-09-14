@@ -4,7 +4,7 @@ import { BreacPointsType } from "../../../types/breacPointTypes";
 export const LeadingBrandsImgWrapper = styled.div`
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,5 +88,19 @@ export const LeadingBrandsCart = styled.div`
       width: 90%;
       height: 80% !important;
     }
+  }
+`;
+
+export const ButtonsWrapper = styled.div`
+  width: 100%;
+  height: 30px;
+  /* border: solid red 1px; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  button{
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
 `;

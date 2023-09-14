@@ -5,17 +5,20 @@ import { CardsProject } from "../../../components/platformProducts/allProjects/c
 import { dataCards } from "../../../api/data/pluginProjects";
 import { Suspense } from "react";
 import { Loader } from "../../../components/Loading";
+import { Container } from "../../../components/container";
 
 const PlatformProducts = () => {
   return (
     <Suspense fallback={<Loader />}>
-      <PlatformProductsWrapper>
-        <PlatformNavbar />
+      <Container>
+        <PlatformProductsWrapper>
+          <PlatformNavbar />
 
-        <AllProjects />
+          <AllProjects />
 
-        <CardsProject dataCards={dataCards} width={600} bg={""} />
-      </PlatformProductsWrapper>
+          <CardsProject dataCards={dataCards} width={673} bg={"#1F1F20"} />
+        </PlatformProductsWrapper>
+      </Container>
     </Suspense>
   );
 };

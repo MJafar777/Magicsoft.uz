@@ -2,16 +2,16 @@ import { styled } from "styled-components";
 import BgContact from "../../../assets/about/bgOfContact.svg";
 
 export const ContactWrapper = styled.div`
-  height: 100vh;
-  width: 100%;
+  height: fit-content;
+  width: 80%;
   margin: 0 auto;
+  padding: 80px 0;
   background-image: url(${BgContact});
   display: flex;
   justify-content: center;
   align-items: center;
   .bg {
-    width: 70%;
-    /* height: 60vh; */
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -135,6 +135,7 @@ export const FormSide = styled.div`
     margin-bottom: 29px;
   }
   textarea {
+    resize: none;
     background-color: transparent;
     border: none;
     outline: none;
@@ -166,6 +167,9 @@ export const FormSide = styled.div`
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 6px 6px 1px #403a16;
+    &:focus{
+      background: var(--Yellow, #fff702);
+    }
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {

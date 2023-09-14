@@ -67,25 +67,12 @@ export const SocialLink = styled.div`
 `;
 
 export const CloseContainer = styled.div`
-  width: 181px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  button {
-    width: 70%;
-    text-align: center;
-    padding: 18px 30px;
-    border-radius: 26px;
-    background-color: transparent;
-    color: white;
-    border: white 1px solid;
-    cursor: pointer;
-  }
-
   .btnClose {
-    width: 30%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,28 +83,26 @@ export const CloseContainer = styled.div`
 `;
 
 export const BodyOfMenu = styled.div`
-  padding-top: 120px;
-  padding-bottom: 120px;
   width: 100%;
   display: flex;
-  height: calc(100vh - 200px);
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  padding: 0;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    padding: 80px;
+    padding: 50px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {
-    padding: 80px 10px;
+    padding: 0;
   }
 `;
 
 export const Title = styled.div`
-  /* height: 70%; */
   font-family: "Concretica";
   width: 40%;
   display: flex;
@@ -147,10 +132,9 @@ export const Title = styled.div`
 
 export const ContainerOfPageOfSite = styled.div`
   width: 70%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 85%;
@@ -166,11 +150,12 @@ export const EachLinkOfPage = styled.div`
   justify-content: start;
   align-items: center;
   font-family: "MazzardM-Regular";
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.16px;
+  margin-top: 35px;
   cursor: pointer;
   transition: all 0.2s linear;
 
@@ -226,12 +211,12 @@ export const EachLinkOfPage = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     width: 100%;
-    font-size: 38px;
+    font-size: 35px;
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {

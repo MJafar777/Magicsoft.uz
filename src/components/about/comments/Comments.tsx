@@ -7,10 +7,31 @@ import {
   SubTitle,
   Title,
 } from "./CommentStyles";
+import preIcon from "../../../assets/about/pre.svg";
 import useLocales from "../../../locales/useLocales";
+import nextIcon from "../../../assets/about/next.svg";
+import { ButtonsWrapper } from "../sliderForAbout/LeadingBrandsSectionStyles";
+import { useRef } from "react";
 
 const Comments = () => {
   const { translate } = useLocales();
+
+  const sliderRef = useRef<Slider | null>(null);
+
+  const next = () => {
+    console.log("dfghjk");
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const previous = () => {
+    console.log("dfghjk");
+
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
 
   const settings = {
     className: "center",
@@ -75,13 +96,21 @@ const Comments = () => {
       <SubTitle>{translate("commentSubtile")}</SubTitle>
       <CommentContainer>
         <LeadingBrandsBoxComment>
-          <Slider {...settings}>
+          <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
             <CommentCard />
             <CommentCard />
             <CommentCard />
             <CommentCard />
             <CommentCard />
           </Slider>
+          <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
+            <button className="button" onClick={previous}>
+              <img src={preIcon} alt="" />
+            </button>
+            <button className="button" onClick={next}>
+              <img src={nextIcon} alt="" />
+            </button>
+          </ButtonsWrapper>
         </LeadingBrandsBoxComment>
       </CommentContainer>
     </CommentsWrapper>

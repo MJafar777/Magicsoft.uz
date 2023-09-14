@@ -5,6 +5,7 @@ interface InovationNameProp {
 }
 
 export const TechnologyWrapper = styled.div`
+  max-width: 1650px;
   background: #000;
   padding-top: 150px;
   padding-bottom: 128px;
@@ -79,7 +80,7 @@ export const InovationSkil = styled.div`
     padding-bottom: 18px;
     margin-bottom: 18px;
     margin-top: 40px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
     p {
       text-align: left;

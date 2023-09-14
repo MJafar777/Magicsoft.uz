@@ -1,25 +1,28 @@
 import CountUp from "react-countup";
 import {
-  AnalysisWrapper,
-  CardOfAnalysis,
-  Subtitle,
-  SuccessfulProjectsNumber,
-  SuccessfulProjectsTitle,
-  SuccessfulProjectsWrapper,
   Title,
+  Subtitle,
+  SuccessfulProjectsTitle,
+  CardOfSuccessfulProjects,
+  SuccessfulProjectsWrapper,
+  SuccessfulProjectsContainerWrapper,
 } from "./SuccessfulProjectsStyles";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@mui/material";
-import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
+import useLocales from "../../../../locales/useLocales";
 
 const SuccessfulProjects = () => {
-  const [start, setStart] = useState(0);
+  const [start, setStart] = useState(1);
+
+  const { translate } = useLocales();
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition >= 500) {
+      console.log(scrollPosition);
+
+      if (scrollPosition >= 1) {
         setStart(1);
       }
     };
@@ -31,14 +34,12 @@ const SuccessfulProjects = () => {
     };
   }, []);
   return (
-    <SuccessfulProjectsWrapper>
-      <SuccessfulProjectsNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"08"} />
-      </SuccessfulProjectsNumber>
+    <SuccessfulProjectsContainerWrapper>
       <SuccessfulProjectsTitle>Successful Projects</SuccessfulProjectsTitle>
-      <AnalysisWrapper>
+
+      <SuccessfulProjectsWrapper>
         {start > 0 ? (
-          <CardOfAnalysis>
+          <CardOfSuccessfulProjects>
             <Title>
               <CountUp
                 end={100}
@@ -50,8 +51,8 @@ const SuccessfulProjects = () => {
                 style={{ fontFamily: "MazzardH-Medium" }}
               />
             </Title>
-            <Subtitle>Apps created</Subtitle>
-          </CardOfAnalysis>
+            <Subtitle>{translate("countOfApp")}</Subtitle>
+          </CardOfSuccessfulProjects>
         ) : (
           <Skeleton
             animation="wave"
@@ -63,7 +64,7 @@ const SuccessfulProjects = () => {
         )}
 
         {start > 0 ? (
-          <CardOfAnalysis>
+          <CardOfSuccessfulProjects>
             <Title>
               <CountUp
                 end={35}
@@ -74,8 +75,8 @@ const SuccessfulProjects = () => {
                 suffix=" +"
               />
             </Title>
-            <Subtitle>Employees</Subtitle>
-          </CardOfAnalysis>
+            <Subtitle>{translate("countEmployee")}</Subtitle>
+          </CardOfSuccessfulProjects>
         ) : (
           <Skeleton
             animation="wave"
@@ -87,19 +88,19 @@ const SuccessfulProjects = () => {
         )}
 
         {start > 0 ? (
-          <CardOfAnalysis>
+          <CardOfSuccessfulProjects>
             <Title>
               <CountUp
-                end={10000}
+                end={10}
                 duration={5.75}
-                start={1000 * start}
+                start={1}
                 // separator="client"
                 decimal=","
                 suffix=" +"
               />
             </Title>
-            <Subtitle>Positive reviews</Subtitle>
-          </CardOfAnalysis>
+            <Subtitle>{translate("countReviews")}</Subtitle>
+          </CardOfSuccessfulProjects>
         ) : (
           <Skeleton
             animation="wave"
@@ -111,19 +112,19 @@ const SuccessfulProjects = () => {
         )}
 
         {start > 0 ? (
-          <CardOfAnalysis className="noneBorder">
+          <CardOfSuccessfulProjects className="noneBorder">
             <Title>
               <CountUp
-                end={200000}
+                end={20}
                 duration={5.75}
-                start={1000 * start}
+                start={1}
                 // separator="client"
                 decimal=","
                 suffix=" +"
               />
             </Title>
-            <Subtitle>Title goes here</Subtitle>
-          </CardOfAnalysis>
+            <Subtitle>{translate("count")}</Subtitle>
+          </CardOfSuccessfulProjects>
         ) : (
           <Skeleton
             animation="wave"
@@ -133,8 +134,8 @@ const SuccessfulProjects = () => {
             height={118}
           />
         )}
-      </AnalysisWrapper>
-    </SuccessfulProjectsWrapper>
+      </SuccessfulProjectsWrapper>
+    </SuccessfulProjectsContainerWrapper>
   );
 };
 

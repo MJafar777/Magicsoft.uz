@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 
 import { devisesThree_PluginPruductPage_Navbar } from "../../../../assets/images/components/PlatformProducts";
 
@@ -12,10 +12,12 @@ import {
   PlatformNavbarWrapper,
 } from "./platformNavbar";
 import { useNavigate } from "react-router-dom";
+import { ButtonContext } from "../../../../context/ButtonContext";
 
 interface Props {}
 
 const PlatformNavbar: FC<Props> = () => {
+  const { goToTop } = useContext(ButtonContext);
   const navigate = useNavigate();
 
   const navigator = () => {
@@ -31,8 +33,7 @@ const PlatformNavbar: FC<Props> = () => {
           Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis
           libero, proin consequat ultrices congue nunc sit.
         </Paragraph>
-        {/* <ButtonContact>Contact</ButtonContact> */}
-        <div className="center">
+        <div onClick={goToTop} className="center">
           <button className="btn" onClick={() => navigator()}>
             <svg
               width="180px"
@@ -55,7 +56,7 @@ const PlatformNavbar: FC<Props> = () => {
       </NavbarLeft>
       <Img
         src={devisesThree_PluginPruductPage_Navbar}
-        alt="#devisesThree_PluginPruductPage_Navbar"
+        alt="devisesThree_PluginPruductPage_Navbar"
       />
     </PlatformNavbarWrapper>
   );
