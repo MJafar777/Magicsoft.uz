@@ -4,7 +4,7 @@ const ContainerWrapper = styled.div`
   width: 90%;
   max-width: 1366px;
   margin: 0px auto;
-  margin-top: 120px;
+  margin-top: 0px;
   background-color: transparent;
 `;
 

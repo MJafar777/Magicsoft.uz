@@ -47,6 +47,7 @@ export const FeedbackContainerWrapper = styled.section<BreacPointsType>`
     width: 100%;
     margin: 50px auto;
     justify-content: flex-start;
+    min-height: 200px;
   }
 `;
 
@@ -99,7 +100,7 @@ export const FeedbackContainer = styled.div`
 `;
 
 export const LeadingBrandsBoxFeedback = styled.div`
-  height: 40vh;
+  height: auto;
   width: 100%;
   margin: 0 auto;
   gap: 30px;
