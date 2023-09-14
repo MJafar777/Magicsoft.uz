@@ -10,6 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import { Skeleton } from "@mui/material";
 import useLocales from "../../../../locales/useLocales";
+import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
 
 const SuccessfulProjects = () => {
   const [start, setStart] = useState(1);
@@ -35,6 +36,10 @@ const SuccessfulProjects = () => {
   }, []);
   return (
     <SuccessfulProjectsContainerWrapper>
+      <div className="successfulProjectsPageSectionNumber">
+        <PageSectionNumber fullPageNumber={12} currentPageNumber={"08"} />
+      </div>
+
       <SuccessfulProjectsTitle>Successful Projects</SuccessfulProjectsTitle>
 
       <SuccessfulProjectsWrapper>

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const SuccessfulProjectsContainerWrapper = styled.section<BreacPointsType>`
   max-width: 1500px;
@@ -13,6 +14,13 @@ export const SuccessfulProjectsContainerWrapper = styled.section<BreacPointsType
   align-items: center;
   justify-content: center;
 
+  .successfulProjectsPageSectionNumber {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
   @media ${(props) => props.theme.breakpoints.xxl} {
     width: 100%;
     max-width: 1201px;
@@ -26,16 +34,26 @@ export const SuccessfulProjectsContainerWrapper = styled.section<BreacPointsType
     max-width: 993px;
     min-height: 441px;
     height: auto;
+
+    .successfulProjectsPageSectionNumber {
+      margin-bottom: 60px;
+    }
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 768px;
+    min-height: 200px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-    margin: 50px auto;
+    margin: 0px auto;
     justify-content: flex-start;
+
+    .successfulProjectsPageSectionNumber {
+      margin-bottom: 0px;
+      display: none;
+    }
   }
 `;
 
@@ -60,9 +78,10 @@ export const SuccessfulProjectsWrapper = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    width: 70%;
     flex-wrap: wrap;
+    width: 100%;
     margin-top: 40px;
+    margin-bottom: 0;
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {

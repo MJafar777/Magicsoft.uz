@@ -1,16 +1,64 @@
 import { styled } from "styled-components";
 import next from "../../../../assets/about/next.svg";
 import pre from "../../../../assets/about/pre.svg";
+import { BreacPointsType } from "../../../../types/breacPointTypes";
+
+export const FeedbackContainerWrapper = styled.section<BreacPointsType>`
+  max-width: 1500px;
+  padding: 0 20px;
+  padding-top: 111px;
+  min-height: 787px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .successfulProjectsPageSectionNumber {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 100%;
+    max-width: 1201px;
+    min-height: 630px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 100%;
+    padding: 0px 20px;
+    padding-top: 0px;
+    max-width: 993px;
+    min-height: 441px;
+    height: auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin: 50px auto;
+    max-width: 768px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    margin: 50px auto;
+    justify-content: flex-start;
+  }
+`;
 
 export const FeedbackWrapper = styled.div`
-  height: 100vh;
-  width: 90%;
+  height: fit-content;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
 
   .slick-prev:before {
-    content: url(${pre}) !important;
+    /* content: url(${pre}) !important; */
     position: absolute !important;
+    display: none;
     top: 150px !important;
     left: 50px;
     font-size: 36px !important;
@@ -22,19 +70,15 @@ export const FeedbackWrapper = styled.div`
     content: url(${next}) !important;
     position: absolute;
     font-weight: bolder;
+    display: none;
     left: -1650px;
     top: 150px;
     font-size: 36px;
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    height: 60vh;
-    margin: 200px auto 300px auto;
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    height: 60vh;
-    margin: 0px auto 0px auto;
-
     .slick-prev:before {
       top: 100px !important;
     }
@@ -58,7 +102,6 @@ export const LeadingBrandsBoxFeedback = styled.div`
   height: 40vh;
   width: 100%;
   margin: 0 auto;
-
   gap: 30px;
 `;
 
@@ -72,7 +115,6 @@ export const FeedbackCardWrapper = styled.div`
   padding: 26px 0;
   padding-left: 32px;
   margin-left: 50px;
-
   p {
     font-family: "MazzardM-SemiBold";
     font-size: 20px;
@@ -104,6 +146,13 @@ export const FeedbackNumber = styled.div`
   margin-bottom: 20px;
 `;
 
+export const LeadingBrandsBoxComment = styled.div`
+  height: 40vh;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+`;
+
 export const SubTitle = styled.p`
   font-family: "MazzardM-SemiBold";
   font-size: 20px;
@@ -119,21 +168,20 @@ export const SubTitle = styled.p`
 
 export const Title = styled.p`
   font-size: 79px;
-  font-family: "Concretica";
+  font-family: Concretica;
   padding-left: 8%;
   margin-bottom: 100px;
-
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 62px;
-    margin-bottom: 90px;
+    margin-bottom: 120px;
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 43.68px;
-    margin-bottom: 86px;
+    margin-bottom: 50px;
   }
   @media ${(prop) => prop.theme.breakpoints.md} {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 `;
 
