@@ -34,7 +34,11 @@ export const ServicesContainerWrapper = styled.section<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-    margin-bottom: 30px;
+    margin: 50px auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 50px auto;
   }
 `;
 
@@ -57,11 +61,13 @@ export const ServicesWrapper = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 992px;
     margin: 10px auto;
+    margin-bottom: 60px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 768px;
     height: auto;
+    margin-bottom: 0px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

@@ -41,7 +41,6 @@ export const OurTechnologiesContainerWrapper = styled.section<BreacPointsType>`
 
 export const OurTechnologiesWrapper = styled.section<BreacPointsType>`
   max-width: 1516px;
-  /* margin: 250px auto; */
   margin: 0px auto;
   padding: 0 20px;
 
@@ -50,7 +49,7 @@ export const OurTechnologiesWrapper = styled.section<BreacPointsType>`
       display: none;
     }
 
-    margin: 100px auto;
+    margin: 0px auto;
   }
 `;
 

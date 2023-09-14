@@ -36,6 +36,10 @@ export const LeadingBrandsSectionContainerWrapper = styled.section<BreacPointsTy
     width: 100%;
     margin-bottom: 30px;
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-bottom: 0px;
+  }
 `;
 
 export const LeadingBrandsSectionWrapper = styled.div<BreacPointsType>`

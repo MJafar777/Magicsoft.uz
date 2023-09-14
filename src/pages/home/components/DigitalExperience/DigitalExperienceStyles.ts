@@ -1,9 +1,10 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const DigitalExperienceContainerWrapper = styled.section<BreacPointsType>`
+export const MissionContainerWrapper = styled.section<BreacPointsType>`
   max-width: 1500px;
   padding: 0 20px;
+  padding-top: 111px;
   min-height: 787px;
   height: 100vh;
   margin: 0 auto;
@@ -22,6 +23,7 @@ export const DigitalExperienceContainerWrapper = styled.section<BreacPointsType>
   @media ${(props) => props.theme.breakpoints.xl} {
     width: 100%;
     padding: 0px 20px;
+    padding-top: 40px;
     max-width: 993px;
     min-height: 441px;
     height: auto;
@@ -33,61 +35,66 @@ export const DigitalExperienceContainerWrapper = styled.section<BreacPointsType>
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-    margin-bottom: 30px;
-    min-height: 100px;
-    height: auto;
+    margin: 50px auto;
   }
 `;
 
-export const DigitalExperienceWrapper = styled.section<BreacPointsType>`
+export const MissionWrapper = styled.section<BreacPointsType>`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   align-items: center;
-  margin: 0 auto;
+  margin: 0px auto;
 
   .mobile-title {
     display: none;
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
+    max-width: 1200px;
     margin: 100px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 992px;
+    margin: 50px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 768px;
+    margin: 0px auto;
+
     display: flex;
+    min-height: auto;
     flex-direction: column-reverse;
-    height: auto;
-    min-height: 100px;
-    margin: 10px auto;
+
+    .mobile-title {
+      display: inline-block;
+      text-align: center;
+    }
 
     .desctop-title {
       display: none;
     }
-
-    .mobile-title {
-      display: inline-block;
-      margin-bottom: 20px;
-    }
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 576px;
   }
 `;
 
-export const DigitalExperienceLeft = styled.div<BreacPointsType>`
+export const MissionLeft = styled.div<BreacPointsType>`
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 30px;
   z-index: 100;
-  width: 50%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
@@ -97,7 +104,7 @@ export const DigitalExperienceLeft = styled.div<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
+export const MissionTitle = styled.h2<BreacPointsType>`
   color: #fff;
   font-family: "MazzardM-Semibold";
   font-size: 86px;
@@ -105,6 +112,10 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
   font-weight: 600;
   line-height: 98.298px;
   margin-top: 7px;
+
+  span {
+    color: #d4f54c;
+  }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 68.8px;
@@ -125,8 +136,7 @@ export const DigitalExperienceTitle = styled.h2<BreacPointsType>`
   }
 `;
 
-export const DigitalExperienceDescription = styled.div<BreacPointsType>`
-  max-width: 600px;
+export const MissionDescription = styled.div<BreacPointsType>`
   color: #a5afbc;
   font-family: "MazzardM-Regular";
   font-size: 20px;
@@ -172,80 +182,109 @@ export const DigitalExperienceDescription = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 340px;
   }
 `;
 
-export const DigitalExperienceRight = styled.div<BreacPointsType>`
+export const MissionRightContaner = styled.div<BreacPointsType>`
+  width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
+    width: 100%;
   }
 `;
 
-export const DigitalExperienceVideContainer = styled.div<BreacPointsType>`
-  border: 1px solid white;
+export const MissionRight = styled.div<BreacPointsType>`
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 24px;
-  border-radius: 30px;
-  width: 80%;
-  padding: 20px;
-  transition: all 0.3s;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transition: all 3s;
+  transform: scale(1.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+    overflow: clip;
+    top: 0;
+    right: 0;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    transform: scale(1.3);
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    transform: scale(1.3);
+  }
+`;
+
+export const MissionVideContainer = styled.div<BreacPointsType>`
+  opacity: 1;
+  position: absolute;
+  z-index: -200;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 2.5em;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 
   video {
     width: 100%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    border-radius: 20px;
-  }
+    z-index: -100;
+    transform: translateX(-80px);
 
-  &:hover {
-    padding: 0;
-    border: 0px;
+    @media ${(props) => props.theme.breakpoints.xxl} {
+    }
 
-    video {
-      border-radius: 2px;
+    @media ${(props) => props.theme.breakpoints.xl} {
+      transform: translateX(0px);
+      width: 78%;
+      margin-right: 50px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+      width: 100%;
+      margin-right: 0px;
     }
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    width: 100%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
-    padding: 0;
-    border: none;
-
-    video {
-      width: 70%;
-      border-radius: 20px;
-    }
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    padding: 0;
-    border: none;
-
-    video {
-      width: 85%;
-      border-radius: 10px;
-    }
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
-export const DigitalExperienceItem = styled.div<BreacPointsType>``;
+export const MissionItem = styled.div<BreacPointsType>``;
