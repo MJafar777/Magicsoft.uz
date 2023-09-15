@@ -4,22 +4,24 @@ import { BreacPointsType } from "../../../types/breacPointTypes";
 export const LoginWrapper = styled.div`
   width: 100%;
   height: 95vh;
-  background-color: #000;
+
   color: #fff;
+  background-color: #000;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 `;
+
 export const Title = styled.div<BreacPointsType>`
   color: #fff;
-  text-align: start;
-  font-family: Mazzard, sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
+  text-align: start;
+  font-style: normal;
   line-height: 109.8%;
+  font-family: Mazzard, sans-serif;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 24px;
@@ -39,61 +41,90 @@ export const Title = styled.div<BreacPointsType>`
 `;
 
 export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
   gap: 30px;
   width: 100%;
+  display: flex;
+  max-width: 300px;
   margin: 20px auto;
+  flex-direction: column;
 `;
+
 export const Button = styled.button`
-  display: block;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: #1b63cc;
-  border: none;
   color: #fff;
-  font-weight: 500;
-`;
-export const Input = styled.input`
+  border: none;
+  padding: 10px;
   display: block;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  border-radius: 8px;
+  background-color: #1b63cc;
+`;
+
+export const Input = styled.input`
+  color: white;
   padding: 10px;
   outline: none;
+  display: block;
+  border-radius: 8px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: white;
 
   &::selection {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
     color: black;
   }
 `;
+
 export const InputPassword = styled.input`
-  display: block;
-  padding: 10px;
-  outline: none;
-  background-color: transparent;
-  border: none;
   color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  display: block;
+  background-color: transparent;
 
   &::selection {
-    background: #fff;
     color: black;
+    background: #fff;
   }
 `;
 
 export const EyeFlex = styled.div`
-  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
+  user-select: none;
+  border-radius: 8px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
-  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 `;
+
 export const ImgEye = styled.img`
   width: 20px;
-  margin-right: 5px;
   cursor: pointer;
   user-select: none;
+  margin-right: 5px;
+`;
+
+export const FlexAuth = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+`;
+export const RegisterPage = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const CenterBtn = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

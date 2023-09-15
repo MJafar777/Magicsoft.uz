@@ -1,13 +1,14 @@
 import App from "../App";
 import { lazy } from "react";
 import { News } from "../pages/news";
+import { Login } from "../pages/auth";
 import { Blogs } from "../pages/blogs";
 import About from "../pages/about/About";
+import { Contact } from "../components/about";
 import { createBrowserRouter } from "react-router-dom";
 import { SecondaryNews } from "../pages/secondaryNews";
+import { ForgotPassword } from "../pages/auth/components";
 import { PlatformProducts } from "../pages/platformsProducts";
-import { Login } from "../pages/auth";
-import { Contact } from "../components/about";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const HomeAsync = lazy(() => import("../pages/home/Home"));
@@ -24,31 +25,41 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <h1>Error</h1>,
     children: [
-      { path: "/", element: <HomeAsync /> },
-      {
-        path: "/platform_products",
-        element: <PlatformProducts />,
-      },
       {
         path: "/news",
         element: <News />,
       },
-      {
-        path: "/news_informations/:id",
-        element: <SecondaryNews />,
-      },
+
       {
         path: "/blog",
         element: <Blogs />,
       },
-      { path: "travels", element: <TravelAsync /> },
-      { path: "retail", element: <RetailAsync /> },
-      { path: "fintech", element: <FintechAsync /> },
+
+      {
+        path: "/news_informations/:id",
+        element: <SecondaryNews />,
+      },
+
+      {
+        path: "/platform_products",
+        element: <PlatformProducts />,
+      },
+
+      { path: "/", element: <HomeAsync /> },
+
+      { path: "/login", element: <Login /> },
 
       { path: "/about-us", element: <About /> },
 
-      { path: "/login", element: <Login /> },
       { path: "/contact", element: <Contact /> },
+
+      { path: "retail", element: <RetailAsync /> },
+
+      { path: "travels", element: <TravelAsync /> },
+
+      { path: "fintech", element: <FintechAsync /> },
+
+      { path: "/forgot-password", element: <ForgotPassword /> },
     ],
   },
 ]);
