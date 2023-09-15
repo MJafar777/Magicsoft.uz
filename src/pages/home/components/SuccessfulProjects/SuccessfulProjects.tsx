@@ -38,7 +38,9 @@ const SuccessfulProjects = () => {
         <PageSectionNumber fullPageNumber={12} currentPageNumber={"08"} />
       </div>
 
-      <SuccessfulProjectsTitle>Successful Projects</SuccessfulProjectsTitle>
+      <SuccessfulProjectsTitle>
+        {translate("SuccessfulProjects")}
+      </SuccessfulProjectsTitle>
 
       <SuccessfulProjectsWrapper>
         {start > 0 ? (
@@ -121,7 +123,6 @@ const SuccessfulProjects = () => {
                 end={20}
                 duration={5.75}
                 start={1}
-                // separator="client"
                 decimal=","
                 suffix=" +"
               />

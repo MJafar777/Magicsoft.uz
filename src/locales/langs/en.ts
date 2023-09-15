@@ -98,6 +98,31 @@ const en = {
   Banking: "Banking",
   fintechTitle:
     "FinTech software solutions designed to unlock agility, cost leadership, and operational efficiency",
+
+  // ---------- Our Mission ----------
+  thisIsOur: "This is our",
+  mission: "mission",
+  missionTitle1:
+    "To be the trusted digital partner and drive transformational outcomes for our customers, and empower our employees to achieve their full potential.",
+  missionTitle2:
+    "We use human-centered design to create unique, high-performing customer experiences.",
+
+  // ---------- Our Community ----------
+  OurCommmunity: "Our Commmunity",
+  GitHub: "GitHub",
+  Follow: "Follow",
+  Telegram: "Telegram",
+  JOIN: "JOIN",
+  Twitter: "Twitter",
+  Instagram: "Instagram",
+  Linkedin: "Linkedin",
+  Youtube: "Youtube",
+  Discord: "Discord",
+  Facebook: "Facebook",
+
+  // ---------- Successful Projects ----------
+  SuccessfulProjects: "Successful Projects",
+  feedbackTitle: "What our clients say",
 };
 
 export default en;
