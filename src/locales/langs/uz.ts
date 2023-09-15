@@ -35,5 +35,11 @@ const uz = {
   //about page
 
   //navbar
+
+  // ---------- Home page  ----------
+
+  // ---------- Main section ----------
+
+  homeMiinTitleTop:""
 };
 export default uz;

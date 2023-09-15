@@ -17,31 +17,31 @@ import digitialVideo from "../../../../assets/digitial.mp4";
 
 import { borderBigVector } from "../../../../assets/images";
 import JobItems from "../../../../components/jobItem/JobItems";
+import useLocales from "../../../../locales/useLocales";
 
 const DigitalExperience = () => {
+  const { translate } = useLocales();
+
   return (
     <MissionContainerWrapper>
       <MissionWrapper>
         <MissionLeft>
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"03"} />
           <MissionTitle className="desctop-title">
-            Digital Experience
+            {translate("digitialExperienceTitle")}
           </MissionTitle>
 
           <MissionDescription>
-            <p>
-              We use human-centered design to create unique, high-performing
-              customer experiences.
-            </p>
-            <p>
-              To keep up in today's fast-paced world, you need to embrace
-              digital innovation to create ahead-of-the-curve, memorable
-              customer experiences (CX) that set the standard for your audience.
-            </p>
+            <p>{translate("digitialExperienceDesc1")}</p>
+            <p>{translate("digitialExperienceDesc2")}</p>
           </MissionDescription>
 
           <ButtonMagnet>
-            <ButtonEscort text1="MORE" text2="MORE" arrowOutwardIcon={true} />
+            <ButtonEscort
+              text1={translate("moreUpper")}
+              text2={translate("moreUpper")}
+              arrowOutwardIcon={true}
+            />
           </ButtonMagnet>
         </MissionLeft>
 
@@ -72,21 +72,21 @@ const DigitalExperience = () => {
           </MissionRight>
 
           <JobItems
-            text={"Product Design"}
+            text={translate("productDesign")}
             top={"30%"}
             right={""}
             bottom={""}
             left={"0px"}
           />
           <JobItems
-            text={"Product Management"}
+            text={translate("productManagement")}
             top={"15%"}
             right={"0"}
             bottom={""}
             left={""}
           />
           <JobItems
-            text={"Product Strategy and Consulting"}
+            text={translate("productStrategyAndConsulting")}
             top={""}
             right={""}
             bottom={"10%"}

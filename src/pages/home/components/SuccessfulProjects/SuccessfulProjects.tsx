@@ -21,8 +21,6 @@ const SuccessfulProjects = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      console.log(scrollPosition);
-
       if (scrollPosition >= 1) {
         setStart(1);
       }

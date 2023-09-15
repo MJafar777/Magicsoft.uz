@@ -18,16 +18,18 @@ import gif from "../../../../assets/gif.gif";
 
 import ButtonMagnet from "../../../../components/buttons/magnetikButton/ButtonMagnetik";
 import useWindowWidth from "../../../../hooks/useWindowWidth";
+import useLocales from "../../../../locales/useLocales";
 
 const Services = () => {
   const wWidth = useWindowWidth();
+  const { translate } = useLocales();
 
   return (
     <ServicesContainerWrapper>
       <ServicesWrapper>
         <ServicesLeft>
           <div className="servicesLeft-title-row">
-            <ServicesLeftTitle>Our Service</ServicesLeftTitle>
+            <ServicesLeftTitle>{translate("ourService")}</ServicesLeftTitle>
             <PageSectionNumber fullPageNumber={12} currentPageNumber={"04"} />
           </div>
           <ServicesLeftItem>
@@ -35,11 +37,11 @@ const Services = () => {
               <p>1</p>
             </ServicesLeftItemNumber>
             <div>
-              <ServicesLeftItemTitle>Product Engineering</ServicesLeftItemTitle>
+              <ServicesLeftItemTitle>
+                {translate("productEngineering")}
+              </ServicesLeftItemTitle>
               <ServicesLeftItemDescription>
-                We provide innovative and reliable engineering solutions over
-                the entire product lifecycle while you remain focused on your
-                core competencies
+                {translate("productEngineeringDesc")}
               </ServicesLeftItemDescription>
             </div>
           </ServicesLeftItem>
@@ -50,12 +52,10 @@ const Services = () => {
             </ServicesLeftItemNumber>
             <div>
               <ServicesLeftItemTitle>
-                Data Engineering & AI
+                {translate("dataEngineeringAI")}
               </ServicesLeftItemTitle>
               <ServicesLeftItemDescription>
-                Take your business to unprecedented heights, enhancing
-                productivity and optimization through our transformational AI
-                and ML capacities.
+                {translate("dataEngineeringAIDesc")}
               </ServicesLeftItemDescription>
             </div>
           </ServicesLeftItem>
@@ -65,11 +65,11 @@ const Services = () => {
               <p>3</p>
             </ServicesLeftItemNumber>
             <div>
-              <ServicesLeftItemTitle>Cloud Engineering</ServicesLeftItemTitle>
+              <ServicesLeftItemTitle>
+                {translate("cloudEngineering")}
+              </ServicesLeftItemTitle>
               <ServicesLeftItemDescription>
-                Build applications and shift to the cloud in a cost-effective
-                and coordinated manner, leveraging our domain expertise,
-                accelerators, and frameworks.
+                {translate("cloudEngineeringDesc")}
               </ServicesLeftItemDescription>
             </div>
           </ServicesLeftItem>
@@ -80,11 +80,11 @@ const Services = () => {
                 <p>4</p>
               </ServicesLeftItemNumber>
               <div>
-                <ServicesLeftItemTitle>NextGen Services</ServicesLeftItemTitle>
+                <ServicesLeftItemTitle>
+                  {translate("nextGenServices")}
+                </ServicesLeftItemTitle>
                 <ServicesLeftItemDescription>
-                  We leverage emerging technologies like blockchain, the
-                  metaverse, and Web3 to transform how businesses and people
-                  interact with each other.
+                  {translate("nextGenServicesDesc")}
                 </ServicesLeftItemDescription>
               </div>
             </ServicesLeftItem>
@@ -95,8 +95,8 @@ const Services = () => {
           <ServicesLeftItemBtn>
             <ButtonMagnet>
               <ButtonEscort
-                text1={"View All Services"}
-                text2={"View All Services"}
+                text1={translate("viewAllServices")}
+                text2={translate("viewAllServices")}
                 arrowOutwardIcon={true}
               />
             </ButtonMagnet>
