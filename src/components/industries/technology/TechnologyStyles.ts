@@ -5,11 +5,11 @@ interface InovationNameProp {
 }
 
 export const TechnologyWrapper = styled.div`
+  max-width: 1650px;
   background: #000;
   padding-top: 150px;
   padding-bottom: 128px;
-  width: 100%;
-  padding-left: 288px;
+  width: 80%;
   margin: 0 auto;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
@@ -28,6 +28,7 @@ export const TitleInovation = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: 109.8%;
+  padding-left: 5%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 68.8px;
@@ -79,7 +80,7 @@ export const InovationSkil = styled.div`
     padding-bottom: 18px;
     margin-bottom: 18px;
     margin-top: 40px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
     p {
       text-align: left;

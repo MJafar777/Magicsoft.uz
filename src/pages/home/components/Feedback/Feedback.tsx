@@ -1,17 +1,42 @@
 import Slider from "react-slick";
 
 import {
-  FeedbackContainer,
+  Title,
+  SubTitle,
   FeedbackNumber,
   FeedbackWrapper,
+  FeedbackContainer,
   LeadingBrandsBoxFeedback,
-  SubTitle,
-  Title,
+  FeedbackContainerWrapper,
 } from "./FeedbackStyles";
+import preIcon from "../../../../assets/about/pre.svg";
 import FeedbackCard from "./FeedbackCard";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
+import { useRef } from "react";
+import useLocales from "../../../../locales/useLocales";
+import { ButtonsWrapper } from "../../../../components/about/sliderForAbout/LeadingBrandsSectionStyles";
+
+import nextIcon from "../../../../assets/about/next.svg";
 
 const Feedback = () => {
+  const { translate } = useLocales();
+
+  const sliderRef = useRef<Slider | null>(null);
+
+  const next = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const previous = () => {
+    console.log("dfghjk");
+
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
   const settings = {
     className: "center",
     centerMode: false,
@@ -70,24 +95,34 @@ const Feedback = () => {
   };
 
   return (
-    <FeedbackWrapper>
-      <FeedbackNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"09"} />
-      </FeedbackNumber>
-      <Title>What our clients say</Title>
-      <SubTitle>What our clients say</SubTitle>
-      <FeedbackContainer>
-        <LeadingBrandsBoxFeedback>
-          <Slider {...settings}>
-            <FeedbackCard />
-            <FeedbackCard />
-            <FeedbackCard />
-            <FeedbackCard />
-            <FeedbackCard />
-          </Slider>
-        </LeadingBrandsBoxFeedback>
-      </FeedbackContainer>
-    </FeedbackWrapper>
+    <FeedbackContainerWrapper>
+      <FeedbackWrapper>
+        <FeedbackNumber>
+          <PageSectionNumber fullPageNumber={12} currentPageNumber={"09"} />
+        </FeedbackNumber>
+        <Title>What our clients say</Title>
+        <SubTitle>What our clients say</SubTitle>
+        <FeedbackContainer>
+          <LeadingBrandsBoxFeedback>
+            <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
+              <FeedbackCard />
+              <FeedbackCard />
+              <FeedbackCard />
+              <FeedbackCard />
+              <FeedbackCard />
+            </Slider>
+            <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
+              <button className="button" onClick={previous}>
+                <img src={preIcon} alt="" />
+              </button>
+              <button className="button" onClick={next}>
+                <img src={nextIcon} alt="" />
+              </button>
+            </ButtonsWrapper>
+          </LeadingBrandsBoxFeedback>
+        </FeedbackContainer>
+      </FeedbackWrapper>
+    </FeedbackContainerWrapper>
   );
 };
 

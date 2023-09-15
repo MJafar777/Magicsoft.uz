@@ -10,7 +10,7 @@ import {
   ButtonChangeBox,
   ButtonPimaryText,
   ButtonSecondaryText,
-} from "../ButtonInfo/ButtonInfoStyles";
+} from "../buttonInfo/ButtonInfoStyles";
 
 interface ButtonEscortProps {
   text1: string;

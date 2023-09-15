@@ -1,6 +1,6 @@
 const ru = {
   hi: "приветь",
-  changeLang: "Русский",
+  changeLang: "Ру",
   aboutUs: "О нас",
   titleOfheader:
     "креативное цифровое агентство, работающее со стартапами и предприятиями.",
@@ -31,5 +31,7 @@ const ru = {
   privancy: " Политика конфиденциальности",
   contactFormSubtitleCon:
     "Вы соглашаетесь с нашей политикой конфиденциальности.",
+    memoriable:'Памятные фотографии'
+
 };
 export default ru;

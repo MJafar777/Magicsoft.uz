@@ -9,8 +9,9 @@ export const CommentsWrapper = styled.div`
   margin-top: 400px;
 
   .slick-prev:before {
-    content: url(${pre}) !important;
+    /* content: url(${pre}) !important; */
     position: absolute !important;
+    display: none;
     top: 150px !important;
     left: 50px;
     font-size: 36px !important;
@@ -22,6 +23,7 @@ export const CommentsWrapper = styled.div`
     content: url(${next}) !important;
     position: absolute;
     font-weight: bolder;
+    display: none;
     left: -1650px;
     top: 150px;
     font-size: 36px;

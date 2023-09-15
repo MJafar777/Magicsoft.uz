@@ -82,7 +82,7 @@ const Navbar = () => {
 
       <LinkItemColumnLine />
 
-      <LinkItem>
+      <LinkItem className="lg-remove">
         <NavLink
           to="/news"
           onClick={() => {
@@ -103,9 +103,9 @@ const Navbar = () => {
         </NavLink>
       </LinkItem>
 
-      <LinkItemColumnLine />
+      <LinkItemColumnLine className="lg-remove" />
 
-      <LinkItem>
+      <LinkItem className="lg-remove">
         <NavLink
           to="/blog"
           onClick={() => {
@@ -126,7 +126,7 @@ const Navbar = () => {
         </NavLink>
       </LinkItem>
 
-      <LinkItemColumnLine />
+      <LinkItemColumnLine className="lg-remove" />
 
       <LinkItem>
         <NavLink

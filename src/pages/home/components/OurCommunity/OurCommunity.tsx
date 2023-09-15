@@ -7,6 +7,7 @@ import {
   OurCommunityWrapper,
   OurCommunityPageNumber,
   OurCommunityCardImageBox,
+  OurCommunityCotainerWrapper,
 } from "./OurCommunityStyles";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,135 +22,153 @@ import { FaDiscord } from "react-icons/fa";
 
 const OurCommunity = () => {
   return (
-    <OurCommunityWrapper>
-      <OurCommunityPageNumber>
-        <PageSectionNumber fullPageNumber={12} currentPageNumber={"07"} />
-      </OurCommunityPageNumber>
+    <OurCommunityCotainerWrapper>
+      <OurCommunityWrapper>
+        <OurCommunityPageNumber>
+          <PageSectionNumber fullPageNumber={12} currentPageNumber={"07"} />
+        </OurCommunityPageNumber>
 
-      <OurCommunityTitle>Our Commmunity</OurCommunityTitle>
+        <OurCommunityTitle>Our Commmunity</OurCommunityTitle>
 
-      <OurCommunityCards>
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+        <OurCommunityCards>
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>GitHub</p>
+              <p>GitHub</p>
 
-            <GitHubIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <GitHubIcon className="cardIcon" />
+              </div>
 
-            <span>Follow</span>
+              <span>Follow</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Telegram</p>
+              <p>Telegram</p>
 
-            <TelegramIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <TelegramIcon className="cardIcon" />
+              </div>
 
-            <span>JOIN</span>
+              <span>JOIN</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Twitter</p>
+              <p>Twitter</p>
 
-            <TwitterIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <TwitterIcon className="cardIcon" />
+              </div>
 
-            <span>Follow</span>
+              <span>Follow</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Instagram</p>
+              <p>Instagram</p>
 
-            <InstagramIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <InstagramIcon className="cardIcon" />
+              </div>
 
-            <span>Follow</span>
+              <span>Follow</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Linkedin</p>
+              <p>Linkedin</p>
 
-            <LinkedInIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <LinkedInIcon className="cardIcon" />
+              </div>
 
-            <span>Follow</span>
+              <span>Follow</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Youtube</p>
+              <p>Youtube</p>
 
-            <YouTubeIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <YouTubeIcon className="cardIcon" />
+              </div>
 
-            <span>JOIN</span>
+              <span>JOIN</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Discord</p>
+              <p>Discord</p>
 
-            <FaDiscord className="cardIcon" />
+              <div className="cardIcon-box">
+                <FaDiscord className="cardIcon" />
+              </div>
 
-            <span>Follow</span>
+              <span>Follow</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
 
-        <OurCommunityCard>
-          <OurCommunityCardImageBox>
-            <img src={blueBorder} alt="border" />
+          <OurCommunityCard>
+            <OurCommunityCardImageBox>
+              <img src={blueBorder} alt="border" />
 
-            <p>Facebook</p>
+              <p>Facebook</p>
 
-            <FacebookIcon className="cardIcon" />
+              <div className="cardIcon-box">
+                <FacebookIcon className="cardIcon" />
+              </div>
 
-            <span>JOIN</span>
+              <span>JOIN</span>
 
-            <h2>+10k</h2>
-          </OurCommunityCardImageBox>
-          <ArrowOutwardIcon className="cardArrowIcon" />
-        </OurCommunityCard>
-      </OurCommunityCards>
-    </OurCommunityWrapper>
+              <h2>+10k</h2>
+            </OurCommunityCardImageBox>
+            <ArrowOutwardIcon className="cardArrowIcon" />
+          </OurCommunityCard>
+        </OurCommunityCards>
+      </OurCommunityWrapper>
+    </OurCommunityCotainerWrapper>
   );
 };
 

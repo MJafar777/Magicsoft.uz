@@ -90,3 +90,17 @@ export const LeadingBrandsCart = styled.div`
     }
   }
 `;
+
+export const ButtonsWrapper = styled.div`
+  width: 100%;
+  height: 30px;
+  /* border: solid red 1px; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+`;

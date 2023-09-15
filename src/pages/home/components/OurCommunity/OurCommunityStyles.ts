@@ -1,9 +1,47 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
+export const OurCommunityCotainerWrapper = styled.section<BreacPointsType>`
+  max-width: 1500px;
+  padding: 0 20px;
+  padding-top: 111px;
+  min-height: 787px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 100%;
+    max-width: 1201px;
+    min-height: 630px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 100%;
+    padding: 0px 20px;
+    padding-top: 40px;
+    max-width: 993px;
+    min-height: 441px;
+    height: auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 768px;
+    margin: 50px auto;
+    padding-top: 0px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    margin: 50px auto;
+  }
+`;
 export const OurCommunityWrapper = styled.section<BreacPointsType>`
   max-width: 1163px;
-  /* margin: 200px auto; */
   margin: 0px auto;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -44,7 +82,14 @@ export const OurCommunityTitle = styled.div<BreacPointsType>`
     font-size: 42.8px;
     font-weight: 600;
     line-height: 48.638px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 42.8px;
+    font-weight: 600;
+    line-height: 48.638px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -107,6 +152,10 @@ export const OurCommunityCard = styled.div<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.xl} {
     border-radius: 14px;
+
+    .cardArrowIcon {
+      right: 5px;
+    }
   }
 `;
 
@@ -160,12 +209,19 @@ export const OurCommunityCardImageBox = styled.div<BreacPointsType>`
     bottom: 10px;
   }
 
-  .cardIcon {
+  .cardIcon-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 25px;
-    height: 25px;
+    text-align: center;
+    top: 42%;
+    justify-content: center;
+  }
+
+  .cardIcon {
+    width: 45px;
+    height: 45px;
     color: white;
   }
 
@@ -192,7 +248,7 @@ export const OurCommunityCardImageBox = styled.div<BreacPointsType>`
     }
 
     .cardIcon {
-      width: 20px;
+      width: 40px;
     }
   }
 
@@ -219,7 +275,7 @@ export const OurCommunityCardImageBox = styled.div<BreacPointsType>`
     }
 
     .cardIcon {
-      width: 15px;
+      width: 25px;
     }
   }
 `;

@@ -18,6 +18,12 @@ export const NavbarWrapper = styled.nav<BreacPointsType>`
     gap: 13px;
   }
 
+  @media ${(props) => props.theme.breakpoints?.lg} {
+    .lg-remove {
+      display: none;
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     display: none;
   }
@@ -150,18 +156,18 @@ export const LinkItemText = styled.p<BreacPointsType>`
 `;
 
 export const LinkItemActiveBox = styled.div<BreacPointsType>`
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   background-color: #1b63cc;
 
   @media ${(props) => props.theme.breakpoints?.xxl} {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
   }
 
   @media ${(props) => props.theme.breakpoints?.xl} {
-    width: 2.8;
-    height: 2.8;
+    width: 4px;
+    height: 4px;
   }
 `;
 

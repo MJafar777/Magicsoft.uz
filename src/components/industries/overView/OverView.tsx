@@ -25,7 +25,7 @@ const OverView = () => {
   
   return (
     <OverViewWraper>
-      <div>
+      <div className="content">
         <OverViewTitle>{data.title}</OverViewTitle>
         <TextOfOverView>{data.text}</TextOfOverView>
       </div>

@@ -1,7 +1,7 @@
 const uz = {
   hi: "salom",
   //navbar
-  changeLang: "Uzbekcha",
+  changeLang: "Uz",
   aboutUs: "Biz Haqimizda",
   //about page
   titleOfheader: "bu startaplar va korxonalar bilan ishlaydigan agentlikdir.",
@@ -30,6 +30,8 @@ const uz = {
     "Ushbu soʻrovni yuborish orqali siz bizning maxfiylik siyosatimizga rozilik bildirasiz.",
   privancy: " Maxfiylik siyosati",
   contactFormSubtitleCon: "maxfiylik siyosatimizga rozilik bildirdiz.",
+  memoriable: "Esda qolarli fotosuratlar",
+
   //about page
 
   //navbar

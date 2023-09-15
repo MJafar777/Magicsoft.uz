@@ -1,9 +1,49 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const LeadingBrandsSectionWrapper = styled.section<BreacPointsType>`
+export const LeadingBrandsSectionContainerWrapper = styled.section<BreacPointsType>`
+  max-width: 1500px;
+  padding: 0 20px;
+  min-height: 787px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 100%;
+    padding: 0px;
+    max-width: 1440px;
+    min-height: 630px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 100%;
+    padding: 0px;
+    max-width: 992px;
+    min-height: 441px;
+    height: auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 768px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-bottom: 0px;
+  }
+`;
+
+export const LeadingBrandsSectionWrapper = styled.div<BreacPointsType>`
   width: 100%;
-  /* height: 100vh; */
   margin: 0 auto;
 
   display: flex;
@@ -18,26 +58,29 @@ export const LeadingBrandsTitle = styled.h2<BreacPointsType>`
   font-size: 86px;
   font-weight: 600;
   line-height: 95px;
-  margin: 90px auto;
+  margin: 0 auto 90px auto;
+
   text-align: center;
 
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 850px;
     font-size: 68.8px;
     line-height: 75.542px;
-    margin: 79px auto 10px auto;
+    margin: 0px auto 10px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
     font-size: 48.8px;
     font-weight: 600;
     line-height: 55.638px;
+    margin: 50px auto 10px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 42.8px;
     font-weight: 600;
     line-height: 48.638px;
+    padding: 0 10px;
   }
 `;
 

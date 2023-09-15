@@ -1,6 +1,6 @@
 const en = {
   hi: "hello",
-  changeLang: "English",
+  changeLang: "En",
   aboutUs: "About Us",
 
   //About page
@@ -27,11 +27,12 @@ const en = {
   inputEmail: "Your email adress",
   inputPhone: "Your phone number",
   teaxtareaMessage: "Your message...",
-  Submit:'Submit',
+  Submit: "Submit",
   contactFormSubtitle:
     "By sending this request you agree to our privacy policy. ",
-  privancy:' Privacy policy ',
-  contactFormSubtitleCon:'agree to our privacy policy.'
-  };
+  privancy: " Privacy policy ",
+  contactFormSubtitleCon: "agree to our privacy policy.",
+  memoriable: "Memorable photos",
+};
 
 export default en;

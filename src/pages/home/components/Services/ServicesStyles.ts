@@ -1,40 +1,73 @@
 import { styled } from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
-export const ServicesWrapper = styled.section<BreacPointsType>`
-  max-width: 1571px;
-  max-height: 627px;
+export const ServicesContainerWrapper = styled.section<BreacPointsType>`
+  max-width: 1500px;
+  padding: 0 20px;
+  padding-top: 111px;
+  min-height: 787px;
+  height: 100vh;
+  margin: 0 auto;
 
-  /* margin: 100px auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    width: 100%;
+    max-width: 1201px;
+    min-height: 630px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 100%;
+    padding: 0px 20px;
+    max-width: 993px;
+    min-height: 441px;
+    height: auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 768px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 50px auto;
+  }
+`;
+
+export const ServicesWrapper = styled.div<BreacPointsType>`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  height: 100vh;
-  margin: 0px auto;
-
-  /* margin-top: 200px; */
-
   @media ${(props) => props.theme.breakpoints.xxl} {
     max-width: 1440px;
-    padding: 0 20px;
-    /* margin: 200px auto; */
-
+    padding: 0px;
     margin: 0px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 60px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 992px;
+    margin: 10px auto;
+    margin-bottom: 60px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 768px;
     height: auto;
+    margin-bottom: 0px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -45,11 +78,16 @@ export const ServicesWrapper = styled.section<BreacPointsType>`
 export const ServicesLeft = styled.div<BreacPointsType>`
   width: 50%;
 
+  .servicesLeft-title-row {
+    display: flex;
+    gap: 20px;
+  }
+
   @media ${(props) => props.theme.breakpoints.xl} {
     width: 45%;
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     width: 100%;
     justify-content: center;
   }
@@ -67,6 +105,7 @@ export const ServicesLeftTitle = styled.h2<BreacPointsType>`
     font-size: 68.8px;
     font-weight: 600;
     line-height: 78.638px;
+    margin-bottom: 0;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
@@ -112,7 +151,7 @@ export const ServicesLeftItem = styled.div<BreacPointsType>`
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    padding: 30px 15px 15px 0;
+    padding: 15px 15px 15px 0;
     gap: 13px;
   }
 
@@ -178,7 +217,7 @@ export const ServicesLeftItemTitle = styled.h2<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.xxl} {
     font-size: 27.2px;
     line-height: 23.8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
@@ -220,7 +259,7 @@ export const ServicesLeftItemBtn = styled.div<BreacPointsType>`
 
   @media ${(props) => props.theme.breakpoints.xl} {
     gap: 30px;
-    margin-top: 18.8px;
+    margin-top: 10px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -230,115 +269,54 @@ export const ServicesLeftItemBtn = styled.div<BreacPointsType>`
 
 export const ServicesRight = styled.div<BreacPointsType>`
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 100%;
-  padding: 0;
-
-  position: relative;
+  padding-left: 20px;
 
   @media ${(props) => props.theme.breakpoints.xl} {
     width: 55%;
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: none;
   }
 `;
 
 export const ServicesRightImageBox = styled.div<BreacPointsType>`
-  position: relative;
-
-  img {
-    transition: all 0.3s;
-    position: absolute;
-  }
-
-  img.gifBorderVector {
-    top: 140px;
-    right: 0;
-  }
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 30px;
+  transition: all 0.3s;
 
   img.gif {
-    width: 580px;
-    top: 250px;
-    right: 50px;
-    bottom: 0px;
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    opacity: 1;
-    position: absolute;
-    z-index: 2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 50px;
+    width: 100%;
+    transition: all 0.3s;
+    border-radius: 30px;
   }
 
   &:hover {
-    img.gifBorderVector {
-      opacity: 0;
-    }
+    border: none;
+    padding: 0;
 
     img.gif {
       border-radius: 2px;
-      transform: scale(1.05);
     }
   }
 
   @media ${(props) => props.theme.breakpoints.xxl} {
-    img.gifBorderVector {
-      width: 550px;
-      top: 50px;
-      right: 0;
-    }
-
     img.gif {
-      width: 460px;
-      top: 150px;
-      right: 43px;
-      border-radius: 40px;
-    }
-  }
-
-  @media ${(props) => props.theme.breakpoints.xl} {
-    img.gifBorderVector {
-      width: 480px;
-      top: 50px;
-      right: 0;
-    }
-
-    img.gif {
-      width: 390px;
-      top: 100px;
-      right: 43px;
-      border-radius: 35px;
+      width: 100%;
     }
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    img.gifBorderVector {
-      width: 380px;
-      top: 60px;
-      right: 0;
-    }
-
     img.gif {
-      width: 320px;
-      top: 130px;
-      right: 33px;
       border-radius: 25px;
     }
   }
