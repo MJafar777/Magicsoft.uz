@@ -19,8 +19,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { FaDiscord } from "react-icons/fa";
+import useLocales from "../../../../locales/useLocales";
 
 const OurCommunity = () => {
+  const { translate } = useLocales();
+
   return (
     <OurCommunityCotainerWrapper>
       <OurCommunityWrapper>
@@ -28,20 +31,20 @@ const OurCommunity = () => {
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"07"} />
         </OurCommunityPageNumber>
 
-        <OurCommunityTitle>Our Commmunity</OurCommunityTitle>
+        <OurCommunityTitle>{translate("OurCommmunity")}</OurCommunityTitle>
 
         <OurCommunityCards>
           <OurCommunityCard>
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>GitHub</p>
+              <p>{translate("GitHub")}</p>
 
               <div className="cardIcon-box">
                 <GitHubIcon className="cardIcon" />
               </div>
 
-              <span>Follow</span>
+              <span>{translate("Follow")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -52,13 +55,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Telegram</p>
+              <p>{translate("Telegram")}</p>
 
               <div className="cardIcon-box">
                 <TelegramIcon className="cardIcon" />
               </div>
 
-              <span>JOIN</span>
+              <span>{translate("JOIN")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -69,13 +72,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Twitter</p>
+              <p>{translate("Twitter")}</p>
 
               <div className="cardIcon-box">
                 <TwitterIcon className="cardIcon" />
               </div>
 
-              <span>Follow</span>
+              <span>{translate("Follow")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -86,13 +89,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Instagram</p>
+              <p>{translate("Instagram")}</p>
 
               <div className="cardIcon-box">
                 <InstagramIcon className="cardIcon" />
               </div>
 
-              <span>Follow</span>
+              <span>{translate("Follow")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -103,13 +106,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Linkedin</p>
+              <p>{translate("Linkedin")}</p>
 
               <div className="cardIcon-box">
                 <LinkedInIcon className="cardIcon" />
               </div>
 
-              <span>Follow</span>
+              <span>{translate("Follow")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -120,13 +123,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Youtube</p>
+              <p>{translate("Youtube")}</p>
 
               <div className="cardIcon-box">
                 <YouTubeIcon className="cardIcon" />
               </div>
 
-              <span>JOIN</span>
+              <span>{translate("JOIN")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -137,13 +140,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Discord</p>
+              <p>{translate("Discord")}</p>
 
               <div className="cardIcon-box">
                 <FaDiscord className="cardIcon" />
               </div>
 
-              <span>Follow</span>
+              <span>{translate("Follow")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>
@@ -154,13 +157,13 @@ const OurCommunity = () => {
             <OurCommunityCardImageBox>
               <img src={blueBorder} alt="border" />
 
-              <p>Facebook</p>
+              <p>{translate("Facebook")}</p>
 
               <div className="cardIcon-box">
                 <FacebookIcon className="cardIcon" />
               </div>
 
-              <span>JOIN</span>
+              <span>{translate("JOIN")}</span>
 
               <h2>+10k</h2>
             </OurCommunityCardImageBox>

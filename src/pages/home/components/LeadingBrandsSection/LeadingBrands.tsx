@@ -18,14 +18,15 @@ import {
   LeadingBrandsSectionWrapper,
   LeadingBrandsSectionContainerWrapper,
 } from "./LeadingBrandsSectionStyles";
+import useLocales from "../../../../locales/useLocales";
 
 const LeadingBrands = () => {
+  const { translate } = useLocales();
+  
   return (
     <LeadingBrandsSectionContainerWrapper>
       <LeadingBrandsSectionWrapper>
-        <LeadingBrandsTitle>
-          Trusted by Leading Brands and Startups
-        </LeadingBrandsTitle>
+        <LeadingBrandsTitle>{translate("leadiongTitle")}</LeadingBrandsTitle>
 
         <PageSectionNumber fullPageNumber={12} currentPageNumber={"02"} />
 
@@ -65,7 +66,11 @@ const LeadingBrands = () => {
         </LeadingBrandsBox>
 
         <ButtonMagnet>
-          <ButtonEscort text1="MORE" text2="MORE" arrowOutwardIcon={false} />
+          <ButtonEscort
+            text1={translate("moreUpper")}
+            text2={translate("moreUpper")}
+            arrowOutwardIcon={false}
+          />
         </ButtonMagnet>
       </LeadingBrandsSectionWrapper>
     </LeadingBrandsSectionContainerWrapper>

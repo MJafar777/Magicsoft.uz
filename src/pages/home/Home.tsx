@@ -14,8 +14,6 @@ import ReactPageScroller from "react-page-scroller";
 const Home = () => {
   const WWidth = useWindowWidth();
 
-  console.log(WWidth);
-
   if (WWidth < 1201) {
     return (
       <>

@@ -30,8 +30,6 @@ const Feedback = () => {
   };
 
   const previous = () => {
-    console.log("dfghjk");
-
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
     }
@@ -100,8 +98,8 @@ const Feedback = () => {
         <FeedbackNumber>
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"09"} />
         </FeedbackNumber>
-        <Title>What our clients say</Title>
-        <SubTitle>What our clients say</SubTitle>
+        <Title>{translate("feedbackTitle")}</Title>
+        <SubTitle>{translate("feedbackTitle")}</SubTitle>
         <FeedbackContainer>
           <LeadingBrandsBoxFeedback>
             <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
