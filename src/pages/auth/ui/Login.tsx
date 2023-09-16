@@ -1,4 +1,4 @@
-import { FC, Suspense, useState } from "react";
+import { FC, Suspense, useEffect, useState } from "react";
 
 import {
   Form,
@@ -14,33 +14,23 @@ import {
   InputPassword,
 } from "./login";
 
-import { BiLogoFacebookCircle } from "react-icons/bi";
-import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
-import { AiFillGoogleCircle, AiFillGithub } from "react-icons/ai";
-import { eye_closed, eye_looked } from "../../../assets";
-import { HeaderLogo } from "../../../layouts/header/components";
 import { NavLink } from "react-router-dom";
 import { Loader } from "../../../components/Loading";
-import { Success } from "../../../components/success";
 // import { Error } from "../../../components/Error";
+import { Success } from "../../../components/success";
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { eye_closed, eye_looked } from "../../../assets";
+import { HeaderLogo } from "../../../layouts/header/components";
+import { AiFillGoogleCircle, AiFillGithub } from "react-icons/ai";
+import { gapi } from "gapi-script";
+import LoginGoogle from "../components/google/login/LoginGoogle";
+import LogoutGoogle from "../components/google/logout/LogoutGoogle";
 
 const Login: FC = () => {
-  const keys = {
-    web: {
-      client_id:
-        "314979823268-u226atnls184jnh1ioje57um1iikk2ta.apps.googleusercontent.com",
-      project_id: "twitch-354311",
-      auth_uri: "https://accounts.google.com/o/oauth2/auth",
-      token_uri: "https://oauth2.googleapis.com/token",
-      auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
-      client_secret: "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",
-      redirect_uris: ["https://magicsoft.uz"],
-      javascript_origins: ["https://magicsoft.uz"],
-    },
-  };
-
   const [passwordVisible, setPasswordVisible] = useState(false);
+
   const [buttonSubmitClicked, setButtonSubmitClicked] = useState(false);
+
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -68,30 +58,26 @@ const Login: FC = () => {
 
   // Oauth Google Account
 
-  const handleLoginSuccess = (response) => {
-    // Foydalanuvchi tizimga muvaffaqiyatli kirgandi
-    console.log(response);
-  };
+  const clientId =
+    "936147651738-s4hi0rdseiema0k63lveg7sv3mk9igrt.apps.googleusercontent.com";
 
-  const handleLoginFailure = (error) => {
-    // Kirishda xatolik yuz berdi
-    console.error(error);
-  };
+  useEffect(() => {
+    function start() {
+      gapi.client.init({
+        clientId: clientId,
+        scope: "",
+      });
+    }
 
-  <GoogleLogin
-    onSuccess={(credentialResponse) => {
-      console.log(credentialResponse);
-    }}
-    onError={() => {
-      console.log("Login Failed");
-    }}
-  />;
+    gapi.load("client:auth2", start);
+  });
 
   return (
     <Suspense fallback={<Loader />}>
       {buttonSubmitClicked ? (
         <RegisterPage>
           <Success />
+
           <CenterBtn>
             <NavLink
               style={{
@@ -110,6 +96,7 @@ const Login: FC = () => {
           <HeaderLogo />
 
           <Title>Log In to your Account</Title>
+
           <Form onSubmit={handleSubmit} autoComplete="off">
             <Input
               required
@@ -121,6 +108,7 @@ const Login: FC = () => {
               value={formData.username}
               onChange={handleInputChange}
             />
+
             <EyeFlex>
               <InputPassword
                 required
@@ -141,21 +129,27 @@ const Login: FC = () => {
                 }`}
               />
             </EyeFlex>
+
             <FlexAuth>
-              <GoogleOAuthProvider
-                clientId={`${keys.web.client_secret}`}
-                onSuccess={handleLoginSuccess}
-                onFailure={handleLoginFailure}
-              >
-                <AiFillGoogleCircle style={{ cursor: "pointer" }} />
-              </GoogleOAuthProvider>
+              <LoginGoogle children={undefined} />
+
+              <AiFillGoogleCircle
+                style={{
+                  cursor: "pointer",
+                }}
+              />
 
               <BiLogoFacebookCircle style={{ cursor: "pointer" }} />
+
               <AiFillGithub style={{ cursor: "pointer" }} />
             </FlexAuth>
 
             <Button type="submit">LOG IN</Button>
           </Form>
+          <Button onClick={() => <LogoutGoogle children={undefined} />}>
+            LOG OUT
+          </Button>
+
           <NavLink
             style={{
               listStyle: "none",
@@ -167,6 +161,7 @@ const Login: FC = () => {
           >
             Forgot Password?
           </NavLink>
+          <LogoutGoogle children={undefined} />
         </LoginWrapper>
       )}
     </Suspense>

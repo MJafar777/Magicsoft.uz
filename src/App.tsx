@@ -11,7 +11,7 @@ import { ButtonContextProvider } from "./context/ButtonContext";
 function App() {
   const location = useLocation();
 
-  console.log(location.pathname);
+  // console.log(location.pathname);
 
   return (
     <Suspense fallback={<Loader />}>
