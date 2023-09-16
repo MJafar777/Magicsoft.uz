@@ -16,7 +16,7 @@ const dataFilter = [
 const AllProjects: React.FC<Props> = () => {
   return (
     <AllProjectsWrapper>
-      <SubTitle>AllProjects</SubTitle>
+      <SubTitle>All Projects</SubTitle>
       <FilterAllProjects dataFilter={dataFilter} />
     </AllProjectsWrapper>
   );
