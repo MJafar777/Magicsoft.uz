@@ -1,7 +1,7 @@
 import App from "../App";
 import { lazy } from "react";
 import { News } from "../pages/news";
-import { Login } from "../pages/auth";
+import { Login, SignUp } from "../pages/auth";
 import { Blogs } from "../pages/blogs";
 import About from "../pages/about/About";
 import { Contact } from "../components/about";
@@ -60,6 +60,7 @@ const router = createBrowserRouter([
       { path: "fintech", element: <FintechAsync /> },
 
       { path: "/forgot-password", element: <ForgotPassword /> },
+      { path: "/sign-up", element: <SignUp /> },
     ],
   },
 ]);

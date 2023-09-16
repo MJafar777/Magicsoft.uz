@@ -1,4 +1,4 @@
-import { FC, Suspense, useEffect, useState } from "react";
+import { FC, Suspense, useState } from "react";
 
 import {
   Form,
@@ -12,27 +12,26 @@ import {
   RegisterPage,
   LoginWrapper,
   InputPassword,
-} from "./login";
+} from "./signUp";
 
 import { NavLink } from "react-router-dom";
-import { Loader } from "../../../components/Loading";
-// import { Error } from "../../../components/Error";
-import { Success } from "../../../components/success";
 import { BiLogoFacebookCircle } from "react-icons/bi";
-import { eye_closed, eye_looked } from "../../../assets";
-import { HeaderLogo } from "../../../layouts/header/components";
+import { Loader } from "../../../../components/Loading";
+import { Success } from "../../../../components/success";
+import { eye_closed, eye_looked } from "../../../../assets";
 import { AiFillGoogleCircle, AiFillGithub } from "react-icons/ai";
-import { gapi } from "gapi-script";
-// import LoginGoogle from "../components/google/login/LoginGoogle";
-// import LogoutGoogle from "../components/google/logout/LogoutGoogle";
+import { HeaderLogo } from "../../../../layouts/header/components";
+import React from "react";
 
-const Login: FC = () => {
+const SignUp: FC = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const [buttonSubmitClicked, setButtonSubmitClicked] = useState(false);
 
   const [formData, setFormData] = useState({
     username: "",
+    userlastname: "",
+    email: "",
     password: "",
   });
 
@@ -53,24 +52,8 @@ const Login: FC = () => {
 
     setButtonSubmitClicked(true);
 
-    setFormData({ username: "", password: "" });
+    setFormData({ username: "", userlastname: "", email: "", password: "" });
   };
-
-  // Oauth Google Account
-
-  const clientId =
-    "936147651738-s4hi0rdseiema0k63lveg7sv3mk9igrt.apps.googleusercontent.com";
-
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId: clientId,
-        scope: "",
-      });
-    }
-
-    gapi.load("client:auth2", start);
-  });
 
   return (
     <Suspense fallback={<Loader />}>
@@ -95,17 +78,37 @@ const Login: FC = () => {
         <LoginWrapper>
           <HeaderLogo />
 
-          <Title>Log In to your Account</Title>
+          <Title>Sign In To Your Account</Title>
 
           <Form onSubmit={handleSubmit} autoComplete="off">
             <Input
               required
-              type="email"
+              type="text"
               id="username"
               maxLength={30}
               name="username"
-              placeholder="Email"
+              placeholder="First name"
               value={formData.username}
+              onChange={handleInputChange}
+            />
+            <Input
+              required
+              type="text"
+              id="userlastname"
+              maxLength={30}
+              name="userlastname"
+              placeholder="Last name"
+              value={formData.userlastname}
+              onChange={handleInputChange}
+            />
+            <Input
+              required
+              type="email"
+              id="email"
+              maxLength={30}
+              name="email"
+              placeholder="Email"
+              value={formData.email}
               onChange={handleInputChange}
             />
 
@@ -131,9 +134,6 @@ const Login: FC = () => {
             </EyeFlex>
 
             <FlexAuth>
-              {/* google Oauth2 ⬇️ */}
-              {/* <LoginGoogle children={undefined} /> */}
-
               <AiFillGoogleCircle
                 style={{
                   cursor: "pointer",
@@ -145,40 +145,12 @@ const Login: FC = () => {
               <AiFillGithub style={{ cursor: "pointer" }} />
             </FlexAuth>
 
-            <Button type="submit">LOG IN</Button>
-            <NavLink
-              style={{
-                width: "100%",
-                listStyle: "none",
-                fontSize: "16px",
-                color: "#f0f0f0",
-              }}
-              to="/sign-up"
-            >
-              <Button style={{ width: "100%" }}>SIGN UP</Button>
-            </NavLink>
+            <Button type="submit">SIGN UP</Button>
           </Form>
-          {/* <Button onClick={() => <LogoutGoogle children={undefined} />}>
-            LOG OUT
-          </Button> */}
-
-          <NavLink
-            style={{
-              listStyle: "none",
-              fontSize: "14px",
-              color: "#f0f0f0",
-              textDecoration: "underline",
-            }}
-            to="/forgot-password"
-          >
-            Forgot Password?
-          </NavLink>
-          {/* logout google Oauth */}
-          {/* <LogoutGoogle children={undefined} /> */}
         </LoginWrapper>
       )}
     </Suspense>
   );
 };
 
-export default Login;
+export default SignUp;
