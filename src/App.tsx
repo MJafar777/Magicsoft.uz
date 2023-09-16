@@ -8,10 +8,13 @@ import ThemeLocalization from "./locales/ThemeLocalization";
 import "./locales/i18n";
 import { ButtonContextProvider } from "./context/ButtonContext";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 function App() {
   const location = useLocation();
-
-  // console.log(location.pathname);
 
   return (
     <Suspense fallback={<Loader />}>
@@ -21,7 +24,6 @@ function App() {
             <Header />
             <Outlet />
             {location.pathname != "/" ? <Footer /> : ""}
-            
           </ThemeLocalization>
         </Theme>
       </ButtonContextProvider>

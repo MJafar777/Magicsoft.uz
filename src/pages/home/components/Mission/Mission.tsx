@@ -15,34 +15,33 @@ import {
 
 import digitialVideo from "../../../../assets/digitial.mp4";
 
+import useLocales from "../../../../locales/useLocales";
 import { borderBigVector } from "../../../../assets/images";
 import JobItems from "../../../../components/jobItem/JobItems";
 
 const Mission = () => {
+  const { translate } = useLocales();
+
   return (
     <MissionContainerWrapper>
       <MissionWrapper>
         <MissionLeft>
           <PageSectionNumber fullPageNumber={12} currentPageNumber={"06"} />
           <MissionTitle className="desctop-title">
-            This is our <span>mission</span>
+            {translate("thisIsOur")} <span>{translate("mission")}</span>
           </MissionTitle>
 
           <MissionDescription>
-            <p>
-              To be the trusted digital partner and drive transformational
-              outcomes for our customers, and empower our employees to achieve
-              their full potential.
-            </p>
-            <p>
-              To keep up in today's fast-paced world, you need to embrace
-              digital innovation to create ahead-of-the-curve, memorable
-              customer experiences (CX) that set the standard for your audience.
-            </p>
+            <p>{translate("missionTitle1")}</p>
+            <p>{translate("missionTitle2")}</p>
           </MissionDescription>
 
           <ButtonMagnet>
-            <ButtonEscort text1="MORE" text2="MORE" arrowOutwardIcon={true} />
+            <ButtonEscort
+              text1={translate("MORE")}
+              text2={translate("MORE")}
+              arrowOutwardIcon={true}
+            />
           </ButtonMagnet>
         </MissionLeft>
 
@@ -73,21 +72,21 @@ const Mission = () => {
           </MissionRight>
 
           <JobItems
-            text={"Product Design"}
+            text={translate("productDesign")}
             top={"30%"}
             right={""}
             bottom={""}
             left={"0px"}
           />
           <JobItems
-            text={"Product Management"}
+            text={translate("productManagement")}
             top={"15%"}
             right={"0"}
             bottom={""}
             left={""}
           />
           <JobItems
-            text={"Product Strategy and Consulting"}
+            text={translate("productStrategyAndConsulting")}
             top={""}
             right={""}
             bottom={"10%"}
@@ -96,7 +95,7 @@ const Mission = () => {
         </MissionRightContaner>
 
         <MissionTitle className="mobile-title">
-          This is our <span>mission</span>
+          {translate("thisIsOur")} <span>{translate("mission")}</span>
         </MissionTitle>
       </MissionWrapper>
     </MissionContainerWrapper>

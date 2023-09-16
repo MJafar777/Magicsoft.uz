@@ -1,6 +1,7 @@
 import { tecCardImae1, tecCardImae2 } from "../../../../assets/images";
 import ButtonIfo from "../../../../components/buttons/buttonInfo/ButtonIfo";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
+import useLocales from "../../../../locales/useLocales";
 import {
   OurTechnologiesCard,
   OurTechnologiesCards,
@@ -14,13 +15,15 @@ import {
 } from "./OurTechnologiesStyles";
 
 const OurTechnologies = () => {
+  const { translate } = useLocales();
+
   return (
     <OurTechnologiesContainerWrapper>
       <OurTechnologiesWrapper>
         <OurTechnologiesTitle>
-          We
-          <span> revolutionalize industries</span>
-          <br className="md-removed-br" /> with the power of tech
+          {translate("We")}
+          <span>{translate("ourTechnologiesTitle1")} </span>
+          <br className="md-removed-br" /> {translate("ourTechnologiesTitle2")}
         </OurTechnologiesTitle>
 
         <OurTechnologiesPageNumber>
@@ -30,32 +33,38 @@ const OurTechnologies = () => {
         <OurTechnologiesCards>
           <OurTechnologiesCard>
             <OurTechnologiesCardTitle>
-              Travel, Logistics <span>&</span>
-              <br className="md-removed-br" /> Hospitality
+              {translate("travelLogistics")} <span>&</span>
+              <br className="md-removed-br" /> {translate("hospitality")}
             </OurTechnologiesCardTitle>
 
             <OurTechnologiesCardDescription>
-              Unravel the art and science of converting travelers with
-              comprehensive travel technology
+              {translate("travelLogisticsDesc")}
             </OurTechnologiesCardDescription>
 
             <OurTechnologiesCardButton>
-              <ButtonIfo text1={"LEARN MORE"} text2={"LEARN MORE"} />
+              <ButtonIfo
+                text1={translate("LEARNMORE")}
+                text2={translate("LEARNMORE")}
+              />
             </OurTechnologiesCardButton>
           </OurTechnologiesCard>
 
           <OurTechnologiesCard>
             <OurTechnologiesCardTitle>
-              Retail <span>and</span>
-              <br className="md-removed-br" /> E-commerce
+              {translate("Retail")} <span>{translate("and")}</span>
+              <br className="md-removed-br" />
+              {translate("ecommerce")}
             </OurTechnologiesCardTitle>
 
             <OurTechnologiesCardDescription>
-              Empowering growth through dynamic E-commerce solutions
+              {translate("retailDesc")}
             </OurTechnologiesCardDescription>
 
             <OurTechnologiesCardButton>
-              <ButtonIfo text1={"LEARN MORE"} text2={"LEARN MORE"} />
+              <ButtonIfo
+                text1={translate("LEARNMORE")}
+                text2={translate("LEARNMORE")}
+              />
             </OurTechnologiesCardButton>
 
             <img
@@ -67,17 +76,19 @@ const OurTechnologies = () => {
 
           <OurTechnologiesCard>
             <OurTechnologiesCardTitle>
-              Fintech <span>and</span>
-              <br className="md-removed-br" /> Banking
+              {translate("Fintech")} <span>{translate("and")}</span>
+              <br className="md-removed-br" /> {translate("Banking")}
             </OurTechnologiesCardTitle>
 
             <OurTechnologiesCardDescription>
-              FinTech software solutions designed to unlock agility, cost
-              leadership, and operational efficiency
+              {translate("fintechTitle")}
             </OurTechnologiesCardDescription>
 
             <OurTechnologiesCardButton>
-              <ButtonIfo text1={"LEARN MORE"} text2={"LEARN MORE"} />
+              <ButtonIfo
+                text1={translate("LEARNMORE")}
+                text2={translate("LEARNMORE")}
+              />
             </OurTechnologiesCardButton>
 
             <img

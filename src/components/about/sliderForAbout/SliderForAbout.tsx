@@ -57,15 +57,12 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
   const sliderRef = useRef<Slider | null>(null);
 
   const next = () => {
-    console.log("dfghjk");
     if (sliderRef.current) {
       sliderRef.current.slickNext();
     }
   };
 
   const previous = () => {
-    console.log("dfghjk");
-
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
     }
@@ -73,10 +70,12 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
 
   return (
     <div>
-      <Slider  ref={(c) => (sliderRef.current = c)}  {...settings}>{children}</Slider>
+      <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
+        {children}
+      </Slider>
       <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
         <button className="button" onClick={previous}>
-        <img src={preIcon} alt="" />
+          <img src={preIcon} alt="" />
         </button>
         <button className="button" onClick={next}>
           <img src={nextIcon} alt="" />

@@ -11,13 +11,13 @@ import {
 import useLocales from "../../../locales/useLocales";
 
 const HeaderOfAbout = () => {
-const {translate}= useLocales()
+  const { translate } = useLocales();
 
   return (
     <HeaderOfAboutWrapper>
       <LeftSideOfHeader>
         <p>
-          <span>Magicsoft</span> {translate('titleOfheader')}.
+          <span>Magicsoft</span> {translate("titleOfheader")}.
         </p>
       </LeftSideOfHeader>
       <RightSideOfHeader>
