@@ -19,6 +19,7 @@ import { TitleBlock } from "../../../components/news&Blogs/navbar";
 // import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards";
 import { MiniCard } from "../../../components/news&Blogs/miniCard";
 import { Loader } from "../../../components/Loading";
+import { Container } from "../../../components/container";
 
 interface DataCard {
   id: number;
@@ -46,43 +47,47 @@ const SecondaryNews = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <SecondaryNewsWrapper key={data[0]?.id}>
-        <SecondaryNewsParent>
-          <ImageTitle
-            src={data[0]?.img || secondaryNews1}
-            alt={`This image not found ${secondaryNews1}`}
-          />
+      <Container>
+        <SecondaryNewsWrapper key={data[0]?.id}>
+          <SecondaryNewsParent>
+            <ImageTitle
+              src={data[0]?.img || secondaryNews1}
+              alt={`This image not found ${secondaryNews1}`}
+            />
 
-          <Title>{data[0]?.title}</Title>
+            <Title>{data[0]?.title}</Title>
 
-          <Paragraph>{data[0]?.paragraphInfo || ""}</Paragraph>
+            <Paragraph>{data[0]?.paragraphInfo || ""}</Paragraph>
+            <br />
+            <Paragraph>{data[0]?.paragraphInfo || ""}</Paragraph>
 
-          <GridBaseOn>
-            {data[0]?.basedOn.map((e) => (
-              <Info key={e}>{e}</Info>
-            ))}
-          </GridBaseOn>
+            <GridBaseOn>
+              {data[0]?.basedOn.map((e) => (
+                <Info key={e}>{e}</Info>
+              ))}
+            </GridBaseOn>
 
-          <TitleBlock title={"Want to explore more?"} />
+            <TitleBlock title={"Want to explore more?"} />
 
-          <TitleBottomBorder />
+            <TitleBottomBorder />
 
-          <GridBase>
-            {dataCards.map((item) => {
-              return (
-                <MiniCard
-                  id={item.id}
-                  img={item.img}
-                  link={item.link}
-                  subTitle={item.subTitle}
-                  miniTitle={item.miniTitle}
-                  category={item.category}
-                />
-              );
-            })}
-          </GridBase>
-        </SecondaryNewsParent>
-      </SecondaryNewsWrapper>
+            <GridBase>
+              {dataCards.map((item) => {
+                return (
+                  <MiniCard
+                    id={item.id}
+                    img={item.img}
+                    link={item.link}
+                    subTitle={item.subTitle}
+                    miniTitle={item.miniTitle}
+                    category={item.category}
+                  />
+                );
+              })}
+            </GridBase>
+          </SecondaryNewsParent>
+        </SecondaryNewsWrapper>
+      </Container>
     </Suspense>
   );
 };
