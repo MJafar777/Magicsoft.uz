@@ -18,9 +18,11 @@ import digitialVideo from "../../../../assets/digitial.mp4";
 import { borderBigVector } from "../../../../assets/images";
 import JobItems from "../../../../components/jobItem/JobItems";
 import useLocales from "../../../../locales/useLocales";
+import { useNavigate } from "react-router-dom";
 
 const DigitalExperience = () => {
   const { translate } = useLocales();
+  const navigate = useNavigate();
 
   return (
     <MissionContainerWrapper>
@@ -36,13 +38,15 @@ const DigitalExperience = () => {
             <p>{translate("digitialExperienceDesc2")}</p>
           </MissionDescription>
 
-          <ButtonMagnet>
-            <ButtonEscort
-              text1={translate("moreUpper")}
-              text2={translate("moreUpper")}
-              arrowOutwardIcon={true}
-            />
-          </ButtonMagnet>
+          <div onClick={() => navigate("/fintech")}>
+            <ButtonMagnet>
+              <ButtonEscort
+                text1={translate("moreUpper")}
+                text2={translate("moreUpper")}
+                arrowOutwardIcon={true}
+              />
+            </ButtonMagnet>
+          </div>
         </MissionLeft>
 
         <MissionRightContaner>
@@ -94,7 +98,9 @@ const DigitalExperience = () => {
           />
         </MissionRightContaner>
 
-        <MissionTitle className="mobile-title">Digital Experience</MissionTitle>
+        <MissionTitle className="mobile-title">
+          {translate("digitialExperienceTitle")}
+        </MissionTitle>
       </MissionWrapper>
     </MissionContainerWrapper>
   );

@@ -19,10 +19,12 @@ import gif from "../../../../assets/gif.gif";
 import ButtonMagnet from "../../../../components/buttons/magnetikButton/ButtonMagnetik";
 import useWindowWidth from "../../../../hooks/useWindowWidth";
 import useLocales from "../../../../locales/useLocales";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const wWidth = useWindowWidth();
   const { translate } = useLocales();
+  const navigate = useNavigate();
 
   return (
     <ServicesContainerWrapper>
@@ -92,7 +94,7 @@ const Services = () => {
             ""
           )}
 
-          <ServicesLeftItemBtn>
+          <ServicesLeftItemBtn onClick={() => navigate("/retail")}>
             <ButtonMagnet>
               <ButtonEscort
                 text1={translate("viewAllServices")}
