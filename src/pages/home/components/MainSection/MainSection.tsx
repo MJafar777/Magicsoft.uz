@@ -21,8 +21,10 @@ import {
 } from "../../../../components/buttons";
 
 import { HeaderReplace } from "../../HomeStyles";
+import useLocales from "../../../../locales/useLocales";
 
 const MainSection = () => {
+  const { translate } = useLocales();
   return (
     <>
       <HeaderReplace />
@@ -33,29 +35,34 @@ const MainSection = () => {
             <PageSectionNumber fullPageNumber={12} currentPageNumber={"01"} />
 
             <MainSectionLeftTitle>
-              Hire the Top of{" "}
-              <span className="MainSectionLeftTitleYellow">Professional</span>{" "}
-              <span className="MainSectionLeftTitleGreen">Software</span>{" "}
-              Engineer
+              {translate("homeMainTitleTop")}{" "}
+              <span className="MainSectionLeftTitleYellow">
+                {translate("homeMainTitleLeft")}
+              </span>{" "}
+              <span className="MainSectionLeftTitleGreen">
+                {translate("homeMainTitleRight")}
+              </span>{" "}
+              {translate("homeMainTitleButtom")}
             </MainSectionLeftTitle>
 
             <div className="mainSectionDesctopBox">
               <MainSectionLeftDescription>
-                MagicSoft is an exclusive group of the top software developers,
-                designers, finance experts, product managers, and project
-                managers in the world.
+                {translate("homeMainDesc")}
               </MainSectionLeftDescription>
 
               <MainSectinLeftButtonsBox>
                 <ButtonMagnet>
                   <ButtonEscort
-                    text1="Hire Top Engineers"
-                    text2="Hire Top Engineers"
+                    text1={translate("hireTopEngineers")}
+                    text2={translate("hireTopEngineers")}
                     arrowOutwardIcon={true}
                   />
                 </ButtonMagnet>
 
-                <ButtonInfo text1={"Why MagicSoft?"} text2={"Why MagicSoft?"} />
+                <ButtonInfo
+                  text1={translate("whyMagicSoft")}
+                  text2={translate("whyMagicSoft")}
+                />
               </MainSectinLeftButtonsBox>
             </div>
           </MainSectionLeft>
@@ -74,21 +81,21 @@ const MainSection = () => {
               </video>
             </MainSectionAnimation>
             <JobItems
-              text={"Finance Experts"}
+              text={translate("financeExperts")}
               top={"20%"}
               right={""}
               bottom={""}
               left={"0px"}
             />
             <JobItems
-              text={"Project Managers"}
+              text={translate("projectManagers")}
               top={""}
               right={""}
               bottom={"10%"}
               left={"30px"}
             />
             <JobItems
-              text={"Software engineers"}
+              text={translate("softwareEngineers")}
               top={"50%"}
               right={"-20px"}
               bottom={""}
@@ -98,21 +105,22 @@ const MainSection = () => {
 
           <div className="mainSectionMobileBox">
             <MainSectionLeftDescription>
-              MagicSoft is an exclusive group of the top software developers,
-              designers, finance experts, product managers, and project managers
-              in the world.
+              {translate("homeMainDesc")}
             </MainSectionLeftDescription>
 
             <MainSectinLeftButtonsBox>
               <ButtonMagnet>
                 <ButtonEscort
-                  text1="Hire Top Engineers"
-                  text2="Hire Top Engineers"
+                  text1={translate("hireTopEngineers")}
+                  text2={translate("hireTopEngineers")}
                   arrowOutwardIcon={true}
                 />
               </ButtonMagnet>
 
-              <ButtonInfo text1={"Why MagicSoft?"} text2={"Why MagicSoft?"} />
+              <ButtonInfo
+                text1={translate("whyMagicSoft")}
+                text2={translate("whyMagicSoft")}
+              />
             </MainSectinLeftButtonsBox>
           </div>
         </MainSectionContainer>

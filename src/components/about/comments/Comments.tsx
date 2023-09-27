@@ -25,8 +25,6 @@ const Comments = () => {
   };
 
   const previous = () => {
-    console.log("dfghjk");
-
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
     }

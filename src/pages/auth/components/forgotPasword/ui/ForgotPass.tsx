@@ -33,16 +33,6 @@ const ForgotPass: FC = () => {
         <Form onSubmit={handleSubmit} autoComplete="off">
           <Input
             required
-            type="text"
-            id="username"
-            maxLength={20}
-            name="username"
-            placeholder="Name"
-            value={formData.username}
-            onChange={handleInputChange}
-          />
-          <Input
-            required
             id="email"
             type="email"
             name="email"
