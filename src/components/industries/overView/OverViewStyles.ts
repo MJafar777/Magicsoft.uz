@@ -2,24 +2,20 @@ import { styled } from "styled-components";
 
 export const OverViewWraper = styled.div`
   height: fit-content;
-  /* padding-left: 230px; */
+  max-width: 1366px;
+  margin: 0 auto;
   width: 100%;
   background-color: #111114;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .content {
-    max-width: 1650px;
     width: 100%;
-    margin: 0 auto;
-    padding:0 190px;
     @media ${(prop) => prop.theme.breakpoints.xxl} {
-      max-width: 1321px;
       padding-left: 150px;
       padding-right: 150px;
     }

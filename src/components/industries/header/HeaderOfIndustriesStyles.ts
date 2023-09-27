@@ -4,6 +4,8 @@ interface HeaderOfIndustriesWraperProps {
 }
 
 export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps>`
+  max-width: 1366px;
+  margin: 0 auto;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -13,8 +15,9 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
   position: relative;
   cursor: pointer;
   /* border: solid red 1px; */
-
+  
   @media ${(prop) => prop.theme.breakpoints.xxl} {
+    width: 90%;
     height: 70vh;
   }
 
@@ -25,7 +28,6 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
 
 export const ContentOfHeader = styled.div`
   position: absolute;
-  left: 12%;
 `;
 
 export const BaseLinks = styled.div`

@@ -27,7 +27,7 @@ export const CommentsWrapper = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     height: 60vh;
-    margin-top: 100px;
+    margin-top: 180px;
     .slick-prev:before {
       top: 100px !important;
     }
@@ -107,6 +107,8 @@ export const Title = styled.p`
   }
   @media ${(prop) => prop.theme.breakpoints.md} {
     text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 `;
 

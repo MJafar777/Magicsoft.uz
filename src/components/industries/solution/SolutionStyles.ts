@@ -3,9 +3,10 @@ export interface CardProp {
   bgColor?: string;
 }
 export const SolutionWrapper = styled.div`
+  max-width: 1366px;
+  margin: 0 auto;
   width: 100%;
   background-color: #000;
-  padding: 86px 5% 130px 10%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding: 80px 0 70px 0;
@@ -42,7 +43,7 @@ export const SolutionTitle = styled.div`
   font-weight: 500;
   line-height: 109.8%; /* 94.428px */
   margin-bottom: 90px;
-  padding-left: 5%;
+  width: 100%;
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     font-size: 68.8px;
@@ -55,7 +56,7 @@ export const SolutionTitle = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
     font-size: 48.16px;
-    padding-bottom: 52px;
+    /* padding-bottom: 52px; */
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
@@ -77,11 +78,10 @@ export const ContainerOfSolution = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
-  /* gap: 2px; */
 `;
 
 export const Card = styled.div<CardProp>`
-  width: 30%;
+  width: 32%;
   height: 320px;
   padding: 1% 1.5%;
   border: 1px solid #646464;

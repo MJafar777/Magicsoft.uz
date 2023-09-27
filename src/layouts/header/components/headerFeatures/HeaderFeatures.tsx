@@ -77,7 +77,7 @@ const HeaderFeatures = () => {
         </LinkItemText>
         <div className="listOfLink">
           <div className="uz" onClick={() => handleLanguage("uz")}>
-            <p>Uzbekcha</p>
+            <p>O'zbekcha</p>
           </div>
           <div className="ru" onClick={() => handleLanguage("ru")}>
             <p>Русский</p>

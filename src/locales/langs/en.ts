@@ -5,18 +5,16 @@ const en = {
 
   //About page
   titleOfheader:
-    "is a creative digital agency working with startups and enterprises.",
+    "is a creative digital agency working with startups and enterprises",
   countOfApp: "Apps created",
   countEmployee: "Employees",
   countReviews: "Positive reviews",
   count: "Number of our offices",
   bannerTitle:
     "We are a fully remote team of 35, working from offices in Europe",
-  bannerSubtitle:
-    "Nulla nulla nec nunc elementum lobortis laoreet ultricies. Sodales eget nulla aliquet arcu. Velit tincidunt est viverra morbi at massa tristique. Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit consectetur. Main office is in Leipzig, Germany.",
+  bannerSubtitle:'',
   teamTitle: "Our Team",
-  teamSubtile:
-    "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit consectetur.",
+  teamSubtile:'',
   teamLead: "Team Leader",
   commentTitle: "What our clients say",
   commentSubtile: "What our clients say",

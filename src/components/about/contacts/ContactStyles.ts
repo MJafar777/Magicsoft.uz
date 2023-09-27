@@ -27,12 +27,15 @@ export const ContactWrapper = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 100%;
     .bg {
       width: 100%;
     }
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
+    padding: 0;
+    
     .bg {
       width: 100%;
       flex-direction: column;
@@ -68,7 +71,7 @@ export const ContentSide = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -94,6 +97,13 @@ export const Title = styled.div`
     text-align: center;
     margin-bottom: 0cqmax;
   }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0cqmax;
+  }
 `;
 
 export const Content = styled.div`
@@ -110,6 +120,11 @@ export const Content = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 90%;
     margin: 0 auto;
   }
 `;
@@ -167,7 +182,7 @@ export const FormSide = styled.div`
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 6px 6px 1px #403a16;
-    &:focus{
+    &:focus {
       background: var(--Yellow, #fff702);
     }
   }
@@ -214,6 +229,11 @@ export const FormSide = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    width: 90%;
     margin: 0 auto;
   }
 `;

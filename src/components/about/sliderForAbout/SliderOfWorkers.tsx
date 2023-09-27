@@ -1,4 +1,4 @@
-import { slide1, slide2, slide3 } from "../../../assets/about";
+import { slide1, slide2, slide3, slide4, slide5, slide6, slide7 } from "../../../assets/about";
 import useLocales from "../../../locales/useLocales";
 import { Title } from "../analysis/AnalysisStyles";
 
@@ -26,13 +26,16 @@ const SliderOfWorkers = () => {
             <img src={slide3} alt="" />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={slide1} alt="" />
+            <img src={slide4} alt="" />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={slide2} alt="" />
+            <img src={slide5} alt="" />
           </LeadingBrandsCart>
           <LeadingBrandsCart>
-            <img src={slide3} alt="" />
+            <img src={slide6} alt="" />
+          </LeadingBrandsCart>
+          <LeadingBrandsCart>
+            <img src={slide7} alt="" />
           </LeadingBrandsCart>
         </SliderAutoPlay>
       </LeadingBrandsBox>

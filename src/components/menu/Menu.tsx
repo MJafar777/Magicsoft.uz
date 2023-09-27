@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import {
   BodyOfMenu,
   CloseContainer,
@@ -26,15 +26,15 @@ import { Arrow } from "../../assets/industries";
 const Menu = () => {
   const { setOpen, open } = useContext<ButtonContextProps>(ButtonContext);
 
-  useEffect(() => {
-    if (open) {
-      const originalStyle = window.getComputedStyle(document.body).overflow;
-      document.body.style.overflow = "hidden";
-      return () => {
-        document.body.style.overflow = originalStyle;
-      };
-    }
-  }, [open]);
+  // useEffect(() => {
+  //   if (open) {
+  //     const originalStyle = window.getComputedStyle(document.body).overflow;
+  //     document.body.style.overflow = "hidden";
+  //     return () => {
+  //       document.body.style.overflow = originalStyle;
+  //     };
+  //   }
+  // }, [open]);
 
   return (
     <MenuWrapper open={open}>

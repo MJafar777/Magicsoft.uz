@@ -4,7 +4,7 @@ import {
   CommentContainer,
   CommentsWrapper,
   LeadingBrandsBoxComment,
-  SubTitle,
+  // SubTitle,
   Title,
 } from "./CommentStyles";
 // import preIcon from "../../../assets/about/pre.svg";
@@ -90,7 +90,7 @@ const Comments = () => {
   return (
     <CommentsWrapper>
       <Title>{translate("commentTitle")}</Title>
-      <SubTitle>{translate("commentSubtile")}</SubTitle>
+      {/* <SubTitle>{translate("commentSubtile")}</SubTitle> */}
       <CommentContainer>
         <LeadingBrandsBoxComment>
           <Slider ref={(c) => (sliderRef.current = c)} {...settings}>

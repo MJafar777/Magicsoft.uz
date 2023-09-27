@@ -3,18 +3,16 @@ const ru = {
   changeLang: "Ру",
   aboutUs: "О нас",
   titleOfheader:
-    "креативное цифровое агентство, работающее со стартапами и предприятиями.",
+    "креативное цифровое агентство, работающее со стартапами и предприятиями",
   countOfApp: "Приложения созданы",
   countEmployee: "Сотрудники",
   countReviews: "Положительные отзывы",
   count: "Количество наших офисов",
   bannerTitle:
     "Мы полностью удаленная команда из 35 человек, работающих в офисах в Европе",
-  bannerSubtitle:
-    "Nulla nulla nec nunc elementum lobortis laoreet ultricies. Sodales eget nulla aliquet arcu. Velittincidunt est viverra morbi at Massa Tristique. Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit consectetur. Главный офис — это в Лейпциге, Германия",
+  bannerSubtitle:'',
   teamTitle: "Наша команда",
-  teamSubtile:
-    "Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis libero, proin consequat ultrices congue nunc sit consectetur.",
+  teamSubtile: "",
   teamLead: "Лидер группы",
   commentTitle: "Что говорят наши клиенты",
   commentSubtile: "Что говорят наши клиенты",

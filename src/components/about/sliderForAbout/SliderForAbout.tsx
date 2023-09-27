@@ -11,7 +11,7 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
