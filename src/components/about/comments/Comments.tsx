@@ -19,7 +19,6 @@ const Comments = () => {
   const sliderRef = useRef<Slider | null>(null);
 
   const next = () => {
-    console.log("dfghjk");
     if (sliderRef.current) {
       sliderRef.current.slickNext();
     }

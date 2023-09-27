@@ -1,7 +1,7 @@
 const uz = {
   hi: "salom",
   //navbar
-  changeLang: "Uzbekcha",
+  changeLang: "Uz",
   aboutUs: "Biz Haqimizda",
   //about page
   titleOfheader: "bu startaplar va korxonalar bilan ishlaydigan agentlikdir.",

@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const MiniCardWrapper = styled.div`
-  max-width: 340px;
+  max-width: 440px;
   width: 100%;
   margin: 10px 0;
   background-color: #121212;
 `;
 
 export const Img = styled.img`
-  max-width: 348px;
+  max-width: 448px;
   width: 100%;
 `;
 
@@ -66,18 +66,22 @@ export const SendLinkBtn = styled.p<BreacPointsType>`
   text-transform: capitalize;
   transition: all 0.5s ease;
 
+  background-color: #474748;
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
   color: #d4f54c;
   font-family: Archivo-Regular, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 137.8%;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 0 20px;
-  margin: 30px auto;
+  margin: 15px;
 
   &:hover img {
     transform: translateY(-4px) translateX(4px);

@@ -14,3 +14,15 @@ export const ScrollPageContainer = styled.section<BreacPointsType>`
   align-items: center;
   padding-top: 111px;
 `;
+
+export const HeaderReplace = styled.div<BreacPointsType>`
+  height: 111px;
+
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    height: 88px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    height: 54px;
+  }
+`;
