@@ -9,13 +9,17 @@ export const LeadingBrandsImgWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .slick-slider .slick-list {
+    margin: 0 20px;
+  }
 
   .slick-next:before,
   [dir="rtl"] .slick-prev:before {
-    display: none;
+    font-size: 28px;
   }
   .slick-prev:before {
-    display: none;
+    font-size: 28px;
+
   }
 `;
 
@@ -69,6 +73,7 @@ export const LeadingBrandsBox = styled.div`
   margin: 90px auto;
   background-color: #111;
   gap: 30px;
+  
 `;
 
 export const LeadingBrandsCart = styled.div`
@@ -98,7 +103,7 @@ export const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
-  button{
+  button {
     background-color: transparent;
     border: none;
     outline: none;

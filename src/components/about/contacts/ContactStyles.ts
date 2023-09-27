@@ -58,12 +58,12 @@ export const ContentSide = styled.div`
     }
 
     @media ${(prop) => prop.theme.breakpoints.xl} {
-      margin: 47px 0 16px 0;
+      margin: 27px 0 16px 0;
     }
 
     @media ${(prop) => prop.theme.breakpoints.md} {
       width: 50%;
-      margin: 20px auto 23px auto;
+      margin: 10px auto 23px auto;
     }
   }
 
@@ -128,7 +128,7 @@ export const FormSide = styled.div`
     font-style: italic;
     font-weight: 400;
     line-height: 137.8%; /* 27.56px */
-    opacity: 0.5;
+    /* opacity: 0.5; */
     border-bottom: solid 1px gray;
     padding-bottom: 9px;
     padding-left: 13px;
@@ -145,7 +145,7 @@ export const FormSide = styled.div`
     font-style: italic;
     font-weight: 400;
     line-height: 137.8%; /* 27.56px */
-    opacity: 0.5;
+    /* opacity: 0.5; */
     padding-bottom: 9px;
     border-bottom: solid 1px gray;
     margin-bottom: 29px;

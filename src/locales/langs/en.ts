@@ -9,7 +9,7 @@ const en = {
   countOfApp: "Apps created",
   countEmployee: "Employees",
   countReviews: "Positive reviews",
-  count: "Title goes here",
+  count: "Number of our offices",
   bannerTitle:
     "We are a fully remote team of 35, working from offices in Europe",
   bannerSubtitle:
@@ -22,7 +22,7 @@ const en = {
   commentSubtile: "What our clients say",
   contactTitle: "CONTACT US",
   contactSubtitle:
-    "We have convinced you? Very cool! Then just write to us and we'll get back to you as soon as possible to arrange a video call. There you can pitch your idea and we will answer all your questions. We are happy to welcome you at MAGICSOFT Studios!",
+    "Have questions or suggestions? You can get answers to all questions by phone, email, phone or contact form.",
   inputName: "Your Name",
   inputEmail: "Your email adress",
   inputPhone: "Your phone number",
@@ -32,7 +32,7 @@ const en = {
     "By sending this request you agree to our privacy policy. ",
   privancy: " Privacy policy ",
   contactFormSubtitleCon: "agree to our privacy policy.",
-  memoriable: "Memorable photos",
+  memoriable: "Photo Gallery  ",
 
   // ---------- Home page  ----------
 
