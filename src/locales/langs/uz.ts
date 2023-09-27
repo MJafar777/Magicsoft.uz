@@ -34,19 +34,25 @@ const uz = {
 
   //about page
 
-  //navbar
-
   // ---------- Home page  ----------
 
+  // ---------- Header & Navbar ----------
+  platforms: "Portfolio",
+  industries: "Tarmoqlar",
+  news: "Yangiliklar",
+  blog: "Blog",
+  login: "Kirish",
+  menu: "MENU",
+
   // ---------- Main section ----------
-  homeMainTitleTop: "Hire the Top of",
+  homeMainTitleTop: "Dasturiy ta'minot bo'yicha ",
   homeMainTitleLeft: "Professional",
-  homeMainTitleRight: "Software",
-  homeMainTitleButtom: "Engineer",
+  homeMainTitleRight: "Muhandislar",
+  homeMainTitleButtom: "",
   homeMainDesc:
-    "MagicSoft is an exclusive group of the top software developers, designers, finance experts, product managers, and project managers in the world.",
-  hireTopEngineers: "Hire Top Engineers",
-  whyMagicSoft: "Why MagicSoft?",
+    "MagicSoft - bu xalqaro miqyosdagi eng yaxshi dasturiy ta'minot ishlab chiquvchilari, dizaynerlari, moliya bo'yicha ekspertlari, mahsulot menejerlari va loyiha menejerlarining eksklyuziv guruhi.",
+  hireTopEngineers: "Muhandislarni yollash",
+  whyMagicSoft: "Nega MagicSoft?",
 
   // ---------- Job Items ----------
   financeExperts: "Finance experts",
@@ -57,64 +63,65 @@ const uz = {
   productStrategyAndConsulting: "Product Strategy and Consulting",
 
   // ---------- Leading Brands Section ----------
-  leadiongTitle: "Trusted by Leading Brands and Startups",
-  moreUpper: "MORE",
+  leadiongTitle: "Bizga ishonadigan kompaniyalar",
+  moreUpper: "BOSHQALAR",
 
   // ---------- Digitial Experience Section ----------
-  digitialExperienceTitle: "Digital Experience",
+  digitialExperienceTitle: "Raqamli tajriba",
   digitialExperienceDesc1:
-    "We use human-centered design to create unique, high-performing customer experiences.",
+    "Biz noyob va yuqori samarali yechimlarni taklif qilamiz.",
   digitialExperienceDesc2:
-    "To keep up in today's fast-paced world, you need to embrace digital innovation to create ahead-of-the-curve, memorable customer experiences (CX) that set the standard for your audience.",
+    "Bugungi tez sur'atlar bilan rivojlanayotgan dunyo bilan hamqadam bo'lish uchun auditoriyangizga standartni o'rnatadigan zamonaviy, unutilmas mijozlar tajribasini yaratish uchun raqamli innovatsiyalardan foydalanishingiz kerak.",
 
   // ---------- Our Services Section ----------
-  ourService: "Our Service",
+  ourService: "Xizmatlarimiz",
   productEngineering: "Product Engineering",
   productEngineeringDesc:
-    "We provide innovative and reliable engineering solutions over the entire product lifecycle while you remain focused on your core competencies",
+    "Biz mahsulotning yaratilish  jarayoni va faoliyati davomida innovatsion va ishonchli muhandislik yechimlarini taqdim etamiz, shu bilan birga siz o'zingizning asosiy vakolatlaringizga e'tibor qaratasiz.",
   dataEngineeringAI: "Data Engineering & AI",
   dataEngineeringAIDesc:
-    "Take your business to unprecedented heights, enhancing   productivity and optimization through our transformational AI and ML capacities.",
+    "(AI & ML) Suniy intelekt yordamida unumdorlikni oshirish va optimallashtirish orqali biznesingizni misli ko'rilmagan cho'qqilarga olib chiqing.",
   cloudEngineering: "Cloud Engineering",
   cloudEngineeringDesc:
     "Build applications and shift to the cloud in a cost-effective and coordinated manner, leveraging our domain expertise, accelerators, and frameworks.",
   nextGenServices: "NextGen Services",
   nextGenServicesDesc:
-    " We leverage emerging technologies like blockchain, the metaverse, and Web3 to transform how businesses and people interact with each other.",
-  viewAllServices: "View All Services",
+    " Biz biznes va insonlarning bir-biri bilan o'zaro munosabatini o'zgartirish uchun blockchain, metaverse va Web3 kabi yangi texnologiyalardan foydalanamiz.",
+  viewAllServices: "Barcha xizmatlar",
 
   // ---------- Our Technologies ----------
   We: "We",
-  ourTechnologiesTitle1: "revolutionalize industries",
+  ourTechnologiesTitle1: " revolutionalize industries",
   ourTechnologiesTitle2: "with the power of tech",
-  travelLogistics: "Travel, Logistics",
-  hospitality: "Hospitality",
+  travelLogistics: "Sayohat",
+  hospitality: "Logistika",
   travelLogisticsDesc:
-    " Unravel the art and science of converting travelers with comprehensive travel technology",
-  LEARNMORE: "LEARN MORE",
-  and: "and",
-  Retail: "Retail",
-  ecommerce: "E-commerce",
-  retailDesc: "Empowering growth through dynamic E-commerce solutions",
+    " Sayohatchilarni integratsiyalashgan sayohat texnologiyasi bilan jalb qilish san'ati va ilm-fanini oching.",
+  LEARNMORE: "KO'PROQ O'QISH",
+  and: "va",
+  Retail: "Chakana savdo",
+  ecommerce: "Elektron tijora",
+  retailDesc:
+    "Dinamik elektron tijorat yechimlari orqali o'sishni kuchaytirish",
   Fintech: "Fintech",
-  Banking: "Banking",
+  Banking: "Bank",
   fintechTitle:
-    "FinTech software solutions designed to unlock agility, cost leadership, and operational efficiency",
+    "FinTech dasturiy yechimlari chaqqonlik, xarajatlar yetakchiligi va operatsion samaradorlikni ta'minlash uchun mo'ljallangan.",
 
   // ---------- Our Mission ----------
-  thisIsOur: "This is our",
-  mission: "mission",
+  thisIsOur: "Bizning",
+  mission: "vazifalarimiz",
   missionTitle1:
-    "To be the trusted digital partner and drive transformational outcomes for our customers, and empower our employees to achieve their full potential.",
-  missionTitle2:
-    "We use human-centered design to create unique, high-performing customer experiences.",
+    "Ishonchli raqamli hamkor bo'lish, mijozlarimiz uchun transformatsion natijalarga erishish va  o'z imkoniyatlarini to'liq ro'yobga chiqarishga imkon berish.",
+  missionTitle2: "Biz noyob va yuqori samarali yechimlarni taklif qilamiz.",
+  MORE: "Boshqalar",
 
   // ---------- Our Community ----------
-  OurCommmunity: "Our Commmunity",
+  OurCommmunity: "Bizning ijtimoiy tarmoqlarimiz",
   GitHub: "GitHub",
-  Follow: "Follow",
+  Follow: "Qo'shilish",
   Telegram: "Telegram",
-  JOIN: "JOIN",
+  JOIN: "Qo'shilish",
   Twitter: "Twitter",
   Instagram: "Instagram",
   Linkedin: "Linkedin",
@@ -123,7 +130,7 @@ const uz = {
   Facebook: "Facebook",
 
   // ---------- Successful Projects ----------
-  SuccessfulProjects: "Successful Projects",
-  feedbackTitle: "What our clients say",
+  SuccessfulProjects: "Muvaffaqiyatli loyihalar",
+  feedbackTitle: "Mijozlar fikri",
 };
 export default uz;

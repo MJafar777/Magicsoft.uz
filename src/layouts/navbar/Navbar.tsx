@@ -39,10 +39,10 @@ const Navbar = () => {
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>Platforms & Products</LinkItemText>
+                <LinkItemText>{translate("platforms")}</LinkItemText>
               </>
             ) : (
-              <LinkItemText>Platforms & Products</LinkItemText>
+              <LinkItemText>{translate("platforms")}</LinkItemText>
             )
           }
         </NavLink>
@@ -57,7 +57,7 @@ const Navbar = () => {
           ) : (
             <div></div>
           )}
-          Industries
+          {translate("industries")}
         </LinkItemText>
 
         <div className="listOfLink">
@@ -94,10 +94,10 @@ const Navbar = () => {
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>News</LinkItemText>
+                <LinkItemText>{translate("news")}</LinkItemText>
               </>
             ) : (
-              <LinkItemText>News</LinkItemText>
+              <LinkItemText>{translate("news")}</LinkItemText>
             )
           }
         </NavLink>
@@ -117,10 +117,10 @@ const Navbar = () => {
             isActive ? (
               <>
                 <LinkItemActiveBox></LinkItemActiveBox>
-                <LinkItemText>Blog</LinkItemText>
+                <LinkItemText>{translate("blog")}</LinkItemText>
               </>
             ) : (
-              <LinkItemText>Blog</LinkItemText>
+              <LinkItemText>{translate("blog")}</LinkItemText>
             )
           }
         </NavLink>
