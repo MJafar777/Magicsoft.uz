@@ -23,16 +23,18 @@ export const SecondaryNewsWrapper = styled.div<BreacPointsType>`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 40px;
   }
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    margin-top: 100px;
+  }
 `;
 
 export const SecondaryNewsParent = styled.div`
-  max-width: 897px;
   width: 100%;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 10px auto;
 `;
 
 export const ImageTitle = styled.img<Props>`
@@ -50,7 +52,6 @@ export const Title = styled.p<BreacPointsType>`
   font-weight: 600;
   line-height: 114.3%;
 
-  margin: 30px auto;
   @media ${(props) => props.theme.breakpoints.lg} {
     margin: 20px auto;
     font-size: 24px;
@@ -64,6 +65,7 @@ export const GridBaseOn = styled.div<BreacPointsType>`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(5, 0.1fr);
+
   gap: 15px;
   margin-top: 60px;
 
@@ -129,5 +131,4 @@ export const TitleBottomBorder = styled.div`
   height: 9px;
   flex-shrink: 0;
   background: var(--yellow, #fcd702);
-  border-radius: 8px;
 `;

@@ -2,10 +2,12 @@ import styled from "styled-components";
 import { BreacPointsType } from "../../types/breacPointTypes";
 
 export const FooterWrapper = styled.div<BreacPointsType>`
+  width: 90%;
   height: 338px;
-  margin-top: 60px;
-
   display: flex;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 1366px;
   align-items: center;
   justify-content: center;
 

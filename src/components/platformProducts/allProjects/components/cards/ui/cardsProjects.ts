@@ -20,7 +20,7 @@ export const CardsProjectWrapper = styled.div<BreacPointsType>`
 `;
 
 export const Cards = styled.div<Props, BreacPointsType>`
-  max-width: ${(e) => (e.width ? e.width : 614)}px;
+  /* max-width: ${(e) => (e.width ? e.width : 614)}px; */
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;

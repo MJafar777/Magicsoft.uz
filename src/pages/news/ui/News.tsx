@@ -10,6 +10,7 @@ import { CardsProject } from "../../../components/platformProducts/allProjects/c
 import { FilterAllProjects } from "../../../components/platformProducts/allProjects/components/filters/index.ts";
 // import useLocales from "../../../locales/useLocales.ts";
 import { Loader } from "../../../components/Loading/index.ts";
+import { Container } from "../../../components/container/index.ts";
 
 interface Props {}
 
@@ -20,22 +21,24 @@ const News: FC<Props> = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <NewsWrapper>
-        <ChildWrapper>
-          {/* {translate("hi")} */}
-          <NavbarNews data={dataCards} length={result} />
-          <TitleBlock title={"News"} />
-          <FilterAllProjects dataFilter={dataFilter} />
-          <Brecked>
-            <CardsProject
-              width={500}
-              bg={"rgba(44, 44, 44, 0.4)"}
-              btn={"LEARN MORE"}
-              dataCards={dataCards}
-            />
-          </Brecked>
-        </ChildWrapper>
-      </NewsWrapper>
+      <Container>
+        <NewsWrapper>
+          <ChildWrapper>
+            {/* {translate("hi")} */}
+            <NavbarNews data={dataCards} length={result} />
+            <TitleBlock title={"News"} />
+            <FilterAllProjects dataFilter={dataFilter} />
+            <Brecked>
+              <CardsProject
+                width={500}
+                bg={"rgba(44, 44, 44, 0.4)"}
+                btn={"LEARN MORE"}
+                dataCards={dataCards}
+              />
+            </Brecked>
+          </ChildWrapper>
+        </NewsWrapper>
+      </Container>
     </Suspense>
   );
 };

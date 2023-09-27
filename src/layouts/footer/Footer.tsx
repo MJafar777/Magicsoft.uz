@@ -2,11 +2,10 @@ import { FC } from "react";
 
 import { FooterWrapper, ChildWrapper } from "./footer";
 import { FooterBottom, FooterMain, FooterTop } from "./components";
-import { Container } from "../../components/container";
 
 const Footer: FC = () => {
   return (
-    <Container>
+    <>
       <FooterWrapper style={{ zIndex: "140" }}>
         <ChildWrapper>
           <FooterTop />
@@ -14,7 +13,7 @@ const Footer: FC = () => {
           <FooterBottom />
         </ChildWrapper>
       </FooterWrapper>
-    </Container>
+    </>
   );
 };
 

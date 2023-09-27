@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BreacPointsType } from "../../../types/breacPointTypes";
+import { BreacPointsType } from "../../../../types/breacPointTypes";
 
 export const LoginWrapper = styled.div`
   width: 100%;
