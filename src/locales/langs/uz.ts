@@ -125,5 +125,22 @@ const uz = {
   // ---------- Successful Projects ----------
   SuccessfulProjects: "Successful Projects",
   feedbackTitle: "What our clients say",
+
+  // ---------- PlatformNavbar ----------
+  joinProjects: "Bizning loyihalarga qo'shiling",
+  dreams:
+    "Biz bilan orzuyingizdagi loyihalarni amalga oshirishingiz mumkin , buning uchun biz bilan bog'lansangiz kifoya .",
+  contact: "Bizga bog'lanish",
+
+  // ---------- PlatformNavbar ----------
+  allProjects: "Barcha loyihalar",
+
+  // ---------- AllProjects ----------
+  all: "Barchasi",
+  startup: "Boshlang'ich loyiha",
+  enterprice: "Korxona",
+  ecommerceTitle: "Elektron tijorat",
+  SaaS: "SaaS",
+  socialMedia: "Ijtimoiy media",
 };
 export default uz;

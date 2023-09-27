@@ -123,5 +123,23 @@ const ru = {
   // ---------- Successful Projects ----------
   SuccessfulProjects: "Успешные проекты",
   feedbackTitle: "Что говорят наши клиенты",
+
+  // ---------- PlatformNavbar ----------
+  joinProjects: "Присоединяйтесь к нашим проектам",
+  dreams:
+    "Вы можете заниматься с нами проектами своей мечты, все, что вам нужно сделать, это связаться с нами .",
+  contact: "контакт",
+
+  // ---------- PlatformNavbar ----------
+  allProjects: "Все проекты",
+
+  // ---------- AllProjects ----------
+  all: "Все",
+  startup: "Запускать",
+  enterprice: "Предприятие",
+  ecommerceTitle: "Электронная коммерция",
+  SaaS: "СааС",
+  socialMedia: "Социальные медиа",
+
 };
 export default ru;

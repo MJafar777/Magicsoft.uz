@@ -123,6 +123,23 @@ const en = {
   // ---------- Successful Projects ----------
   SuccessfulProjects: "Successful Projects",
   feedbackTitle: "What our clients say",
+
+  // ---------- PlatformNavbar ----------
+  joinProjects: "Join our projects",
+  dreams:
+    "You can pursue your dream projects with us, all you have to do is contact us.",
+  contact: "Contact",
+
+  // ---------- PlatformNavbar ----------
+  allProjects: "All Projects",
+
+  // ---------- AllProjects ----------
+  all: "All",
+  startup: "Startup",
+  enterprice: "Enterprice",
+  ecommerceTitle: "Enterprice",
+  SaaS: "SaaS",
+  socialMedia: "Social Media",
 };
 
 export default en;

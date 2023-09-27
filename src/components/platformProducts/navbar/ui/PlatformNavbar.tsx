@@ -13,12 +13,16 @@ import {
 } from "./platformNavbar";
 import { useNavigate } from "react-router-dom";
 import { ButtonContext } from "../../../../context/ButtonContext";
+import useLocales from "../../../../locales/useLocales";
 
 interface Props {}
 
 const PlatformNavbar: FC<Props> = () => {
-  const { goToTop } = useContext(ButtonContext);
   const navigate = useNavigate();
+
+  const { translate } = useLocales();
+
+  const { goToTop } = useContext(ButtonContext);
 
   const navigator = () => {
     navigate("/contact");
@@ -27,12 +31,9 @@ const PlatformNavbar: FC<Props> = () => {
   return (
     <PlatformNavbarWrapper>
       <NavbarLeft>
-        <SubTitle>Projects cool title</SubTitle>
+        <SubTitle>{translate("joinProjects")}</SubTitle>
         <SubTitleBottomBorder />
-        <Paragraph>
-          Tempus neque, mi, enim commodo augue rhoncus sagittis. Convallis
-          libero, proin consequat ultrices congue nunc sit.
-        </Paragraph>
+        <Paragraph>{translate("dreams")}</Paragraph>
         <div onClick={goToTop} className="center">
           <button className="btn" onClick={() => navigator()}>
             <svg
@@ -50,7 +51,7 @@ const PlatformNavbar: FC<Props> = () => {
                 className="hl-line"
               />
             </svg>
-            <span>Contact</span>
+            <span>{translate("contact")}</span>
           </button>
         </div>
       </NavbarLeft>
