@@ -65,7 +65,12 @@ const CardsProject = (props: Props) => {
           })
           .map((item) => {
             return (
-              <Cards bg={bg} width={width} key={item.id}>
+              <Cards
+                bg={bg}
+                width={width}
+                key={item.id}
+                onClick={() => alert("progress...")}
+              >
                 <Img src={item.img} alt={`this image not found ${item.img}`} />
                 <CardsPaddings>
                   <Title>{item.miniTitle}</Title>
@@ -83,7 +88,6 @@ const CardsProject = (props: Props) => {
                     style={{
                       listStyle: "none",
                       textDecoration: "none",
-                      
                     }}
                     to={`${item.link}/${item.id}`}
                   >
