@@ -9,6 +9,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { SecondaryNews } from "../pages/secondaryNews";
 import { ForgotPassword } from "../pages/auth/components";
 import { PlatformProducts } from "../pages/platformsProducts";
+import { OurProjectsInfo } from "../pages/OurProjectsInfo";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const HomeAsync = lazy(() => import("../pages/home/Home"));
@@ -49,6 +50,8 @@ const router = createBrowserRouter([
 
       { path: "/login", element: <Login /> },
 
+      { path: "/sign-up", element: <SignUp /> },
+
       { path: "/about-us", element: <About /> },
 
       { path: "/contact", element: <Contact /> },
@@ -60,7 +63,8 @@ const router = createBrowserRouter([
       { path: "fintech", element: <FintechAsync /> },
 
       { path: "/forgot-password", element: <ForgotPassword /> },
-      { path: "/sign-up", element: <SignUp /> },
+
+      { path: "our-projects-info/:id", element: <OurProjectsInfo /> },
     ],
   },
 ]);

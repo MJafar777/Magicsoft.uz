@@ -65,12 +65,7 @@ const CardsProject = (props: Props) => {
           })
           .map((item) => {
             return (
-              <Cards
-                bg={bg}
-                width={width}
-                key={item.id}
-                onClick={() => alert("progress...")}
-              >
+              <Cards bg={bg} width={width} key={item.id}>
                 <Img src={item.img} alt={`this image not found ${item.img}`} />
                 <CardsPaddings>
                   <Title>{item.miniTitle}</Title>
@@ -89,7 +84,8 @@ const CardsProject = (props: Props) => {
                       listStyle: "none",
                       textDecoration: "none",
                     }}
-                    to={`${item.link}/${item.id}`}
+                    to={`/our-projects-info/${item.id}`}
+                    // to={`${item.link}/${item.id}`}
                   >
                     <SendLinkBtn
                       onClick={() =>
