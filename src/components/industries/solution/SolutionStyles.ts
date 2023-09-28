@@ -78,11 +78,12 @@ export const ContainerOfSolution = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
+  height: fit-content;
 `;
 
 export const Card = styled.div<CardProp>`
   width: 32%;
-  height: 320px;
+  min-height: 340px;
   padding: 1% 1.5%;
   border: 1px solid #646464;
   background-color: ${(prop) => prop.bgColor};

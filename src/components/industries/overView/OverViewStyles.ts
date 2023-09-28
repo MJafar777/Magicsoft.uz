@@ -82,7 +82,7 @@ export const TextOfOverView = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
-    font-size: 11.2px;
+    font-size: 16px;
     padding: 0;
     width: 100%;
   }

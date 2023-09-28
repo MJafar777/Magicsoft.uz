@@ -14,8 +14,7 @@ export const HeaderOfIndustriesWraper = styled.div<HeaderOfIndustriesWraperProps
   align-items: center;
   position: relative;
   cursor: pointer;
-  /* border: solid red 1px; */
-  
+    
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 90%;
     height: 70vh;

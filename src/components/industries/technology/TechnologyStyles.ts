@@ -195,6 +195,6 @@ export const InovationInfo = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
-    font-size: 11.2px;
+    font-size: 16px;
   }
 `;

@@ -1,46 +1,90 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import EachTechnology from "./EachTechnology";
 import {
   ContainerInovationSkils,
+  InovationInfo,
+  InovationSkil,
   TechnologyWrapper,
   TitleInovation,
 } from "./TechnologyStyles";
 
-import {
-  TechnologyData,
-  TechnologyData as TravelData,
-} from "../../../api/data/travels";
-import { TechnologyData as FintechData } from "../../../api/data/fintech";
-import { TechnologyData as RetailData } from "../../../api/data/retail";
+import useLocales from "../../../locales/useLocales";
+import { Arrow } from "../../../assets/industries";
 
 const Technology = () => {
   const loaction = useLocation();
-  const [data, setData] = useState(FintechData);
 
+  const { translate } = useLocales();
+
+  const [whichIndustry, setWhichIndustry] = useState("OfTravel");
   useEffect(() => {
     if (loaction.pathname == "/fintech") {
-      setData(FintechData);
+      setWhichIndustry("OfFintech");
     } else if (loaction.pathname == "/travels") {
-      setData(TravelData);
+      setWhichIndustry("OfTravel");
     } else {
-      setData(RetailData);
+      setWhichIndustry("OfRetail");
     }
   }, [loaction.pathname]);
 
   return (
     <TechnologyWrapper>
-      <TitleInovation>{TechnologyData.title}</TitleInovation>
+      <TitleInovation>{translate(`skilTitle${whichIndustry}`)}</TitleInovation>
       <ContainerInovationSkils>
-        {data.listOfSkil?.map((oneSkil) => {
-          return (
-            <EachTechnology
-              title={oneSkil.title}
-              info={oneSkil.content}
-              id={oneSkil.id}
-            />
-          );
-        })}
+        <InovationSkil>
+          <div className="topContent">
+            <span></span>
+            <p>{translate(`skilOneTitle${whichIndustry}`)}</p>
+            <img src={Arrow} alt="" />
+          </div>
+          <InovationInfo>
+            {translate(`skilOneSubtitle${whichIndustry}`)}
+          </InovationInfo>
+        </InovationSkil>
+
+        <InovationSkil>
+          <div className="topContent">
+            <span></span>
+            <p>{translate(`skilTwoTitle${whichIndustry}`)}</p>
+            <img src={Arrow} alt="" />
+          </div>
+          <InovationInfo>
+            {translate(`skilTwoSubtitle${whichIndustry}`)}
+          </InovationInfo>
+        </InovationSkil>
+
+        <InovationSkil>
+          <div className="topContent">
+            <span></span>
+            <p>{translate(`skilThreeTitle${whichIndustry}`)}</p>
+            <img src={Arrow} alt="" />
+          </div>
+          <InovationInfo>
+            {translate(`skilThreeSubtitle${whichIndustry}`)}
+          </InovationInfo>
+        </InovationSkil>
+
+        <InovationSkil>
+          <div className="topContent">
+            <span></span>
+            <p>{translate(`skilFourTitle${whichIndustry}`)}</p>
+            <img src={Arrow} alt="" />
+          </div>
+          <InovationInfo>
+            {translate(`skilFourSubtile${whichIndustry}`)}
+          </InovationInfo>
+        </InovationSkil>
+
+        <InovationSkil>
+          <div className="topContent">
+            <span></span>
+            <p>{translate(`skilOneTitle${whichIndustry}`)}</p>
+            <img src={Arrow} alt="" />
+          </div>
+          <InovationInfo>
+            {translate(`skilOneSubtitle${whichIndustry}`)}
+          </InovationInfo>
+        </InovationSkil>
       </ContainerInovationSkils>
     </TechnologyWrapper>
   );
