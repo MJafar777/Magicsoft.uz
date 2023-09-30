@@ -18,6 +18,7 @@ const Comments = () => {
 
   const sliderRef = useRef<Slider | null>(null);
 
+
   // const next = () => {
   //   if (sliderRef.current) {
   //     sliderRef.current.slickNext();
@@ -29,6 +30,7 @@ const Comments = () => {
   //     sliderRef.current.slickPrev();
   //   }
   // };
+
 
   const settings = {
     className: "center",

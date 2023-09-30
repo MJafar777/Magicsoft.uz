@@ -22,11 +22,13 @@ import {
 
 import { HeaderReplace } from "../../HomeStyles";
 import useLocales from "../../../../locales/useLocales";
+
 import { useNavigate } from "react-router-dom";
 
 const MainSection = () => {
   const { translate } = useLocales();
   const navigate = useNavigate();
+
 
   return (
     <>
@@ -70,6 +72,7 @@ const MainSection = () => {
                     text2={translate("whyMagicSoft")}
                   />
                 </div>
+
               </MainSectinLeftButtonsBox>
             </div>
           </MainSectionLeft>

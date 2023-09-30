@@ -20,11 +20,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { FaDiscord } from "react-icons/fa";
 import useLocales from "../../../../locales/useLocales";
+
 import { Link, useNavigate } from "react-router-dom";
 
 const OurCommunity = () => {
   const { translate } = useLocales();
   const navigate = useNavigate();
+
 
   return (
     <OurCommunityCotainerWrapper>
@@ -41,13 +43,17 @@ const OurCommunity = () => {
               <OurCommunityCardImageBox>
                 <img src={blueBorder} alt="border" />
 
+
                 <p>{translate("GitHub")}</p>
+
 
                 <div className="cardIcon-box">
                   <GitHubIcon className="cardIcon" />
                 </div>
 
+
                 <span>{translate("Follow")}</span>
+
 
                 <h2>+10k</h2>
               </OurCommunityCardImageBox>
@@ -60,13 +66,17 @@ const OurCommunity = () => {
               <OurCommunityCardImageBox>
                 <img src={blueBorder} alt="border" />
 
+
                 <p>{translate("Telegram")}</p>
+
 
                 <div className="cardIcon-box">
                   <TelegramIcon className="cardIcon" />
                 </div>
 
+
                 <span>{translate("JOIN")}</span>
+
 
                 <h2>+10k</h2>
               </OurCommunityCardImageBox>
@@ -79,13 +89,17 @@ const OurCommunity = () => {
               <OurCommunityCardImageBox>
                 <img src={blueBorder} alt="border" />
 
+
                 <p>{translate("Twitter")}</p>
+
 
                 <div className="cardIcon-box">
                   <TwitterIcon className="cardIcon" />
                 </div>
 
+
                 <span>{translate("Follow")}</span>
+
 
                 <h2>+10k</h2>
               </OurCommunityCardImageBox>

@@ -217,6 +217,13 @@ const en = {
 
   // ---------- Main section ----------
   homeMainTitleTop: "Hire the Top of ",
+  memoriable: "Memorable photos",
+
+  // ---------- Home page  ----------
+
+  // ---------- Main section ----------
+  homeMainTitleTop: "Hire the Top of",
+
   homeMainTitleLeft: "Professional",
   homeMainTitleRight: "Software",
   homeMainTitleButtom: "Engineer",
@@ -319,6 +326,7 @@ const en = {
   ecommerceTitle: "Enterprice",
   SaaS: "SaaS",
   socialMedia: "Social Media",
+
 };
 
 export default en;

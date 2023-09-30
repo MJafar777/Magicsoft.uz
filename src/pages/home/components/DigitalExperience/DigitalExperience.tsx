@@ -18,11 +18,13 @@ import digitialVideo from "../../../../assets/digitial.mp4";
 import { borderBigVector } from "../../../../assets/images";
 import JobItems from "../../../../components/jobItem/JobItems";
 import useLocales from "../../../../locales/useLocales";
+
 import { useNavigate } from "react-router-dom";
 
 const DigitalExperience = () => {
   const { translate } = useLocales();
   const navigate = useNavigate();
+
 
   return (
     <MissionContainerWrapper>
@@ -38,6 +40,7 @@ const DigitalExperience = () => {
             <p>{translate("digitialExperienceDesc2")}</p>
           </MissionDescription>
 
+
           <div onClick={() => navigate("/fintech")}>
             <ButtonMagnet>
               <ButtonEscort
@@ -47,6 +50,7 @@ const DigitalExperience = () => {
               />
             </ButtonMagnet>
           </div>
+
         </MissionLeft>
 
         <MissionRightContaner>

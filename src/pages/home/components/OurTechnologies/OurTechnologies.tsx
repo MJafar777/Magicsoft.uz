@@ -17,7 +17,9 @@ import {
 
 const OurTechnologies = () => {
   const { translate } = useLocales();
+
   const navigate = useNavigate();
+
 
   return (
     <OurTechnologiesContainerWrapper>
@@ -43,7 +45,9 @@ const OurTechnologies = () => {
               {translate("travelLogisticsDesc")}
             </OurTechnologiesCardDescription>
 
+
             <OurTechnologiesCardButton onClick={() => navigate("/travels")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}
@@ -62,7 +66,9 @@ const OurTechnologies = () => {
               {translate("retailDesc")}
             </OurTechnologiesCardDescription>
 
+
             <OurTechnologiesCardButton onClick={() => navigate("/retail")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}
@@ -86,7 +92,9 @@ const OurTechnologies = () => {
               {translate("fintechTitle")}
             </OurTechnologiesCardDescription>
 
+
             <OurTechnologiesCardButton onClick={() => navigate("/fintech")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}
