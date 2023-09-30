@@ -12,7 +12,7 @@ export const AllProjectsWrapper = styled.div<BreacPointsType>`
 export const SubTitle = styled.h2<BreacPointsType>`
   color: #fff;
   font-family: Mazzard, sans-serif;
-  font-size: 86px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 600;
   margin: 20px auto;

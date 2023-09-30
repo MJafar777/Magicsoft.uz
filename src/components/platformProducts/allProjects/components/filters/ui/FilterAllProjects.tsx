@@ -1,11 +1,13 @@
 import { FC, useContext, useState } from "react";
-import {
-  FilterAllProjectsWrapper,
-  ButtonsFilter,
-  IconFilter,
-} from "./filterAllProject";
 import { filter } from "../../../../../../assets";
 import useWindowWidth from "../../../../../../hooks/useWindowWidth";
+
+import {
+  IconFilter,
+  ButtonsFilter,
+  FilterAllProjectsWrapper,
+} from "./filterAllProject";
+
 import {
   ButtonContext,
   ButtonContextProps,
@@ -14,6 +16,7 @@ import {
 type DataFilterItem = {
   id: number;
   value: string;
+  type: string;
 };
 
 type Props = {
@@ -76,7 +79,7 @@ const FilterAllProjects: FC<Props> = (props) => {
           <ButtonsFilter
             onClick={() => {
               FilterButtonClicked(item.id);
-              setContextValueItem(item.value);
+              setContextValueItem(item.type);
             }}
             key={item.id}
             style={idFilterValue === item.id ? activeButton : {}}

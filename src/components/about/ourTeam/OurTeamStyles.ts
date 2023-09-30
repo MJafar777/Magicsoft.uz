@@ -68,6 +68,11 @@ export const ContainerImgs = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
 
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     width: 85%;

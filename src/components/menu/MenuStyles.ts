@@ -8,6 +8,8 @@ export const MenuWrapper = styled.div<MenuWrapperProp>`
   height: 100vh;
   background-color: #000;
   position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 100;
@@ -20,8 +22,8 @@ export const MenuWrapper = styled.div<MenuWrapperProp>`
   justify-content: start;
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
-    height: 110vh;
-  }
+    height: 100vh;
+}
 `;
 
 export const NavOfmenu = styled.div`
@@ -29,7 +31,6 @@ export const NavOfmenu = styled.div`
   display: flex;
   padding: 50px 100px;
   justify-content: space-between;
-
   @media ${(prop) => prop.theme.breakpoints.xxl} {
     padding: 40px 80px;
   }
@@ -50,7 +51,7 @@ export const SocialWrapper = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
     position: absolute;
-    bottom: 12%;
+    bottom: 5%;
     left: 15%;
     width: 100%;
     margin: 0 auto;
@@ -217,14 +218,20 @@ export const EachLinkOfPage = styled.div`
   @media ${(prop) => prop.theme.breakpoints.xl} {
     width: 100%;
     font-size: 35px;
+    margin-top: 30px;
+
   }
 
   @media ${(prop) => prop.theme.breakpoints.lg} {
     font-size: 32px;
+    margin-top: 25px;
+
   }
 
   @media ${(prop) => prop.theme.breakpoints.sm} {
     font-size: 24px;
+    margin-top: 20px;
+
     img {
       width: 20px;
       height: 20px;

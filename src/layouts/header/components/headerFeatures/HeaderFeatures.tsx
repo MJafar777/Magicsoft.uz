@@ -61,7 +61,7 @@ const HeaderFeatures = () => {
               setDisplayOfLanguage(false);
             }}
           >
-            Log In
+            {translate("login")}
           </LinkItemText>
         </NavLink>
       </LinkItem>
@@ -77,7 +77,7 @@ const HeaderFeatures = () => {
         </LinkItemText>
         <div className="listOfLink">
           <div className="uz" onClick={() => handleLanguage("uz")}>
-            <p>Uzbekcha</p>
+            <p>O'zbekcha</p>
           </div>
           <div className="ru" onClick={() => handleLanguage("ru")}>
             <p>Русский</p>
@@ -93,7 +93,7 @@ const HeaderFeatures = () => {
 
       <SidebarMenuBtnWrapper>
         <SidebarMenuBtn onClick={() => setOpen(true)}>
-          <SideabrMenuBtnText>MENU </SideabrMenuBtnText>
+          <SideabrMenuBtnText>{translate("menu")} </SideabrMenuBtnText>
         </SidebarMenuBtn>
         <SidebarMenuBurgerBtn onClick={() => setOpen(true)} src={burger} />
       </SidebarMenuBtnWrapper>

@@ -5,14 +5,19 @@ import {
   NavbarNews,
   TitleBlock,
 } from "../../../components/news&Blogs/navbar/index.ts";
+import { Loader } from "../../../components/Loading/index.ts";
 import { dataCards, dataFilter } from "../../../api/data/news.ts";
+import { Container } from "../../../components/container/index.ts";
 import { CardsProject } from "../../../components/platformProducts/allProjects/components/cards/index.ts";
 import { FilterAllProjects } from "../../../components/platformProducts/allProjects/components/filters/index.ts";
-// import useLocales from "../../../locales/useLocales.ts";
-import { Loader } from "../../../components/Loading/index.ts";
-import { Container } from "../../../components/container/index.ts";
 
 interface Props {}
+
+interface DataFilterItem {
+  id: number;
+  type: string;
+  value: string;
+}
 
 const result = dataCards.length;
 
@@ -24,10 +29,9 @@ const News: FC<Props> = () => {
       <Container>
         <NewsWrapper>
           <ChildWrapper>
-            {/* {translate("hi")} */}
             <NavbarNews data={dataCards} length={result} />
             <TitleBlock title={"News"} />
-            <FilterAllProjects dataFilter={dataFilter} />
+            <FilterAllProjects dataFilter={dataFilter as DataFilterItem[]} />
             <Brecked>
               <CardsProject
                 width={500}

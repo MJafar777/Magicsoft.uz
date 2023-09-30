@@ -13,6 +13,8 @@ export const LeadingBrandsSectionContainerWrapper = styled.section<BreacPointsTy
   align-items: center;
   justify-content: center;
 
+  
+
   @media ${(props) => props.theme.breakpoints.xxl} {
     width: 100%;
     padding: 0px;

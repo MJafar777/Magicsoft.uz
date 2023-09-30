@@ -1,7 +1,4 @@
-import {
-  InovationInfo,
-  InovationSkil,
-} from "./TechnologyStyles";
+import { InovationInfo, InovationSkil } from "./TechnologyStyles";
 
 import { Arrow } from "../../../assets/industries";
 
@@ -12,11 +9,8 @@ interface EachTechnologyInterface {
 }
 
 const EachTechnology = (prop: EachTechnologyInterface) => {
-
-
   return (
-    <InovationSkil
-    >
+    <InovationSkil>
       <div className="topContent">
         <span></span>
         <p>{prop.title}</p>

@@ -5,29 +5,39 @@ import {
   OverViewWraper,
   TextOfOverView,
 } from "./OverViewStyles";
-import { OverViewData as TravelData } from "../../../api/data/travels";
-import { OverViewData as FintechData } from "../../../api/data/fintech";
-import { OverViewData as RetailData } from "../../../api/data/retail";
+// import { OverViewData as TravelData } from "../../../api/data/travels";
+// import { OverViewData as FintechData } from "../../../api/data/fintech";
+// import { OverViewData as RetailData } from "../../../api/data/retail";
+import useLocales from "../../../locales/useLocales";
 
 const OverView = () => {
   const loaction = useLocation();
-  const [data, setData] = useState(FintechData);
+  const { translate } = useLocales();
 
+  // const [data, setData] = useState(FintechData);
+  const [whichIndustry, setWhichIndustry] = useState("OfTravel");
   useEffect(() => {
     if (loaction.pathname == "/fintech") {
-      setData(FintechData);
+      // setData(FintechData);
+      setWhichIndustry("OfFintech");
     } else if (loaction.pathname == "/travels") {
-      setData(TravelData);
+      // setData(TravelData);
+      setWhichIndustry("OfTravel");
     } else {
-      setData(RetailData);
+      // setData(RetailData);
+      setWhichIndustry("OfRetail");
     }
   }, [loaction.pathname]);
   
   return (
     <OverViewWraper>
       <div className="content">
-        <OverViewTitle>{data.title}</OverViewTitle>
-        <TextOfOverView>{data.text}</TextOfOverView>
+        <OverViewTitle>
+          {translate(`overviewOfTitle${whichIndustry}`)}
+        </OverViewTitle>
+        <TextOfOverView>
+          {translate(`overviewOfSubtitle${whichIndustry}`)}
+        </TextOfOverView>
       </div>
     </OverViewWraper>
   );

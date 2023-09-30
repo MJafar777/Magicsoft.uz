@@ -1,22 +1,25 @@
 import React from "react";
 import { AllProjectsWrapper, SubTitle } from "./allProjects";
 import { FilterAllProjects } from "../components/filters";
+import useLocales from "../../../../locales/useLocales";
 
 interface Props {}
 
-const dataFilter = [
-  { id: 1, value: "All" },
-  { id: 2, value: "Startup" },
-  { id: 3, value: "Enterprise" },
-  { id: 4, value: "Ecommerce" },
-  { id: 5, value: "SaaS" },
-  { id: 6, value: "Social Media" },
-];
-
 const AllProjects: React.FC<Props> = () => {
+  const { translate } = useLocales();
+
+  const dataFilter = [
+    { id: 1, value: translate("all"), type: "All" },
+    { id: 2, value: translate("startup"), type: "Startup" },
+    { id: 3, value: translate("enterprice"), type: "Enterprice" },
+    { id: 4, value: translate("ecommerceTitle"), type: "Ecommerce" },
+    { id: 5, value: translate("SaaS"), type: "SaaS" },
+    { id: 6, value: translate("socialMedia"), type: "Social Media" },
+  ];
+
   return (
     <AllProjectsWrapper>
-      <SubTitle>AllProjects</SubTitle>
+      <SubTitle>{translate("allProjects")}</SubTitle>
       <FilterAllProjects dataFilter={dataFilter} />
     </AllProjectsWrapper>
   );

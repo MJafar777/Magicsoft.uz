@@ -7,7 +7,7 @@ export const HeaderData = {
 export const OverViewData = {
   title:
     "Helping you deliver higher levels of customer satisfaction with e-commerce solutions built on digital intelligence.",
-  text: "Kellton is a global digital transformation enablement company and a leading provider of e-commerce software development services. We offer custom e-commerce application development services by dwelling upon an outside-in approach and benchmarking to overcome pain points. As a dynamic e-commerce website development company, we help retail and e-commerce industry players deliver on a diversified set of growth strategies. Our roadmap for e-commerce entails prototyping, piloting, Proof-of-Concept (PoC), and implementing dynamic pricing engines to help achieve sustainable and consistent growth along with thoughtful capability building.",
+  text: "MagicSoft Pro is a global digital transformation enablement company and a leading provider of e-commerce software development services. We offer custom e-commerce application development services by dwelling upon an outside-in approach and benchmarking to overcome pain points. As a dynamic e-commerce website development company, we help retail and e-commerce industry players deliver on a diversified set of growth strategies. Our roadmap for e-commerce entails prototyping, piloting, Proof-of-Concept (PoC), and implementing dynamic pricing engines to help achieve sustainable and consistent growth along with thoughtful capability building.",
 };
 
 export const TechnologyData = {
@@ -114,7 +114,7 @@ export const SolutionData = {
 };
 
 export const AnalysisData = {
-  year: { value: "15+", subject: "Years of experience" },
-  client: { value: "100+", subject: "Global clients" },
-  developer: { value: "120+", subject: "Expert developers" },
+  year: { value: "5+", subject: "Years of experience" },
+  client: { value: "10+", subject: "Global clients" },
+  developer: { value: "20+", subject: "Expert developers" },
 };

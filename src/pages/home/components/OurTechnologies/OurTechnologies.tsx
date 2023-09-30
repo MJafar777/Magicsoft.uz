@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { tecCardImae1, tecCardImae2 } from "../../../../assets/images";
 import ButtonIfo from "../../../../components/buttons/buttonInfo/ButtonIfo";
 import PageSectionNumber from "../../../../components/pageSectionNumber/PageSectionNumber";
@@ -16,6 +17,9 @@ import {
 
 const OurTechnologies = () => {
   const { translate } = useLocales();
+
+  const navigate = useNavigate();
+
 
   return (
     <OurTechnologiesContainerWrapper>
@@ -41,7 +45,9 @@ const OurTechnologies = () => {
               {translate("travelLogisticsDesc")}
             </OurTechnologiesCardDescription>
 
-            <OurTechnologiesCardButton>
+
+            <OurTechnologiesCardButton onClick={() => navigate("/travels")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}
@@ -60,7 +66,9 @@ const OurTechnologies = () => {
               {translate("retailDesc")}
             </OurTechnologiesCardDescription>
 
-            <OurTechnologiesCardButton>
+
+            <OurTechnologiesCardButton onClick={() => navigate("/retail")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}
@@ -84,7 +92,9 @@ const OurTechnologies = () => {
               {translate("fintechTitle")}
             </OurTechnologiesCardDescription>
 
-            <OurTechnologiesCardButton>
+
+            <OurTechnologiesCardButton onClick={() => navigate("/fintech")}>
+
               <ButtonIfo
                 text1={translate("LEARNMORE")}
                 text2={translate("LEARNMORE")}

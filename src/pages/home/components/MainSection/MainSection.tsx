@@ -23,8 +23,13 @@ import {
 import { HeaderReplace } from "../../HomeStyles";
 import useLocales from "../../../../locales/useLocales";
 
+import { useNavigate } from "react-router-dom";
+
 const MainSection = () => {
   const { translate } = useLocales();
+  const navigate = useNavigate();
+
+
   return (
     <>
       <HeaderReplace />
@@ -51,18 +56,23 @@ const MainSection = () => {
               </MainSectionLeftDescription>
 
               <MainSectinLeftButtonsBox>
-                <ButtonMagnet>
-                  <ButtonEscort
-                    text1={translate("hireTopEngineers")}
-                    text2={translate("hireTopEngineers")}
-                    arrowOutwardIcon={true}
-                  />
-                </ButtonMagnet>
+                <div onClick={() => navigate("/contact")}>
+                  <ButtonMagnet>
+                    <ButtonEscort
+                      text1={translate("hireTopEngineers")}
+                      text2={translate("hireTopEngineers")}
+                      arrowOutwardIcon={true}
+                    />
+                  </ButtonMagnet>
+                </div>
 
-                <ButtonInfo
-                  text1={translate("whyMagicSoft")}
-                  text2={translate("whyMagicSoft")}
-                />
+                <div onClick={() => navigate("/about-us")}>
+                  <ButtonInfo
+                    text1={translate("whyMagicSoft")}
+                    text2={translate("whyMagicSoft")}
+                  />
+                </div>
+
               </MainSectinLeftButtonsBox>
             </div>
           </MainSectionLeft>

@@ -23,13 +23,15 @@ import useLocales from "../../../locales/useLocales";
 const dataOfTeamMember = [
   {
     img: Team_member_1,
-    name: "Louis",
-    specialty: "Team Leader",
+    name: "Behzod",
+    specialty: "Frontend developer",
+    link: "https://www.linkedin.com/in/behzod-hamroyev-586345226/",
   },
   {
     img: Team_member_2,
-    name: "Louis",
+    name: "Umid",
     specialty: "Team Leader",
+    link: "https://www.linkedin.com/in/umid-rustamov/",
   },
   {
     img: Team_member_3,
@@ -73,12 +75,17 @@ const OurTeam = () => {
           <InfoEachWorker key={index}>
             <Link
               style={{ listStyle: "none" }}
+              target="_blank"
               to={worker.link ? worker.link : ""}
             >
               {/* <Team_member_1 /> */}
               <img src={worker.img} alt="" />
               <NameOfWorker>{worker.name}</NameOfWorker>
-              <Specialty>{worker.specialty=='Team Leader'? translate('teamLead'):worker.specialty}</Specialty>
+              <Specialty>
+                {worker.specialty == "Team Leader"
+                  ? translate("teamLead")
+                  : worker.specialty}
+              </Specialty>
             </Link>
           </InfoEachWorker>
         ))}

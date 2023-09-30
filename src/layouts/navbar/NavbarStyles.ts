@@ -68,7 +68,7 @@ export const LinkItem = styled.div<LinkItemProp>`
         color: #1b63cc;
         transition: all 0.5s linear;
 
-        font-size: 14px;
+        font-size: 18px;
         width: 11vw;
 
         &:hover {
@@ -81,7 +81,7 @@ export const LinkItem = styled.div<LinkItemProp>`
         width: 11vw;
         margin-top: 70px;
         color: #1b63cc;
-        font-size: 14px;
+        font-size: 18px;
         transition: all 0.5s linear;
 
         &:hover {
@@ -94,7 +94,7 @@ export const LinkItem = styled.div<LinkItemProp>`
         margin-left: 30px;
         margin-top: 100px;
         color: #1b63cc;
-        font-size: 14px;
+        font-size: 18px;
         transition: all 0.5s linear;
 
         &:hover {
@@ -151,7 +151,7 @@ export const LinkItemText = styled.p<BreacPointsType>`
   }
 
   @media ${(props) => props.theme.breakpoints?.xl} {
-    font-size: 11.2px;
+    font-size: 16px;
   }
 `;
 

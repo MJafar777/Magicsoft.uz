@@ -24,6 +24,8 @@ export const Cards = styled.div<Props, BreacPointsType>`
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+  cursor: pointer;
+
   background-color: ${(e) => (e.bg ? e.bg : "#000")};
 
   @media ${(props) => props.theme.breakpoints.xxl} {

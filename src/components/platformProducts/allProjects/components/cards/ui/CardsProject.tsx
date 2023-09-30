@@ -64,6 +64,8 @@ const CardsProject = (props: Props) => {
             );
           })
           .map((item) => {
+            console.log(item);
+
             return (
               <Cards bg={bg} width={width} key={item.id}>
                 <Img src={item.img} alt={`this image not found ${item.img}`} />
@@ -83,7 +85,6 @@ const CardsProject = (props: Props) => {
                     style={{
                       listStyle: "none",
                       textDecoration: "none",
-                      
                     }}
                     to={`${item.link}/${item.id}`}
                   >
@@ -92,7 +93,7 @@ const CardsProject = (props: Props) => {
                         sendToTop(dataCards[1].id, dataCards[1].category)
                       }
                     >
-                      {btn ? btn : "VIEW CASE STUDY"}{" "}
+                      {btn ? btn : "LEAR MORE"}{" "}
                       <Icon
                         src={sendBtn}
                         alt={`this image not found !${sendBtn}`}

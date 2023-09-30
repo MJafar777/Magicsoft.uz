@@ -118,7 +118,7 @@ export const LinkItemText = styled.p<BreacPointsType>`
   }
 
   @media ${(props) => props.theme.breakpoints.xl} {
-    font-size: 11.2px;
+    font-size: 16px;
   }
 `;
 
