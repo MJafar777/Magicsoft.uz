@@ -1,4 +1,4 @@
-import { news6, news2, news3, news4, news5 } from "../../assets";
+import { news1, news2, news3, news4, news5, news6 } from "../../assets";
 
 export const dataFilter = [
   { id: 1, value: "All" },
@@ -18,13 +18,13 @@ export const dataCards: {
   subTitle: string;
   basedOn: string[];
   miniTitle: string;
+  category: string[];
   paragraphInfo: string;
   date?: string | undefined;
-  category: string[];
 }[] = [
   {
     id: 1,
-    img: news6,
+    img: news1,
     miniTitle: "iPhone 15 серияси расман USB-C билан тақдим қилинди!",
     title:
       "Yilning eng intizorlik bilan kutilgan smartfonlari - iPhone 15 seriyasi rasman USB-C bilan taqdim qilindi!",
@@ -88,33 +88,33 @@ export const dataCards: {
   {
     id: 5,
     img: news5,
-    miniTitle: "Karnataka State Government's Finance Department partners ",
+    miniTitle: "AppleGPT – ChatGPT qotili!",
     title:
-      "Kellton and Hooper Labs announce a strategic partnership to build a strong roadmap on AI and Hyper-Automation",
+      "Apple kompaniyasi ChatGPT bilan raqobatlasha oladigan sunʼiy intellekt vositalari ustida ish olib bormoqda.",
     subTitle:
-      "Orci, nullam id pretium morbi adipiscing risus nulla. Turpis accumsan quis nulla dictumst rhoncus facilisis. Leo eget non velit, egestas proin molestie id ac. Non tincidunt nisi senectus mollis faucibus leo, tempus, viverra.",
+      "Apple kompaniyasi ChatGPT bilan raqobatlasha oladigan sunʼiy intellekt vositalari ustida ish olib bormoqda. Bu haqidagi xabarlar avvalroq faqat mish-mish sifatida qabul qilanayotgandi. Ammo Apple rahbari Tim Kuk ilk marta bu xabar rost ekanligini tasdiqladi.",
     link: "/news_informations",
     date: "June 01 , 2023",
     basedOn: ["Engineering", "Design"],
 
     paragraphInfo:
-      "Kellton, a publicly listed Digital Transformation company, recently partnered with Hooper Labs Inc., a Low-Code Hyper Automation platform. As part of this partnership, Kellton has decided to invest in co-development, Go-To-Market, and operational excellence for Hooper Labs. This synergy accelerates Kellton's leadership in the area of Process Automation, Data Transformation, and intelligent delivery of Enterprise Solutions. Krishna Chintam, Global CEO at Kellton, stated, This partnership has been timely, especially when Generative AI and Hyper Automation are at the core of the enterprise architecture and growth strategy for all our enterprise clients. Hooper's uniquely packaged derivative solutions in Compliance Management, Audit Management, and Process Automation, coupled with a unique Data Orchestration and Decision Engine, provide our customers with a wide variety of possibilities to resolve their process gaps. We are very excited about this partnership and thrilled to showcase Hooper and its derivatives as part of our Kellton offerings, he further adds. Srikanthan Tirumala, Founder & CEO of Hooper Labs Inc., said that he is extremely thrilled to share the stage with Kellton to reach out to a global audience. Leveraging both Kellton's remarkable reputation in delivering quality solutions to large enterprises and taking help from their Marketing and Sales teams, we believe we will grow multiple times faster than we could imagine, he states. Kellton is a Digital technology consulting and IT services company that delivers innovative IoT and digital solutions driving exceptional business value. As a globally trusted Digital Transformation company, Kellton excels in leveraging new technologies to transform enterprises for a digital future in a groundbreaking manner. From start-ups to Fortune 500 companies, Kellton provides end-to-end digital solutions to hundreds of clients across multiple business verticals and earned a distinguished position in the ecosystem. Hooper Labs Inc. is a privately held company with headquarters in Saratoga, CA, with an R&D center in Hyderabad, India. ",
+      "Apple kompaniyasi ChatGPT bilan raqobatlasha oladigan sunʼiy intellekt vositalari ustida ish olib bormoqda. Bu haqidagi xabarlar avvalroq faqat mish-mish sifatida qabul qilanayotgandi. Ammo Apple rahbari Tim Kuk ilk marta bu xabar rost ekanligini tasdiqladi. Choraklik hisobot konferensiyasiga ko‘ra, Apple kompaniyasining tadqiqot va ishlanmalarga sarflagan xarajatlari o‘tgan yilning shu davriga nisbatan qariyb 14 foizga o‘sdi va yilning so‘nggi choragida 22,61 milliard dollarni tashkil etdi. Tim Kukning qo‘shimcha qilishicha, Apple uzoq yillar davomida sunʼiy intellektni rivojlantirmoqda va bu sohaga katta miqdorda sarmoya kiritmoqda. Tim Kuk Routers agentligiga bergan intervyusida shunday bayonot berdi: ‘Biz bir necha yillardan buyon sunʼiy intellektning keng ko‘lamli texnologiyalari, jumladan, generativ sunʼiy intellekt bo‘yicha tadqiqotlar olib bordik. Biz ushbu sohaga sarmoya kiritishda va innovatsiyalar kiritishda davom etamiz, mahsulotlarimizni ushbu texnologiyalar yordamida rivojlantirishga imkon beramiz va odamlarga hayotlarini osonlashtirishga yordam beramiz. Shubhasiz, biz juda ko‘p mablag‘ sarflayapmiz va bu, ko‘rib turganingizdek, ilmiy-tadqiqot ishlariga sarflangan mablag‘larda o‘z aksini topmoqda.",
     category: ["All", "Development"],
   },
   {
     id: 6,
     img: news6,
-    miniTitle: "Karnataka State Government's Finance Department partners ",
+    miniTitle: "Tesla Apple qila olmagan ishni qildi!",
     title:
-      "Kellton and Hooper Labs announce a strategic partnership to build a strong roadmap on AI and Hyper-Automation",
+      "Apple kompaniyasi 2017 yilda AirPower nomli o‘zining simsiz zaryadlash platformasini taqdim qilgan edi.",
     subTitle:
-      "Orci, nullam id pretium morbi adipiscing risus nulla. Turpis accumsan quis nulla dictumst rhoncus facilisis. Leo eget non velit, egestas proin molestie id ac. Non tincidunt nisi senectus mollis faucibus leo, tempus, viverra.",
+      "Afsuski, 2018 yilda chiqarilishi kerak bo‘lgan qurilma 2019 yilga kelib, hali bozorga chiqmasdan bekor qilingan. Biroq, bugunga kelib Tesla xuddi shunday g‘oyaga asoslangan simsiz zaryadlash paltforamasini taqdim qildi.",
     link: "/news_informations",
     date: "June 01 , 2023",
     basedOn: ["Engineering", "Design"],
 
     paragraphInfo:
-      "Kellton, a publicly listed Digital Transformation company, recently partnered with Hooper Labs Inc., a Low-Code Hyper Automation platform. As part of this partnership, Kellton has decided to invest in co-development, Go-To-Market, and operational excellence for Hooper Labs. This synergy accelerates Kellton's leadership in the area of Process Automation, Data Transformation, and intelligent delivery of Enterprise Solutions. Krishna Chintam, Global CEO at Kellton, stated, This partnership has been timely, especially when Generative AI and Hyper Automation are at the core of the enterprise architecture and growth strategy for all our enterprise clients. Hooper's uniquely packaged derivative solutions in Compliance Management, Audit Management, and Process Automation, coupled with a unique Data Orchestration and Decision Engine, provide our customers with a wide variety of possibilities to resolve their process gaps. We are very excited about this partnership and thrilled to showcase Hooper and its derivatives as part of our Kellton offerings, he further adds. Srikanthan Tirumala, Founder & CEO of Hooper Labs Inc., said that he is extremely thrilled to share the stage with Kellton to reach out to a global audience. Leveraging both Kellton's remarkable reputation in delivering quality solutions to large enterprises and taking help from their Marketing and Sales teams, we believe we will grow multiple times faster than we could imagine, he states. Kellton is a Digital technology consulting and IT services company that delivers innovative IoT and digital solutions driving exceptional business value. As a globally trusted Digital Transformation company, Kellton excels in leveraging new technologies to transform enterprises for a digital future in a groundbreaking manner. From start-ups to Fortune 500 companies, Kellton provides end-to-end digital solutions to hundreds of clients across multiple business verticals and earned a distinguished position in the ecosystem. Hooper Labs Inc. is a privately held company with headquarters in Saratoga, CA, with an R&D center in Hyderabad, India. ",
+      "Ilon Maskning Tesla kompaniyasi bir vaqtning o‘zida uchtagacha qurilmalarni (har biri uchun) 15 Vt tezlikda zaryadlay oladigan Simsiz Zaryadlash Platformasini sotuvga chiqardi. Kompaniyaning taʼkidlashicha, qurilmaning burchakli dizayni va metall stili - korpus aslida alyuminiydan yasalgan - Cybertruck‘dan ilhomlanib yaratilgan. Uning qurilmalar zaryadlash uchun qo‘yiladigan yuzaki qismi esa zamshga o‘xshash alkantara materialidan tayyorlangan.Aytish kerakki, Tesla simsiz zaryadlash platformasi FreePower texnologiyasiga asoslangan, yaʼni siz Qi simsiz zaryaladlanishni qo‘llab-quvvatlaydigan qurilmalaringizni platformaning istalgan joyiga qo‘yish bilan zaryadlay olasiz yoxud qurilmalarni zaryadlash uchun aniq joyga qo‘yish talab qilinmaydi. Tesla Simsiz Zaryadlash Platformasi uchun allaqachon buyurtma berish boshlangan. Zaryadlovchi quti ichida uni tekis yoki qiya yotgan holda ushlash imkonini beradigan magnit tirgak bilan USB-C kabel va 65 vattlik quvvat adapteri bilan keladi. Uning narxi 300 dollar bo‘lib, uni yetkazib berish 2023 yilning fevral oyidan boshlanadi.",
     category: ["All", "Getting started"],
   },
 ];

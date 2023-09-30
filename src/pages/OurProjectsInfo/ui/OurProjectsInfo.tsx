@@ -14,10 +14,10 @@ import {
   OurProjectsInfoWrapper,
 } from "./ourProjectsInfoStyle";
 
-import { Link, useParams } from "react-router-dom/dist";
-import { dataCards } from "../../../api/data/pluginProjects";
 import { secondaryNews1 } from "../../../assets";
 import { Loader } from "../../../components/Loading";
+import { Link, useParams } from "react-router-dom/dist";
+import { dataCards } from "../../../api/data/pluginProjects";
 import { MiniCard } from "../../../components/news&Blogs/miniCard";
 import { TitleBlock } from "../../../components/news&Blogs/navbar";
 
@@ -42,7 +42,6 @@ interface DataCard {
 }
 
 const OurProjectsInfo: FC<Props> = () => {
-  // const location = useLocation();
   const { id } = useParams();
 
   const [data, setData] = useState<DataCard[]>(dataCards);

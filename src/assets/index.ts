@@ -1,19 +1,19 @@
 // ---------- export images in News page ----------
-export { default as news1 } from "./images/pages/news/news1.svg";
+export { default as news1 } from "./images/pages/news/news1.png";
 export { default as news2 } from "./images/pages/news/news2.png";
 export { default as news3 } from "./images/pages/news/news3.png";
 export { default as news4 } from "./images/pages/news/news4.png";
-export { default as news5 } from "./images/pages/news/news5.svg";
+export { default as news5 } from "./images/pages/news/news5.png";
 export { default as news6 } from "./images/pages/news/news6.png";
 
 // ---------- export images in Blogs page ----------
 
-export { default as blogs1 } from "./images/pages/blogs/blog1.svg";
-export { default as blogs2 } from "./images/pages/blogs/blog2.svg";
-export { default as blogs3 } from "./images/pages/blogs/blog3.svg";
-export { default as blogs4 } from "./images/pages/blogs/blog4.svg";
-export { default as blogs5 } from "./images/pages/blogs/blog5.svg";
-export { default as blogs6 } from "./images/pages/blogs/blog6.svg";
+export { default as blogs1 } from "./images/pages/blogs/blog1.jpg";
+export { default as blogs2 } from "./images/pages/blogs/blog2.jpg";
+export { default as blogs3 } from "./images/pages/blogs/blog3.png";
+export { default as blogs4 } from "./images/pages/blogs/blog4.jpg";
+export { default as blogs5 } from "./images/pages/blogs/blog5.png";
+export { default as blogs6 } from "./images/pages/blogs/blog6.png";
 
 // ---------- export images in secondaryNews page ----------
 

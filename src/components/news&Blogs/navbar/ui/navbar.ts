@@ -10,6 +10,7 @@ export const NavbarWrapper = styled.div`
 
   margin: 0 auto;
   background: #161616;
+  overflow: hidden;
 `;
 
 export const Cards = styled.div<BreacPointsType>`
