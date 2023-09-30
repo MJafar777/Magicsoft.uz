@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import { BreacPointsType } from "../../../types/breacPointTypes";
 
-export const OurProjectsInfoWrapper = styled.div``;
-
 interface Props {
   src: string;
   alt: string;
 }
 
-export const SecondaryNewsWrapper = styled.div<BreacPointsType>`
+export const OurProjectsInfoWrapper = styled.div<BreacPointsType>`
   width: 100%;
   background: #000;
   color: white;
@@ -133,4 +131,49 @@ export const TitleBottomBorder = styled.div`
   height: 9px;
   flex-shrink: 0;
   background: var(--yellow, #fcd702);
+`;
+
+export const SendLinkBtn = styled.p<BreacPointsType>`
+  cursor: pointer;
+  user-select: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+
+  background-color: #474748;
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  color: #d4f54c;
+  font-family: Archivo-Regular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.8%;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+
+  &:hover img {
+    transform: translateY(-2px) translateX(2px);
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    transform: translateY(-4px) translateX(4px);
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 14px;
+  }
+`;
+
+export const Icon = styled.img<BreacPointsType>`
+  width: 25px;
+  transform: rotateZ(45deg);
+  transition: all 0.1s ease;
+  @media ${(props) => props.theme.breakpoints.md} {
+    transform: scale(0.9);
+  }
 `;
