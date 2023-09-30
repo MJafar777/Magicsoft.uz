@@ -35,7 +35,7 @@ const Analysis = () => {
         <CardOfAnalysis>
           <Title>
             <CountUp
-              end={100}
+              end={10}
               duration={5.75}
               start={start}
               separator="client"
@@ -60,9 +60,9 @@ const Analysis = () => {
         <CardOfAnalysis>
           <Title>
             <CountUp
-              end={35}
+              end={20}
               duration={5.75}
-              start={start}
+              start={1}
               separator="client"
               decimal=","
               suffix=" +"
@@ -84,9 +84,9 @@ const Analysis = () => {
         <CardOfAnalysis>
           <Title>
             <CountUp
-              end={10000}
+              end={500}
               duration={5.75}
-              start={1000 * start}
+              start={1}
               // separator="client"
               decimal=","
               suffix=" +"
@@ -108,9 +108,9 @@ const Analysis = () => {
         <CardOfAnalysis className="noneBorder">
           <Title>
             <CountUp
-              end={200000}
+              end={3}
               duration={5.75}
-              start={1000 * start}
+              start={0}
               // separator="client"
               decimal=","
               suffix=" +"

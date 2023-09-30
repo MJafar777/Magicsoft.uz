@@ -107,7 +107,7 @@ export const SolutionData = {
 };
 
 export const AnalysisData = {
-  year: { value: "15+", subject: "Years of experience" },
-  client: { value: "100+", subject: "Global clients" },
-  developer: { value: "120+", subject: "Expert developers" },
+  year: { value: "5+", subject: "Years of experience" },
+  client: { value: "10+", subject: "Global clients" },
+  developer: { value: "20+", subject: "Expert developers" },
 };

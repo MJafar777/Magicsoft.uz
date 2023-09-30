@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import next from "../../../assets/about/next.svg";
-import pre from "../../../assets/about/pre.svg";
+// import next from "../../../assets/about/next.svg";
+// import pre from "../../../assets/about/pre.svg";
 
 export const CommentsWrapper = styled.div`
   height: fit-content;
@@ -8,25 +8,17 @@ export const CommentsWrapper = styled.div`
   margin: 0 auto;
   margin-top: 400px;
 
+  .slick-slider .slick-list {
+    margin: 0 10px;
+  }
+
   .slick-prev:before {
-    /* content: url(${pre}) !important; */
-    position: absolute !important;
-    display: none;
-    top: 150px !important;
-    left: 50px;
-    font-size: 36px !important;
-    font-weight: bolder;
+    font-size: 28px;
   }
 
   .slick-next:before,
   [dir="rtl"] .slick-prev:before {
-    content: url(${next}) !important;
-    position: absolute;
-    font-weight: bolder;
-    display: none;
-    left: -1650px;
-    top: 150px;
-    font-size: 36px;
+    font-size: 28px;
   }
   @media ${(prop) => prop.theme.breakpoints.xl} {
     height: 60vh;
@@ -35,31 +27,19 @@ export const CommentsWrapper = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     height: 60vh;
-    margin-top: 100px;
+    margin-top: 180px;
     .slick-prev:before {
       top: 100px !important;
     }
   }
 `;
 
-export const CommentContainer = styled.div`
-  display: flex;
-  .slick-slide {
-    /* opacity: 0.5; */
-  }
-  .slick-slide .slick-active {
-    opacity: 1;
-  }
-  .slick-slide .slick-active .slick-center .slick-current {
-    opacity: 1 !important;
-  }
-`;
+export const CommentContainer = styled.div``;
 
 export const LeadingBrandsBoxComment = styled.div`
   height: 40vh;
   width: 100%;
   margin: 0 auto;
-
   gap: 30px;
 `;
 
@@ -73,6 +53,7 @@ export const CommentCardWrapper = styled.div`
   padding: 26px 0;
   padding-left: 32px;
   margin-left: 50px;
+  
   p {
     font-family: "MazzardM-SemiBold";
     font-size: 20px;
@@ -126,6 +107,8 @@ export const Title = styled.p`
   }
   @media ${(prop) => prop.theme.breakpoints.md} {
     text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 `;
 

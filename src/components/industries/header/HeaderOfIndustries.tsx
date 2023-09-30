@@ -4,9 +4,9 @@ import ReactFluidAnimation, {
   IAnimationConfig,
 } from "@usertive/react-fluid-animation";
 
-import { HeaderData as TravelData } from "../../../api/data/travels";
-import { HeaderData as FintechData } from "../../../api/data/fintech";
-import { HeaderData as RetailData } from "../../../api/data/retail";
+// import { HeaderData as TravelData } from "../../../api/data/travels";
+// import { HeaderData as FintechData/ } from "../../../api/data/fintech";
+// import { HeaderData as RetailData } from "../../../api/data/retail";
 
 import {
   BaseLinks,
@@ -17,6 +17,7 @@ import {
 } from "./HeaderOfIndustriesStyles";
 
 import { useEffect, useState } from "react";
+import useLocales from "../../../locales/useLocales";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const defaultConfig: Partial<IAnimationConfig> = {
@@ -44,15 +45,20 @@ const defaultConfig: Partial<IAnimationConfig> = {
 
 const HeaderOfIndustries = () => {
   const loaction = useLocation();
-  const [data, setData] = useState(FintechData);
+  const { translate } = useLocales();
+  // const [data, setData] = useState(FintechData);
+  const [whichIndustry, setWhichIndustry] = useState("OfTravel");
 
   useEffect(() => {
     if (loaction.pathname == "/fintech") {
-      setData(FintechData);
+      // setData(FintechData);
+      setWhichIndustry("OfFintech");
     } else if (loaction.pathname == "/travels") {
-      setData(TravelData);
+      // setData(TravelData);
+      setWhichIndustry("OfTravel");
     } else {
-      setData(RetailData);
+      // setData(RetailData);
+      setWhichIndustry("OfRetail");
     }
   }, [loaction.pathname]);
 
@@ -68,12 +74,12 @@ const HeaderOfIndustries = () => {
       />
       <ContentOfHeader>
         <BaseLinks>
-          <Link to={"/"}>Home / </Link>
-          <Link to={"/"}>Industries / </Link>
-          <Link to={"/"}>{data.back}</Link>
+          {/* <Link to={"/"}>Home / </Link> */}
+          {/* <Link to={"/"}>Industries / </Link> */}
+          <Link to={"/"}>{translate(`topHeaderOfTitle${whichIndustry}`)}</Link>
         </BaseLinks>
-        <HeaderTitle>{data.title}</HeaderTitle>
-        <Subtitle>{data.subTitle}</Subtitle>
+        <HeaderTitle>{translate(`headerOfTitle${whichIndustry}`)}</HeaderTitle>
+        <Subtitle>{translate(`headerOfSubtitle${whichIndustry}`)}</Subtitle>
       </ContentOfHeader>
     </HeaderOfIndustriesWraper>
     // </CointainerWrapper>

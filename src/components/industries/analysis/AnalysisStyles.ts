@@ -1,21 +1,19 @@
 import { styled } from "styled-components";
 
 export const AnalysisWrapper = styled.div`
-  padding-bottom: 141px;
-  padding-left: 190px;
-  padding-right: 190px;
+  max-width: 1366px;
   display: flex;
-  justify-content: center;
-  /* background-color: black; */
-  padding: 0;
-  width: 100%;
-
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   @media ${(prop) => prop.theme.breakpoints.sm} {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 12px;
   }
 `;
 

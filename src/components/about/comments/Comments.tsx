@@ -4,13 +4,13 @@ import {
   CommentContainer,
   CommentsWrapper,
   LeadingBrandsBoxComment,
-  SubTitle,
+  // SubTitle,
   Title,
 } from "./CommentStyles";
-import preIcon from "../../../assets/about/pre.svg";
+// import preIcon from "../../../assets/about/pre.svg";
 import useLocales from "../../../locales/useLocales";
-import nextIcon from "../../../assets/about/next.svg";
-import { ButtonsWrapper } from "../sliderForAbout/LeadingBrandsSectionStyles";
+// import nextIcon from "../../../assets/about/next.svg";
+// import { ButtonsWrapper } from "../sliderForAbout/LeadingBrandsSectionStyles";
 import { useRef } from "react";
 
 const Comments = () => {
@@ -18,17 +18,17 @@ const Comments = () => {
 
   const sliderRef = useRef<Slider | null>(null);
 
-  const next = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
+  // const next = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickNext();
+  //   }
+  // };
 
-  const previous = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
+  // const previous = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickPrev();
+  //   }
+  // };
 
   const settings = {
     className: "center",
@@ -90,7 +90,7 @@ const Comments = () => {
   return (
     <CommentsWrapper>
       <Title>{translate("commentTitle")}</Title>
-      <SubTitle>{translate("commentSubtile")}</SubTitle>
+      {/* <SubTitle>{translate("commentSubtile")}</SubTitle> */}
       <CommentContainer>
         <LeadingBrandsBoxComment>
           <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
@@ -100,14 +100,14 @@ const Comments = () => {
             <CommentCard />
             <CommentCard />
           </Slider>
-          <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
+          {/* <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
             <button className="button" onClick={previous}>
               <img src={preIcon} alt="" />
             </button>
             <button className="button" onClick={next}>
               <img src={nextIcon} alt="" />
             </button>
-          </ButtonsWrapper>
+          </ButtonsWrapper> */}
         </LeadingBrandsBoxComment>
       </CommentContainer>
     </CommentsWrapper>

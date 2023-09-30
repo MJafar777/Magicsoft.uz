@@ -57,23 +57,24 @@ const Navbar = () => {
           ) : (
             <div></div>
           )}
-          {translate("industries")}
+          {/* Industries */}
+          {translate("Industries")}
         </LinkItemText>
 
         <div className="listOfLink">
           <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/travels" className="travel">
-              Travel and others
+              {translate("travelNavbar")}
             </Link>
           </div>
           <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/retail" className="travel2">
-              Retail and e-commerce
+              {translate("retailNavbar")}
             </Link>
           </div>
           <div onClick={() => setDisplayOfIndustry(false)}>
             <Link to="/fintech" className="travel3">
-              Fintech and Banking
+              {translate("fintechNavbar")}
             </Link>
           </div>
           <img src={folder} alt="" />

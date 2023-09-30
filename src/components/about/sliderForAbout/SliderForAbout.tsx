@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import React, { ReactNode, useRef } from "react";
-import preIcon from "../../../assets/about/pre.svg";
-import nextIcon from "../../../assets/about/next.svg";
-import { ButtonsWrapper } from "./LeadingBrandsSectionStyles";
+// import preIcon from "../../../assets/about/pre.svg";
+// import nextIcon from "../../../assets/about/next.svg";
+// import { ButtonsWrapper } from "./LeadingBrandsSectionStyles";
 interface SliderProps {
   children: ReactNode;
 }
@@ -11,7 +11,7 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
@@ -56,31 +56,31 @@ const SliderAutoPlay: React.FC<SliderProps> = ({ children }) => {
 
   const sliderRef = useRef<Slider | null>(null);
 
-  const next = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
+  // const next = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickNext();
+  //   }
+  // };
 
-  const previous = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
+  // const previous = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickPrev();
+  //   }
+  // };
 
   return (
     <div>
       <Slider ref={(c) => (sliderRef.current = c)} {...settings}>
         {children}
       </Slider>
-      <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
+      {/* <ButtonsWrapper style={{ textAlign: "center", marginTop: "50px" }}>
         <button className="button" onClick={previous}>
           <img src={preIcon} alt="" />
         </button>
         <button className="button" onClick={next}>
           <img src={nextIcon} alt="" />
         </button>
-      </ButtonsWrapper>
+      </ButtonsWrapper> */}
     </div>
   );
 };

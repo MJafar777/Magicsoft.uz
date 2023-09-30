@@ -13,9 +13,11 @@ import {
 import { AnalysisData as TravelData } from "../../../api/data/travels";
 import { AnalysisData as FintechData } from "../../../api/data/fintech";
 import { AnalysisData as RetailData } from "../../../api/data/retail";
+import useLocales from "../../../locales/useLocales";
 
 const Analysis = () => {
   const loaction = useLocation();
+  const { translate } = useLocales();
   const [data, setData] = useState(FintechData);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const Analysis = () => {
       <CardOfAnalysis>
         <TheFirst>
           <ValueOfAnalysis>{data.year.value}</ValueOfAnalysis>
-          <WhichSubject>{data.year.subject}</WhichSubject>
+          <WhichSubject>{translate("subTileOfAnalisOneOfTravel")}</WhichSubject>
         </TheFirst>
       </CardOfAnalysis>
 
@@ -53,7 +55,7 @@ const Analysis = () => {
               onStart={() => console.log("Started! 💨")}
             />
           </ValueOfAnalysis>
-          <WhichSubject>{data.client.subject}</WhichSubject>
+          <WhichSubject>{translate("subTileOfAnalisTwoOfTravel")}</WhichSubject>
         </TheSecond>
       </CardOfAnalysis>
 
@@ -73,7 +75,9 @@ const Analysis = () => {
               onStart={() => console.log("Started! 💨")}
             />
           </ValueOfAnalysis>
-          <WhichSubject>{data.developer.subject}</WhichSubject>
+          <WhichSubject>
+            {translate("subTileOfAnalisThreeOfTravel")}
+          </WhichSubject>
         </TheThird>
       </CardOfAnalysis>
     </AnalysisWrapper>

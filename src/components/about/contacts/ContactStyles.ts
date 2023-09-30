@@ -27,12 +27,15 @@ export const ContactWrapper = styled.div`
   }
 
   @media ${(prop) => prop.theme.breakpoints.xl} {
+    width: 100%;
     .bg {
       width: 100%;
     }
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
+    padding: 0;
+    
     .bg {
       width: 100%;
       flex-direction: column;
@@ -58,17 +61,17 @@ export const ContentSide = styled.div`
     }
 
     @media ${(prop) => prop.theme.breakpoints.xl} {
-      margin: 47px 0 16px 0;
+      margin: 27px 0 16px 0;
     }
 
     @media ${(prop) => prop.theme.breakpoints.md} {
       width: 50%;
-      margin: 20px auto 23px auto;
+      margin: 10px auto 23px auto;
     }
   }
 
   @media ${(prop) => prop.theme.breakpoints.md} {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -94,6 +97,13 @@ export const Title = styled.div`
     text-align: center;
     margin-bottom: 0cqmax;
   }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0cqmax;
+  }
 `;
 
 export const Content = styled.div`
@@ -112,6 +122,11 @@ export const Content = styled.div`
     width: 70%;
     margin: 0 auto;
   }
+
+  @media ${(prop) => prop.theme.breakpoints.sm} {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 export const FormSide = styled.div`
@@ -128,7 +143,7 @@ export const FormSide = styled.div`
     font-style: italic;
     font-weight: 400;
     line-height: 137.8%; /* 27.56px */
-    opacity: 0.5;
+    /* opacity: 0.5; */
     border-bottom: solid 1px gray;
     padding-bottom: 9px;
     padding-left: 13px;
@@ -145,7 +160,7 @@ export const FormSide = styled.div`
     font-style: italic;
     font-weight: 400;
     line-height: 137.8%; /* 27.56px */
-    opacity: 0.5;
+    /* opacity: 0.5; */
     padding-bottom: 9px;
     border-bottom: solid 1px gray;
     margin-bottom: 29px;
@@ -167,7 +182,7 @@ export const FormSide = styled.div`
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 6px 6px 1px #403a16;
-    &:focus{
+    &:focus {
       background: var(--Yellow, #fff702);
     }
   }
@@ -214,6 +229,11 @@ export const FormSide = styled.div`
 
   @media ${(prop) => prop.theme.breakpoints.md} {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  @media ${(prop) => prop.theme.breakpoints.md} {
+    width: 90%;
     margin: 0 auto;
   }
 `;
