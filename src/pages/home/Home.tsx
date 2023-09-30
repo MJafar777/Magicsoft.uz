@@ -41,7 +41,8 @@ const Home = () => {
   }
 
   return (
-    <ReactPageScroller>
+    <>
+      {/* <ReactPageScroller> */}
       <MainSection />
 
       <LeadingBrandsSection />
@@ -63,7 +64,8 @@ const Home = () => {
       <OurCommunityCotainerWrapper>
         <Footer />
       </OurCommunityCotainerWrapper>
-    </ReactPageScroller>
+      {/* </ReactPageScroller> */}
+    </>
   );
 };
 

@@ -36,8 +36,16 @@ const en = {
 
   // ---------- Home page  ----------
 
+  // ---------- Header & Navbar ----------
+  platforms: "Platforms & Products",
+  industries: "Industries",
+  news: "News",
+  blog: "Blog",
+  login: "Log in",
+  menu: "MENU",
+
   // ---------- Main section ----------
-  homeMainTitleTop: "Hire the Top of",
+  homeMainTitleTop: "Hire the Top of ",
   homeMainTitleLeft: "Professional",
   homeMainTitleRight: "Software",
   homeMainTitleButtom: "Engineer",
